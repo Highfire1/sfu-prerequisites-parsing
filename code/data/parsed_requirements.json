@@ -1,0 +1,116 @@
+[
+  {
+    "original": {
+      "dept": "ENSC",
+      "number": "405W",
+      "title": "Capstone A: Project Design, Management, and Documentation",
+      "notes": "Engineering Science students cannot take MSE 410, MSE 411, SEE 410W or SEE 411 for credit. Students who have taken (ENSC 304 and ENSC 305W) may not take ENSC 405W for credit. ",
+      "prerequisites": "(ENSC 105W or MSE 101W), ENSC 204, all with a minimum grade of C-, completion of a minimum of 22 units of required upper division ENSC courses, and completion of (or concurrent enrollment in) two upper division technical electives meeting the requirements of the program. Students are required to complete at least two co-ops before enrolling in ENSC 440 Capstone B. Capstone B must be taken in the term immediately following Capstone A. Enrollment into Capstone A is by approval of the department via Capstone application form.",
+      "corequisites": ""
+    },
+    "parsed": {
+      "department": "ENSC",
+      "number": "405W",
+      "rSchema": "SFUv0.10",
+      "prerequisite": {
+        "type": "group",
+        "logic": "AND",
+        "children": [
+          {
+            "type": "group",
+            "logic": "OR",
+            "children": [
+              {
+                "type": "course",
+                "department": "ENSC",
+                "number": "105W",
+                "minGrade": "C-"
+              },
+              {
+                "type": "course",
+                "department": "MSE",
+                "number": "101W",
+                "minGrade": "C-"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "department": "ENSC",
+            "number": "204",
+            "minGrade": "C-"
+          },
+          {
+            "type": "creditCount",
+            "credits": 22,
+            "department": "ENSC",
+            "level": "UD"
+          },
+          {
+            "type": "courseCount",
+            "count": 2,
+            "level": "UD",
+            "canBeTakenConcurrently": "true"
+          },
+          {
+            "type": "permission",
+            "note": "Enrollment is by approval of the department via Capstone application form."
+          }
+        ]
+      },
+      "__rawResponse": "```json\n{\n    \"department\": \"ENSC\",\n    \"number\": \"405W\",\n    \"rSchema\": \"SFUv0.10\",\n    \"prerequisite\": {\n        \"type\": \"group\",\n        \"logic\": \"AND\",\n        \"children\": [\n            {\n                \"type\": \"group\",\n                \"logic\": \"OR\",\n                \"children\": [\n                    {\n                        \"type\": \"course\",\n                        \"department\": \"ENSC\",\n                        \"number\": \"105W\",\n                        \"minGrade\": \"C-\"\n                    },\n                    {\n                        \"type\": \"course\",\n                        \"department\": \"MSE\",\n                        \"number\": \"101W\",\n                        \"minGrade\": \"C-\"\n                    }\n                ]\n            },\n            {\n                \"type\": \"course\",\n                \"department\": \"ENSC\",\n                \"number\": \"204\",\n                \"minGrade\": \"C-\"\n            },\n            {\n                \"type\": \"creditCount\",\n                \"credits\": 22,\n                \"department\": \"ENSC\",\n                \"level\": \"UD\"\n            },\n            {\n                \"type\": \"courseCount\",\n                \"count\": 2,\n                \"level\": \"UD\",\n                \"canBeTakenConcurrently\": \"true\"\n            },\n            {\n                \"type\": \"permission\",\n                \"note\": \"Enrollment is by approval of the department via Capstone application form.\"\n            }\n        ]\n    }\n}\n```"
+    },
+    "timestamp": "2025-06-27T10:39:30.465Z"
+  },
+  {
+    "original": {
+      "dept": "MATH",
+      "number": "190",
+      "title": "Principles of Mathematics for Teachers",
+      "notes": "",
+      "prerequisites": "Pre-Calculus 11 or Foundations of Mathematics 11 (or equivalent)\r\nwith a grade of at least B, or SFU FAN X99 course with a grade of at least C, or achieving a satisfactory grade on the Simon Fraser University Quantitative Placement Test. This course may not be counted toward the Mathematics minor, major or honours degree requirements. Students who have taken, have received transfer credit for, or are currently taking MATH 150, 151, 154 or 157 may not take MATH 190 for credit without permission from the Department of Mathematics. Intended to be particularly accessible to students who are not specializing in mathematics.",
+      "corequisites": ""
+    },
+    "parsed": {
+      "department": "MATH",
+      "number": "190",
+      "rSchema": "SFUv0.10",
+      "prerequisite": {
+        "type": "group",
+        "logic": "OR",
+        "children": [
+          {
+            "type": "group",
+            "logic": "OR",
+            "children": [
+              {
+                "type": "HSCourse",
+                "course": "Pre-Calculus 11",
+                "minGrade": "B",
+                "orEquivalent": "true"
+              },
+              {
+                "type": "HSCourse",
+                "course": "Foundations of Mathematics 11",
+                "minGrade": "B",
+                "orEquivalent": "true"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "department": "FAN",
+            "number": "X99",
+            "minGrade": "C"
+          },
+          {
+            "type": "other",
+            "note": "Achieving a satisfactory grade on the Simon Fraser University Quantitative Placement Test"
+          }
+        ]
+      },
+      "__rawResponse": "```json\n{\n    \"department\": \"MATH\",\n    \"number\": \"190\",\n    \"rSchema\": \"SFUv0.10\",\n    \"prerequisite\": {\n        \"type\": \"group\",\n        \"logic\": \"OR\",\n        \"children\": [\n            {\n                \"type\": \"group\",\n                \"logic\": \"OR\",\n                \"children\": [\n                    {\n                        \"type\": \"HSCourse\",\n                        \"course\": \"Pre-Calculus 11\",\n                        \"minGrade\": \"B\",\n                        \"orEquivalent\": \"true\"\n                    },\n                    {\n                        \"type\": \"HSCourse\",\n                        \"course\": \"Foundations of Mathematics 11\",\n                        \"minGrade\": \"B\",\n                        \"orEquivalent\": \"true\"\n                    }\n                ]\n            },\n            {\n                \"type\": \"course\",\n                \"department\": \"FAN\",\n                \"number\": \"X99\",\n                \"minGrade\": \"C\"\n            },\n            {\n                \"type\": \"other\",\n                \"note\": \"Achieving a satisfactory grade on the Simon Fraser University Quantitative Placement Test\"\n            }\n        ]\n    }\n}\n```"
+    },
+    "timestamp": "2025-06-27T10:41:55.761Z"
+  }
+]

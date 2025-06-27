@@ -77,6 +77,7 @@ CONFIDENCE REQUIREMENTS:
 
 OUTPUT FORMAT:
 Return ONLY valid JSON - either a CourseRequirements object or an error object:
+You do not have to include spacing or formatting, just the JSON structure.
 
 {
   "error": true,
@@ -300,12 +301,12 @@ async function processAllCourses() {
             const course = courses[i];
             if (!course) continue; // Skip if undefined
 
-            const prereqLength = course.prerequisites ? course.prerequisites.length : 0;
-            const coreqLength = course.corequisites ? course.corequisites.length : 0;
-            if ((prereqLength + coreqLength) < 500) {
-                console.log('  → Skipping (combined prerequisites and corequisites are less than 300 characters)');
-                continue;
-            }
+            // const prereqLength = course.prerequisites ? course.prerequisites.length : 0;
+            // const coreqLength = course.corequisites ? course.corequisites.length : 0;
+            // if ((prereqLength + coreqLength) < 500) {
+            //     console.log('  → Skipping (combined prerequisites and corequisites are less than 300 characters)');
+            //     continue;
+            // }
             
             console.log(`\n[${i + 1}/${courses.length}] Processing ${course.dept} ${course.number}: ${course.title}`);
             
@@ -387,17 +388,14 @@ async function processAllCourses() {
             });
             
             // Save intermediate results every 10 courses
-            if (results.length % 10 === 0) {
-                await fs.writeFile(OUTPUT_PATH, JSON.stringify(results, null, 2), 'utf-8');
-                console.log(`  💾 Saved intermediate results (${results.length} processed)`);
-            }
-            
-            // Add a small delay to be respectful to the API
-            await new Promise(resolve => setTimeout(resolve, 1000));
+            // if (results.length % 10 === 0) {
+            //     await fs.writeFile(OUTPUT_PATH, JSON.stringify(results, null, 2), 'utf-8');
+            //     console.log(`  💾 Saved intermediate results (${results.length} processed)`);
+            // }
         }
         
         // Save final results
-        await fs.writeFile(OUTPUT_PATH, JSON.stringify(results, null, 2), 'utf-8');
+        // await fs.writeFile(OUTPUT_PATH, JSON.stringify(results, null, 2), 'utf-8');
         
         // Close readline interface
         rl.close();
