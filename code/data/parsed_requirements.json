@@ -1,116 +1,746 @@
 [
   {
-    "original": {
-      "dept": "ENSC",
-      "number": "405W",
-      "title": "Capstone A: Project Design, Management, and Documentation",
-      "notes": "Engineering Science students cannot take MSE 410, MSE 411, SEE 410W or SEE 411 for credit. Students who have taken (ENSC 304 and ENSC 305W) may not take ENSC 405W for credit. ",
-      "prerequisites": "(ENSC 105W or MSE 101W), ENSC 204, all with a minimum grade of C-, completion of a minimum of 22 units of required upper division ENSC courses, and completion of (or concurrent enrollment in) two upper division technical electives meeting the requirements of the program. Students are required to complete at least two co-ops before enrolling in ENSC 440 Capstone B. Capstone B must be taken in the term immediately following Capstone A. Enrollment into Capstone A is by approval of the department via Capstone application form.",
-      "corequisites": ""
-    },
-    "parsed": {
-      "department": "ENSC",
-      "number": "405W",
-      "rSchema": "SFUv0.10",
-      "prerequisite": {
-        "type": "group",
-        "logic": "AND",
-        "children": [
-          {
-            "type": "group",
-            "logic": "OR",
-            "children": [
-              {
-                "type": "course",
-                "department": "ENSC",
-                "number": "105W",
-                "minGrade": "C-"
-              },
-              {
-                "type": "course",
-                "department": "MSE",
-                "number": "101W",
-                "minGrade": "C-"
-              }
-            ]
-          },
-          {
-            "type": "course",
-            "department": "ENSC",
-            "number": "204",
-            "minGrade": "C-"
-          },
-          {
-            "type": "creditCount",
-            "credits": 22,
-            "department": "ENSC",
-            "level": "UD"
-          },
-          {
-            "type": "courseCount",
-            "count": 2,
-            "level": "UD",
-            "canBeTakenConcurrently": "true"
-          },
-          {
-            "type": "permission",
-            "note": "Enrollment is by approval of the department via Capstone application form."
-          }
-        ]
-      },
-      "__rawResponse": "```json\n{\n    \"department\": \"ENSC\",\n    \"number\": \"405W\",\n    \"rSchema\": \"SFUv0.10\",\n    \"prerequisite\": {\n        \"type\": \"group\",\n        \"logic\": \"AND\",\n        \"children\": [\n            {\n                \"type\": \"group\",\n                \"logic\": \"OR\",\n                \"children\": [\n                    {\n                        \"type\": \"course\",\n                        \"department\": \"ENSC\",\n                        \"number\": \"105W\",\n                        \"minGrade\": \"C-\"\n                    },\n                    {\n                        \"type\": \"course\",\n                        \"department\": \"MSE\",\n                        \"number\": \"101W\",\n                        \"minGrade\": \"C-\"\n                    }\n                ]\n            },\n            {\n                \"type\": \"course\",\n                \"department\": \"ENSC\",\n                \"number\": \"204\",\n                \"minGrade\": \"C-\"\n            },\n            {\n                \"type\": \"creditCount\",\n                \"credits\": 22,\n                \"department\": \"ENSC\",\n                \"level\": \"UD\"\n            },\n            {\n                \"type\": \"courseCount\",\n                \"count\": 2,\n                \"level\": \"UD\",\n                \"canBeTakenConcurrently\": \"true\"\n            },\n            {\n                \"type\": \"permission\",\n                \"note\": \"Enrollment is by approval of the department via Capstone application form.\"\n            }\n        ]\n    }\n}\n```"
-    },
-    "timestamp": "2025-06-27T10:39:30.465Z"
+    "department": "ACMA",
+    "number": "101",
+    "rSchema": "SFUv0.10",
+    "corequisite": {
+      "type": "group",
+      "logic": "OR",
+      "children": [
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "150"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "151"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "154"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "157"
+        }
+      ]
+    }
   },
   {
-    "original": {
-      "dept": "MATH",
-      "number": "190",
-      "title": "Principles of Mathematics for Teachers",
-      "notes": "",
-      "prerequisites": "Pre-Calculus 11 or Foundations of Mathematics 11 (or equivalent)\r\nwith a grade of at least B, or SFU FAN X99 course with a grade of at least C, or achieving a satisfactory grade on the Simon Fraser University Quantitative Placement Test. This course may not be counted toward the Mathematics minor, major or honours degree requirements. Students who have taken, have received transfer credit for, or are currently taking MATH 150, 151, 154 or 157 may not take MATH 190 for credit without permission from the Department of Mathematics. Intended to be particularly accessible to students who are not specializing in mathematics.",
-      "corequisites": ""
+    "department": "ACMA",
+    "number": "201",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "OR",
+      "children": [
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "152",
+          "minGrade": "C"
+        },
+        {
+          "type": "group",
+          "logic": "OR",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "155",
+              "minGrade": "B"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "158",
+              "minGrade": "B"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "department": "ACMA",
+    "number": "231",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "OR",
+      "children": [
+        {
+          "type": "HSCourse",
+          "course": "BC Mathematics 12",
+          "orEquivalent": "true"
+        },
+        {
+          "type": "courseCount",
+          "count": 1,
+          "department": "MATH",
+          "level": "1XX",
+          "minGrade": "C"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ACMA",
+    "number": "301",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "OR",
+      "children": [
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "201",
+          "minGrade": "C"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "210",
+          "minGrade": "C"
+        }
+      ]
     },
-    "parsed": {
-      "department": "MATH",
-      "number": "190",
-      "rSchema": "SFUv0.10",
-      "prerequisite": {
-        "type": "group",
-        "logic": "OR",
-        "children": [
-          {
-            "type": "group",
-            "logic": "OR",
-            "children": [
-              {
-                "type": "HSCourse",
-                "course": "Pre-Calculus 11",
-                "minGrade": "B",
-                "orEquivalent": "true"
-              },
-              {
-                "type": "HSCourse",
-                "course": "Foundations of Mathematics 11",
-                "minGrade": "B",
-                "orEquivalent": "true"
-              }
-            ]
-          },
-          {
-            "type": "course",
-            "department": "FAN",
-            "number": "X99",
-            "minGrade": "C"
-          },
-          {
-            "type": "other",
-            "note": "Achieving a satisfactory grade on the Simon Fraser University Quantitative Placement Test"
-          }
-        ]
-      },
-      "__rawResponse": "```json\n{\n    \"department\": \"MATH\",\n    \"number\": \"190\",\n    \"rSchema\": \"SFUv0.10\",\n    \"prerequisite\": {\n        \"type\": \"group\",\n        \"logic\": \"OR\",\n        \"children\": [\n            {\n                \"type\": \"group\",\n                \"logic\": \"OR\",\n                \"children\": [\n                    {\n                        \"type\": \"HSCourse\",\n                        \"course\": \"Pre-Calculus 11\",\n                        \"minGrade\": \"B\",\n                        \"orEquivalent\": \"true\"\n                    },\n                    {\n                        \"type\": \"HSCourse\",\n                        \"course\": \"Foundations of Mathematics 11\",\n                        \"minGrade\": \"B\",\n                        \"orEquivalent\": \"true\"\n                    }\n                ]\n            },\n            {\n                \"type\": \"course\",\n                \"department\": \"FAN\",\n                \"number\": \"X99\",\n                \"minGrade\": \"C\"\n            },\n            {\n                \"type\": \"other\",\n                \"note\": \"Achieving a satisfactory grade on the Simon Fraser University Quantitative Placement Test\"\n            }\n        ]\n    }\n}\n```"
+    "corequisite": {
+      "type": "course",
+      "department": "STAT",
+      "number": "285"
+    }
+  },
+  {
+    "department": "ACMA",
+    "number": "321",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "course",
+      "department": "ACMA",
+      "number": "101",
+      "minGrade": "C"
     },
-    "timestamp": "2025-06-27T10:41:55.761Z"
+    "corequisite": {
+      "type": "group",
+      "logic": "AND",
+      "children": [
+        {
+          "type": "course",
+          "department": "STAT",
+          "number": "330"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "231"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ACMA",
+    "number": "336",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "AND",
+      "children": [
+        {
+          "type": "permission",
+          "note": "Students must apply and receive permission from the co-op coordinator."
+        },
+        {
+          "type": "creditCount",
+          "credits": 45
+        },
+        {
+          "type": "CGPA",
+          "minCGPA": 2.5
+        }
+      ]
+    }
+  },
+  {
+    "department": "ACMA",
+    "number": "337",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "AND",
+      "children": [
+        {
+          "type": "group",
+          "logic": "OR",
+          "children": [
+            {
+              "type": "course",
+              "department": "ACMA",
+              "number": "336"
+            },
+            {
+              "type": "other",
+              "note": "Job Practicum I from another department"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "Students must apply and receive permission from the co-op coordinator at least one term in advance."
+        }
+      ]
+    }
+  },
+  {
+    "department": "ACMA",
+    "number": "340",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "OR",
+      "children": [
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "201",
+          "minGrade": "C"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "210",
+          "minGrade": "C"
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "STAT",
+      "number": "285"
+    }
+  },
+  {
+    "department": "ACMA",
+    "number": "360W",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "OR",
+      "children": [
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "301",
+          "minGrade": "C"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "320",
+          "minGrade": "C"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ACMA",
+    "number": "401",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "OR",
+      "children": [
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "301",
+          "minGrade": "C"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "320",
+          "minGrade": "C"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ACMA",
+    "number": "421",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "course",
+      "department": "ACMA",
+      "number": "321",
+      "minGrade": "C"
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "STAT",
+      "number": "350"
+    }
+  },
+  {
+    "department": "ACMA",
+    "number": "436",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "AND",
+      "children": [
+        {
+          "type": "group",
+          "logic": "OR",
+          "children": [
+            {
+              "type": "course",
+              "department": "ACMA",
+              "number": "337"
+            },
+            {
+              "type": "other",
+              "note": "Job Practicum II from another department"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "Students must apply and receive permission from the co-op coordinator at least one term in advance."
+        }
+      ]
+    }
+  },
+  {
+    "department": "ACMA",
+    "number": "437",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "AND",
+      "children": [
+        {
+          "type": "group",
+          "logic": "OR",
+          "children": [
+            {
+              "type": "course",
+              "department": "ACMA",
+              "number": "436"
+            },
+            {
+              "type": "other",
+              "note": "Job Practicum III from another department"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "Students must apply and receive permission from the co-op coordinator at least one term in advance."
+        }
+      ]
+    }
+  },
+  {
+    "department": "ACMA",
+    "number": "438",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "AND",
+      "children": [
+        {
+          "type": "group",
+          "logic": "OR",
+          "children": [
+            {
+              "type": "course",
+              "department": "ACMA",
+              "number": "437"
+            },
+            {
+              "type": "other",
+              "note": "Job Practicum IV from another department"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "Students must apply and receive permission from the co-op coordinator at least one term in advance."
+        }
+      ]
+    }
+  },
+  {
+    "department": "ACMA",
+    "number": "455",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "course",
+      "department": "ACMA",
+      "number": "355",
+      "minGrade": "C"
+    }
+  },
+  {
+    "department": "ACMA",
+    "number": "495",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "permission",
+      "note": "Written permission from the Department of Statistics and Actuarial Science undergraduate curriculum committee is required."
+    }
+  },
+  {
+    "department": "APMA",
+    "number": "995",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "AND",
+      "children": [
+        {
+          "type": "program",
+          "program": "Applied Mathematics PhD stream"
+        },
+        {
+          "type": "other",
+          "note": "Must be completed within first six terms of the program."
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "200",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "creditCount",
+      "credits": 30
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "271",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "OR",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "272W",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "OR",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "273",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "OR",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "EVSC",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "GEOG",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "REM",
+          "number": "100"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "282",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "OR",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "285",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "creditCount",
+      "credits": 12
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "286",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "AND",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 30
+        },
+        {
+          "type": "group",
+          "logic": "OR",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "100"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "201"
+            },
+            {
+              "type": "course",
+              "department": "EVSC",
+              "number": "100"
+            },
+            {
+              "type": "course",
+              "department": "GEOG",
+              "number": "100"
+            },
+            {
+              "type": "course",
+              "department": "REM",
+              "number": "100"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "301",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "creditCount",
+      "credits": 45
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "312",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "OR",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "231"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "232"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "277"
+        },
+        {
+          "type": "course",
+          "department": "HIST",
+          "number": "277"
+        },
+        {
+          "type": "permission",
+          "note": "by permission of the instructor"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "313",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "OR",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "231"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "232"
+        },
+        {
+          "type": "group",
+          "logic": "OR",
+          "children": [
+            {
+              "type": "course",
+              "department": "HS",
+              "number": "277"
+            },
+            {
+              "type": "course",
+              "department": "HIST",
+              "number": "277"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "permission of the instructor"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "321",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "AND",
+      "children": [
+        {
+          "type": "group",
+          "logic": "OR",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "272W"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "273"
+            },
+            {
+              "type": "permission",
+              "note": "by permission of instructor"
+            }
+          ]
+        },
+        {
+          "type": "other",
+          "note": "Other prerequisites may be required, but will vary according to topic."
+        }
+      ]
+    }
   }
 ]

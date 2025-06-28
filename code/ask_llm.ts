@@ -5,6 +5,7 @@ import path from 'path';
 import * as readline from 'readline';
 
 import type { CourseRequirements, RequirementNode, CourseCondensedInfo } from './types.js';
+import { prettyPrintRequirement } from './utilities.js';
 
 // Load environment variables
 config();
@@ -65,6 +66,8 @@ PARSING RULES:
       "note": "Permission from the co-op coordinator is required"
     }
 11. You should only return actual prerequisites or corequisites, not general course information or other notes.
+12. Do not add words that are not present in the original text.
+
 
 CONFIDENCE REQUIREMENTS:
 - Only return a parsed result if you are highly confident (>85%) in your parsing
@@ -123,65 +126,6 @@ ${types}
 `;
 
 
-function prettyPrintRequirement(node: RequirementNode, indent = 0): string {
-    const prefix = '  '.repeat(indent);
-
-    switch (node.type) {
-        case 'group':
-            // This is a RequirementGroup
-            const lines = [`${prefix}Group (${node.logic}):`];
-            for (const child of node.children) {
-                lines.push(prettyPrintRequirement(child, indent + 1));
-            }
-            return lines.join('\n');
-            
-        case 'course':
-            const gradeStr = node.minGrade ? ` (minimum "${node.minGrade}")` : '';
-            const concurrentStr = node.canBeTakenConcurrently ? ' (can be taken concurrently)' : '';
-            const equivalentStr = node.orEquivalent ? ' (or equivalent)' : '';
-            return `${prefix}${node.department} ${node.number}${gradeStr}${concurrentStr}${equivalentStr}`;
-
-        case 'creditCount':
-            const deptStr = Array.isArray(node.department)
-                ? node.department.join(', ')
-                : node.department || 'any course';
-            const levelStr = node.level ? ` level ${node.level}` : '';
-            const creditConcurrentStr = node.canBeTakenConcurrently ? ' (can be taken concurrently)' : '';
-            return `${prefix}${node.credits} credits of ${deptStr}${levelStr}${creditConcurrentStr}`;
-
-        case 'courseCount':
-            const courseDeptStr = Array.isArray(node.department)
-                ? node.department.join(', ')
-                : node.department || 'any department';
-            const courseLevelStr = node.level ? ` level ${node.level}` : '';
-            const courseGradeStr = node.minGrade ? ` (minimum "${node.minGrade}")` : '';
-            const courseConcurrentStr = node.canBeTakenConcurrently ? ' (can be taken concurrently)' : '';
-            return `${prefix}${node.count} courses from ${courseDeptStr}${courseLevelStr}${courseGradeStr}${courseConcurrentStr}`;
-
-        case 'CGPA':
-            return `${prefix}CGPA of ${node.minCGPA}`;
-
-        case 'UDGPA':
-            return `${prefix}Upper Division GPA of ${node.minUDGPA}`;
-
-        case 'HSCourse':
-            const hsGradeStr = node.minGrade ? ` (minimum "${node.minGrade}")` : '';
-            const hsEquivalentStr = node.orEquivalent ? ' (or equivalent)' : '';
-            return `${prefix}High School: ${node.course}${hsGradeStr}${hsEquivalentStr}`;
-
-        case 'program':
-            return `${prefix}Program: ${node.program}`;
-
-        case 'permission':
-            return `${prefix}Permission: ${node.note}`;
-
-        case 'other':
-            return `${prefix}Other: ${node.note}`;
-
-        default:
-            return `${prefix}Unknown requirement type`;
-    }
-}
 
 async function parseCourseRequirements(course: CourseCondensedInfo): Promise<LLMResponse> {
     // Store the raw response for potential display
@@ -189,7 +133,7 @@ async function parseCourseRequirements(course: CourseCondensedInfo): Promise<LLM
 
     const userPrompt = `Parse the prerequisites and corequisites for this course:
 
-    Department: ${course.dept}
+    Department: ${course.department}
     Number: ${course.number}
     Title: ${course.title}
     Prerequisites: "${course.prerequisites}"
@@ -231,8 +175,10 @@ async function parseCourseRequirements(course: CourseCondensedInfo): Promise<LLM
             }
             
             const parsed = JSON.parse(cleanContent) as LLMResponse;
-            // Store raw response for later use
-            (parsed as any).__rawResponse = rawResponseContent;
+            // Store raw response in the proper field if it's a successful parse
+            if (!('error' in parsed)) {
+                parsed.rawResponse = rawResponseContent;
+            }
             return parsed;
         } catch (parseError) {
             return {
@@ -251,34 +197,6 @@ async function parseCourseRequirements(course: CourseCondensedInfo): Promise<LLM
     }
 }
 
-async function getRawResponse(course: CourseCondensedInfo): Promise<string> {
-    const userPrompt = `Parse the prerequisites and corequisites for this course:
-
-Department: ${course.dept}
-Number: ${course.number}
-Title: ${course.title}
-Prerequisites: "${course.prerequisites}"
-Corequisites: "${course.corequisites}"
-Notes: "${course.notes}"
-
-Return the parsed CourseRequirements JSON or an error if not confident enough.`;
-
-    try {
-        const response = await client.chat.completions.create({
-            model: 'google/gemini-2.5-flash-lite-preview-06-17',
-            messages: [
-                { role: 'system', content: systemPrompt },
-                { role: 'user', content: userPrompt }
-            ],
-            temperature: 0.1,
-        });
-
-        return response.choices[0]?.message?.content || 'No response received';
-    } catch (error) {
-        return `Error getting raw response: ${error}`;
-    }
-}
-
 async function processAllCourses() {
     const VITAL_DATA_PATH = path.join(__dirname, 'data', 'vital_data.json');
     const OUTPUT_PATH = path.join(__dirname, 'data', 'parsed_requirements.json');
@@ -290,36 +208,50 @@ async function processAllCourses() {
         
         console.log(`Processing ${courses.length} courses...`);
         
-        const results: Array<{
-            original: CourseCondensedInfo;
-            parsed: LLMResponse;
-            timestamp: string;
-        }> = [];
+        // Load existing results if they exist
+        let results: CourseRequirements[] = [];
+        
+        try {
+            const existingContent = await fs.readFile(OUTPUT_PATH, 'utf-8');
+            results = JSON.parse(existingContent);
+            console.log(`Loaded ${results.length} existing results from ${OUTPUT_PATH}`);
+        } catch (error) {
+            console.log('No existing results found, starting fresh');
+        }
+        
+        // Create a set of already processed courses for quick lookup
+        const processedCourses = new Set(
+            results.map(r => `${r.department}-${r.number}`)
+        );
         
         // Process courses one by one
         for (let i = 0; i < courses.length; i++) {
             const course = courses[i];
             if (!course) continue; // Skip if undefined
 
-            // const prereqLength = course.prerequisites ? course.prerequisites.length : 0;
-            // const coreqLength = course.corequisites ? course.corequisites.length : 0;
-            // if ((prereqLength + coreqLength) < 500) {
-            //     console.log('  → Skipping (combined prerequisites and corequisites are less than 300 characters)');
-            //     continue;
-            // }
+            const courseKey = `${course.department}-${course.number}`;
             
-            console.log(`\n[${i + 1}/${courses.length}] Processing ${course.dept} ${course.number}: ${course.title}`);
+            // Skip if already processed
+            if (processedCourses.has(courseKey)) {
+                console.log(`[${i + 1}/${courses.length}] Skipping ${course.department} ${course.number}: ${course.title} (already processed)`);
+                continue;
+            }
             
             // Skip courses with no prerequisites or corequisites
             if (!course.prerequisites && !course.corequisites) {
-                console.log('  → Skipping (no prerequisites or corequisites)');
+                console.log(`\n[${i + 1}/${courses.length}] Skipping ${course.department} ${course.number}: ${course.title} (no prerequisites or corequisites)`);
                 continue;
             }
+
+            console.log(`\n[${i + 1}/${courses.length}] Processing ${course.department} ${course.number}: ${course.title}`);
             
             console.log(`  Prerequisites: "${course.prerequisites}"`);
             console.log(`  Corequisites: "${course.corequisites}"`);
             
             const parsed = await parseCourseRequirements(course);
+            
+            // Extract the raw response from the proper field
+            const rawResponse = ('error' in parsed) ? 'Raw response not available for errors' : (parsed.rawResponse || 'Raw response not available');
             
             if ('error' in parsed) {
                 console.log(`  ❌ Error (confidence: ${parsed.confidence}%): ${parsed.reason}`);
@@ -345,69 +277,79 @@ async function processAllCourses() {
             }
             
             // Interactive prompt for user actions
-            console.log('\n  What would you like to do?');
-            console.log('  1) Print raw OpenRouter response');
-            console.log('  2) Save to database (pass for now)');
-            console.log('  3) Skip/Continue');
-            console.log('  q) Quit processing');
+            let shouldSave = false;
+            let continueLoop = true;
             
-            const choice = await askUserChoice('  Enter your choice (1/2/3/q): ');
-            
-            switch (choice.toLowerCase()) {
-                case '1':
-                    console.log('\n  📄 Raw OpenRouter Response:');
-                    console.log('  ' + '─'.repeat(50));
-                    // Get the raw response - we need to modify parseCourseRequirements to return it
-                    const rawResponse = await getRawResponse(course);
-                    console.log(rawResponse);
-                    console.log('  ' + '─'.repeat(50));
-                    break;
-                    
-                case '2':
-                    console.log('  💾 Save to database - passing for now...');
-                    break;
-                    
-                case '3':
-                    console.log('  ⏭️  Continuing...');
-                    break;
-                    
-                case 'q':
-                    console.log('  👋 Quitting...');
-                    rl.close();
-                    return;
-                    
-                default:
-                    console.log('  ⚠️  Invalid choice, continuing...');
-                    break;
+            while (continueLoop) {
+                console.log('\n  What would you like to do?');
+                console.log('  1) Print raw OpenRouter response');
+                console.log('  2) Save to database');
+                console.log('  3) Skip/Continue (don\'t save)');
+                console.log('  q) Quit processing');
+                
+                const choice = await askUserChoice('  Enter your choice (1/2/3/q): ');
+                
+                switch (choice.toLowerCase()) {
+                    case '1':
+                        console.log('\n  📄 Raw OpenRouter Response:');
+                        console.log('  ' + '─'.repeat(50));
+                        console.log(rawResponse);
+                        console.log('  ' + '─'.repeat(50));
+                        // Don't exit the loop, go back to menu
+                        break;
+                        
+                    case '2':
+                        shouldSave = true;
+                        console.log('  💾 Saving to database...');
+                        continueLoop = false;
+                        break;
+                        
+                    case '3':
+                        console.log('  ⏭️  Continuing without saving...');
+                        shouldSave = false;
+                        continueLoop = false;
+                        break;
+                        
+                    case 'q':
+                        console.log('  👋 Quitting...');
+                        rl.close();
+                        return;
+                        
+                    default:
+                        console.log('  ⚠️  Invalid choice, please try again...');
+                        break;
+                }
             }
             
-            results.push({
-                original: course,
-                parsed,
-                timestamp: new Date().toISOString()
-            });
-            
-            // Save intermediate results every 10 courses
-            // if (results.length % 10 === 0) {
-            //     await fs.writeFile(OUTPUT_PATH, JSON.stringify(results, null, 2), 'utf-8');
-            //     console.log(`  💾 Saved intermediate results (${results.length} processed)`);
-            // }
+            // Save the result if requested
+            // don't save errors
+            if (shouldSave && !('error' in parsed)) {
+                if ('rawResponse' in parsed) {
+                    delete parsed.rawResponse;
+                }
+                results.push(parsed);
+                processedCourses.add(courseKey);
+                
+                // Save to file immediately
+                await fs.writeFile(OUTPUT_PATH, JSON.stringify(results, null, 2), 'utf-8');
+                console.log(`  ✅ Saved result (total: ${results.length} courses)`);
+            }
         }
         
         // Save final results
-        // await fs.writeFile(OUTPUT_PATH, JSON.stringify(results, null, 2), 'utf-8');
+        await fs.writeFile(OUTPUT_PATH, JSON.stringify(results, null, 2), 'utf-8');
         
         // Close readline interface
         rl.close();
         
         // Print summary
-        const successful = results.filter(r => !('error' in r.parsed)).length;
-        const errors = results.filter(r => 'error' in r.parsed).length;
+        // const successful = results.filter(r => !('error' in r.parsed)).length;
+        // const errors = results.filter(r => 'error' in r.parsed).length;
         
         console.log(`\n📊 SUMMARY:`);
         console.log(`   Total processed: ${results.length}`);
-        console.log(`   Successful: ${successful}`);
-        console.log(`   Errors: ${errors}`);
+        // console.log(`   Successful: ${successful}`);
+        // console.log(`   Errors: ${errors}`);
         console.log(`   Results saved to: ${OUTPUT_PATH}`);
         
     } catch (error) {

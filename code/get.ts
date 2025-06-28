@@ -15,7 +15,7 @@ async function fetchAndSaveOutlines() {
 }
 
 type CourseCondensedInfo = {
-    dept: string;
+    department: string;
     number: string; // deceptive naming, see FAN X99
     title: string;
     notes: string;
@@ -24,14 +24,20 @@ type CourseCondensedInfo = {
 };
 
 async function parseVitalData(json: any) {
-    const outlines: CourseCondensedInfo[] = json.data.map((item: any) => ({
-        dept: item.dept,
-        number: item.number,
-        title: item.title,
-        notes: item.notes,
-        prerequisites: item.prerequisites,
-        corequisites: item.corequisites,
-    }));
+    const outlines: CourseCondensedInfo[] = json.data
+        .map((item: any) => ({
+            department: item.dept,
+            number: item.number,
+            title: item.title,
+            notes: item.notes,
+            prerequisites: item.prerequisites,
+            corequisites: item.corequisites,
+        }))
+        .filter((course: CourseCondensedInfo) => 
+            course.prerequisites !== "" || course.corequisites !== ""
+        );
+    
+    console.log(`Filtered ${json.data.length} courses down to ${outlines.length} courses with prerequisites or corequisites`);
     await fs.writeFile(VITAL_DATA_PATH, JSON.stringify(outlines, null, 2), 'utf-8');
 }
 

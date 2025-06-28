@@ -2,7 +2,7 @@ const SCHEMA_VERSION = 'SFUv0.10';
 
 // Import types
 interface CourseCondensedInfo {
-    dept: string;
+    department: string;
     number: string;
     title: string;
     notes: string;
@@ -18,6 +18,8 @@ interface CourseRequirements {
     corequisite?: RequirementNode;
     recommended_prerequisite?: RequirementNode;
     recommended_corequisite?: RequirementNode;
+    rawResponse?: string;
+    timestamp?: string; // ISO 8601 format
 }
 
 

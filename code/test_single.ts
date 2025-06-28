@@ -17,7 +17,7 @@ function askUserChoice(question: string): Promise<string> {
 
 // Test with a single course
 const testCourse = {
-    dept: "HSCI",
+    department: "HSCI",
     number: "340", 
     title: "Social Determinants of Health",
     notes: "",
@@ -82,7 +82,7 @@ function prettyPrintRequirement(node: any, indent = 0): string {
 
 async function testSingleCourse() {
     console.log('Testing single course parsing...\n');
-    console.log(`Course: ${testCourse.dept} ${testCourse.number} - ${testCourse.title}`);
+    console.log(`Course: ${testCourse.department} ${testCourse.number} - ${testCourse.title}`);
     console.log(`Prerequisites: "${testCourse.prerequisites}"`);
     console.log(`Corequisites: "${testCourse.corequisites}"`);
     console.log('\nParsing...\n');
