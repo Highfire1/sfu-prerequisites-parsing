@@ -10,6 +10,11 @@ interface CourseCondensedInfo {
     corequisites: string;
 }
 
+interface Course {
+    subject: string;
+    course: string;
+}
+
 interface CourseRequirements {
     department: string;
     number: string;
@@ -18,6 +23,7 @@ interface CourseRequirements {
     corequisite?: RequirementNode;
     recommended_prerequisite?: RequirementNode;
     recommended_corequisite?: RequirementNode;
+    credit_conflicts?: Course[];
     rawResponse?: string;
     timestamp?: string; // ISO 8601 format
 }
@@ -25,7 +31,7 @@ interface CourseRequirements {
 
 interface RequirementGroup {
     type: 'group';
-    logic: 'AND' | 'OR';
+    logic: 'ALL_OF' | 'ONE_OF' | 'TWO_OF';
     children: RequirementNode[];
 }
 
@@ -89,4 +95,10 @@ interface RequirementOther {
     note: string;
 }
 
-export type {CourseCondensedInfo, CourseRequirements, RequirementNode, RequirementGroup, RequirementProgram, RequirementCGPA, RequirementUDGPA, RequirementCourse, RequirementHSCourse, RequirementCreditCount, RequirementCourseCount, RequirementOther};
+interface BlacklistedCourse {
+    department: string;
+    course_code: string;
+    reason: string;
+}
+
+export type {CourseCondensedInfo, Course, CourseRequirements, RequirementNode, RequirementGroup, RequirementProgram, RequirementCGPA, RequirementUDGPA, RequirementCourse, RequirementHSCourse, RequirementCreditCount, RequirementCourseCount, RequirementPermission, RequirementOther, BlacklistedCourse};

@@ -1,5 +1,6 @@
 import { parseCourseRequirements } from './ask_llm.js';
 import * as readline from 'readline';
+import { readablePrintRequirement } from './utilities.js';
 
 // Create readline interface for user input
 const rl = readline.createInterface({
@@ -105,6 +106,13 @@ async function testSingleCourse() {
         if (result.corequisite) {
             console.log('\n🔗 Corequisites:');
             console.log(prettyPrintRequirement(result.corequisite, 1));
+        }
+        
+        if (result.credit_conflicts && result.credit_conflicts.length > 0) {
+            console.log('\n⚠️ Credit Conflicts:');
+            result.credit_conflicts.forEach(conflict => {
+                console.log(`  - ${conflict.subject} ${conflict.course}`);
+            });
         }
         
         // Interactive prompt for user actions

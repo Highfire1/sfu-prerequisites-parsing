@@ -5,7 +5,7 @@
     "rSchema": "SFUv0.10",
     "corequisite": {
       "type": "group",
-      "logic": "OR",
+      "logic": "ONE_OF",
       "children": [
         {
           "type": "course",
@@ -36,7 +36,7 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "OR",
+      "logic": "ONE_OF",
       "children": [
         {
           "type": "course",
@@ -46,7 +46,7 @@
         },
         {
           "type": "group",
-          "logic": "OR",
+          "logic": "ONE_OF",
           "children": [
             {
               "type": "course",
@@ -71,7 +71,7 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "OR",
+      "logic": "ONE_OF",
       "children": [
         {
           "type": "HSCourse",
@@ -94,7 +94,7 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "OR",
+      "logic": "ONE_OF",
       "children": [
         {
           "type": "course",
@@ -128,7 +128,7 @@
     },
     "corequisite": {
       "type": "group",
-      "logic": "AND",
+      "logic": "ALL_OF",
       "children": [
         {
           "type": "course",
@@ -149,7 +149,7 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "AND",
+      "logic": "ALL_OF",
       "children": [
         {
           "type": "permission",
@@ -172,11 +172,11 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "AND",
+      "logic": "ALL_OF",
       "children": [
         {
           "type": "group",
-          "logic": "OR",
+          "logic": "ONE_OF",
           "children": [
             {
               "type": "course",
@@ -202,7 +202,7 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "OR",
+      "logic": "ONE_OF",
       "children": [
         {
           "type": "course",
@@ -230,7 +230,7 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "OR",
+      "logic": "ONE_OF",
       "children": [
         {
           "type": "course",
@@ -253,7 +253,7 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "OR",
+      "logic": "ONE_OF",
       "children": [
         {
           "type": "course",
@@ -292,11 +292,11 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "AND",
+      "logic": "ALL_OF",
       "children": [
         {
           "type": "group",
-          "logic": "OR",
+          "logic": "ONE_OF",
           "children": [
             {
               "type": "course",
@@ -322,11 +322,11 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "AND",
+      "logic": "ALL_OF",
       "children": [
         {
           "type": "group",
-          "logic": "OR",
+          "logic": "ONE_OF",
           "children": [
             {
               "type": "course",
@@ -352,11 +352,11 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "AND",
+      "logic": "ALL_OF",
       "children": [
         {
           "type": "group",
-          "logic": "OR",
+          "logic": "ONE_OF",
           "children": [
             {
               "type": "course",
@@ -402,7 +402,7 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "AND",
+      "logic": "ALL_OF",
       "children": [
         {
           "type": "program",
@@ -430,7 +430,7 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "OR",
+      "logic": "ONE_OF",
       "children": [
         {
           "type": "course",
@@ -451,7 +451,7 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "OR",
+      "logic": "ONE_OF",
       "children": [
         {
           "type": "course",
@@ -477,7 +477,7 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "OR",
+      "logic": "ONE_OF",
       "children": [
         {
           "type": "course",
@@ -513,7 +513,7 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "OR",
+      "logic": "ONE_OF",
       "children": [
         {
           "type": "course",
@@ -543,7 +543,7 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "AND",
+      "logic": "ALL_OF",
       "children": [
         {
           "type": "creditCount",
@@ -551,7 +551,7 @@
         },
         {
           "type": "group",
-          "logic": "OR",
+          "logic": "ONE_OF",
           "children": [
             {
               "type": "course",
@@ -603,7 +603,7 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "OR",
+      "logic": "ONE_OF",
       "children": [
         {
           "type": "course",
@@ -658,7 +658,7 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "OR",
+      "logic": "ONE_OF",
       "children": [
         {
           "type": "course",
@@ -687,7 +687,7 @@
         },
         {
           "type": "group",
-          "logic": "OR",
+          "logic": "ONE_OF",
           "children": [
             {
               "type": "course",
@@ -714,11 +714,11 @@
     "rSchema": "SFUv0.10",
     "prerequisite": {
       "type": "group",
-      "logic": "AND",
+      "logic": "ALL_OF",
       "children": [
         {
           "type": "group",
-          "logic": "OR",
+          "logic": "ONE_OF",
           "children": [
             {
               "type": "course",
@@ -739,6 +739,678 @@
         {
           "type": "other",
           "note": "Other prerequisites may be required, but will vary according to topic."
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "322",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "course",
+      "department": "ARCH",
+      "number": "131"
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "323",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "131"
+        },
+        {
+          "type": "courseCount",
+          "count": 1,
+          "department": "BIOL",
+          "level": "LD"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "329",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "340",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "344",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "131"
+        },
+        {
+          "type": "courseCount",
+          "count": 1,
+          "department": "BIOL",
+          "level": "LD"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "348",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 6,
+          "department": "ARCH"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "201"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "349",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "201"
+            }
+          ]
+        },
+        {
+          "type": "creditCount",
+          "credits": 45
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "350",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "program",
+      "program": "Environment Co-operative Education Program"
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "351",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "350"
+        },
+        {
+          "type": "program",
+          "program": "readmission to the Environment Co-operative Education Program"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "363",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "100"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "201"
+            }
+          ]
+        },
+        {
+          "type": "creditCount",
+          "credits": 45
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "365",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "group",
+              "logic": "ONE_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "ARCH",
+                  "number": "101"
+                },
+                {
+                  "type": "course",
+                  "department": "ARCH",
+                  "number": "201"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "logic": "TWO_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "ARCH",
+                  "number": "100"
+                },
+                {
+                  "type": "course",
+                  "department": "REM",
+                  "number": "100"
+                },
+                {
+                  "type": "course",
+                  "department": "GEOG",
+                  "number": "100"
+                },
+                {
+                  "type": "course",
+                  "department": "EVSC",
+                  "number": "100"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "creditCount",
+          "credits": 45
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "373",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "131"
+        },
+        {
+          "type": "courseCount",
+          "count": 1,
+          "level": "LD",
+          "department": [
+            "ARCH",
+            "BISC",
+            "HSCI",
+            "BPK"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "374",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    },
+    "recommended_prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "282"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "372"
+            }
+          ]
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "271"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "375",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        },
+        {
+          "type": "creditCount",
+          "credits": 45
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "376",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "201"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "285"
+            },
+            {
+              "type": "course",
+              "department": "GEOG",
+              "number": "251"
+            },
+            {
+              "type": "course",
+              "department": "PSYC",
+              "number": "210"
+            },
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "201"
+            },
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "203"
+            },
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "205"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "378",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "course",
+      "department": "ARCH",
+      "number": "273"
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "382",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "282"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "372"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "subject": "ARCH",
+        "course": "485"
+      }
+    ]
+  },
+  {
+    "department": "ARCH",
+    "number": "383",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "courseCount",
+      "count": 1,
+      "department": [
+        "ARCH",
+        "BISC",
+        "BPK",
+        "CHEM",
+        "CRIM",
+        "HSCI"
+      ],
+      "level": "LD"
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "386",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "433",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "282"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "372"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "Permission of the department is required"
+        }
+      ]
+    },
+    "recommended_corequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "434"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "435"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "434",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "282"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "372"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "permission of the department"
+        }
+      ]
+    },
+    "recommended_corequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "433"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "435"
+        }
+      ]
+    }
+  },
+  {
+    "department": "ARCH",
+    "number": "435",
+    "rSchema": "SFUv0.10",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "282"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "372"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "permission of the department"
+        }
+      ]
+    },
+    "recommended_corequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "433"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "434"
         }
       ]
     }
