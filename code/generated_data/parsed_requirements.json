@@ -5,7 +5,7 @@
     "original_prerequisites": "",
     "original_corequisites": "MATH 150, 151, 154 or 157.",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "corequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -36,56 +36,11 @@
   },
   {
     "department": "ACMA",
-    "number": "201",
-    "original_prerequisites": "MATH 152 with a minimum grade of C; or MATH 155 or MATH 158, with a grade of at least B.",
-    "original_corequisites": "",
-    "original_notes": "Students with credit for ACMA 210 cannot take ACMA 201 for further credit.",
-    "rSchema": "SFUv1",
-    "prerequisite": {
-      "type": "group",
-      "logic": "ONE_OF",
-      "children": [
-        {
-          "type": "course",
-          "department": "MATH",
-          "number": "152",
-          "minGrade": "C"
-        },
-        {
-          "type": "group",
-          "logic": "ONE_OF",
-          "children": [
-            {
-              "type": "course",
-              "department": "MATH",
-              "number": "155",
-              "minGrade": "B"
-            },
-            {
-              "type": "course",
-              "department": "MATH",
-              "number": "158",
-              "minGrade": "B"
-            }
-          ]
-        }
-      ]
-    },
-    "credit_conflicts": [
-      {
-        "subject": "ACMA",
-        "course": "210"
-      }
-    ],
-    "timestamp": "2025-06-30T01:42:27.736Z"
-  },
-  {
-    "department": "ACMA",
     "number": "231",
     "original_prerequisites": "BC Mathematics 12 (or equivalent) or any 100-level MATH course with a minimum grade of C.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -108,86 +63,11 @@
   },
   {
     "department": "ACMA",
-    "number": "301",
-    "original_prerequisites": "ACMA 201 (or 210), with a minimum grade of C. Corequisite: STAT 285.",
-    "original_corequisites": "",
-    "original_notes": "Students with credit for ACMA 320 cannot take ACMA 301 for further credit.",
-    "rSchema": "SFUv1",
-    "prerequisite": {
-      "type": "group",
-      "logic": "ONE_OF",
-      "children": [
-        {
-          "type": "course",
-          "department": "ACMA",
-          "number": "201",
-          "minGrade": "C"
-        },
-        {
-          "type": "course",
-          "department": "ACMA",
-          "number": "210",
-          "minGrade": "C"
-        }
-      ]
-    },
-    "corequisite": {
-      "type": "course",
-      "department": "STAT",
-      "number": "285"
-    },
-    "credit_conflicts": [
-      {
-        "subject": "ACMA",
-        "course": "320"
-      }
-    ],
-    "timestamp": "2025-06-30T01:43:19.535Z"
-  },
-  {
-    "department": "ACMA",
-    "number": "321",
-    "original_prerequisites": "ACMA 101 with a minimum grade of C. Corequisite: STAT 330, ACMA 231.",
-    "original_corequisites": "",
-    "original_notes": "Students with credit for ACMA 355 may not take this course for further credit.",
-    "rSchema": "SFUv1",
-    "prerequisite": {
-      "type": "course",
-      "department": "ACMA",
-      "number": "101",
-      "minGrade": "C"
-    },
-    "corequisite": {
-      "type": "group",
-      "logic": "ALL_OF",
-      "children": [
-        {
-          "type": "course",
-          "department": "STAT",
-          "number": "330"
-        },
-        {
-          "type": "course",
-          "department": "ACMA",
-          "number": "231"
-        }
-      ]
-    },
-    "credit_conflicts": [
-      {
-        "subject": "ACMA",
-        "course": "355"
-      }
-    ],
-    "timestamp": "2025-06-30T01:43:55.934Z"
-  },
-  {
-    "department": "ACMA",
     "number": "336",
     "original_prerequisites": "Students must apply and receive permission from the co-op coordinator at least one but preferably two terms in advance. They will normally be required to have completed 45 units with a GPA of 2.50 before they may take this practicum course.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -214,7 +94,7 @@
     "original_prerequisites": "ACMA 336 or Job Practicum I from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -248,7 +128,7 @@
     "original_prerequisites": "ACMA 201 (or 210), with a minimum grade of C. Corequisite: STAT 285.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -276,77 +156,11 @@
   },
   {
     "department": "ACMA",
-    "number": "360W",
-    "original_prerequisites": "ACMA 301 (or 320), with a minimum grade of C.",
-    "original_corequisites": "",
-    "original_notes": "Students who have taken STAT 300W first may not then take this course for further credit.",
-    "rSchema": "SFUv1",
-    "prerequisite": {
-      "type": "group",
-      "logic": "ONE_OF",
-      "children": [
-        {
-          "type": "course",
-          "department": "ACMA",
-          "number": "301",
-          "minGrade": "C"
-        },
-        {
-          "type": "course",
-          "department": "ACMA",
-          "number": "320",
-          "minGrade": "C"
-        }
-      ]
-    },
-    "credit_conflicts": [
-      {
-        "subject": "STAT",
-        "course": "300W"
-      }
-    ],
-    "timestamp": "2025-06-30T01:45:59.483Z"
-  },
-  {
-    "department": "ACMA",
-    "number": "401",
-    "original_prerequisites": "ACMA 301 (or 320), with a minimum grade of C.",
-    "original_corequisites": "",
-    "original_notes": "Students with credit for ACMA 425 cannot take ACMA 401 for further credit.",
-    "rSchema": "SFUv1",
-    "prerequisite": {
-      "type": "group",
-      "logic": "ONE_OF",
-      "children": [
-        {
-          "type": "course",
-          "department": "ACMA",
-          "number": "301",
-          "minGrade": "C"
-        },
-        {
-          "type": "course",
-          "department": "ACMA",
-          "number": "320",
-          "minGrade": "C"
-        }
-      ]
-    },
-    "credit_conflicts": [
-      {
-        "subject": "ACMA",
-        "course": "425"
-      }
-    ],
-    "timestamp": "2025-06-30T01:46:32.975Z"
-  },
-  {
-    "department": "ACMA",
     "number": "421",
     "original_prerequisites": "ACMA 321 with a minimum grade of C. Corequisite: STAT 350.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "course",
       "department": "ACMA",
@@ -366,7 +180,7 @@
     "original_prerequisites": "ACMA 337 or Job Practicum II from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -400,7 +214,7 @@
     "original_prerequisites": "ACMA 436 or Job Practicum III from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -434,7 +248,7 @@
     "original_prerequisites": "ACMA 437 or Job Practicum IV from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -468,7 +282,7 @@
     "original_prerequisites": "ACMA 355 with a minimum grade of C.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "course",
       "department": "ACMA",
@@ -483,7 +297,7 @@
     "original_prerequisites": "Written permission from the Department of Statistics and Actuarial Science undergraduate curriculum committee.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "permission",
       "note": "Written permission from the Department of Statistics and Actuarial Science undergraduate curriculum committee."
@@ -496,7 +310,7 @@
     "original_prerequisites": "Applied Mathematics PhD stream students only. Must be completed within first six terms of the program.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -519,7 +333,7 @@
     "original_prerequisites": "30 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "creditCount",
       "credits": 30
@@ -532,7 +346,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -557,7 +371,7 @@
     "original_prerequisites": "ARCH 100, 101, or 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -587,7 +401,7 @@
     "original_prerequisites": "Any one of the following: ARCH 100, ARCH 101, EVSC 100, GEOG 100, or REM 100.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -623,42 +437,11 @@
   },
   {
     "department": "ARCH",
-    "number": "282",
-    "original_prerequisites": "ARCH 101 or ARCH 201.",
-    "original_corequisites": "",
-    "original_notes": "Students who have completed ARCH 372 cannot take ARCH 282 for additional credit.",
-    "rSchema": "SFUv1",
-    "prerequisite": {
-      "type": "group",
-      "logic": "ONE_OF",
-      "children": [
-        {
-          "type": "course",
-          "department": "ARCH",
-          "number": "101"
-        },
-        {
-          "type": "course",
-          "department": "ARCH",
-          "number": "201"
-        }
-      ]
-    },
-    "credit_conflicts": [
-      {
-        "subject": "ARCH",
-        "course": "372"
-      }
-    ],
-    "timestamp": "2025-06-30T01:54:32.205Z"
-  },
-  {
-    "department": "ARCH",
     "number": "285",
     "original_prerequisites": "12 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "creditCount",
       "credits": 12
@@ -671,7 +454,7 @@
     "original_prerequisites": "30 units including one of ARCH 100, ARCH 101, ARCH 201, EVSC 100, GEOG 100, or REM 100.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -726,7 +509,7 @@
     "original_prerequisites": "45 credit hours.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "creditCount",
       "credits": 45
@@ -739,7 +522,7 @@
     "original_prerequisites": "ARCH 272W or 273 or by permission of instructor. Other prerequisites may be required, but will vary according to topic.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -778,7 +561,7 @@
     "original_prerequisites": "ARCH 131.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "course",
       "department": "ARCH",
@@ -792,7 +575,7 @@
     "original_prerequisites": "ARCH 131 or any lower division biology course.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -818,7 +601,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -843,7 +626,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -868,7 +651,7 @@
     "original_prerequisites": "Six units in Archaeology, including ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -904,7 +687,7 @@
     "original_prerequisites": "Acceptance in the Environment Co-operative Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "program",
       "program": "Environment Co-operative Education Program"
@@ -917,7 +700,7 @@
     "original_prerequisites": "ARCH 350 and readmission to the Environment Co-operative Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -941,7 +724,7 @@
     "original_prerequisites": "ARCH 100 or ARCH 101 or ARCH 201, and 45 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -981,7 +764,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201; or any two of ARCH 100, REM 100, GEOG 100, EVSC 100; and 45 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1048,7 +831,7 @@
     "original_prerequisites": "ARCH 131 or any lower division ARCH, BISC, HSCI, or BPK course.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1079,7 +862,7 @@
     "original_prerequisites": "ARCH 101 (or ARCH 201). Recommended: ARCH 282 (or ARCH 372) and ARCH 271.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1131,7 +914,7 @@
     "original_prerequisites": "ARCH 101, ARCH 201, or 45 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1160,7 +943,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201, and any one of ARCH 285, GEOG 251, PSYC 210, STAT 101, STAT 201, STAT 203, or STAT 205.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1232,7 +1015,7 @@
     "original_prerequisites": "ARCH 273.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "course",
       "department": "ARCH",
@@ -1242,42 +1025,11 @@
   },
   {
     "department": "ARCH",
-    "number": "382",
-    "original_prerequisites": "ARCH 282 or 372.",
-    "original_corequisites": "",
-    "original_notes": "Students with credit for ARCH 485 may not take this course for further credit.",
-    "rSchema": "SFUv1",
-    "prerequisite": {
-      "type": "group",
-      "logic": "ONE_OF",
-      "children": [
-        {
-          "type": "course",
-          "department": "ARCH",
-          "number": "282"
-        },
-        {
-          "type": "course",
-          "department": "ARCH",
-          "number": "372"
-        }
-      ]
-    },
-    "credit_conflicts": [
-      {
-        "subject": "ARCH",
-        "course": "485"
-      }
-    ],
-    "timestamp": "2025-06-30T02:38:11.086Z"
-  },
-  {
-    "department": "ARCH",
     "number": "383",
     "original_prerequisites": "Any lower division ARCH, BISC, BPK, CHEM, CRIM or HSCI course.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "courseCount",
       "count": 1,
@@ -1299,7 +1051,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1324,7 +1076,7 @@
     "original_prerequisites": "ARCH 282 or 372 and permission of the department. Normally taken concurrently with ARCH 434 and 435.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1375,7 +1127,7 @@
     "original_prerequisites": "ARCH 282 or 372 and permission of the department. Normally taken concurrently with ARCH 433 and 435.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1426,7 +1178,7 @@
     "original_prerequisites": "ARCH 282 or 372 and permission of the department. Normally taken concurrently with ARCH 433 and 434.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1477,7 +1229,7 @@
     "original_prerequisites": "ARCH 373 and permission of the department. Normally taken concurrently with ARCH 433 and ARCH 434.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1517,7 +1269,7 @@
     "original_prerequisites": "ARCH 373 or CRIM 357, BPK 303, BPK 324, BPK 325, BPK 326. ARCH 373 is recommended.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1573,7 +1325,7 @@
     "original_prerequisites": "ARCH 351 and readmission to the Environment Co-operative Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1597,7 +1349,7 @@
     "original_prerequisites": "ARCH 101, 131, 201, 272W and 273.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1637,7 +1389,7 @@
     "original_prerequisites": "45 units, including ARCH 282 or 372, and permission of the department.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1676,7 +1428,7 @@
     "original_prerequisites": "45 units, including ARCH 282 or 372, and permission of the department.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1715,7 +1467,7 @@
     "original_prerequisites": "ARCH 383 or approval by the instructor after the interview.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1739,7 +1491,7 @@
     "original_prerequisites": "Permission of the department.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "permission",
       "note": "Permission of the department."
@@ -1752,7 +1504,7 @@
     "original_prerequisites": "Permission of the department.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "permission",
       "note": "Permission of the department."
@@ -1765,7 +1517,7 @@
     "original_prerequisites": "Enrollment in the MA or Certificate in HRM.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1788,7 +1540,7 @@
     "original_prerequisites": "Enrollment in the MA or Certificate in HRM.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1811,7 +1563,7 @@
     "original_prerequisites": "10 units, consent of supervising faculty member, and approval of the director of the HRM program.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1838,7 +1590,7 @@
     "original_prerequisites": "Only available to students in the Archaeology PhD program.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "program",
       "program": "Archaeology PhD program"
@@ -1851,7 +1603,7 @@
     "original_prerequisites": "Only available to students in the Archaeology PhD program.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "program",
       "program": "Archaeology PhD program"
@@ -1864,7 +1616,7 @@
     "original_prerequisites": "Biology 12 (or equivalent) with a minimum grade of C (or BISC 100 with a minimum grade of C-, or BISC 113 with a minimum grade of C+, or BPK 105 with a minimum grade of C+, or HSCI 100 with a minimum grade of C+); and Chemistry 12 (or equivalent) with a minimum grade of C (or CHEM 111 with a minimum grade of C-).",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1933,7 +1685,7 @@
     "original_prerequisites": "Biology 12 (or equivalent) with a minimum grade of C (or BISC 100 with a minimum grade of C-, or BISC 113 with a minimum grade of C+, or BPK 105 with a minimum grade of C+, or HSCI 100 with a minimum grade of C+).",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1978,7 +1730,7 @@
     "original_prerequisites": "",
     "original_corequisites": "BISC 101 or 102; and completion of fewer than 60 units.",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "corequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2013,7 +1765,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2040,7 +1792,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2063,54 +1815,11 @@
   },
   {
     "department": "BISC",
-    "number": "205",
-    "original_prerequisites": "BISC 101, BISC 102, and PHYS 101, all with a minimum grade of C-.",
-    "original_corequisites": "",
-    "original_notes": "Students who have taken BISC 305 or BISC 366 first may not then take this course for further credit.",
-    "rSchema": "SFUv1",
-    "prerequisite": {
-      "type": "group",
-      "logic": "ALL_OF",
-      "children": [
-        {
-          "type": "course",
-          "department": "BISC",
-          "number": "101",
-          "minGrade": "C-"
-        },
-        {
-          "type": "course",
-          "department": "BISC",
-          "number": "102",
-          "minGrade": "C-"
-        },
-        {
-          "type": "course",
-          "department": "PHYS",
-          "number": "101",
-          "minGrade": "C-"
-        }
-      ]
-    },
-    "credit_conflicts": [
-      {
-        "subject": "BISC",
-        "course": "305"
-      },
-      {
-        "subject": "BISC",
-        "course": "366"
-      }
-    ],
-    "timestamp": "2025-06-30T03:02:52.453Z"
-  },
-  {
-    "department": "BISC",
     "number": "212",
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-, and completion of less than 60 units; or permission of the instructor.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -2151,7 +1860,7 @@
     "original_prerequisites": "BISC 202 with a minimum grade of C-. Recommended: BISC 204.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "course",
       "department": "BISC",
@@ -2171,7 +1880,7 @@
     "original_prerequisites": "BISC 202 and MBB 222, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2198,7 +1907,7 @@
     "original_prerequisites": "BISC 102, MBB 222, and MBB 231, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2231,7 +1940,7 @@
     "original_prerequisites": "(BISC 205 or BPK 205) and MBB 231, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2270,7 +1979,7 @@
     "original_prerequisites": "BISC 101, 102, and (BISC 204 or GEOG 215), all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2315,7 +2024,7 @@
     "original_prerequisites": "BISC 101, 102, and (BISC 204 or GEOG 215), all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2360,7 +2069,7 @@
     "original_prerequisites": "BISC 204 with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "course",
       "department": "BISC",
@@ -2375,7 +2084,7 @@
     "original_prerequisites": "BISC 101 and (BISC 204, or BISC 205, or GEOG 215, or MBB 231), both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2426,7 +2135,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2453,7 +2162,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2480,7 +2189,7 @@
     "original_prerequisites": "BISC 101, 102, and (BISC 204 or HSCI 212), all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2525,7 +2234,7 @@
     "original_prerequisites": "BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2558,7 +2267,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2585,7 +2294,7 @@
     "original_prerequisites": "Acceptance in the Biological Sciences Co-operative Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "permission",
       "note": "Acceptance in the Biological Sciences Co-operative Education Program."
@@ -2598,7 +2307,7 @@
     "original_prerequisites": "BISC 341 and readmission to the Science Co-op Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2622,7 +2331,7 @@
     "original_prerequisites": "BISC 202, (BISC 204 or GEOG 215), and STAT 201, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2667,7 +2376,7 @@
     "original_prerequisites": "BISC 205 and MBB 231, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2694,7 +2403,7 @@
     "original_prerequisites": "A minimum of 45 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "creditCount",
       "credits": 45
@@ -2707,7 +2416,7 @@
     "original_prerequisites": "60 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "creditCount",
       "credits": 60
@@ -2720,7 +2429,7 @@
     "original_prerequisites": "Students complete one of: (BISC 205 and MBB 231), or (BPK 205 and MBB 231), or BPK 306, or HSCI 321; each with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -2783,7 +2492,7 @@
     "original_prerequisites": "BISC 102, (BISC 204 or GEOG 215), and MATH 154, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2828,7 +2537,7 @@
     "original_prerequisites": "BISC 102 and (BISC 204 or GEOG 215), both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2867,7 +2576,7 @@
     "original_prerequisites": "BISC 101, 102, and (BISC 204 or GEOG 215), all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2912,7 +2621,7 @@
     "original_prerequisites": "BISC 204 with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "course",
       "department": "BISC",
@@ -2927,7 +2636,7 @@
     "original_prerequisites": "BISC 204 or GEOG 215, with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -2954,7 +2663,7 @@
     "original_prerequisites": "BISC 204 or GEOG 215, with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -2981,7 +2690,7 @@
     "original_prerequisites": "BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-. Recommended: BISC 333 or MBB 331.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3030,7 +2739,7 @@
     "original_prerequisites": "BISC 202, MBB 222, MBB 231, and (BISC 357 or MBB 331), all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3081,7 +2790,7 @@
     "original_prerequisites": "(BISC 205 or BPK 205) and MBB 231, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3120,7 +2829,7 @@
     "original_prerequisites": "MBB 231 and (BISC 303, or BISC 328, or BISC 337, or BISC 366), both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3167,50 +2876,11 @@
   },
   {
     "department": "BISC",
-    "number": "433",
-    "original_prerequisites": "MBB 222, MBB 231, and BISC 303, all with a minimum grade of C-.",
-    "original_corequisites": "",
-    "original_notes": "Students with credit for BISC 475 under the title \"Environmental Microbiology\" may not take this course for further credit.",
-    "rSchema": "SFUv1",
-    "prerequisite": {
-      "type": "group",
-      "logic": "ALL_OF",
-      "children": [
-        {
-          "type": "course",
-          "department": "MBB",
-          "number": "222",
-          "minGrade": "C-"
-        },
-        {
-          "type": "course",
-          "department": "MBB",
-          "number": "231",
-          "minGrade": "C-"
-        },
-        {
-          "type": "course",
-          "department": "BISC",
-          "number": "303",
-          "minGrade": "C-"
-        }
-      ]
-    },
-    "credit_conflicts": [
-      {
-        "subject": "BISC",
-        "course": "475"
-      }
-    ],
-    "timestamp": "2025-06-30T03:46:10.371Z"
-  },
-  {
-    "department": "BISC",
     "number": "440W",
     "original_prerequisites": "BISC 300 and STAT 201, both with a minimum grade of C+, and (75 units or permission of the instructor).",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3251,7 +2921,7 @@
     "original_prerequisites": "BISC 202 or 204, both with a minimum grade of C-. Recommended: BISC 300.",
     "original_corequisites": "",
     "original_notes": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3276,5 +2946,937 @@
       "number": "300"
     },
     "timestamp": "2025-06-30T03:47:35.425Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "201",
+    "original_prerequisites": "MATH 152 with a minimum grade of C; or MATH 155 or MATH 158, with a grade of at least B.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 210 cannot take ACMA 201 for further credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "152",
+          "minGrade": "C"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "155",
+              "minGrade": "B"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "158",
+              "minGrade": "B"
+            }
+          ]
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "ACMA",
+        "course": "210"
+      }
+    ],
+    "timestamp": "2025-06-30T05:00:50.647Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "301",
+    "original_prerequisites": "ACMA 201 (or 210), with a minimum grade of C. Corequisite: STAT 285.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 320 cannot take ACMA 301 for further credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "201",
+          "minGrade": "C"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "210",
+          "minGrade": "C"
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "STAT",
+      "number": "285"
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "ACMA",
+        "course": "320"
+      }
+    ],
+    "timestamp": "2025-06-30T05:02:56.545Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "321",
+    "original_prerequisites": "ACMA 101 with a minimum grade of C. Corequisite: STAT 330, ACMA 231.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 355 may not take this course for further credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "course",
+      "department": "ACMA",
+      "number": "101",
+      "minGrade": "C"
+    },
+    "corequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "STAT",
+          "number": "330"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "231"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "ACMA",
+        "course": "355"
+      }
+    ],
+    "timestamp": "2025-06-30T05:04:35.587Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "360W",
+    "original_prerequisites": "ACMA 301 (or 320), with a minimum grade of C.",
+    "original_corequisites": "",
+    "original_notes": "Students who have taken STAT 300W first may not then take this course for further credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "301",
+          "minGrade": "C"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "320",
+          "minGrade": "C"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "STAT",
+        "course": "300W"
+      }
+    ],
+    "timestamp": "2025-06-30T05:05:33.381Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "401",
+    "original_prerequisites": "ACMA 301 (or 320), with a minimum grade of C.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 425 cannot take ACMA 401 for further credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "301",
+          "minGrade": "C"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "320",
+          "minGrade": "C"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "ACMA",
+        "course": "425"
+      }
+    ],
+    "timestamp": "2025-06-30T05:06:32.070Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "282",
+    "original_prerequisites": "ARCH 101 or ARCH 201.",
+    "original_corequisites": "",
+    "original_notes": "Students who have completed ARCH 372 cannot take ARCH 282 for additional credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "ARCH",
+        "course": "372"
+      }
+    ],
+    "timestamp": "2025-06-30T05:07:37.731Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "312",
+    "original_prerequisites": "One of the following courses: ARCH 100, ARCH 101, ARCH 201, HS 100, HS 231, HS 232, HS 277, HIST 277 or by permission of the instructor.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for HS 312 cannot take this course for further credit. Students with credit for ARCH 321 under the title \"Select Regions in World Archaeology I: Greece\" may not take this course for further credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "231"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "232"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "277"
+        },
+        {
+          "type": "course",
+          "department": "HIST",
+          "number": "277"
+        },
+        {
+          "type": "permission",
+          "note": "by permission of the instructor"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "HS",
+        "course": "312"
+      },
+      {
+        "type": "conflict_course",
+        "subject": "ARCH",
+        "course": "321",
+        "title": "Select Regions in World Archaeology I: Greece"
+      }
+    ],
+    "timestamp": "2025-06-30T05:14:00.701Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "313",
+    "original_prerequisites": "One of the following courses: ARCH 100, ARCH 201, HS 100, HS 231, HS 232, HS/HIST 277 or by permission of the instructor.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for HS 313 cannot take this course for further credit. Students with credit for ARCH 332 under the title \"Special Topics in Archaeology I: Roman Art and Archaeology\" may not take this course for further credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "231"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "232"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "277"
+        },
+        {
+          "type": "course",
+          "department": "HIST",
+          "number": "277"
+        },
+        {
+          "type": "permission",
+          "note": "permission of the instructor"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "HS",
+        "course": "313"
+      },
+      {
+        "type": "conflict_course",
+        "subject": "ARCH",
+        "course": "332",
+        "title": "Special Topics in Archaeology I: Roman Art and Archaeology"
+      }
+    ],
+    "timestamp": "2025-06-30T05:15:57.245Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "344",
+    "original_prerequisites": "ARCH 131 or any lower division biology course.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ARCH 333 Special Topics in Archaeology II: Primate Behaviour may not take this course for further credit.  ",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "131"
+        },
+        {
+          "type": "courseCount",
+          "count": 1,
+          "department": "BIOL",
+          "level": "LD"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "ARCH",
+        "course": "333",
+        "title": "Special Topics in Archaeology II: Primate Behaviour"
+      }
+    ],
+    "timestamp": "2025-06-30T05:16:47.375Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "349",
+    "original_prerequisites": "ARCH 101 or ARCH 201, and 45 units.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ARCH 332 Special Topics in Archaeology I: Mgt. of Archaeological Collections and ARCH 333 Special Topics in Archaeology II: Mgt. of Archaeological Collections  may not take this course for further credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "201"
+            }
+          ]
+        },
+        {
+          "type": "creditCount",
+          "credits": 45
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "ARCH",
+        "course": "332",
+        "title": "Special Topics in Archaeology I: Mgt. of Archaeological Collections"
+      },
+      {
+        "type": "conflict_course",
+        "subject": "ARCH",
+        "course": "333",
+        "title": "Special Topics in Archaeology II: Mgt. of Archaeological Collections"
+      }
+    ],
+    "timestamp": "2025-06-30T05:18:08.576Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "382",
+    "original_prerequisites": "ARCH 282 or 372.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ARCH 485 may not take this course for further credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "282"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "372"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "ARCH",
+        "course": "485"
+      }
+    ],
+    "timestamp": "2025-06-30T05:25:39.629Z"
+  },
+  {
+    "department": "BISC",
+    "number": "205",
+    "original_prerequisites": "BISC 101, BISC 102, and PHYS 101, all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "Students who have taken BISC 305 or BISC 366 first may not then take this course for further credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "PHYS",
+          "number": "101",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "BISC",
+        "course": "305"
+      },
+      {
+        "type": "conflict_course",
+        "subject": "BISC",
+        "course": "366"
+      }
+    ],
+    "timestamp": "2025-06-30T05:26:40.926Z"
+  },
+  {
+    "department": "BISC",
+    "number": "327",
+    "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "Students who have taken BISC 326 first may not then take this course for further credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "BISC",
+        "course": "326"
+      }
+    ],
+    "timestamp": "2025-06-30T05:27:36.477Z"
+  },
+  {
+    "department": "BISC",
+    "number": "328",
+    "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-. Recommended: BISC 204.",
+    "original_corequisites": "",
+    "original_notes": "Students who have taken BISC 326 first may not then take this course for further credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "recommended_prerequisite": {
+      "type": "course",
+      "department": "BISC",
+      "number": "204"
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "BISC",
+        "course": "326"
+      }
+    ],
+    "timestamp": "2025-06-30T05:28:10.205Z"
+  },
+  {
+    "department": "BISC",
+    "number": "357",
+    "original_prerequisites": "BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-. Recommended: MBB 331.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for MBB 308 may not take this course for further credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "202",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "222",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "recommended_prerequisite": {
+      "type": "course",
+      "department": "MBB",
+      "number": "331"
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "MBB",
+        "course": "308"
+      }
+    ],
+    "timestamp": "2025-06-30T05:31:48.525Z"
+  },
+  {
+    "department": "BISC",
+    "number": "428",
+    "original_prerequisites": "BISC 101, BISC 102, MBB 222, and MBB 231, all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "Students who have completed BISC 472 under the title \"Advanced Cell Biology\" may not take this course for further credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "222",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "BISC",
+        "course": "472",
+        "title": "Advanced Cell Biology"
+      }
+    ],
+    "timestamp": "2025-06-30T05:32:43.243Z"
+  },
+  {
+    "department": "BISC",
+    "number": "433",
+    "original_prerequisites": "MBB 222, MBB 231, and BISC 303, all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for BISC 475 under the title \"Environmental Microbiology\" may not take this course for further credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "222",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "303",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "BISC",
+        "course": "475",
+        "title": "Environmental Microbiology"
+      }
+    ],
+    "timestamp": "2025-06-30T05:33:18.195Z"
+  },
+  {
+    "department": "BISC",
+    "number": "443",
+    "original_prerequisites": "BISC 342 and readmission to the Science Co-op Education Program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "342"
+        },
+        {
+          "type": "program",
+          "program": "readmission to the Science Co-op Education Program"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T05:36:00.927Z"
+  },
+  {
+    "department": "BISC",
+    "number": "444",
+    "original_prerequisites": "BISC 443 and re-admission to the science co-operative education program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "443"
+        },
+        {
+          "type": "permission",
+          "note": "re-admission to the science co-operative education program."
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T05:37:47.666Z"
+  },
+  {
+    "department": "BISC",
+    "number": "445",
+    "original_prerequisites": "BISC 205 and MBB 231, both with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "205",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T05:38:32.857Z"
+  },
+  {
+    "department": "BISC",
+    "number": "446",
+    "original_prerequisites": "BISC 444 and readmission to the Science Co-op Education Program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "444"
+        },
+        {
+          "type": "program",
+          "program": "readmission to the Science Co-op Education Program"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T05:40:13.594Z"
+  },
+  {
+    "department": "BISC",
+    "number": "447",
+    "original_prerequisites": "MBB 322 or BISC 333, with a minimum grade of C.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for MBB 447 may not take this course for further credit. Students with credit for MBB 440 or BISC 472 under the title \"Stem Cell Biology and Applications\" may not take this course for further credit.",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "322",
+          "minGrade": "C"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "333",
+          "minGrade": "C"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "MBB",
+        "course": "447"
+      },
+      {
+        "type": "conflict_course",
+        "subject": "MBB",
+        "course": "440",
+        "title": "Stem Cell Biology and Applications"
+      },
+      {
+        "type": "conflict_course",
+        "subject": "BISC",
+        "course": "472",
+        "title": "Stem Cell Biology and Applications"
+      }
+    ],
+    "timestamp": "2025-06-30T05:40:53.829Z"
+  },
+  {
+    "department": "BISC",
+    "number": "457",
+    "original_prerequisites": "BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "202",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "222",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T05:41:24.016Z"
+  },
+  {
+    "department": "BISC",
+    "number": "471",
+    "original_prerequisites": "To be announced.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "other",
+      "note": "To be announced."
+    },
+    "timestamp": "2025-06-30T05:50:59.984Z"
+  },
+  {
+    "department": "BISC",
+    "number": "474",
+    "original_prerequisites": "To be announced.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "SFUv1",
+    "prerequisite": {
+      "type": "other",
+      "note": "To be announced."
+    },
+    "timestamp": "2025-06-30T05:51:48.037Z"
   }
 ]

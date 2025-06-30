@@ -11,24 +11,6 @@
   },
   {
     "department": "ARCH",
-    "course_code": "312",
-    "reason": "we aren't capturing the condition \"under the x title\" right now in our credit conflicts",
-    "timestamp": "2025-06-30T02:20:50.259Z"
-  },
-  {
-    "department": "ARCH",
-    "course_code": "313",
-    "reason": "same as above",
-    "timestamp": "2025-06-30T02:21:41.057Z"
-  },
-  {
-    "department": "ARCH",
-    "course_code": "344",
-    "reason": "arch 333 is not in our course list",
-    "timestamp": "2025-06-30T02:26:11.042Z"
-  },
-  {
-    "department": "ARCH",
     "course_code": "451",
     "reason": "missed the readmission thing, maybe we need a way to reprompt the model with some text, although that adds even more spagetti to the code",
     "timestamp": "2025-06-30T02:43:33.171Z"
@@ -50,18 +32,6 @@
     "course_code": "106",
     "reason": "Sanity check: Not Equivalent\nThe `credit_conflicts` field is incomplete. The original notes state \"BISC 101 or higher level BISC courses\", but the JSON only captures the conflict with BISC 101.",
     "timestamp": "2025-06-30T02:53:52.462Z"
-  },
-  {
-    "department": "BISC",
-    "course_code": "327",
-    "reason": "course conflict not captured properly",
-    "timestamp": "2025-06-30T03:29:21.835Z"
-  },
-  {
-    "department": "BISC",
-    "course_code": "328",
-    "reason": "credit conflict not properly captured",
-    "timestamp": "2025-06-30T03:29:55.937Z"
   },
   {
     "department": "BISC",
