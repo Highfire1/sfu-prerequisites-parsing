@@ -30,6 +30,12 @@ At least one prerequisite text from the API is different than the SFU website
 They are equivalent in this case but it is questionable
 and possibly in some cases one of the two might be more clear/easier to parse?
 
+### Changes to be made
+
 Workflow could be faster
 - probably best to generate 100 courses at a time in advance, and then you can go through them without waiting for the llm to generate tokens
 - especially because there are 2653 courses right now and that will actually take many many hours
+- either that or find a faster llm provider
+
+Need to be able to reprompt the llm to make a specific change
+
