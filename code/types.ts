@@ -1,4 +1,4 @@
-const SCHEMA_VERSION = 'SFUv1';
+const SCHEMA_VERSION = 'SFUv1.1';
 
 // Import types
 interface CourseCondensedInfo {
@@ -42,6 +42,7 @@ interface SaveCourseRequirements {
     department: string;
     number: string;
     // Original course data
+    original_title: string;
     original_prerequisites: string;
     original_corequisites: string;
     original_notes: string;

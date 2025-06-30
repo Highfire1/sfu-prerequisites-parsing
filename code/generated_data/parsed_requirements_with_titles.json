@@ -1,0 +1,3998 @@
+[
+  {
+    "department": "ACMA",
+    "number": "101",
+    "original_prerequisites": "",
+    "original_corequisites": "MATH 150, 151, 154 or 157.",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "corequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "150"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "151"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "154"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "157"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T01:42:01.050Z",
+    "original_title": "Introduction to Insurance"
+  },
+  {
+    "department": "ACMA",
+    "number": "231",
+    "original_prerequisites": "BC Mathematics 12 (or equivalent) or any 100-level MATH course with a minimum grade of C.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "HSCourse",
+          "course": "BC Mathematics 12",
+          "orEquivalent": "true"
+        },
+        {
+          "type": "courseCount",
+          "count": 1,
+          "department": "MATH",
+          "level": "1XX",
+          "minGrade": "C"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T01:42:45.715Z",
+    "original_title": "Tools for Data-Driven Decision Making"
+  },
+  {
+    "department": "ACMA",
+    "number": "336",
+    "original_prerequisites": "Students must apply and receive permission from the co-op coordinator at least one but preferably two terms in advance. They will normally be required to have completed 45 units with a GPA of 2.50 before they may take this practicum course.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "permission",
+          "note": "Students must apply and receive permission from the co-op coordinator at least one but preferably two terms in advance."
+        },
+        {
+          "type": "creditCount",
+          "credits": 45
+        },
+        {
+          "type": "CGPA",
+          "minCGPA": 2.5
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T01:44:31.680Z",
+    "original_title": "Job Practicum I"
+  },
+  {
+    "department": "ACMA",
+    "number": "337",
+    "original_prerequisites": "ACMA 336 or Job Practicum I from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ACMA",
+              "number": "336"
+            },
+            {
+              "type": "other",
+              "note": "Job Practicum I from another department"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "Students must apply and receive permission from the co-op coordinator at least one term in advance."
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T01:44:55.360Z",
+    "original_title": "Job Practicum II"
+  },
+  {
+    "department": "ACMA",
+    "number": "340",
+    "original_prerequisites": "ACMA 201 (or 210), with a minimum grade of C. Corequisite: STAT 285.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "201",
+          "minGrade": "C"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "210",
+          "minGrade": "C"
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "STAT",
+      "number": "285"
+    },
+    "timestamp": "2025-06-30T01:45:38.888Z",
+    "original_title": "Financial Economics for Actuaries"
+  },
+  {
+    "department": "ACMA",
+    "number": "421",
+    "original_prerequisites": "ACMA 321 with a minimum grade of C. Corequisite: STAT 350.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "course",
+      "department": "ACMA",
+      "number": "321",
+      "minGrade": "C"
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "STAT",
+      "number": "350"
+    },
+    "timestamp": "2025-06-30T01:47:56.834Z",
+    "original_title": "Advanced Models for Short-Term Insurance"
+  },
+  {
+    "department": "ACMA",
+    "number": "436",
+    "original_prerequisites": "ACMA 337 or Job Practicum II from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ACMA",
+              "number": "337"
+            },
+            {
+              "type": "other",
+              "note": "Job Practicum II from another department"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "Students must apply and receive permission from the co-op coordinator at least one term in advance."
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T01:48:34.747Z",
+    "original_title": "Job Practicum III"
+  },
+  {
+    "department": "ACMA",
+    "number": "437",
+    "original_prerequisites": "ACMA 436 or Job Practicum III from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ACMA",
+              "number": "436"
+            },
+            {
+              "type": "other",
+              "note": "Job Practicum III from another department"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "Students must apply and receive permission from the co-op coordinator at least one term in advance."
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T01:49:02.320Z",
+    "original_title": "Job Practicum IV"
+  },
+  {
+    "department": "ACMA",
+    "number": "438",
+    "original_prerequisites": "ACMA 437 or Job Practicum IV from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ACMA",
+              "number": "437"
+            },
+            {
+              "type": "other",
+              "note": "Job Practicum IV from another department"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "Students must apply and receive permission from the co-op coordinator at least one term in advance."
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T01:49:26.134Z",
+    "original_title": "Job Practicum V"
+  },
+  {
+    "department": "ACMA",
+    "number": "455",
+    "original_prerequisites": "ACMA 355 with a minimum grade of C.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "course",
+      "department": "ACMA",
+      "number": "355",
+      "minGrade": "C"
+    },
+    "timestamp": "2025-06-30T01:51:11.627Z",
+    "original_title": "Loss Models II"
+  },
+  {
+    "department": "ACMA",
+    "number": "495",
+    "original_prerequisites": "Written permission from the Department of Statistics and Actuarial Science undergraduate curriculum committee.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "permission",
+      "note": "Written permission from the Department of Statistics and Actuarial Science undergraduate curriculum committee."
+    },
+    "timestamp": "2025-06-30T01:51:43.938Z",
+    "original_title": "Directed Studies in Actuarial Science"
+  },
+  {
+    "department": "APMA",
+    "number": "995",
+    "original_prerequisites": "Applied Mathematics PhD stream students only. Must be completed within first six terms of the program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "program",
+          "program": "Applied Mathematics PhD stream"
+        },
+        {
+          "type": "other",
+          "note": "Must be completed within first six terms of the program."
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T01:52:08.177Z",
+    "original_title": "PhD Oral Candidacy Exam"
+  },
+  {
+    "department": "ARCH",
+    "number": "200",
+    "original_prerequisites": "30 units.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "creditCount",
+      "credits": 30
+    },
+    "timestamp": "2025-06-30T01:52:29.676Z",
+    "original_title": "Special Topics in Archaeology"
+  },
+  {
+    "department": "ARCH",
+    "number": "271",
+    "original_prerequisites": "ARCH 101 or ARCH 201.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T01:52:49.080Z",
+    "original_title": "Interpreting the Past: An Introduction to Archaeological Theory"
+  },
+  {
+    "department": "ARCH",
+    "number": "272W",
+    "original_prerequisites": "ARCH 100, 101, or 201.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T01:53:09.622Z",
+    "original_title": "Archaeology of the Old World"
+  },
+  {
+    "department": "ARCH",
+    "number": "273",
+    "original_prerequisites": "Any one of the following: ARCH 100, ARCH 101, EVSC 100, GEOG 100, or REM 100.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "EVSC",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "GEOG",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "REM",
+          "number": "100"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T01:53:29.192Z",
+    "original_title": "Archaeology of the New World"
+  },
+  {
+    "department": "ARCH",
+    "number": "285",
+    "original_prerequisites": "12 units.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "creditCount",
+      "credits": 12
+    },
+    "timestamp": "2025-06-30T01:54:49.766Z",
+    "original_title": "Archaeological Science"
+  },
+  {
+    "department": "ARCH",
+    "number": "286",
+    "original_prerequisites": "30 units including one of ARCH 100, ARCH 101, ARCH 201, EVSC 100, GEOG 100, or REM 100.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 30
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "100"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "201"
+            },
+            {
+              "type": "course",
+              "department": "EVSC",
+              "number": "100"
+            },
+            {
+              "type": "course",
+              "department": "GEOG",
+              "number": "100"
+            },
+            {
+              "type": "course",
+              "department": "REM",
+              "number": "100"
+            }
+          ]
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T01:59:08.756Z",
+    "original_title": "Cultural Heritage Management"
+  },
+  {
+    "department": "ARCH",
+    "number": "301",
+    "original_prerequisites": "45 credit hours.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "creditCount",
+      "credits": 45
+    },
+    "timestamp": "2025-06-30T01:59:50.521Z",
+    "original_title": "Ancient Visual Art"
+  },
+  {
+    "department": "ARCH",
+    "number": "321",
+    "original_prerequisites": "ARCH 272W or 273 or by permission of instructor. Other prerequisites may be required, but will vary according to topic.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "272W"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "273"
+            },
+            {
+              "type": "permission",
+              "note": "by permission of instructor"
+            }
+          ]
+        },
+        {
+          "type": "other",
+          "note": "Other prerequisites may be required, but will vary according to topic."
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:22:35.861Z",
+    "original_title": "Special Topics: Select Regions in World Archaeology I"
+  },
+  {
+    "department": "ARCH",
+    "number": "322",
+    "original_prerequisites": "ARCH 131.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "course",
+      "department": "ARCH",
+      "number": "131"
+    },
+    "timestamp": "2025-06-30T02:22:58.228Z",
+    "original_title": "Special Topics in Biological Anthropology I"
+  },
+  {
+    "department": "ARCH",
+    "number": "323",
+    "original_prerequisites": "ARCH 131 or any lower division biology course.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "131"
+        },
+        {
+          "type": "courseCount",
+          "count": 1,
+          "department": "BIOL",
+          "level": "LD"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:23:25.392Z",
+    "original_title": "Special Topics in Biological Anthropology II"
+  },
+  {
+    "department": "ARCH",
+    "number": "329",
+    "original_prerequisites": "ARCH 101 or ARCH 201.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:23:51.110Z",
+    "original_title": "Special Topics in Environmental Archaeology"
+  },
+  {
+    "department": "ARCH",
+    "number": "340",
+    "original_prerequisites": "ARCH 101 or ARCH 201.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:24:12.247Z",
+    "original_title": "Zooarchaeology"
+  },
+  {
+    "department": "ARCH",
+    "number": "348",
+    "original_prerequisites": "Six units in Archaeology, including ARCH 101 or ARCH 201.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 6,
+          "department": "ARCH"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "201"
+            }
+          ]
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:26:37.797Z",
+    "original_title": "Archaeological Conservation"
+  },
+  {
+    "department": "ARCH",
+    "number": "350",
+    "original_prerequisites": "Acceptance in the Environment Co-operative Education Program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "program",
+      "program": "Environment Co-operative Education Program"
+    },
+    "timestamp": "2025-06-30T02:28:12.774Z",
+    "original_title": "Practicum I"
+  },
+  {
+    "department": "ARCH",
+    "number": "351",
+    "original_prerequisites": "ARCH 350 and readmission to the Environment Co-operative Education Program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "350"
+        },
+        {
+          "type": "program",
+          "program": "readmission to the Environment Co-operative Education Program"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:28:41.200Z",
+    "original_title": "Practicum II"
+  },
+  {
+    "department": "ARCH",
+    "number": "363",
+    "original_prerequisites": "ARCH 100 or ARCH 101 or ARCH 201, and 45 units.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "100"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "201"
+            }
+          ]
+        },
+        {
+          "type": "creditCount",
+          "credits": 45
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:29:10.472Z",
+    "original_title": "Landscape Archaeology"
+  },
+  {
+    "department": "ARCH",
+    "number": "365",
+    "original_prerequisites": "ARCH 101 or ARCH 201; or any two of ARCH 100, REM 100, GEOG 100, EVSC 100; and 45 units.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "group",
+              "logic": "ONE_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "ARCH",
+                  "number": "101"
+                },
+                {
+                  "type": "course",
+                  "department": "ARCH",
+                  "number": "201"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "logic": "TWO_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "ARCH",
+                  "number": "100"
+                },
+                {
+                  "type": "course",
+                  "department": "REM",
+                  "number": "100"
+                },
+                {
+                  "type": "course",
+                  "department": "GEOG",
+                  "number": "100"
+                },
+                {
+                  "type": "course",
+                  "department": "EVSC",
+                  "number": "100"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "creditCount",
+          "credits": 45
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:33:46.420Z",
+    "original_title": "Archaeological Perspectives on Human Ecology"
+  },
+  {
+    "department": "ARCH",
+    "number": "373",
+    "original_prerequisites": "ARCH 131 or any lower division ARCH, BISC, HSCI, or BPK course.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "131"
+        },
+        {
+          "type": "courseCount",
+          "count": 1,
+          "department": [
+            "ARCH",
+            "BISC",
+            "HSCI",
+            "BPK"
+          ],
+          "level": "LD"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:35:26.889Z",
+    "original_title": "Human Osteology"
+  },
+  {
+    "department": "ARCH",
+    "number": "374",
+    "original_prerequisites": "ARCH 101 (or ARCH 201). Recommended: ARCH 282 (or ARCH 372) and ARCH 271.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    },
+    "recommended_prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "282"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "372"
+            }
+          ]
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "271"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:36:11.335Z",
+    "original_title": "Research Design in Archaeology"
+  },
+  {
+    "department": "ARCH",
+    "number": "375",
+    "original_prerequisites": "ARCH 101, ARCH 201, or 45 units.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        },
+        {
+          "type": "creditCount",
+          "credits": 45
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:36:35.872Z",
+    "original_title": "From Soup to Nuts: The Archaeology of Food"
+  },
+  {
+    "department": "ARCH",
+    "number": "376",
+    "original_prerequisites": "ARCH 101 or ARCH 201, and any one of ARCH 285, GEOG 251, PSYC 210, STAT 101, STAT 201, STAT 203, or STAT 205.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "201"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "285"
+            },
+            {
+              "type": "course",
+              "department": "GEOG",
+              "number": "251"
+            },
+            {
+              "type": "course",
+              "department": "PSYC",
+              "number": "210"
+            },
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "201"
+            },
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "203"
+            },
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "205"
+            }
+          ]
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:37:28.791Z",
+    "original_title": "Quantitative Methods in Archaeology"
+  },
+  {
+    "department": "ARCH",
+    "number": "378",
+    "original_prerequisites": "ARCH 273.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "course",
+      "department": "ARCH",
+      "number": "273"
+    },
+    "timestamp": "2025-06-30T02:37:46.792Z",
+    "original_title": "Pacific Northwest North America"
+  },
+  {
+    "department": "ARCH",
+    "number": "383",
+    "original_prerequisites": "Any lower division ARCH, BISC, BPK, CHEM, CRIM or HSCI course.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "courseCount",
+      "count": 1,
+      "department": [
+        "ARCH",
+        "BISC",
+        "BPK",
+        "CHEM",
+        "CRIM",
+        "HSCI"
+      ],
+      "level": "LD"
+    },
+    "timestamp": "2025-06-30T02:38:36.893Z",
+    "original_title": "Ancient and Forensic DNA"
+  },
+  {
+    "department": "ARCH",
+    "number": "386",
+    "original_prerequisites": "ARCH 101 or ARCH 201.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:38:53.564Z",
+    "original_title": "Archaeological Resource Management"
+  },
+  {
+    "department": "ARCH",
+    "number": "433",
+    "original_prerequisites": "ARCH 282 or 372 and permission of the department. Normally taken concurrently with ARCH 434 and 435.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "282"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "372"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "permission of the department"
+        }
+      ]
+    },
+    "recommended_corequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "434"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "435"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:39:19.194Z",
+    "original_title": "Background to Field Work"
+  },
+  {
+    "department": "ARCH",
+    "number": "434",
+    "original_prerequisites": "ARCH 282 or 372 and permission of the department. Normally taken concurrently with ARCH 433 and 435.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "282"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "372"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "permission of the department"
+        }
+      ]
+    },
+    "recommended_corequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "433"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "435"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:39:57.536Z",
+    "original_title": "Archaeological Field Methods"
+  },
+  {
+    "department": "ARCH",
+    "number": "435",
+    "original_prerequisites": "ARCH 282 or 372 and permission of the department. Normally taken concurrently with ARCH 433 and 434.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "282"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "372"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "permission of the department"
+        }
+      ]
+    },
+    "recommended_corequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "433"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "434"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:40:37.957Z",
+    "original_title": "Field Work Practicum"
+  },
+  {
+    "department": "ARCH",
+    "number": "436",
+    "original_prerequisites": "ARCH 373 and permission of the department. Normally taken concurrently with ARCH 433 and ARCH 434.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "373"
+        },
+        {
+          "type": "permission",
+          "note": "permission of the department"
+        }
+      ]
+    },
+    "recommended_corequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "433"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "434"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:41:10.143Z",
+    "original_title": "Biological Anthropology Field Practicum"
+  },
+  {
+    "department": "ARCH",
+    "number": "442",
+    "original_prerequisites": "ARCH 373 or CRIM 357, BPK 303, BPK 324, BPK 325, BPK 326. ARCH 373 is recommended.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "373"
+            },
+            {
+              "type": "course",
+              "department": "CRIM",
+              "number": "357"
+            }
+          ]
+        },
+        {
+          "type": "course",
+          "department": "BPK",
+          "number": "303"
+        },
+        {
+          "type": "course",
+          "department": "BPK",
+          "number": "324"
+        },
+        {
+          "type": "course",
+          "department": "BPK",
+          "number": "325"
+        },
+        {
+          "type": "course",
+          "department": "BPK",
+          "number": "326"
+        }
+      ]
+    },
+    "recommended_prerequisite": {
+      "type": "course",
+      "department": "ARCH",
+      "number": "373"
+    },
+    "timestamp": "2025-06-30T02:41:42.140Z",
+    "original_title": "Forensic Anthropology"
+  },
+  {
+    "department": "ARCH",
+    "number": "450",
+    "original_prerequisites": "ARCH 351 and readmission to the Environment Co-operative Education Program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "351"
+        },
+        {
+          "type": "permission",
+          "note": "readmission to the Environment Co-operative Education Program"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:42:19.953Z",
+    "original_title": "Practicum III"
+  },
+  {
+    "department": "ARCH",
+    "number": "471W",
+    "original_prerequisites": "ARCH 101, 131, 201, 272W and 273.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "131"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "272W"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "273"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:45:16.097Z",
+    "original_title": "Archaeological Theory"
+  },
+  {
+    "department": "ARCH",
+    "number": "479",
+    "original_prerequisites": "45 units, including ARCH 282 or 372, and permission of the department.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 45
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "282"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "372"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "permission of the department."
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:45:48.692Z",
+    "original_title": "Directed Readings"
+  },
+  {
+    "department": "ARCH",
+    "number": "480",
+    "original_prerequisites": "45 units, including ARCH 282 or 372, and permission of the department.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 45
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "282"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "372"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "permission of the department."
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:46:21.818Z",
+    "original_title": "Directed Laboratory/Library/Field Research"
+  },
+  {
+    "department": "ARCH",
+    "number": "483",
+    "original_prerequisites": "ARCH 383 or approval by the instructor after the interview.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "383"
+        },
+        {
+          "type": "permission",
+          "note": "approval by the instructor after the interview."
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:46:52.345Z",
+    "original_title": "Ancient and Forensic DNA Lab Project"
+  },
+  {
+    "department": "ARCH",
+    "number": "498",
+    "original_prerequisites": "Permission of the department.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "permission",
+      "note": "Permission of the department."
+    },
+    "timestamp": "2025-06-30T02:47:16.758Z",
+    "original_title": "Honours Reading"
+  },
+  {
+    "department": "ARCH",
+    "number": "499",
+    "original_prerequisites": "Permission of the department.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "permission",
+      "note": "Permission of the department."
+    },
+    "timestamp": "2025-06-30T02:47:42.822Z",
+    "original_title": "Honours Thesis"
+  },
+  {
+    "department": "ARCH",
+    "number": "551",
+    "original_prerequisites": "Enrollment in the MA or Certificate in HRM.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "program",
+          "program": "MA in HRM"
+        },
+        {
+          "type": "program",
+          "program": "Certificate in HRM"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:48:00.664Z",
+    "original_title": "HRM Business Management"
+  },
+  {
+    "department": "ARCH",
+    "number": "561",
+    "original_prerequisites": "Enrollment in the MA or Certificate in HRM.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "program",
+          "program": "MA in HRM"
+        },
+        {
+          "type": "program",
+          "program": "Certificate in HRM"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:48:21.608Z",
+    "original_title": "HRM Archaeological Research Design and Methods"
+  },
+  {
+    "department": "ARCH",
+    "number": "591",
+    "original_prerequisites": "10 units, consent of supervising faculty member, and approval of the director of the HRM program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 10
+        },
+        {
+          "type": "permission",
+          "note": "consent of supervising faculty member"
+        },
+        {
+          "type": "permission",
+          "note": "approval of the director of the HRM program"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:48:51.632Z",
+    "original_title": "Directed Study in Heritage Resource Management"
+  },
+  {
+    "department": "ARCH",
+    "number": "874",
+    "original_prerequisites": "Only available to students in the Archaeology PhD program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "program",
+      "program": "Archaeology PhD program"
+    },
+    "timestamp": "2025-06-30T02:49:07.112Z",
+    "original_title": "PhD Prospectus & Colloquium"
+  },
+  {
+    "department": "ARCH",
+    "number": "875",
+    "original_prerequisites": "Only available to students in the Archaeology PhD program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "program",
+      "program": "Archaeology PhD program"
+    },
+    "timestamp": "2025-06-30T02:49:34.746Z",
+    "original_title": "PhD Comprehensive Examination"
+  },
+  {
+    "department": "BISC",
+    "number": "101",
+    "original_prerequisites": "Biology 12 (or equivalent) with a minimum grade of C (or BISC 100 with a minimum grade of C-, or BISC 113 with a minimum grade of C+, or BPK 105 with a minimum grade of C+, or HSCI 100 with a minimum grade of C+); and Chemistry 12 (or equivalent) with a minimum grade of C (or CHEM 111 with a minimum grade of C-).",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "HSCourse",
+              "course": "Biology 12",
+              "minGrade": "C",
+              "orEquivalent": "true"
+            },
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "100",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "113",
+              "minGrade": "C+"
+            },
+            {
+              "type": "course",
+              "department": "BPK",
+              "number": "105",
+              "minGrade": "C+"
+            },
+            {
+              "type": "course",
+              "department": "HSCI",
+              "number": "100",
+              "minGrade": "C+"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "HSCourse",
+              "course": "Chemistry 12",
+              "minGrade": "C",
+              "orEquivalent": "true"
+            },
+            {
+              "type": "course",
+              "department": "CHEM",
+              "number": "111",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:52:00.854Z",
+    "original_title": "General Biology"
+  },
+  {
+    "department": "BISC",
+    "number": "102",
+    "original_prerequisites": "Biology 12 (or equivalent) with a minimum grade of C (or BISC 100 with a minimum grade of C-, or BISC 113 with a minimum grade of C+, or BPK 105 with a minimum grade of C+, or HSCI 100 with a minimum grade of C+).",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "HSCourse",
+          "course": "Biology 12",
+          "minGrade": "C",
+          "orEquivalent": "true"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "100",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "113",
+          "minGrade": "C+"
+        },
+        {
+          "type": "course",
+          "department": "BPK",
+          "number": "105",
+          "minGrade": "C+"
+        },
+        {
+          "type": "course",
+          "department": "HSCI",
+          "number": "100",
+          "minGrade": "C+"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:52:54.422Z",
+    "original_title": "General Biology"
+  },
+  {
+    "department": "BISC",
+    "number": "171",
+    "original_prerequisites": "",
+    "original_corequisites": "BISC 101 or 102; and completion of fewer than 60 units.",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "corequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "102"
+            }
+          ]
+        },
+        {
+          "type": "other",
+          "note": "completion of fewer than 60 units"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:56:24.515Z",
+    "original_title": "Biological Sciences Undergraduate Seminar"
+  },
+  {
+    "department": "BISC",
+    "number": "202",
+    "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T02:57:55.934Z",
+    "original_title": "Genetics"
+  },
+  {
+    "department": "BISC",
+    "number": "204",
+    "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:00:48.279Z",
+    "original_title": "Ecology"
+  },
+  {
+    "department": "BISC",
+    "number": "212",
+    "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-, and completion of less than 60 units; or permission of the instructor.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "101",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "102",
+              "minGrade": "C-"
+            },
+            {
+              "type": "other",
+              "note": "completion of less than 60 units"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "permission of the instructor"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:08:46.551Z",
+    "original_title": "Biological Research"
+  },
+  {
+    "department": "BISC",
+    "number": "300",
+    "original_prerequisites": "BISC 202 with a minimum grade of C-. Recommended: BISC 204.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "course",
+      "department": "BISC",
+      "number": "202",
+      "minGrade": "C-"
+    },
+    "recommended_prerequisite": {
+      "type": "course",
+      "department": "BISC",
+      "number": "204"
+    },
+    "timestamp": "2025-06-30T03:10:49.430Z",
+    "original_title": "Evolution"
+  },
+  {
+    "department": "BISC",
+    "number": "302W",
+    "original_prerequisites": "BISC 202 and MBB 222, both with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "202",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "222",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:11:08.244Z",
+    "original_title": "Genetic Analysis"
+  },
+  {
+    "department": "BISC",
+    "number": "303",
+    "original_prerequisites": "BISC 102, MBB 222, and MBB 231, all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "222",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:11:45.607Z",
+    "original_title": "Microbiology"
+  },
+  {
+    "department": "BISC",
+    "number": "305",
+    "original_prerequisites": "(BISC 205 or BPK 205) and MBB 231, both with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "205",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "BPK",
+              "number": "205",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:15:46.390Z",
+    "original_title": "Animal Physiology"
+  },
+  {
+    "department": "BISC",
+    "number": "306",
+    "original_prerequisites": "BISC 101, 102, and (BISC 204 or GEOG 215), all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "204",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "GEOG",
+              "number": "215",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:19:41.281Z",
+    "original_title": "Invertebrate Biology"
+  },
+  {
+    "department": "BISC",
+    "number": "308",
+    "original_prerequisites": "BISC 101, 102, and (BISC 204 or GEOG 215), all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "204",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "GEOG",
+              "number": "215",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:20:57.693Z",
+    "original_title": "Environmental Toxicology: An Ecological Perspective"
+  },
+  {
+    "department": "BISC",
+    "number": "309",
+    "original_prerequisites": "BISC 204 with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "course",
+      "department": "BISC",
+      "number": "204",
+      "minGrade": "C-"
+    },
+    "timestamp": "2025-06-30T03:21:24.836Z",
+    "original_title": "Conservation Biology"
+  },
+  {
+    "department": "BISC",
+    "number": "313",
+    "original_prerequisites": "BISC 101 and (BISC 204, or BISC 205, or GEOG 215, or MBB 231), both with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "204",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "205",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "GEOG",
+              "number": "215",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MBB",
+              "number": "231",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:25:18.023Z",
+    "original_title": "Environmental Toxicology: A Mechanistic Perspective"
+  },
+  {
+    "department": "BISC",
+    "number": "316",
+    "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:26:46.562Z",
+    "original_title": "Vertebrate Biology"
+  },
+  {
+    "department": "BISC",
+    "number": "317",
+    "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:27:11.621Z",
+    "original_title": "Insect Biology"
+  },
+  {
+    "department": "BISC",
+    "number": "318",
+    "original_prerequisites": "BISC 101, 102, and (BISC 204 or HSCI 212), all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "204",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "HSCI",
+              "number": "212",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:27:35.524Z",
+    "original_title": "Parasitology"
+  },
+  {
+    "department": "BISC",
+    "number": "333",
+    "original_prerequisites": "BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "202",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "222",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:30:54.567Z",
+    "original_title": "Developmental Biology"
+  },
+  {
+    "department": "BISC",
+    "number": "337",
+    "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:31:13.542Z",
+    "original_title": "Plant Biology"
+  },
+  {
+    "department": "BISC",
+    "number": "341",
+    "original_prerequisites": "Acceptance in the Biological Sciences Co-operative Education Program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "permission",
+      "note": "Acceptance in the Biological Sciences Co-operative Education Program."
+    },
+    "timestamp": "2025-06-30T03:31:45.191Z",
+    "original_title": "Practicum I"
+  },
+  {
+    "department": "BISC",
+    "number": "342",
+    "original_prerequisites": "BISC 341 and readmission to the Science Co-op Education Program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "341"
+        },
+        {
+          "type": "program",
+          "program": "readmission to the Science Co-op Education Program"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:32:11.222Z",
+    "original_title": "Practicum II"
+  },
+  {
+    "department": "BISC",
+    "number": "360W",
+    "original_prerequisites": "BISC 202, (BISC 204 or GEOG 215), and STAT 201, all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "202",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "204",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "GEOG",
+              "number": "215",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "course",
+          "department": "STAT",
+          "number": "201",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:34:21.810Z",
+    "original_title": "Techniques in Ecology and Evolution"
+  },
+  {
+    "department": "BISC",
+    "number": "366",
+    "original_prerequisites": "BISC 205 and MBB 231, both with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "205",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:35:31.748Z",
+    "original_title": "Plant Physiology"
+  },
+  {
+    "department": "BISC",
+    "number": "371",
+    "original_prerequisites": "A minimum of 45 units.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "creditCount",
+      "credits": 45
+    },
+    "timestamp": "2025-06-30T03:36:05.521Z",
+    "original_title": "Special Topics in Biology for Non-majors"
+  },
+  {
+    "department": "BISC",
+    "number": "373",
+    "original_prerequisites": "60 units.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "creditCount",
+      "credits": 60
+    },
+    "timestamp": "2025-06-30T03:36:26.158Z",
+    "original_title": "Brewing Science"
+  },
+  {
+    "department": "BISC",
+    "number": "405",
+    "original_prerequisites": "Students complete one of: (BISC 205 and MBB 231), or (BPK 205 and MBB 231), or BPK 306, or HSCI 321; each with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "205",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MBB",
+              "number": "231",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "BPK",
+              "number": "205",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MBB",
+              "number": "231",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "course",
+          "department": "BPK",
+          "number": "306",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "HSCI",
+          "number": "321",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:37:30.695Z",
+    "original_title": "Neurobiology"
+  },
+  {
+    "department": "BISC",
+    "number": "407",
+    "original_prerequisites": "BISC 102, (BISC 204 or GEOG 215), and MATH 154, all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "204",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "GEOG",
+              "number": "215",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "154",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:39:42.420Z",
+    "original_title": "Population Dynamics"
+  },
+  {
+    "department": "BISC",
+    "number": "410",
+    "original_prerequisites": "BISC 102 and (BISC 204 or GEOG 215), both with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "204",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "GEOG",
+              "number": "215",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:40:14.930Z",
+    "original_title": "Behavioural Ecology"
+  },
+  {
+    "department": "BISC",
+    "number": "412",
+    "original_prerequisites": "BISC 101, 102, and (BISC 204 or GEOG 215), all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "204",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "GEOG",
+              "number": "215",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:40:41.584Z",
+    "original_title": "Aquatic Ecology"
+  },
+  {
+    "department": "BISC",
+    "number": "413",
+    "original_prerequisites": "BISC 204 with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "course",
+      "department": "BISC",
+      "number": "204",
+      "minGrade": "C-"
+    },
+    "timestamp": "2025-06-30T03:41:34.109Z",
+    "original_title": "Fisheries Ecology"
+  },
+  {
+    "department": "BISC",
+    "number": "414",
+    "original_prerequisites": "BISC 204 or GEOG 215, with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "204",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "GEOG",
+          "number": "215",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:42:26.651Z",
+    "original_title": "Limnology"
+  },
+  {
+    "department": "BISC",
+    "number": "420",
+    "original_prerequisites": "BISC 204 or GEOG 215, with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "204",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "GEOG",
+          "number": "215",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:42:45.658Z",
+    "original_title": "Community Ecology"
+  },
+  {
+    "department": "BISC",
+    "number": "423",
+    "original_prerequisites": "BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-. Recommended: BISC 333 or MBB 331.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "202",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "222",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "recommended_prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "333"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "331"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:43:11.967Z",
+    "original_title": "Developmental Neurobiology"
+  },
+  {
+    "department": "BISC",
+    "number": "424",
+    "original_prerequisites": "BISC 202, MBB 222, MBB 231, and (BISC 357 or MBB 331), all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "202",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "222",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "357",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MBB",
+              "number": "331",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:43:48.739Z",
+    "original_title": "Applied Genomics"
+  },
+  {
+    "department": "BISC",
+    "number": "425",
+    "original_prerequisites": "(BISC 205 or BPK 205) and MBB 231, both with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "205",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "BPK",
+              "number": "205",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:44:35.120Z",
+    "original_title": "Sensory Biology"
+  },
+  {
+    "department": "BISC",
+    "number": "430",
+    "original_prerequisites": "MBB 231 and (BISC 303, or BISC 328, or BISC 337, or BISC 366), both with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "303",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "328",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "337",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "366",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:45:44.096Z",
+    "original_title": "Microbe-Plant Interactions"
+  },
+  {
+    "department": "BISC",
+    "number": "440W",
+    "original_prerequisites": "BISC 300 and STAT 201, both with a minimum grade of C+, and (75 units or permission of the instructor).",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "300",
+          "minGrade": "C+"
+        },
+        {
+          "type": "course",
+          "department": "STAT",
+          "number": "201",
+          "minGrade": "C+"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "creditCount",
+              "credits": 75
+            },
+            {
+              "type": "permission",
+              "note": "permission of the instructor"
+            }
+          ]
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T03:46:57.822Z",
+    "original_title": "Biodiversity"
+  },
+  {
+    "department": "BISC",
+    "number": "441",
+    "original_prerequisites": "BISC 202 or 204, both with a minimum grade of C-. Recommended: BISC 300.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "202",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "204",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "recommended_prerequisite": {
+      "type": "course",
+      "department": "BISC",
+      "number": "300"
+    },
+    "timestamp": "2025-06-30T03:47:35.425Z",
+    "original_title": "Evolution of Health and Disease"
+  },
+  {
+    "department": "ACMA",
+    "number": "201",
+    "original_prerequisites": "MATH 152 with a minimum grade of C; or MATH 155 or MATH 158, with a grade of at least B.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 210 cannot take ACMA 201 for further credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "152",
+          "minGrade": "C"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "155",
+              "minGrade": "B"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "158",
+              "minGrade": "B"
+            }
+          ]
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "ACMA",
+        "course": "210"
+      }
+    ],
+    "timestamp": "2025-06-30T05:00:50.647Z",
+    "original_title": "Interest Theory and Applications"
+  },
+  {
+    "department": "ACMA",
+    "number": "301",
+    "original_prerequisites": "ACMA 201 (or 210), with a minimum grade of C. Corequisite: STAT 285.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 320 cannot take ACMA 301 for further credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "201",
+          "minGrade": "C"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "210",
+          "minGrade": "C"
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "STAT",
+      "number": "285"
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "ACMA",
+        "course": "320"
+      }
+    ],
+    "timestamp": "2025-06-30T05:02:56.545Z",
+    "original_title": "Long-Term Actuarial Mathematics I"
+  },
+  {
+    "department": "ACMA",
+    "number": "321",
+    "original_prerequisites": "ACMA 101 with a minimum grade of C. Corequisite: STAT 330, ACMA 231.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 355 may not take this course for further credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "course",
+      "department": "ACMA",
+      "number": "101",
+      "minGrade": "C"
+    },
+    "corequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "STAT",
+          "number": "330"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "231"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "ACMA",
+        "course": "355"
+      }
+    ],
+    "timestamp": "2025-06-30T05:04:35.587Z",
+    "original_title": "Fundamentals of Short-Term Insurance"
+  },
+  {
+    "department": "ACMA",
+    "number": "360W",
+    "original_prerequisites": "ACMA 301 (or 320), with a minimum grade of C.",
+    "original_corequisites": "",
+    "original_notes": "Students who have taken STAT 300W first may not then take this course for further credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "301",
+          "minGrade": "C"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "320",
+          "minGrade": "C"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "STAT",
+        "course": "300W"
+      }
+    ],
+    "timestamp": "2025-06-30T05:05:33.381Z",
+    "original_title": "Actuarial Communication"
+  },
+  {
+    "department": "ACMA",
+    "number": "401",
+    "original_prerequisites": "ACMA 301 (or 320), with a minimum grade of C.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 425 cannot take ACMA 401 for further credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "301",
+          "minGrade": "C"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "320",
+          "minGrade": "C"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "ACMA",
+        "course": "425"
+      }
+    ],
+    "timestamp": "2025-06-30T05:06:32.070Z",
+    "original_title": "Long-Term Actuarial Mathematics II"
+  },
+  {
+    "department": "ARCH",
+    "number": "282",
+    "original_prerequisites": "ARCH 101 or ARCH 201.",
+    "original_corequisites": "",
+    "original_notes": "Students who have completed ARCH 372 cannot take ARCH 282 for additional credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "ARCH",
+        "course": "372"
+      }
+    ],
+    "timestamp": "2025-06-30T05:07:37.731Z",
+    "original_title": "Material Culture Analysis"
+  },
+  {
+    "department": "ARCH",
+    "number": "312",
+    "original_prerequisites": "One of the following courses: ARCH 100, ARCH 101, ARCH 201, HS 100, HS 231, HS 232, HS 277, HIST 277 or by permission of the instructor.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for HS 312 cannot take this course for further credit. Students with credit for ARCH 321 under the title \"Select Regions in World Archaeology I: Greece\" may not take this course for further credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "231"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "232"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "277"
+        },
+        {
+          "type": "course",
+          "department": "HIST",
+          "number": "277"
+        },
+        {
+          "type": "permission",
+          "note": "by permission of the instructor"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "HS",
+        "course": "312"
+      },
+      {
+        "type": "conflict_course",
+        "subject": "ARCH",
+        "course": "321",
+        "title": "Select Regions in World Archaeology I: Greece"
+      }
+    ],
+    "timestamp": "2025-06-30T05:14:00.701Z",
+    "original_title": "Greek Art and Archaeology"
+  },
+  {
+    "department": "ARCH",
+    "number": "313",
+    "original_prerequisites": "One of the following courses: ARCH 100, ARCH 201, HS 100, HS 231, HS 232, HS/HIST 277 or by permission of the instructor.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for HS 313 cannot take this course for further credit. Students with credit for ARCH 332 under the title \"Special Topics in Archaeology I: Roman Art and Archaeology\" may not take this course for further credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "231"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "232"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "277"
+        },
+        {
+          "type": "course",
+          "department": "HIST",
+          "number": "277"
+        },
+        {
+          "type": "permission",
+          "note": "permission of the instructor"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "HS",
+        "course": "313"
+      },
+      {
+        "type": "conflict_course",
+        "subject": "ARCH",
+        "course": "332",
+        "title": "Special Topics in Archaeology I: Roman Art and Archaeology"
+      }
+    ],
+    "timestamp": "2025-06-30T05:15:57.245Z",
+    "original_title": "Roman Art and Archaeology"
+  },
+  {
+    "department": "ARCH",
+    "number": "344",
+    "original_prerequisites": "ARCH 131 or any lower division biology course.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ARCH 333 Special Topics in Archaeology II: Primate Behaviour may not take this course for further credit.  ",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "131"
+        },
+        {
+          "type": "courseCount",
+          "count": 1,
+          "department": "BIOL",
+          "level": "LD"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "ARCH",
+        "course": "333",
+        "title": "Special Topics in Archaeology II: Primate Behaviour"
+      }
+    ],
+    "timestamp": "2025-06-30T05:16:47.375Z",
+    "original_title": "Primate Behaviour"
+  },
+  {
+    "department": "ARCH",
+    "number": "349",
+    "original_prerequisites": "ARCH 101 or ARCH 201, and 45 units.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ARCH 332 Special Topics in Archaeology I: Mgt. of Archaeological Collections and ARCH 333 Special Topics in Archaeology II: Mgt. of Archaeological Collections  may not take this course for further credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "201"
+            }
+          ]
+        },
+        {
+          "type": "creditCount",
+          "credits": 45
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "ARCH",
+        "course": "332",
+        "title": "Special Topics in Archaeology I: Mgt. of Archaeological Collections"
+      },
+      {
+        "type": "conflict_course",
+        "subject": "ARCH",
+        "course": "333",
+        "title": "Special Topics in Archaeology II: Mgt. of Archaeological Collections"
+      }
+    ],
+    "timestamp": "2025-06-30T05:18:08.576Z",
+    "original_title": "Management of Archaeological Collections"
+  },
+  {
+    "department": "ARCH",
+    "number": "382",
+    "original_prerequisites": "ARCH 282 or 372.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ARCH 485 may not take this course for further credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "282"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "372"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "ARCH",
+        "course": "485"
+      }
+    ],
+    "timestamp": "2025-06-30T05:25:39.629Z",
+    "original_title": "Lithic Technology"
+  },
+  {
+    "department": "BISC",
+    "number": "205",
+    "original_prerequisites": "BISC 101, BISC 102, and PHYS 101, all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "Students who have taken BISC 305 or BISC 366 first may not then take this course for further credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "PHYS",
+          "number": "101",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "BISC",
+        "course": "305"
+      },
+      {
+        "type": "conflict_course",
+        "subject": "BISC",
+        "course": "366"
+      }
+    ],
+    "timestamp": "2025-06-30T05:26:40.926Z",
+    "original_title": "Principles of Physiology"
+  },
+  {
+    "department": "BISC",
+    "number": "327",
+    "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "Students who have taken BISC 326 first may not then take this course for further credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "BISC",
+        "course": "326"
+      }
+    ],
+    "timestamp": "2025-06-30T05:27:36.477Z",
+    "original_title": "Algal Biology"
+  },
+  {
+    "department": "BISC",
+    "number": "328",
+    "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-. Recommended: BISC 204.",
+    "original_corequisites": "",
+    "original_notes": "Students who have taken BISC 326 first may not then take this course for further credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "recommended_prerequisite": {
+      "type": "course",
+      "department": "BISC",
+      "number": "204"
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "BISC",
+        "course": "326"
+      }
+    ],
+    "timestamp": "2025-06-30T05:28:10.205Z",
+    "original_title": "Fungal Biology and Ecology"
+  },
+  {
+    "department": "BISC",
+    "number": "357",
+    "original_prerequisites": "BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-. Recommended: MBB 331.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for MBB 308 may not take this course for further credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "202",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "222",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "recommended_prerequisite": {
+      "type": "course",
+      "department": "MBB",
+      "number": "331"
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "MBB",
+        "course": "308"
+      }
+    ],
+    "timestamp": "2025-06-30T05:31:48.525Z",
+    "original_title": "Genetic Engineering"
+  },
+  {
+    "department": "BISC",
+    "number": "428",
+    "original_prerequisites": "BISC 101, BISC 102, MBB 222, and MBB 231, all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "Students who have completed BISC 472 under the title \"Advanced Cell Biology\" may not take this course for further credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "101",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "102",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "222",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "BISC",
+        "course": "472",
+        "title": "Advanced Cell Biology"
+      }
+    ],
+    "timestamp": "2025-06-30T05:32:43.243Z",
+    "original_title": "Cell Anatomy"
+  },
+  {
+    "department": "BISC",
+    "number": "433",
+    "original_prerequisites": "MBB 222, MBB 231, and BISC 303, all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for BISC 475 under the title \"Environmental Microbiology\" may not take this course for further credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "222",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "303",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "BISC",
+        "course": "475",
+        "title": "Environmental Microbiology"
+      }
+    ],
+    "timestamp": "2025-06-30T05:33:18.195Z",
+    "original_title": "Environmental Microbiology"
+  },
+  {
+    "department": "BISC",
+    "number": "443",
+    "original_prerequisites": "BISC 342 and readmission to the Science Co-op Education Program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "342"
+        },
+        {
+          "type": "program",
+          "program": "readmission to the Science Co-op Education Program"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T05:36:00.927Z",
+    "original_title": "Practicum III"
+  },
+  {
+    "department": "BISC",
+    "number": "444",
+    "original_prerequisites": "BISC 443 and re-admission to the science co-operative education program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "443"
+        },
+        {
+          "type": "permission",
+          "note": "re-admission to the science co-operative education program."
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T05:37:47.666Z",
+    "original_title": "Practicum IV"
+  },
+  {
+    "department": "BISC",
+    "number": "445",
+    "original_prerequisites": "BISC 205 and MBB 231, both with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "205",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T05:38:32.857Z",
+    "original_title": "Environmental Physiology of Animals"
+  },
+  {
+    "department": "BISC",
+    "number": "446",
+    "original_prerequisites": "BISC 444 and readmission to the Science Co-op Education Program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "444"
+        },
+        {
+          "type": "program",
+          "program": "readmission to the Science Co-op Education Program"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T05:40:13.594Z",
+    "original_title": "Practicum V"
+  },
+  {
+    "department": "BISC",
+    "number": "447",
+    "original_prerequisites": "MBB 322 or BISC 333, with a minimum grade of C.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for MBB 447 may not take this course for further credit. Students with credit for MBB 440 or BISC 472 under the title \"Stem Cell Biology and Applications\" may not take this course for further credit.",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "322",
+          "minGrade": "C"
+        },
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "333",
+          "minGrade": "C"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "subject": "MBB",
+        "course": "447"
+      },
+      {
+        "type": "conflict_course",
+        "subject": "MBB",
+        "course": "440",
+        "title": "Stem Cell Biology and Applications"
+      },
+      {
+        "type": "conflict_course",
+        "subject": "BISC",
+        "course": "472",
+        "title": "Stem Cell Biology and Applications"
+      }
+    ],
+    "timestamp": "2025-06-30T05:40:53.829Z",
+    "original_title": "Stem Cells - Current Trends"
+  },
+  {
+    "department": "BISC",
+    "number": "457",
+    "original_prerequisites": "BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BISC",
+          "number": "202",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "222",
+          "minGrade": "C-"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "231",
+          "minGrade": "C-"
+        }
+      ]
+    },
+    "timestamp": "2025-06-30T05:41:24.016Z",
+    "original_title": "Plant Molecular Biology and Biotechnology"
+  },
+  {
+    "department": "BISC",
+    "number": "471",
+    "original_prerequisites": "To be announced.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "other",
+      "note": "To be announced."
+    },
+    "timestamp": "2025-06-30T05:50:59.984Z",
+    "original_title": "Special Topics in Cells, Molecules and Physiology"
+  },
+  {
+    "department": "BISC",
+    "number": "474",
+    "original_prerequisites": "To be announced.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "r_schema": "1.1",
+    "prerequisite": {
+      "type": "other",
+      "note": "To be announced."
+    },
+    "timestamp": "2025-06-30T05:51:48.037Z",
+    "original_title": "Special Topics in Ecology, Evolution and Conservation"
+  }
+]

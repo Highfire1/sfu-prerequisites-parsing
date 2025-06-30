@@ -782,6 +782,7 @@ ${JSON.stringify(parsed, null, 2)}
                 const enhancedResult: CourseRequirements = {
                     department: parsed.department,
                     number: parsed.number,
+                    original_title: course.title,
                     original_prerequisites: course.prerequisites,
                     original_corequisites: course.corequisites,
                     original_notes: course.notes,
