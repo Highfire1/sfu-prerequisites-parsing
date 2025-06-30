@@ -17,10 +17,6 @@ Parsing one course costs 2.3 cents on average (so far)
 
 ### Currently Known Issues
 
-the credit conflicts field is missing information. 
-- Some conflicts are order based (e.g. BISC 205 is a duplicate credit, but only if BISC 305/306 were taken first) 
-- `"Students with credit for ARCH 321 under the title "Select Regions in World Archaeology I: Greece" may not take this course for further credit."` where the conflict is only if the course is offered with that specific detail is not captured
-
 Some courses are not returned by the API for unknown reasons
 - ARCH 344 mentions ARCH 333, but it is not in the list of courses from the API
 
@@ -36,6 +32,3 @@ Workflow could be faster
 - probably best to generate 100 courses at a time in advance, and then you can go through them without waiting for the llm to generate tokens
 - especially because there are 2653 courses right now and that will actually take many many hours
 - either that or find a faster llm provider
-
-Need to be able to reprompt the llm to make a specific change
-
