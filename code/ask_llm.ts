@@ -426,17 +426,17 @@ ${JSON.stringify(parsedForSchemaCheck, null, 2)}
 
             while (continueLoop) {
                 console.log('\n  👤 What would you like to do?');
-                console.log('  1) Save to database');
+                console.log('  Enter) Save to database');
                 console.log('  2) Blacklist (use sanity check reason)');
                 console.log('  3) Blacklist (custom reason)');
                 console.log('  4) Skip/Continue (don\'t save)');
                 console.log('  5) Print raw OpenRouter response');
                 console.log('  q) Quit processing');
 
-                const choice = await askUserChoice('  Enter your choice (1/2/3/4/5/q):  ');
+                const choice = await askUserChoice('  Enter your choice (Enter/2/3/4/5/q):  ');
 
                 switch (choice.toLowerCase()) {
-                    case '1':
+                    case '':
                         shouldSave = true;
                         console.log('  💾 Saving to database...');
                         continueLoop = false;
@@ -509,7 +509,7 @@ ${JSON.stringify(parsedForSchemaCheck, null, 2)}
                     recommended_prerequisite: parsed.recommended_prerequisite,
                     recommended_corequisite: parsed.recommended_corequisite,
                     credit_conflicts: parsed.credit_conflicts,
-                    
+
                     timestamp: new Date().toISOString()
                 };
 
