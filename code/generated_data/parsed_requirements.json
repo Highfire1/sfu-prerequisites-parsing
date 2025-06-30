@@ -5,7 +5,7 @@
     "original_prerequisites": "",
     "original_corequisites": "MATH 150, 151, 154 or 157.",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "corequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -32,7 +32,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T01:42:01.050Z"
+    "timestamp": "2025-06-30T01:42:01.050Z",
+    "original_title": "Introduction to Insurance"
   },
   {
     "department": "ACMA",
@@ -40,7 +41,7 @@
     "original_prerequisites": "BC Mathematics 12 (or equivalent) or any 100-level MATH course with a minimum grade of C.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -59,7 +60,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T01:42:45.715Z"
+    "timestamp": "2025-06-30T01:42:45.715Z",
+    "original_title": "Tools for Data-Driven Decision Making"
   },
   {
     "department": "ACMA",
@@ -67,7 +69,7 @@
     "original_prerequisites": "Students must apply and receive permission from the co-op coordinator at least one but preferably two terms in advance. They will normally be required to have completed 45 units with a GPA of 2.50 before they may take this practicum course.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -86,7 +88,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T01:44:31.680Z"
+    "timestamp": "2025-06-30T01:44:31.680Z",
+    "original_title": "Job Practicum I"
   },
   {
     "department": "ACMA",
@@ -94,7 +97,7 @@
     "original_prerequisites": "ACMA 336 or Job Practicum I from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -120,7 +123,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T01:44:55.360Z"
+    "timestamp": "2025-06-30T01:44:55.360Z",
+    "original_title": "Job Practicum II"
   },
   {
     "department": "ACMA",
@@ -128,7 +132,7 @@
     "original_prerequisites": "ACMA 201 (or 210), with a minimum grade of C. Corequisite: STAT 285.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -152,7 +156,8 @@
       "department": "STAT",
       "number": "285"
     },
-    "timestamp": "2025-06-30T01:45:38.888Z"
+    "timestamp": "2025-06-30T01:45:38.888Z",
+    "original_title": "Financial Economics for Actuaries"
   },
   {
     "department": "ACMA",
@@ -160,7 +165,7 @@
     "original_prerequisites": "ACMA 321 with a minimum grade of C. Corequisite: STAT 350.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "course",
       "department": "ACMA",
@@ -172,7 +177,8 @@
       "department": "STAT",
       "number": "350"
     },
-    "timestamp": "2025-06-30T01:47:56.834Z"
+    "timestamp": "2025-06-30T01:47:56.834Z",
+    "original_title": "Advanced Models for Short-Term Insurance"
   },
   {
     "department": "ACMA",
@@ -180,7 +186,7 @@
     "original_prerequisites": "ACMA 337 or Job Practicum II from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -206,7 +212,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T01:48:34.747Z"
+    "timestamp": "2025-06-30T01:48:34.747Z",
+    "original_title": "Job Practicum III"
   },
   {
     "department": "ACMA",
@@ -214,7 +221,7 @@
     "original_prerequisites": "ACMA 436 or Job Practicum III from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -240,7 +247,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T01:49:02.320Z"
+    "timestamp": "2025-06-30T01:49:02.320Z",
+    "original_title": "Job Practicum IV"
   },
   {
     "department": "ACMA",
@@ -248,7 +256,7 @@
     "original_prerequisites": "ACMA 437 or Job Practicum IV from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -274,7 +282,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T01:49:26.134Z"
+    "timestamp": "2025-06-30T01:49:26.134Z",
+    "original_title": "Job Practicum V"
   },
   {
     "department": "ACMA",
@@ -282,14 +291,15 @@
     "original_prerequisites": "ACMA 355 with a minimum grade of C.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "course",
       "department": "ACMA",
       "number": "355",
       "minGrade": "C"
     },
-    "timestamp": "2025-06-30T01:51:11.627Z"
+    "timestamp": "2025-06-30T01:51:11.627Z",
+    "original_title": "Loss Models II"
   },
   {
     "department": "ACMA",
@@ -297,12 +307,13 @@
     "original_prerequisites": "Written permission from the Department of Statistics and Actuarial Science undergraduate curriculum committee.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "permission",
       "note": "Written permission from the Department of Statistics and Actuarial Science undergraduate curriculum committee."
     },
-    "timestamp": "2025-06-30T01:51:43.938Z"
+    "timestamp": "2025-06-30T01:51:43.938Z",
+    "original_title": "Directed Studies in Actuarial Science"
   },
   {
     "department": "APMA",
@@ -310,7 +321,7 @@
     "original_prerequisites": "Applied Mathematics PhD stream students only. Must be completed within first six terms of the program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -325,7 +336,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T01:52:08.177Z"
+    "timestamp": "2025-06-30T01:52:08.177Z",
+    "original_title": "PhD Oral Candidacy Exam"
   },
   {
     "department": "ARCH",
@@ -333,12 +345,13 @@
     "original_prerequisites": "30 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "creditCount",
       "credits": 30
     },
-    "timestamp": "2025-06-30T01:52:29.676Z"
+    "timestamp": "2025-06-30T01:52:29.676Z",
+    "original_title": "Special Topics in Archaeology"
   },
   {
     "department": "ARCH",
@@ -346,7 +359,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -363,7 +376,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T01:52:49.080Z"
+    "timestamp": "2025-06-30T01:52:49.080Z",
+    "original_title": "Interpreting the Past: An Introduction to Archaeological Theory"
   },
   {
     "department": "ARCH",
@@ -371,7 +385,7 @@
     "original_prerequisites": "ARCH 100, 101, or 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -393,7 +407,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T01:53:09.622Z"
+    "timestamp": "2025-06-30T01:53:09.622Z",
+    "original_title": "Archaeology of the Old World"
   },
   {
     "department": "ARCH",
@@ -401,7 +416,7 @@
     "original_prerequisites": "Any one of the following: ARCH 100, ARCH 101, EVSC 100, GEOG 100, or REM 100.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -433,7 +448,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T01:53:29.192Z"
+    "timestamp": "2025-06-30T01:53:29.192Z",
+    "original_title": "Archaeology of the New World"
   },
   {
     "department": "ARCH",
@@ -441,12 +457,13 @@
     "original_prerequisites": "12 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "creditCount",
       "credits": 12
     },
-    "timestamp": "2025-06-30T01:54:49.766Z"
+    "timestamp": "2025-06-30T01:54:49.766Z",
+    "original_title": "Archaeological Science"
   },
   {
     "department": "ARCH",
@@ -454,7 +471,7 @@
     "original_prerequisites": "30 units including one of ARCH 100, ARCH 101, ARCH 201, EVSC 100, GEOG 100, or REM 100.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -501,7 +518,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T01:59:08.756Z"
+    "timestamp": "2025-06-30T01:59:08.756Z",
+    "original_title": "Cultural Heritage Management"
   },
   {
     "department": "ARCH",
@@ -509,12 +527,13 @@
     "original_prerequisites": "45 credit hours.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "creditCount",
       "credits": 45
     },
-    "timestamp": "2025-06-30T01:59:50.521Z"
+    "timestamp": "2025-06-30T01:59:50.521Z",
+    "original_title": "Ancient Visual Art"
   },
   {
     "department": "ARCH",
@@ -522,7 +541,7 @@
     "original_prerequisites": "ARCH 272W or 273 or by permission of instructor. Other prerequisites may be required, but will vary according to topic.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -553,7 +572,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:22:35.861Z"
+    "timestamp": "2025-06-30T02:22:35.861Z",
+    "original_title": "Special Topics: Select Regions in World Archaeology I"
   },
   {
     "department": "ARCH",
@@ -561,13 +581,14 @@
     "original_prerequisites": "ARCH 131.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "course",
       "department": "ARCH",
       "number": "131"
     },
-    "timestamp": "2025-06-30T02:22:58.228Z"
+    "timestamp": "2025-06-30T02:22:58.228Z",
+    "original_title": "Special Topics in Biological Anthropology I"
   },
   {
     "department": "ARCH",
@@ -575,7 +596,7 @@
     "original_prerequisites": "ARCH 131 or any lower division biology course.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -593,7 +614,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:23:25.392Z"
+    "timestamp": "2025-06-30T02:23:25.392Z",
+    "original_title": "Special Topics in Biological Anthropology II"
   },
   {
     "department": "ARCH",
@@ -601,7 +623,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -618,7 +640,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:23:51.110Z"
+    "timestamp": "2025-06-30T02:23:51.110Z",
+    "original_title": "Special Topics in Environmental Archaeology"
   },
   {
     "department": "ARCH",
@@ -626,7 +649,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -643,7 +666,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:24:12.247Z"
+    "timestamp": "2025-06-30T02:24:12.247Z",
+    "original_title": "Zooarchaeology"
   },
   {
     "department": "ARCH",
@@ -651,7 +675,7 @@
     "original_prerequisites": "Six units in Archaeology, including ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -679,7 +703,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:26:37.797Z"
+    "timestamp": "2025-06-30T02:26:37.797Z",
+    "original_title": "Archaeological Conservation"
   },
   {
     "department": "ARCH",
@@ -687,12 +712,13 @@
     "original_prerequisites": "Acceptance in the Environment Co-operative Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "program",
       "program": "Environment Co-operative Education Program"
     },
-    "timestamp": "2025-06-30T02:28:12.774Z"
+    "timestamp": "2025-06-30T02:28:12.774Z",
+    "original_title": "Practicum I"
   },
   {
     "department": "ARCH",
@@ -700,7 +726,7 @@
     "original_prerequisites": "ARCH 350 and readmission to the Environment Co-operative Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -716,7 +742,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:28:41.200Z"
+    "timestamp": "2025-06-30T02:28:41.200Z",
+    "original_title": "Practicum II"
   },
   {
     "department": "ARCH",
@@ -724,7 +751,7 @@
     "original_prerequisites": "ARCH 100 or ARCH 101 or ARCH 201, and 45 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -756,7 +783,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:29:10.472Z"
+    "timestamp": "2025-06-30T02:29:10.472Z",
+    "original_title": "Landscape Archaeology"
   },
   {
     "department": "ARCH",
@@ -764,7 +792,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201; or any two of ARCH 100, REM 100, GEOG 100, EVSC 100; and 45 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -823,7 +851,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:33:46.420Z"
+    "timestamp": "2025-06-30T02:33:46.420Z",
+    "original_title": "Archaeological Perspectives on Human Ecology"
   },
   {
     "department": "ARCH",
@@ -831,7 +860,7 @@
     "original_prerequisites": "ARCH 131 or any lower division ARCH, BISC, HSCI, or BPK course.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -854,7 +883,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:35:26.889Z"
+    "timestamp": "2025-06-30T02:35:26.889Z",
+    "original_title": "Human Osteology"
   },
   {
     "department": "ARCH",
@@ -862,7 +892,7 @@
     "original_prerequisites": "ARCH 101 (or ARCH 201). Recommended: ARCH 282 (or ARCH 372) and ARCH 271.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -906,7 +936,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:36:11.335Z"
+    "timestamp": "2025-06-30T02:36:11.335Z",
+    "original_title": "Research Design in Archaeology"
   },
   {
     "department": "ARCH",
@@ -914,7 +945,7 @@
     "original_prerequisites": "ARCH 101, ARCH 201, or 45 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -935,7 +966,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:36:35.872Z"
+    "timestamp": "2025-06-30T02:36:35.872Z",
+    "original_title": "From Soup to Nuts: The Archaeology of Food"
   },
   {
     "department": "ARCH",
@@ -943,7 +975,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201, and any one of ARCH 285, GEOG 251, PSYC 210, STAT 101, STAT 201, STAT 203, or STAT 205.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1007,7 +1039,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:37:28.791Z"
+    "timestamp": "2025-06-30T02:37:28.791Z",
+    "original_title": "Quantitative Methods in Archaeology"
   },
   {
     "department": "ARCH",
@@ -1015,13 +1048,14 @@
     "original_prerequisites": "ARCH 273.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "course",
       "department": "ARCH",
       "number": "273"
     },
-    "timestamp": "2025-06-30T02:37:46.792Z"
+    "timestamp": "2025-06-30T02:37:46.792Z",
+    "original_title": "Pacific Northwest North America"
   },
   {
     "department": "ARCH",
@@ -1029,7 +1063,7 @@
     "original_prerequisites": "Any lower division ARCH, BISC, BPK, CHEM, CRIM or HSCI course.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "courseCount",
       "count": 1,
@@ -1043,7 +1077,8 @@
       ],
       "level": "LD"
     },
-    "timestamp": "2025-06-30T02:38:36.893Z"
+    "timestamp": "2025-06-30T02:38:36.893Z",
+    "original_title": "Ancient and Forensic DNA"
   },
   {
     "department": "ARCH",
@@ -1051,7 +1086,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1068,7 +1103,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:38:53.564Z"
+    "timestamp": "2025-06-30T02:38:53.564Z",
+    "original_title": "Archaeological Resource Management"
   },
   {
     "department": "ARCH",
@@ -1076,7 +1112,7 @@
     "original_prerequisites": "ARCH 282 or 372 and permission of the department. Normally taken concurrently with ARCH 434 and 435.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1119,7 +1155,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:39:19.194Z"
+    "timestamp": "2025-06-30T02:39:19.194Z",
+    "original_title": "Background to Field Work"
   },
   {
     "department": "ARCH",
@@ -1127,7 +1164,7 @@
     "original_prerequisites": "ARCH 282 or 372 and permission of the department. Normally taken concurrently with ARCH 433 and 435.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1170,7 +1207,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:39:57.536Z"
+    "timestamp": "2025-06-30T02:39:57.536Z",
+    "original_title": "Archaeological Field Methods"
   },
   {
     "department": "ARCH",
@@ -1178,7 +1216,7 @@
     "original_prerequisites": "ARCH 282 or 372 and permission of the department. Normally taken concurrently with ARCH 433 and 434.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1221,7 +1259,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:40:37.957Z"
+    "timestamp": "2025-06-30T02:40:37.957Z",
+    "original_title": "Field Work Practicum"
   },
   {
     "department": "ARCH",
@@ -1229,7 +1268,7 @@
     "original_prerequisites": "ARCH 373 and permission of the department. Normally taken concurrently with ARCH 433 and ARCH 434.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1261,7 +1300,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:41:10.143Z"
+    "timestamp": "2025-06-30T02:41:10.143Z",
+    "original_title": "Biological Anthropology Field Practicum"
   },
   {
     "department": "ARCH",
@@ -1269,7 +1309,7 @@
     "original_prerequisites": "ARCH 373 or CRIM 357, BPK 303, BPK 324, BPK 325, BPK 326. ARCH 373 is recommended.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1317,7 +1357,8 @@
       "department": "ARCH",
       "number": "373"
     },
-    "timestamp": "2025-06-30T02:41:42.140Z"
+    "timestamp": "2025-06-30T02:41:42.140Z",
+    "original_title": "Forensic Anthropology"
   },
   {
     "department": "ARCH",
@@ -1325,7 +1366,7 @@
     "original_prerequisites": "ARCH 351 and readmission to the Environment Co-operative Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1341,7 +1382,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:42:19.953Z"
+    "timestamp": "2025-06-30T02:42:19.953Z",
+    "original_title": "Practicum III"
   },
   {
     "department": "ARCH",
@@ -1349,7 +1391,7 @@
     "original_prerequisites": "ARCH 101, 131, 201, 272W and 273.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1381,7 +1423,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:45:16.097Z"
+    "timestamp": "2025-06-30T02:45:16.097Z",
+    "original_title": "Archaeological Theory"
   },
   {
     "department": "ARCH",
@@ -1389,7 +1432,7 @@
     "original_prerequisites": "45 units, including ARCH 282 or 372, and permission of the department.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1420,7 +1463,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:45:48.692Z"
+    "timestamp": "2025-06-30T02:45:48.692Z",
+    "original_title": "Directed Readings"
   },
   {
     "department": "ARCH",
@@ -1428,7 +1472,7 @@
     "original_prerequisites": "45 units, including ARCH 282 or 372, and permission of the department.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1459,7 +1503,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:46:21.818Z"
+    "timestamp": "2025-06-30T02:46:21.818Z",
+    "original_title": "Directed Laboratory/Library/Field Research"
   },
   {
     "department": "ARCH",
@@ -1467,7 +1512,7 @@
     "original_prerequisites": "ARCH 383 or approval by the instructor after the interview.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1483,7 +1528,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:46:52.345Z"
+    "timestamp": "2025-06-30T02:46:52.345Z",
+    "original_title": "Ancient and Forensic DNA Lab Project"
   },
   {
     "department": "ARCH",
@@ -1491,12 +1537,13 @@
     "original_prerequisites": "Permission of the department.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "permission",
       "note": "Permission of the department."
     },
-    "timestamp": "2025-06-30T02:47:16.758Z"
+    "timestamp": "2025-06-30T02:47:16.758Z",
+    "original_title": "Honours Reading"
   },
   {
     "department": "ARCH",
@@ -1504,12 +1551,13 @@
     "original_prerequisites": "Permission of the department.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "permission",
       "note": "Permission of the department."
     },
-    "timestamp": "2025-06-30T02:47:42.822Z"
+    "timestamp": "2025-06-30T02:47:42.822Z",
+    "original_title": "Honours Thesis"
   },
   {
     "department": "ARCH",
@@ -1517,7 +1565,7 @@
     "original_prerequisites": "Enrollment in the MA or Certificate in HRM.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1532,7 +1580,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:48:00.664Z"
+    "timestamp": "2025-06-30T02:48:00.664Z",
+    "original_title": "HRM Business Management"
   },
   {
     "department": "ARCH",
@@ -1540,7 +1589,7 @@
     "original_prerequisites": "Enrollment in the MA or Certificate in HRM.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1555,7 +1604,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:48:21.608Z"
+    "timestamp": "2025-06-30T02:48:21.608Z",
+    "original_title": "HRM Archaeological Research Design and Methods"
   },
   {
     "department": "ARCH",
@@ -1563,7 +1613,7 @@
     "original_prerequisites": "10 units, consent of supervising faculty member, and approval of the director of the HRM program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1582,7 +1632,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:48:51.632Z"
+    "timestamp": "2025-06-30T02:48:51.632Z",
+    "original_title": "Directed Study in Heritage Resource Management"
   },
   {
     "department": "ARCH",
@@ -1590,12 +1641,13 @@
     "original_prerequisites": "Only available to students in the Archaeology PhD program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "program",
       "program": "Archaeology PhD program"
     },
-    "timestamp": "2025-06-30T02:49:07.112Z"
+    "timestamp": "2025-06-30T02:49:07.112Z",
+    "original_title": "PhD Prospectus & Colloquium"
   },
   {
     "department": "ARCH",
@@ -1603,12 +1655,13 @@
     "original_prerequisites": "Only available to students in the Archaeology PhD program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "program",
       "program": "Archaeology PhD program"
     },
-    "timestamp": "2025-06-30T02:49:34.746Z"
+    "timestamp": "2025-06-30T02:49:34.746Z",
+    "original_title": "PhD Comprehensive Examination"
   },
   {
     "department": "BISC",
@@ -1616,7 +1669,7 @@
     "original_prerequisites": "Biology 12 (or equivalent) with a minimum grade of C (or BISC 100 with a minimum grade of C-, or BISC 113 with a minimum grade of C+, or BPK 105 with a minimum grade of C+, or HSCI 100 with a minimum grade of C+); and Chemistry 12 (or equivalent) with a minimum grade of C (or CHEM 111 with a minimum grade of C-).",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1677,7 +1730,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:52:00.854Z"
+    "timestamp": "2025-06-30T02:52:00.854Z",
+    "original_title": "General Biology"
   },
   {
     "department": "BISC",
@@ -1685,7 +1739,7 @@
     "original_prerequisites": "Biology 12 (or equivalent) with a minimum grade of C (or BISC 100 with a minimum grade of C-, or BISC 113 with a minimum grade of C+, or BPK 105 with a minimum grade of C+, or HSCI 100 with a minimum grade of C+).",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1722,7 +1776,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:52:54.422Z"
+    "timestamp": "2025-06-30T02:52:54.422Z",
+    "original_title": "General Biology"
   },
   {
     "department": "BISC",
@@ -1730,7 +1785,7 @@
     "original_prerequisites": "",
     "original_corequisites": "BISC 101 or 102; and completion of fewer than 60 units.",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "corequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1757,7 +1812,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:56:24.515Z"
+    "timestamp": "2025-06-30T02:56:24.515Z",
+    "original_title": "Biological Sciences Undergraduate Seminar"
   },
   {
     "department": "BISC",
@@ -1765,7 +1821,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1784,7 +1840,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T02:57:55.934Z"
+    "timestamp": "2025-06-30T02:57:55.934Z",
+    "original_title": "Genetics"
   },
   {
     "department": "BISC",
@@ -1792,7 +1849,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1811,7 +1868,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:00:48.279Z"
+    "timestamp": "2025-06-30T03:00:48.279Z",
+    "original_title": "Ecology"
   },
   {
     "department": "BISC",
@@ -1819,7 +1877,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-, and completion of less than 60 units; or permission of the instructor.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1852,7 +1910,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:08:46.551Z"
+    "timestamp": "2025-06-30T03:08:46.551Z",
+    "original_title": "Biological Research"
   },
   {
     "department": "BISC",
@@ -1860,7 +1919,7 @@
     "original_prerequisites": "BISC 202 with a minimum grade of C-. Recommended: BISC 204.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "course",
       "department": "BISC",
@@ -1872,7 +1931,8 @@
       "department": "BISC",
       "number": "204"
     },
-    "timestamp": "2025-06-30T03:10:49.430Z"
+    "timestamp": "2025-06-30T03:10:49.430Z",
+    "original_title": "Evolution"
   },
   {
     "department": "BISC",
@@ -1880,7 +1940,7 @@
     "original_prerequisites": "BISC 202 and MBB 222, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1899,7 +1959,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:11:08.244Z"
+    "timestamp": "2025-06-30T03:11:08.244Z",
+    "original_title": "Genetic Analysis"
   },
   {
     "department": "BISC",
@@ -1907,7 +1968,7 @@
     "original_prerequisites": "BISC 102, MBB 222, and MBB 231, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1932,7 +1993,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:11:45.607Z"
+    "timestamp": "2025-06-30T03:11:45.607Z",
+    "original_title": "Microbiology"
   },
   {
     "department": "BISC",
@@ -1940,7 +2002,7 @@
     "original_prerequisites": "(BISC 205 or BPK 205) and MBB 231, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1971,7 +2033,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:15:46.390Z"
+    "timestamp": "2025-06-30T03:15:46.390Z",
+    "original_title": "Animal Physiology"
   },
   {
     "department": "BISC",
@@ -1979,7 +2042,7 @@
     "original_prerequisites": "BISC 101, 102, and (BISC 204 or GEOG 215), all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2016,7 +2079,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:19:41.281Z"
+    "timestamp": "2025-06-30T03:19:41.281Z",
+    "original_title": "Invertebrate Biology"
   },
   {
     "department": "BISC",
@@ -2024,7 +2088,7 @@
     "original_prerequisites": "BISC 101, 102, and (BISC 204 or GEOG 215), all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2061,7 +2125,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:20:57.693Z"
+    "timestamp": "2025-06-30T03:20:57.693Z",
+    "original_title": "Environmental Toxicology: An Ecological Perspective"
   },
   {
     "department": "BISC",
@@ -2069,14 +2134,15 @@
     "original_prerequisites": "BISC 204 with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "course",
       "department": "BISC",
       "number": "204",
       "minGrade": "C-"
     },
-    "timestamp": "2025-06-30T03:21:24.836Z"
+    "timestamp": "2025-06-30T03:21:24.836Z",
+    "original_title": "Conservation Biology"
   },
   {
     "department": "BISC",
@@ -2084,7 +2150,7 @@
     "original_prerequisites": "BISC 101 and (BISC 204, or BISC 205, or GEOG 215, or MBB 231), both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2127,7 +2193,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:25:18.023Z"
+    "timestamp": "2025-06-30T03:25:18.023Z",
+    "original_title": "Environmental Toxicology: A Mechanistic Perspective"
   },
   {
     "department": "BISC",
@@ -2135,7 +2202,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2154,7 +2221,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:26:46.562Z"
+    "timestamp": "2025-06-30T03:26:46.562Z",
+    "original_title": "Vertebrate Biology"
   },
   {
     "department": "BISC",
@@ -2162,7 +2230,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2181,7 +2249,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:27:11.621Z"
+    "timestamp": "2025-06-30T03:27:11.621Z",
+    "original_title": "Insect Biology"
   },
   {
     "department": "BISC",
@@ -2189,7 +2258,7 @@
     "original_prerequisites": "BISC 101, 102, and (BISC 204 or HSCI 212), all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2226,7 +2295,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:27:35.524Z"
+    "timestamp": "2025-06-30T03:27:35.524Z",
+    "original_title": "Parasitology"
   },
   {
     "department": "BISC",
@@ -2234,7 +2304,7 @@
     "original_prerequisites": "BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2259,7 +2329,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:30:54.567Z"
+    "timestamp": "2025-06-30T03:30:54.567Z",
+    "original_title": "Developmental Biology"
   },
   {
     "department": "BISC",
@@ -2267,7 +2338,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2286,7 +2357,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:31:13.542Z"
+    "timestamp": "2025-06-30T03:31:13.542Z",
+    "original_title": "Plant Biology"
   },
   {
     "department": "BISC",
@@ -2294,12 +2366,13 @@
     "original_prerequisites": "Acceptance in the Biological Sciences Co-operative Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "permission",
       "note": "Acceptance in the Biological Sciences Co-operative Education Program."
     },
-    "timestamp": "2025-06-30T03:31:45.191Z"
+    "timestamp": "2025-06-30T03:31:45.191Z",
+    "original_title": "Practicum I"
   },
   {
     "department": "BISC",
@@ -2307,7 +2380,7 @@
     "original_prerequisites": "BISC 341 and readmission to the Science Co-op Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2323,7 +2396,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:32:11.222Z"
+    "timestamp": "2025-06-30T03:32:11.222Z",
+    "original_title": "Practicum II"
   },
   {
     "department": "BISC",
@@ -2331,7 +2405,7 @@
     "original_prerequisites": "BISC 202, (BISC 204 or GEOG 215), and STAT 201, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2368,7 +2442,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:34:21.810Z"
+    "timestamp": "2025-06-30T03:34:21.810Z",
+    "original_title": "Techniques in Ecology and Evolution"
   },
   {
     "department": "BISC",
@@ -2376,7 +2451,7 @@
     "original_prerequisites": "BISC 205 and MBB 231, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2395,7 +2470,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:35:31.748Z"
+    "timestamp": "2025-06-30T03:35:31.748Z",
+    "original_title": "Plant Physiology"
   },
   {
     "department": "BISC",
@@ -2403,12 +2479,13 @@
     "original_prerequisites": "A minimum of 45 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "creditCount",
       "credits": 45
     },
-    "timestamp": "2025-06-30T03:36:05.521Z"
+    "timestamp": "2025-06-30T03:36:05.521Z",
+    "original_title": "Special Topics in Biology for Non-majors"
   },
   {
     "department": "BISC",
@@ -2416,12 +2493,13 @@
     "original_prerequisites": "60 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "creditCount",
       "credits": 60
     },
-    "timestamp": "2025-06-30T03:36:26.158Z"
+    "timestamp": "2025-06-30T03:36:26.158Z",
+    "original_title": "Brewing Science"
   },
   {
     "department": "BISC",
@@ -2429,7 +2507,7 @@
     "original_prerequisites": "Students complete one of: (BISC 205 and MBB 231), or (BPK 205 and MBB 231), or BPK 306, or HSCI 321; each with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -2484,7 +2562,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:37:30.695Z"
+    "timestamp": "2025-06-30T03:37:30.695Z",
+    "original_title": "Neurobiology"
   },
   {
     "department": "BISC",
@@ -2492,7 +2571,7 @@
     "original_prerequisites": "BISC 102, (BISC 204 or GEOG 215), and MATH 154, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2529,7 +2608,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:39:42.420Z"
+    "timestamp": "2025-06-30T03:39:42.420Z",
+    "original_title": "Population Dynamics"
   },
   {
     "department": "BISC",
@@ -2537,7 +2617,7 @@
     "original_prerequisites": "BISC 102 and (BISC 204 or GEOG 215), both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2568,7 +2648,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:40:14.930Z"
+    "timestamp": "2025-06-30T03:40:14.930Z",
+    "original_title": "Behavioural Ecology"
   },
   {
     "department": "BISC",
@@ -2576,7 +2657,7 @@
     "original_prerequisites": "BISC 101, 102, and (BISC 204 or GEOG 215), all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2613,7 +2694,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:40:41.584Z"
+    "timestamp": "2025-06-30T03:40:41.584Z",
+    "original_title": "Aquatic Ecology"
   },
   {
     "department": "BISC",
@@ -2621,14 +2703,15 @@
     "original_prerequisites": "BISC 204 with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "course",
       "department": "BISC",
       "number": "204",
       "minGrade": "C-"
     },
-    "timestamp": "2025-06-30T03:41:34.109Z"
+    "timestamp": "2025-06-30T03:41:34.109Z",
+    "original_title": "Fisheries Ecology"
   },
   {
     "department": "BISC",
@@ -2636,7 +2719,7 @@
     "original_prerequisites": "BISC 204 or GEOG 215, with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -2655,7 +2738,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:42:26.651Z"
+    "timestamp": "2025-06-30T03:42:26.651Z",
+    "original_title": "Limnology"
   },
   {
     "department": "BISC",
@@ -2663,7 +2747,7 @@
     "original_prerequisites": "BISC 204 or GEOG 215, with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -2682,7 +2766,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:42:45.658Z"
+    "timestamp": "2025-06-30T03:42:45.658Z",
+    "original_title": "Community Ecology"
   },
   {
     "department": "BISC",
@@ -2690,7 +2775,7 @@
     "original_prerequisites": "BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-. Recommended: BISC 333 or MBB 331.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2731,7 +2816,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:43:11.967Z"
+    "timestamp": "2025-06-30T03:43:11.967Z",
+    "original_title": "Developmental Neurobiology"
   },
   {
     "department": "BISC",
@@ -2739,7 +2825,7 @@
     "original_prerequisites": "BISC 202, MBB 222, MBB 231, and (BISC 357 or MBB 331), all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2782,7 +2868,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:43:48.739Z"
+    "timestamp": "2025-06-30T03:43:48.739Z",
+    "original_title": "Applied Genomics"
   },
   {
     "department": "BISC",
@@ -2790,7 +2877,7 @@
     "original_prerequisites": "(BISC 205 or BPK 205) and MBB 231, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2821,7 +2908,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:44:35.120Z"
+    "timestamp": "2025-06-30T03:44:35.120Z",
+    "original_title": "Sensory Biology"
   },
   {
     "department": "BISC",
@@ -2829,7 +2917,7 @@
     "original_prerequisites": "MBB 231 and (BISC 303, or BISC 328, or BISC 337, or BISC 366), both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2872,7 +2960,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:45:44.096Z"
+    "timestamp": "2025-06-30T03:45:44.096Z",
+    "original_title": "Microbe-Plant Interactions"
   },
   {
     "department": "BISC",
@@ -2880,7 +2969,7 @@
     "original_prerequisites": "BISC 300 and STAT 201, both with a minimum grade of C+, and (75 units or permission of the instructor).",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2913,7 +3002,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T03:46:57.822Z"
+    "timestamp": "2025-06-30T03:46:57.822Z",
+    "original_title": "Biodiversity"
   },
   {
     "department": "BISC",
@@ -2921,7 +3011,7 @@
     "original_prerequisites": "BISC 202 or 204, both with a minimum grade of C-. Recommended: BISC 300.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -2945,7 +3035,8 @@
       "department": "BISC",
       "number": "300"
     },
-    "timestamp": "2025-06-30T03:47:35.425Z"
+    "timestamp": "2025-06-30T03:47:35.425Z",
+    "original_title": "Evolution of Health and Disease"
   },
   {
     "department": "ACMA",
@@ -2953,7 +3044,7 @@
     "original_prerequisites": "MATH 152 with a minimum grade of C; or MATH 155 or MATH 158, with a grade of at least B.",
     "original_corequisites": "",
     "original_notes": "Students with credit for ACMA 210 cannot take ACMA 201 for further credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -2991,7 +3082,8 @@
         "course": "210"
       }
     ],
-    "timestamp": "2025-06-30T05:00:50.647Z"
+    "timestamp": "2025-06-30T05:00:50.647Z",
+    "original_title": "Interest Theory and Applications"
   },
   {
     "department": "ACMA",
@@ -2999,7 +3091,7 @@
     "original_prerequisites": "ACMA 201 (or 210), with a minimum grade of C. Corequisite: STAT 285.",
     "original_corequisites": "",
     "original_notes": "Students with credit for ACMA 320 cannot take ACMA 301 for further credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3030,7 +3122,8 @@
         "course": "320"
       }
     ],
-    "timestamp": "2025-06-30T05:02:56.545Z"
+    "timestamp": "2025-06-30T05:02:56.545Z",
+    "original_title": "Long-Term Actuarial Mathematics I"
   },
   {
     "department": "ACMA",
@@ -3038,7 +3131,7 @@
     "original_prerequisites": "ACMA 101 with a minimum grade of C. Corequisite: STAT 330, ACMA 231.",
     "original_corequisites": "",
     "original_notes": "Students with credit for ACMA 355 may not take this course for further credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "course",
       "department": "ACMA",
@@ -3068,7 +3161,8 @@
         "course": "355"
       }
     ],
-    "timestamp": "2025-06-30T05:04:35.587Z"
+    "timestamp": "2025-06-30T05:04:35.587Z",
+    "original_title": "Fundamentals of Short-Term Insurance"
   },
   {
     "department": "ACMA",
@@ -3076,7 +3170,7 @@
     "original_prerequisites": "ACMA 301 (or 320), with a minimum grade of C.",
     "original_corequisites": "",
     "original_notes": "Students who have taken STAT 300W first may not then take this course for further credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3102,7 +3196,8 @@
         "course": "300W"
       }
     ],
-    "timestamp": "2025-06-30T05:05:33.381Z"
+    "timestamp": "2025-06-30T05:05:33.381Z",
+    "original_title": "Actuarial Communication"
   },
   {
     "department": "ACMA",
@@ -3110,7 +3205,7 @@
     "original_prerequisites": "ACMA 301 (or 320), with a minimum grade of C.",
     "original_corequisites": "",
     "original_notes": "Students with credit for ACMA 425 cannot take ACMA 401 for further credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3136,7 +3231,8 @@
         "course": "425"
       }
     ],
-    "timestamp": "2025-06-30T05:06:32.070Z"
+    "timestamp": "2025-06-30T05:06:32.070Z",
+    "original_title": "Long-Term Actuarial Mathematics II"
   },
   {
     "department": "ARCH",
@@ -3144,7 +3240,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "Students who have completed ARCH 372 cannot take ARCH 282 for additional credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3168,7 +3264,8 @@
         "course": "372"
       }
     ],
-    "timestamp": "2025-06-30T05:07:37.731Z"
+    "timestamp": "2025-06-30T05:07:37.731Z",
+    "original_title": "Material Culture Analysis"
   },
   {
     "department": "ARCH",
@@ -3176,7 +3273,7 @@
     "original_prerequisites": "One of the following courses: ARCH 100, ARCH 101, ARCH 201, HS 100, HS 231, HS 232, HS 277, HIST 277 or by permission of the instructor.",
     "original_corequisites": "",
     "original_notes": "Students with credit for HS 312 cannot take this course for further credit. Students with credit for ARCH 321 under the title \"Select Regions in World Archaeology I: Greece\" may not take this course for further credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3240,7 +3337,8 @@
         "title": "Select Regions in World Archaeology I: Greece"
       }
     ],
-    "timestamp": "2025-06-30T05:14:00.701Z"
+    "timestamp": "2025-06-30T05:14:00.701Z",
+    "original_title": "Greek Art and Archaeology"
   },
   {
     "department": "ARCH",
@@ -3248,7 +3346,7 @@
     "original_prerequisites": "One of the following courses: ARCH 100, ARCH 201, HS 100, HS 231, HS 232, HS/HIST 277 or by permission of the instructor.",
     "original_corequisites": "",
     "original_notes": "Students with credit for HS 313 cannot take this course for further credit. Students with credit for ARCH 332 under the title \"Special Topics in Archaeology I: Roman Art and Archaeology\" may not take this course for further credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3307,7 +3405,8 @@
         "title": "Special Topics in Archaeology I: Roman Art and Archaeology"
       }
     ],
-    "timestamp": "2025-06-30T05:15:57.245Z"
+    "timestamp": "2025-06-30T05:15:57.245Z",
+    "original_title": "Roman Art and Archaeology"
   },
   {
     "department": "ARCH",
@@ -3315,7 +3414,7 @@
     "original_prerequisites": "ARCH 131 or any lower division biology course.",
     "original_corequisites": "",
     "original_notes": "Students with credit for ARCH 333 Special Topics in Archaeology II: Primate Behaviour may not take this course for further credit.  ",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3341,7 +3440,8 @@
         "title": "Special Topics in Archaeology II: Primate Behaviour"
       }
     ],
-    "timestamp": "2025-06-30T05:16:47.375Z"
+    "timestamp": "2025-06-30T05:16:47.375Z",
+    "original_title": "Primate Behaviour"
   },
   {
     "department": "ARCH",
@@ -3349,7 +3449,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201, and 45 units.",
     "original_corequisites": "",
     "original_notes": "Students with credit for ARCH 332 Special Topics in Archaeology I: Mgt. of Archaeological Collections and ARCH 333 Special Topics in Archaeology II: Mgt. of Archaeological Collections  may not take this course for further credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3390,7 +3490,8 @@
         "title": "Special Topics in Archaeology II: Mgt. of Archaeological Collections"
       }
     ],
-    "timestamp": "2025-06-30T05:18:08.576Z"
+    "timestamp": "2025-06-30T05:18:08.576Z",
+    "original_title": "Management of Archaeological Collections"
   },
   {
     "department": "ARCH",
@@ -3398,7 +3499,7 @@
     "original_prerequisites": "ARCH 282 or 372.",
     "original_corequisites": "",
     "original_notes": "Students with credit for ARCH 485 may not take this course for further credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3422,7 +3523,8 @@
         "course": "485"
       }
     ],
-    "timestamp": "2025-06-30T05:25:39.629Z"
+    "timestamp": "2025-06-30T05:25:39.629Z",
+    "original_title": "Lithic Technology"
   },
   {
     "department": "BISC",
@@ -3430,7 +3532,7 @@
     "original_prerequisites": "BISC 101, BISC 102, and PHYS 101, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "Students who have taken BISC 305 or BISC 366 first may not then take this course for further credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3467,7 +3569,8 @@
         "course": "366"
       }
     ],
-    "timestamp": "2025-06-30T05:26:40.926Z"
+    "timestamp": "2025-06-30T05:26:40.926Z",
+    "original_title": "Principles of Physiology"
   },
   {
     "department": "BISC",
@@ -3475,7 +3578,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "Students who have taken BISC 326 first may not then take this course for further credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3501,7 +3604,8 @@
         "course": "326"
       }
     ],
-    "timestamp": "2025-06-30T05:27:36.477Z"
+    "timestamp": "2025-06-30T05:27:36.477Z",
+    "original_title": "Algal Biology"
   },
   {
     "department": "BISC",
@@ -3509,7 +3613,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-. Recommended: BISC 204.",
     "original_corequisites": "",
     "original_notes": "Students who have taken BISC 326 first may not then take this course for further credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3540,7 +3644,8 @@
         "course": "326"
       }
     ],
-    "timestamp": "2025-06-30T05:28:10.205Z"
+    "timestamp": "2025-06-30T05:28:10.205Z",
+    "original_title": "Fungal Biology and Ecology"
   },
   {
     "department": "BISC",
@@ -3548,7 +3653,7 @@
     "original_prerequisites": "BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-. Recommended: MBB 331.",
     "original_corequisites": "",
     "original_notes": "Students with credit for MBB 308 may not take this course for further credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3585,7 +3690,8 @@
         "course": "308"
       }
     ],
-    "timestamp": "2025-06-30T05:31:48.525Z"
+    "timestamp": "2025-06-30T05:31:48.525Z",
+    "original_title": "Genetic Engineering"
   },
   {
     "department": "BISC",
@@ -3593,7 +3699,7 @@
     "original_prerequisites": "BISC 101, BISC 102, MBB 222, and MBB 231, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "Students who have completed BISC 472 under the title \"Advanced Cell Biology\" may not take this course for further credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3632,7 +3738,8 @@
         "title": "Advanced Cell Biology"
       }
     ],
-    "timestamp": "2025-06-30T05:32:43.243Z"
+    "timestamp": "2025-06-30T05:32:43.243Z",
+    "original_title": "Cell Anatomy"
   },
   {
     "department": "BISC",
@@ -3640,7 +3747,7 @@
     "original_prerequisites": "MBB 222, MBB 231, and BISC 303, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "Students with credit for BISC 475 under the title \"Environmental Microbiology\" may not take this course for further credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3673,7 +3780,8 @@
         "title": "Environmental Microbiology"
       }
     ],
-    "timestamp": "2025-06-30T05:33:18.195Z"
+    "timestamp": "2025-06-30T05:33:18.195Z",
+    "original_title": "Environmental Microbiology"
   },
   {
     "department": "BISC",
@@ -3681,7 +3789,7 @@
     "original_prerequisites": "BISC 342 and readmission to the Science Co-op Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3697,7 +3805,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T05:36:00.927Z"
+    "timestamp": "2025-06-30T05:36:00.927Z",
+    "original_title": "Practicum III"
   },
   {
     "department": "BISC",
@@ -3705,7 +3814,7 @@
     "original_prerequisites": "BISC 443 and re-admission to the science co-operative education program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3721,7 +3830,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T05:37:47.666Z"
+    "timestamp": "2025-06-30T05:37:47.666Z",
+    "original_title": "Practicum IV"
   },
   {
     "department": "BISC",
@@ -3729,7 +3839,7 @@
     "original_prerequisites": "BISC 205 and MBB 231, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3748,7 +3858,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T05:38:32.857Z"
+    "timestamp": "2025-06-30T05:38:32.857Z",
+    "original_title": "Environmental Physiology of Animals"
   },
   {
     "department": "BISC",
@@ -3756,7 +3867,7 @@
     "original_prerequisites": "BISC 444 and readmission to the Science Co-op Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3772,7 +3883,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T05:40:13.594Z"
+    "timestamp": "2025-06-30T05:40:13.594Z",
+    "original_title": "Practicum V"
   },
   {
     "department": "BISC",
@@ -3780,7 +3892,7 @@
     "original_prerequisites": "MBB 322 or BISC 333, with a minimum grade of C.",
     "original_corequisites": "",
     "original_notes": "Students with credit for MBB 447 may not take this course for further credit. Students with credit for MBB 440 or BISC 472 under the title \"Stem Cell Biology and Applications\" may not take this course for further credit.",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3818,7 +3930,8 @@
         "title": "Stem Cell Biology and Applications"
       }
     ],
-    "timestamp": "2025-06-30T05:40:53.829Z"
+    "timestamp": "2025-06-30T05:40:53.829Z",
+    "original_title": "Stem Cells - Current Trends"
   },
   {
     "department": "BISC",
@@ -3826,7 +3939,7 @@
     "original_prerequisites": "BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3851,7 +3964,8 @@
         }
       ]
     },
-    "timestamp": "2025-06-30T05:41:24.016Z"
+    "timestamp": "2025-06-30T05:41:24.016Z",
+    "original_title": "Plant Molecular Biology and Biotechnology"
   },
   {
     "department": "BISC",
@@ -3859,12 +3973,13 @@
     "original_prerequisites": "To be announced.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "other",
       "note": "To be announced."
     },
-    "timestamp": "2025-06-30T05:50:59.984Z"
+    "timestamp": "2025-06-30T05:50:59.984Z",
+    "original_title": "Special Topics in Cells, Molecules and Physiology"
   },
   {
     "department": "BISC",
@@ -3872,11 +3987,12 @@
     "original_prerequisites": "To be announced.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "r_schema": "1.1",
     "prerequisite": {
       "type": "other",
       "note": "To be announced."
     },
-    "timestamp": "2025-06-30T05:51:48.037Z"
+    "timestamp": "2025-06-30T05:51:48.037Z",
+    "original_title": "Special Topics in Ecology, Evolution and Conservation"
   }
 ]
