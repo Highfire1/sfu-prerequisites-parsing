@@ -32,19 +32,19 @@ interface ParsedCourseRequirements {
 interface SaveCourseRequirements {
     department: string;
     number: string;
+    // Original course data
+    original_prerequisites: string;
+    original_corequisites: string;
+    original_notes: string;
+
+
     rSchema: string;
     prerequisite?: RequirementNode;
     corequisite?: RequirementNode;
     recommended_prerequisite?: RequirementNode;
     recommended_corequisite?: RequirementNode;
     credit_conflicts?: Course[];
-    
-    // Original course data
-    original_title: string;
-    original_prerequisites: string;
-    original_corequisites: string;
-    original_notes: string;
-    
+
     timestamp: string; // ISO 8601 format
 }
 

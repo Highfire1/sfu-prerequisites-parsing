@@ -263,7 +263,7 @@ async function processAllCourses() {
 
             // Skip if blacklisted
             if (isBlacklisted(course, blacklist)) {
-                const blacklistEntry = blacklist.find(item => 
+                const blacklistEntry = blacklist.find(item =>
                     item.department === course.department && item.course_code === course.number
                 );
                 console.log(`[${i + 1}/${courses.length}] Skipping ${course.department} ${course.number} (blacklisted)`);
@@ -499,19 +499,20 @@ ${JSON.stringify(parsedForSchemaCheck, null, 2)}
                 const enhancedResult: CourseRequirements = {
                     department: parsed.department,
                     number: parsed.number,
+                    original_prerequisites: course.prerequisites,
+                    original_corequisites: course.corequisites,
+                    original_notes: course.notes,
                     rSchema: parsed.rSchema,
+                    
                     prerequisite: parsed.prerequisite,
                     corequisite: parsed.corequisite,
                     recommended_prerequisite: parsed.recommended_prerequisite,
                     recommended_corequisite: parsed.recommended_corequisite,
                     credit_conflicts: parsed.credit_conflicts,
-                    original_title: course.title,
-                    original_prerequisites: course.prerequisites,
-                    original_corequisites: course.corequisites,
-                    original_notes: course.notes,
+                    
                     timestamp: new Date().toISOString()
                 };
-                
+
                 results.push(enhancedResult);
                 processedCourses.add(courseKey);
 
@@ -569,24 +570,24 @@ async function addToBlacklist(department: string, courseCode: string, reason: st
         reason,
         timestamp: new Date().toISOString()
     };
-    
+
     // Check if already blacklisted
-    const exists = blacklist.find(item => 
+    const exists = blacklist.find(item =>
         item.department === department && item.course_code === courseCode
     );
-    
+
     if (exists) {
         console.log(`  ⚠️  Course ${department} ${courseCode} is already blacklisted: ${exists.reason}`);
         return;
     }
-    
+
     blacklist.push(newEntry);
     await saveBlacklist(blacklist);
     console.log(`  🚫 Added ${department} ${courseCode} to blacklist: ${reason}`);
 }
 
 function isBlacklisted(course: CourseCondensedInfo, blacklist: BlacklistedCourse[]): boolean {
-    return blacklist.some(item => 
+    return blacklist.some(item =>
         item.department === course.department && item.course_code === course.number
     );
 }
