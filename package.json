@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "parse": "bun run code/ask_llm.ts",
-    "fetch-data": "bun run code/get.ts"
+    "fetch-data": "bun run code/get.ts",
+    "gen-links": "bun run code/make_links.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
