@@ -10,21 +10,30 @@ interface CourseCondensedInfo {
     corequisites: string;
 }
 
-interface Course {
+interface ConflictEquivalentCourse {
+    type: 'conflict_course';
     subject: string;
     course: string;
+    title?: string;
 }
+
+interface ConflictOther {
+    type: 'conflict_other';
+    note: string;
+}
+
+type CreditConflict = ConflictEquivalentCourse | ConflictOther;
 
 // Simplified interface for LLM parsing (without metadata fields)
 interface ParsedCourseRequirements {
     department: string;
     number: string;
-    rSchema: string;
+    r_schema: string;
     prerequisite?: RequirementNode;
     corequisite?: RequirementNode;
     recommended_prerequisite?: RequirementNode;
     recommended_corequisite?: RequirementNode;
-    credit_conflicts?: Course[];
+    credit_conflicts?: CreditConflict[];
     rawResponse?: string;
 }
 
@@ -38,12 +47,12 @@ interface SaveCourseRequirements {
     original_notes: string;
 
 
-    rSchema: string;
+    r_schema: string;
     prerequisite?: RequirementNode;
     corequisite?: RequirementNode;
     recommended_prerequisite?: RequirementNode;
     recommended_corequisite?: RequirementNode;
-    credit_conflicts?: Course[];
+    credit_conflicts?: CreditConflict[];
 
     timestamp: string; // ISO 8601 format
 }
@@ -122,4 +131,4 @@ interface BlacklistedCourse {
     timestamp: string; // ISO 8601 format
 }
 
-export type {CourseCondensedInfo, Course, SaveCourseRequirements as CourseRequirements, ParsedCourseRequirements, RequirementNode, RequirementGroup, RequirementProgram, RequirementCGPA, RequirementUDGPA, RequirementCourse, RequirementHSCourse, RequirementCreditCount, RequirementCourseCount, RequirementPermission, RequirementOther, BlacklistedCourse};
+export type {CourseCondensedInfo, CreditConflict, SaveCourseRequirements as CourseRequirements, ParsedCourseRequirements, RequirementNode, RequirementGroup, RequirementProgram, RequirementCGPA, RequirementUDGPA, RequirementCourse, RequirementHSCourse, RequirementCreditCount, RequirementCourseCount, RequirementPermission, RequirementOther, BlacklistedCourse};

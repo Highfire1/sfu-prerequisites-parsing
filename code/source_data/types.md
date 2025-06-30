@@ -1,23 +1,32 @@
 ```js
 const SCHEMA_VERSION = 'SFUv1';
 
-interface Course {
+
+interface ConflictEquivalentCourse {
+    type: 'conflict_course';
     subject: string;
     course: string;
+    title?: string;
 }
+
+interface ConflictOther {
+    type: 'conflict_other';
+    note: string;
+}
+
+type CreditConflict = ConflictEquivalentCourse | ConflictOther;
 
 interface ParsedCourseRequirements {
     department: string;
     number: string;
-    rSchema: string;
+    r_schema: string;
     prerequisite?: RequirementNode;
     corequisite?: RequirementNode;
     recommended_prerequisite?: RequirementNode;
     recommended_corequisite?: RequirementNode;
-    credit_conflicts?: Course[];
+    credit_conflicts?: CreditConflict[];
     rawResponse?: string;
 }
-
 
 interface RequirementGroup {
     type: 'group';

@@ -4,8 +4,9 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import * as readline from 'readline';
 
-import type { Course, CourseRequirements, ParsedCourseRequirements, RequirementNode, CourseCondensedInfo, BlacklistedCourse } from './types.ts';
-import { prettyPrintRequirement, readablePrintRequirement } from './utilities.js';
+import type { CreditConflict, CourseRequirements, ParsedCourseRequirements, RequirementNode, CourseCondensedInfo, BlacklistedCourse } from './types.js';
+import { prettyPrintRequirement, readablePrintRequirement, validateParsedCourseRequirements } from './utilities.js';
+import type { ValidationResult } from './utilities.js';
 
 // Load environment variables
 config();
@@ -65,12 +66,15 @@ PARSING RULES:
       "type": "permission",
       "note": "Students must apply and receive permission from the co-op coordinator"
     }
-11. For credit conflicts in notes (e.g., "Students with credit for ACMA 210 cannot take ACMA 201 for further credit"), extract them into credit_conflicts array:
-    {
-      "credit_conflicts": [
-        { "subject": "ACMA", "course": "210" }
-      ]
-    }
+11. For credit conflicts in notes, extract them into credit_conflicts array using these types:
+    - For specific course conflicts: { "type": "conflict_course", "subject": "ACMA", "course": "210", "title": "optional course title" }
+    - For other complex restrictions: { "type": "conflict_other", "note": "full description text" }
+    Examples:
+    "Students with credit for ACMA 210 cannot take ACMA 201 for further credit" → 
+    { "type": "conflict_course", "subject": "ACMA", "course": "210" }
+    
+    "BPK major and honours students may not receive credit for BPK 105" →
+    { "type": "conflict_other", "note": "BPK major and honours students may not receive credit for BPK 105" }
 12. You should only return actual prerequisites or corequisites, not general course information or other notes.
 13. Group logic types:
     - ALL_OF: All children must be satisfied (equivalent to AND)
@@ -110,7 +114,7 @@ Some example outputs:
 {
     "department": "MATH",
     "number": "",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
         "type": "group",
         "logic": "ONE_OF",
@@ -127,7 +131,7 @@ Some example outputs:
 {
     "department": "CMPT",
     "number": "383",
-    "rSchema": "SFUv1",
+    "r_schema": "SFUv1",
     "prerequisite": {
         "type": "course",
         "department": "CMPT",
@@ -136,16 +140,20 @@ Some example outputs:
     }
 }
 
-Note: "Students with credit for ACMA 210 cannot take ACMA 201 for further credit."
-{
-    "department": "ACMA",
-    "number": "201",
-    "rSchema": "SFUv1",
-    "credit_conflicts": [
-        { "subject": "ACMA", "course": "210" }
-    ]
+Note: "Students with credit for HS 312 cannot take this course for further credit. Students with credit for ARCH 321 under the title "Select Regions in World Archaeology I: Greece" may not take this course for further credit."
+[
+    {
+        "type": "conflict_course",
+        "subject": "HS",
+        "course": "312"
+    },
+    {
+        "type": "conflict_course",
+        "subject": "ARCH",
+        "course": "321",
+        "title": "Select Regions in World Archaeology I: Greece"
     }
-}
+]
 
 Type definitions follow:
 ${types}
@@ -223,6 +231,172 @@ async function parseCourseRequirements(course: CourseCondensedInfo): Promise<LLM
     }
 }
 
+async function requestRevision(course: CourseCondensedInfo, currentParsed: ParsedCourseRequirements, feedback: string): Promise<LLMResponse> {
+    const revisionPrompt = `You are an expert at parsing university course prerequisites and corequisites from natural language text into structured data.
+
+You previously parsed a course's requirements, but the user has provided feedback for improvements. Please revise the JSON output based on the feedback while maintaining accuracy to the original course information.
+
+Original course info:
+Department: ${course.department}
+Number: ${course.number}
+Title: ${course.title}
+Prerequisites: "${course.prerequisites}"
+Corequisites: "${course.corequisites}"
+Notes: "${course.notes}"
+
+Current parsed JSON:
+${JSON.stringify(currentParsed, null, 2)}
+
+User feedback for revision:
+${feedback}
+
+Please provide a revised ParsedCourseRequirements JSON that addresses the feedback while staying true to the original course requirements. Follow the same schema and parsing rules as before.
+
+Return ONLY the revised JSON, no explanation needed.
+
+Type definitions follow:
+${types}
+`;
+
+    try {
+        const response = await client.chat.completions.create({
+            model: 'google/gemini-2.5-pro',
+            messages: [
+                { role: 'system', content: 'You are an expert course requirements parser. Revise the JSON based on user feedback while maintaining accuracy.' },
+                { role: 'user', content: revisionPrompt }
+            ],
+            temperature: 0.1,
+        });
+
+        const content = response.choices[0]?.message?.content;
+        const rawResponseContent = content || 'No response received';
+
+        if (!content) {
+            return {
+                error: true,
+                reason: 'No response from LLM for revision',
+                confidence: 0
+            };
+        }
+
+        // Parse the JSON response
+        try {
+            // Remove markdown code blocks if present
+            let cleanContent = content.trim();
+            if (cleanContent.startsWith('```json')) {
+                cleanContent = cleanContent.replace(/^```json\s*/, '').replace(/\s*```$/, '');
+            } else if (cleanContent.startsWith('```')) {
+                cleanContent = cleanContent.replace(/^```\s*/, '').replace(/\s*```$/, '');
+            }
+
+            const parsed = JSON.parse(cleanContent) as ParsedCourseRequirements;
+            // Store the raw response from this revision
+            parsed.rawResponse = rawResponseContent;
+            return parsed;
+        } catch (parseError) {
+            return {
+                error: true,
+                reason: `Failed to parse revised LLM response as JSON: ${parseError} - Response: ${content}`,
+                confidence: 0
+            };
+        }
+
+    } catch (error) {
+        return {
+            error: true,
+            reason: `Revision API call failed: ${error}`,
+            confidence: 0
+        };
+    }
+}
+
+async function requestRevisionFromError(course: CourseCondensedInfo, currentError: LLMError, feedback: string): Promise<LLMResponse> {
+    const revisionPrompt = `You are an expert at parsing university course prerequisites and corequisites from natural language text into structured data.
+
+You previously attempted to parse a course's requirements but encountered an error or low confidence. The user has provided feedback to help you try again.
+
+Original course info:
+Department: ${course.department}
+Number: ${course.number}
+Title: ${course.title}
+Prerequisites: "${course.prerequisites}"
+Corequisites: "${course.corequisites}"
+Notes: "${course.notes}"
+
+Previous error:
+Reason: ${currentError.reason}
+Confidence: ${currentError.confidence}%
+
+User feedback to help with parsing:
+${feedback}
+
+Please attempt to parse the course requirements again, taking into account the user's feedback. If you're still not confident enough (>85%), return an error with updated reasoning.
+
+Return ONLY valid JSON - either a ParsedCourseRequirements object or an error object.
+
+IMPORTANT: Do NOT include the following fields in your output as they will be added automatically:
+- original_title, original_prerequisites, original_corequisites, original_notes
+- timestamp
+- rawResponse
+
+Type definitions follow:
+${types}
+`;
+
+    try {
+        const response = await client.chat.completions.create({
+            model: 'google/gemini-2.5-pro',
+            messages: [
+                { role: 'system', content: 'You are an expert course requirements parser. Try again based on user feedback, but only return results if highly confident.' },
+                { role: 'user', content: revisionPrompt }
+            ],
+            temperature: 0.1,
+        });
+
+        const content = response.choices[0]?.message?.content;
+        const rawResponseContent = content || 'No response received';
+
+        if (!content) {
+            return {
+                error: true,
+                reason: 'No response from LLM for error revision',
+                confidence: 0
+            };
+        }
+
+        // Parse the JSON response
+        try {
+            // Remove markdown code blocks if present
+            let cleanContent = content.trim();
+            if (cleanContent.startsWith('```json')) {
+                cleanContent = cleanContent.replace(/^```json\s*/, '').replace(/\s*```$/, '');
+            } else if (cleanContent.startsWith('```')) {
+                cleanContent = cleanContent.replace(/^```\s*/, '').replace(/\s*```$/, '');
+            }
+
+            const parsed = JSON.parse(cleanContent) as LLMResponse;
+            // Store raw response in the proper field if it's a successful parse
+            if (!('error' in parsed)) {
+                parsed.rawResponse = rawResponseContent;
+            }
+            return parsed;
+        } catch (parseError) {
+            return {
+                error: true,
+                reason: `Failed to parse revised LLM response as JSON: ${parseError} - Response: ${content}`,
+                confidence: 0
+            };
+        }
+
+    } catch (error) {
+        return {
+            error: true,
+            reason: `Error revision API call failed: ${error}`,
+            confidence: 0
+        };
+    }
+}
+
 async function processAllCourses() {
     const VITAL_DATA_PATH = path.join(__dirname, 'source_data', 'vital_data.json');
     const OUTPUT_PATH = path.join(__dirname, 'generated_data', 'parsed_requirements.json');
@@ -288,8 +462,18 @@ async function processAllCourses() {
             console.log(`  Corequisites: "${course.corequisites}"`);
             console.log(`  Notes: "${course.notes}"`);
 
+            // Track all LLM responses for this course
+            const llmResponses: { type: string; response: string; timestamp: string }[] = [];
 
-            const parsed = await parseCourseRequirements(course);
+            let parsed = await parseCourseRequirements(course);
+
+            // Store the initial parsing response
+            const initialRawResponse = ('error' in parsed) ? 'Raw response not available for errors' : (parsed.rawResponse || 'Raw response not available');
+            llmResponses.push({
+                type: 'Initial Parsing',
+                response: initialRawResponse,
+                timestamp: new Date().toISOString()
+            });
 
             // Extract the raw response from the proper field
             const rawResponse = ('error' in parsed) ? 'Raw response not available for errors' : (parsed.rawResponse || 'Raw response not available');
@@ -297,7 +481,7 @@ async function processAllCourses() {
             if ('error' in parsed) {
                 console.log(`  ❌ Error (confidence: ${parsed.confidence}%): ${parsed.reason}`);
             } else {
-                console.log(`  ✅ Successfully parsed (using schema: ${parsed.rSchema})`);
+                console.log(`  ✅ Successfully parsed (using schema: ${parsed.r_schema})`);
                 console.log()
                 if (parsed.prerequisite) {
                     console.log(`  📚 Prerequisites:`);
@@ -323,7 +507,12 @@ async function processAllCourses() {
                 if (parsed.credit_conflicts) {
                     console.log(`  ⚠️  Credit Conflicts:`);
                     parsed.credit_conflicts.forEach(conflict => {
-                        console.log(`    - ${conflict.subject} ${conflict.course}`);
+                        if (conflict.type === 'conflict_course') {
+                            const title = conflict.title ? ` (${conflict.title})` : '';
+                            console.log(`    - Equivalent: ${conflict.subject} ${conflict.course}${title}`);
+                        } else if (conflict.type === 'conflict_other') {
+                            console.log(`    - Other: ${conflict.note}`);
+                        }
                     });
                 }
             }
@@ -368,57 +557,53 @@ ${JSON.stringify(parsed, null, 2)}
                 });
 
                 sanityContent = sanityResponse.choices[0]?.message?.content?.trim() || '';
+                
+                // Store the sanity check response
+                llmResponses.push({
+                    type: 'Sanity Check',
+                    response: sanityContent || 'No response from LLM',
+                    timestamp: new Date().toISOString()
+                });
+                
                 if (sanityContent) {
                     console.log(`\n  🔎 Sanity Check: ${sanityContent}`);
                 } else {
                     console.log('\n  🔎 Sanity Check: No response from LLM');
                 }
             } catch (err) {
+                llmResponses.push({
+                    type: 'Sanity Check',
+                    response: `Error calling LLM: ${err}`,
+                    timestamp: new Date().toISOString()
+                });
                 console.log('\n  🔎 Sanity Check: Error calling LLM:', err);
             }
 
-            // Schema check using LLM (Gemini Flash)
+            // Schema validation using code-based validation
             // Remove rawResponse before schema validation
-            let parsedForSchemaCheck: any = parsed;
-            if (parsedForSchemaCheck && typeof parsedForSchemaCheck === 'object' && 'rawResponse' in parsedForSchemaCheck) {
-                parsedForSchemaCheck = { ...parsedForSchemaCheck };
-                delete parsedForSchemaCheck.rawResponse;
+            let parsedFor_schemaCheck: any = parsed;
+            if (parsedFor_schemaCheck && typeof parsedFor_schemaCheck === 'object' && 'rawResponse' in parsedFor_schemaCheck) {
+                parsedFor_schemaCheck = { ...parsedFor_schemaCheck };
+                delete parsedFor_schemaCheck.rawResponse;
             }
-            const schemaCheckPrompt = `
-You are a strict JSON schema validator for course requirements.
 
-Given the following JSON object, check if it strictly matches the ParsedCourseRequirements schema as defined below.
-- Only check for schema validity (types, required fields, allowed values, structure).
-- Do NOT check for logical equivalence or correctness of the requirements.
-- If valid, respond with "Valid".
-- If invalid, respond with "Invalid" and list all schema violations.
-
-ParsedCourseRequirements schema (TypeScript types):
-${types}
-
-JSON to validate:
-${JSON.stringify(parsedForSchemaCheck, null, 2)}
-`;
-
-            try {
-                const schemaCheckResponse = await client.chat.completions.create({
-                    model: 'google/gemini-2.5-flash-preview-05-20',
-                    messages: [
-                        { role: 'system', content: 'You are a strict JSON schema validator.' },
-                        { role: 'user', content: schemaCheckPrompt }
-                    ],
-                    temperature: 0.0,
-                });
-
-                const schemaCheckContent = schemaCheckResponse.choices[0]?.message?.content?.trim();
-                if (schemaCheckContent) {
-                    console.log(`\n  🧩 Schema Check: ${schemaCheckContent}`);
-                } else {
-                    console.log('\n  🧩 Schema Check: No response from LLM');
-                }
-            } catch (err) {
-                console.log('\n  🧩 Schema Check: Error calling LLM:', err);
+            const validationResult: ValidationResult = validateParsedCourseRequirements(parsedFor_schemaCheck);
+            
+            let schemaCheckContent: string;
+            if (validationResult.isValid) {
+                schemaCheckContent = 'Valid';
+            } else {
+                schemaCheckContent = `Invalid - Schema violations:\n${validationResult.errors.map(error => `  • ${error}`).join('\n')}`;
             }
+            
+            // Store the schema check response
+            llmResponses.push({
+                type: 'Schema Check',
+                response: schemaCheckContent,
+                timestamp: new Date().toISOString()
+            });
+            
+            console.log(`\n  🧩 Schema Check: ${schemaCheckContent}`);
 
             // Interactive prompt for user actions
             let shouldSave = false;
@@ -430,10 +615,11 @@ ${JSON.stringify(parsedForSchemaCheck, null, 2)}
                 console.log('  2) Blacklist (use sanity check reason)');
                 console.log('  3) Blacklist (custom reason)');
                 console.log('  4) Skip/Continue (don\'t save)');
-                console.log('  5) Print raw OpenRouter response');
+                console.log('  5) Print all LLM responses');
+                console.log('  6) Request revision');
                 console.log('  q) Quit processing');
 
-                const choice = await askUserChoice('  Enter your choice (Enter/2/3/4/5/q):  ');
+                const choice = await askUserChoice('  Enter your choice (Enter/2/3/4/5/6/q):    ');
 
                 switch (choice.toLowerCase()) {
                     case '':
@@ -474,11 +660,108 @@ ${JSON.stringify(parsedForSchemaCheck, null, 2)}
                         break;
 
                     case '5':
-                        console.log('\n  📄 Raw OpenRouter Response:');
-                        console.log('  ' + '─'.repeat(50));
-                        console.log(rawResponse);
-                        console.log('  ' + '─'.repeat(50));
+                        console.log('\n  📄 All LLM Responses for this course:');
+                        console.log('  ' + '═'.repeat(60));
+                        
+                        llmResponses.forEach((response, index) => {
+                            console.log(`\n  ${index + 1}. ${response.type} (${response.timestamp})`);
+                            console.log('  ' + '─'.repeat(50));
+                            console.log(response.response);
+                        });
+                        
+                        console.log('  ' + '═'.repeat(60));
                         // Don't exit the loop, go back to menu
+                        break;
+
+                    case '6':
+                        // Request revision from Gemini Pro
+                        const revisionFeedback = await askUserChoice('  Enter your feedback for revision: ');
+                        if (!revisionFeedback.trim()) {
+                            console.log('  ⚠️  Empty feedback, returning to menu');
+                            break;
+                        }
+                        
+                        console.log('  🔄 Requesting revision...');
+                        let revisedResult: LLMResponse;
+                        
+                        if ('error' in parsed) {
+                            // Handle revision for error responses
+                            revisedResult = await requestRevisionFromError(course, parsed, revisionFeedback.trim());
+                        } else {
+                            // Handle revision for successful responses
+                            revisedResult = await requestRevision(course, parsed, revisionFeedback.trim());
+                        }
+                        
+                        // Store the revision response
+                        if ('error' in revisedResult) {
+                            llmResponses.push({
+                                type: 'Revision Request',
+                                response: `Error: ${revisedResult.reason}`,
+                                timestamp: new Date().toISOString()
+                            });
+                        } else {
+                            llmResponses.push({
+                                type: 'Revision Request',
+                                response: revisedResult.rawResponse || 'Raw response not available',
+                                timestamp: new Date().toISOString()
+                            });
+                        }
+                        
+                        if ('error' in revisedResult) {
+                            console.log(`  ❌ Revision failed: ${revisedResult.reason}`);
+                        } else {
+                            console.log('  ✅ Revision completed! Updated parsed result:');
+                            // Replace the parsed result with the revision (don't merge, replace completely)
+                            parsed = revisedResult;
+                            
+                            // Perform schema validation on the revised result
+                            let revisedFor_schemaCheck: any = parsed;
+                            if (revisedFor_schemaCheck && typeof revisedFor_schemaCheck === 'object' && 'rawResponse' in revisedFor_schemaCheck) {
+                                revisedFor_schemaCheck = { ...revisedFor_schemaCheck };
+                                delete revisedFor_schemaCheck.rawResponse;
+                            }
+
+                            const revisionValidationResult: ValidationResult = validateParsedCourseRequirements(revisedFor_schemaCheck);
+                            
+                            let revisionSchemaCheckContent: string;
+                            if (revisionValidationResult.isValid) {
+                                revisionSchemaCheckContent = 'Valid';
+                            } else {
+                                revisionSchemaCheckContent = `Invalid - Schema violations:\n${revisionValidationResult.errors.map(error => `  • ${error}`).join('\n')}`;
+                            }
+                            
+                            // Store the revision schema check response
+                            llmResponses.push({
+                                type: 'Revision Schema Check',
+                                response: revisionSchemaCheckContent,
+                                timestamp: new Date().toISOString()
+                            });
+                            
+                            console.log(`\n  🧩 Revision Schema Check: ${revisionSchemaCheckContent}`);
+                            
+                            // Display the updated result - only if it's not an error
+                            if (!('error' in parsed)) {
+                                if (parsed.prerequisite) {
+                                    console.log(`  📚 Prerequisites:`);
+                                    console.log(prettyPrintRequirement(parsed.prerequisite, 2));
+                                }
+                                if (parsed.corequisite) {
+                                    console.log(`  🔗 Corequisites:`);
+                                    console.log(prettyPrintRequirement(parsed.corequisite, 2));
+                                }
+                                if (parsed.credit_conflicts) {
+                                    console.log(`  ⚠️  Credit Conflicts:`);
+                                    parsed.credit_conflicts.forEach(conflict => {
+                                        if (conflict.type === 'conflict_course') {
+                                            const title = conflict.title ? ` (${conflict.title})` : '';
+                                            console.log(`    - Course: ${conflict.subject} ${conflict.course}${title}`);
+                                        } else if (conflict.type === 'conflict_other') {
+                                            console.log(`    - Other: ${conflict.note}`);
+                                        }
+                                    });
+                                }
+                            }
+                        }
                         break;
 
                     case 'q':
@@ -502,7 +785,7 @@ ${JSON.stringify(parsedForSchemaCheck, null, 2)}
                     original_prerequisites: course.prerequisites,
                     original_corequisites: course.corequisites,
                     original_notes: course.notes,
-                    rSchema: parsed.rSchema,
+                    r_schema: parsed.r_schema,
                     
                     prerequisite: parsed.prerequisite,
                     corequisite: parsed.corequisite,
@@ -604,7 +887,7 @@ async function main() {
 }
 
 // Export for potential use in other modules
-export { parseCourseRequirements, processAllCourses };
+export { parseCourseRequirements, requestRevision, requestRevisionFromError, processAllCourses };
 
 // Run if this file is executed directly
 if (import.meta.main) {
