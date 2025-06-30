@@ -8,4 +8,4 @@ initialize data with
 `bun run fetch-data`
 
 then run with
-`bun run process-all`
+`bun run parse`

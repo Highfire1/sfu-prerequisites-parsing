@@ -2,8 +2,7 @@
   "name": "sfu-prerequisites-parsing",
   "private": true,
   "scripts": {
-    "test-single": "bun run code/test_single.ts",
-    "process-all": "bun run code/ask_llm.ts",
+    "parse": "bun run code/ask_llm.ts",
     "fetch-data": "bun run code/get.ts"
   },
   "devDependencies": {
