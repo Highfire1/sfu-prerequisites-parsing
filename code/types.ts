@@ -1,4 +1,4 @@
-const SCHEMA_VERSION = 'SFUv0.10';
+const SCHEMA_VERSION = 'SFUv1';
 
 // Import types
 interface CourseCondensedInfo {
