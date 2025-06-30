@@ -9,3 +9,7 @@ initialize data with
 
 then run with
 `bun run parse`
+
+You will need an `OPENROUTER_API_KEY` in a `.env` file.
+
+Parsing one course requires about 3 to 15 cents depending on its complexity
