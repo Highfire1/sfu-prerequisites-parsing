@@ -12,7 +12,7 @@ then run with
 
 You will need an `OPENROUTER_API_KEY` in a `.env` file.
 
-Parsing one course requires about 3 to 15 cents depending on its complexity
+Parsing one course costs 2.3 cents on average (so far)
 
 
 ### Currently Known Issues
