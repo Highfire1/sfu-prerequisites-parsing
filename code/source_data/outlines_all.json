@@ -25732,7 +25732,9 @@
       "degreeLevel": "UGRD",
       "offerings": [
         {
-          "instructors": [],
+          "instructors": [
+            "TBA TBA"
+          ],
           "term": "Fall 2025"
         },
         {
@@ -26188,7 +26190,9 @@
       "degreeLevel": "UGRD",
       "offerings": [
         {
-          "instructors": [],
+          "instructors": [
+            "TBA TBA"
+          ],
           "term": "Fall 2025"
         },
         {
@@ -27029,7 +27033,9 @@
       "degreeLevel": "UGRD",
       "offerings": [
         {
-          "instructors": [],
+          "instructors": [
+            "TBA TBA"
+          ],
           "term": "Fall 2025"
         },
         {
@@ -33335,7 +33341,6 @@
       "offerings": [
         {
           "instructors": [
-            "Laura Atkins",
             "Kathleen Akins"
           ],
           "term": "Fall 2025"
@@ -37217,7 +37222,7 @@
       "offerings": [
         {
           "instructors": [
-            "Sessional"
+            "Katherine Robinson"
           ],
           "term": "Fall 2025"
         },
@@ -40963,7 +40968,7 @@
         {
           "instructors": [
             "Luba Petersen",
-            "John Gilraine",
+            "Michael Gilraine",
             "Kevin Schnepel"
           ],
           "term": "Summer 2025"
@@ -41175,13 +41180,13 @@
       "offerings": [
         {
           "instructors": [
-            "John Gilraine"
+            "Michael Gilraine"
           ],
           "term": "Fall 2025"
         },
         {
           "instructors": [
-            "John Gilraine",
+            "Michael Gilraine",
             "Kenneth Kasa"
           ],
           "term": "Summer 2025"
@@ -45324,7 +45329,7 @@
       "offerings": [
         {
           "instructors": [
-            "Cher Hill"
+            "Jeannie Kerr"
           ],
           "term": "Fall 2025"
         },
@@ -53070,6 +53075,12 @@
           "instructors": [
             "Ruth Joy"
           ],
+          "term": "Fall 2025"
+        },
+        {
+          "instructors": [
+            "Ruth Joy"
+          ],
           "term": "Fall 2024"
         },
         {
@@ -56064,7 +56075,9 @@
           "term": "Fall 2025"
         },
         {
-          "instructors": [],
+          "instructors": [
+            "Sarah Henzi"
+          ],
           "term": "Summer 2025"
         },
         {
@@ -57205,7 +57218,9 @@
       "degreeLevel": "UGRD",
       "offerings": [
         {
-          "instructors": [],
+          "instructors": [
+            "Rachel Chimuka"
+          ],
           "term": "Fall 2025"
         },
         {
@@ -57294,7 +57309,7 @@
       "offerings": [
         {
           "instructors": [
-            "Sessional"
+            "Nick Gottlieb"
           ],
           "term": "Fall 2025"
         },
@@ -57664,7 +57679,7 @@
       "offerings": [
         {
           "instructors": [
-            "Sessional"
+            "Christiana Miewald"
           ],
           "term": "Fall 2025"
         },
@@ -65605,9 +65620,7 @@
       "degreeLevel": "UGRD",
       "offerings": [
         {
-          "instructors": [
-            "Bohdan Nosyk"
-          ],
+          "instructors": [],
           "term": "Fall 2025"
         },
         {
@@ -66398,12 +66411,6 @@
       "offerings": [
         {
           "instructors": [
-            "Hui Xie"
-          ],
-          "term": "Fall 2025"
-        },
-        {
-          "instructors": [
             "Bruce Lanphear"
           ],
           "term": "Summer 2024"
@@ -67133,6 +67140,12 @@
           "instructors": [
             "Hui Xie"
           ],
+          "term": "Fall 2025"
+        },
+        {
+          "instructors": [
+            "Hui Xie"
+          ],
           "term": "Spring 2024"
         }
       ]
@@ -67579,7 +67592,6 @@
       "offerings": [
         {
           "instructors": [
-            "Bohdan Nosyk",
             "Ryan Allen"
           ],
           "term": "Fall 2025"
@@ -86218,7 +86230,9 @@
       "degreeLevel": "UGRD",
       "offerings": [
         {
-          "instructors": [],
+          "instructors": [
+            "Hadi Moeinnia"
+          ],
           "term": "Fall 2025"
         }
       ]
@@ -86576,7 +86590,9 @@
       "degreeLevel": "UGRD",
       "offerings": [
         {
-          "instructors": [],
+          "instructors": [
+            "Mohammad Shojayian"
+          ],
           "term": "Fall 2025"
         },
         {
@@ -91932,8 +91948,7 @@
       "offerings": [
         {
           "instructors": [
-            "David Sivak",
-            "Nancy Forde"
+            "David Sivak"
           ],
           "term": "Fall 2025"
         },
@@ -100605,6 +100620,12 @@
       "offerings": [
         {
           "instructors": [
+            "Sessional"
+          ],
+          "term": "Fall 2025"
+        },
+        {
+          "instructors": [
             "Reetinder Kaur"
           ],
           "term": "Fall 2024"
@@ -106867,7 +106888,8 @@
       "offerings": [
         {
           "instructors": [
-            "Sessional"
+            "Sessional",
+            "Isabel Mayo-Harp"
           ],
           "term": "Fall 2025"
         },
@@ -106918,7 +106940,8 @@
       "offerings": [
         {
           "instructors": [
-            "Isabel Mayo-Harp"
+            "Isabel Mayo-Harp",
+            "Sessional"
           ],
           "term": "Fall 2025"
         },

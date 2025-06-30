@@ -34,7 +34,7 @@ async function parseVitalData(json: any) {
             corequisites: item.corequisites,
         }))
         .filter((course: CourseCondensedInfo) => 
-            course.prerequisites !== "" || course.corequisites !== ""
+            course.prerequisites !== "" || course.corequisites !== "" || course.notes !== ""
         );
     
     console.log(`Filtered ${json.data.length} courses down to ${outlines.length} courses with prerequisites or corequisites`);

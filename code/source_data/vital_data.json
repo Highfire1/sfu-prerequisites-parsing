@@ -128,6 +128,14 @@
     "corequisites": ""
   },
   {
+    "department": "ACMA",
+    "number": "831",
+    "title": "Advanced Actuarial Models",
+    "notes": "Students with credit for ACMA 821 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
     "department": "APMA",
     "number": "995",
     "title": "PhD Oral Candidacy Exam",
@@ -136,11 +144,35 @@
     "corequisites": ""
   },
   {
+    "department": "ARAB",
+    "number": "100",
+    "title": "Introductory Arabic I",
+    "notes": "Students with credit for LANG 134 or ARAB 134 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "ARCH",
+    "number": "101",
+    "title": "Reconstructing the Human Past",
+    "notes": "Students who have taken ARCH 201 may not enroll in ARCH 101.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
     "department": "ARCH",
     "number": "200",
     "title": "Special Topics in Archaeology",
     "notes": "",
     "prerequisites": "30 units.",
+    "corequisites": ""
+  },
+  {
+    "department": "ARCH",
+    "number": "252",
+    "title": "Ancient Egypt and Africa",
+    "notes": "Students with credit for ARCH 200 under this title may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -573,6 +605,14 @@
     "title": "Biological Systems for Engineers",
     "notes": "Students who have taken BISC 101 or higher level BISC courses first may not then take this course for further credit.",
     "prerequisites": "Enrolled in the MSE program.",
+    "corequisites": ""
+  },
+  {
+    "department": "BISC",
+    "number": "113",
+    "title": "Biology in Everyday Life",
+    "notes": "Students with credit for HSCI 100, BISC 100, 101, 102, or succeeding BISC courses, may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -1121,6 +1161,14 @@
   },
   {
     "department": "BPK",
+    "number": "141",
+    "title": "Theory of Exercise Program Design",
+    "notes": "Students with credit for BPK 143 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BPK",
     "number": "142",
     "title": "Introduction to Biomedical Physiology and Kinesiology",
     "notes": "",
@@ -1573,6 +1621,14 @@
     "title": "Undergraduate Honours Thesis Reporting",
     "notes": "",
     "prerequisites": "BPK 491 (minimum grade of B). Corequisite: BPK 495. Only students in the honours program may enroll in BPK 499.",
+    "corequisites": ""
+  },
+  {
+    "department": "BPK",
+    "number": "812",
+    "title": "Molecular and Cellular Cardiology",
+    "notes": "Students with credit for KIN 806 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -2377,10 +2433,58 @@
   },
   {
     "department": "BUS",
+    "number": "510",
+    "title": "Financial and Managerial Accounting",
+    "notes": "Students with credit for BUS 670 or BUS 705 or BUS 766 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "511",
+    "title": "Business Ethics",
+    "notes": "Students with credit for BUS 650 or BUS 707 or BUS 753 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "552",
+    "title": "Managerial Economics",
+    "notes": "Students with credit for BUS 651 or BUS 703 or BUS 751 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "553",
+    "title": "Business Analytics",
+    "notes": "Students with credit for BUS 706 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
     "number": "555",
     "title": "Managerial Finance",
     "notes": "Students with credit for BUS 606 or BUS 708 or BUS 764 may not take this course for further credit.",
     "prerequisites": "BUS 510 or equivalent.",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "556",
+    "title": "Marketing Management",
+    "notes": "Students with credit for BUS 615 or BUS 702 or BUS 754 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "557",
+    "title": "Managing People and Organizations",
+    "notes": "Students with credit for BUS 719 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -2393,10 +2497,34 @@
   },
   {
     "department": "BUS",
+    "number": "603",
+    "title": "Structure and Change in Organizations",
+    "notes": "Equivalent Courses: MBA603",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
     "number": "605",
     "title": "Applied Project in Business in the Americas",
     "notes": "Students with credit for BUS 696 may not take this course for further credit.",
     "prerequisites": "Enrollment in the Americas stream of the EMBA.",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "606",
+    "title": "Finance",
+    "notes": "Students with credit for BUS 555 or BUS 708 or BUS 764 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "607",
+    "title": "Strategy",
+    "notes": "Students with credit for BUS 718 or BUS 737 or BUS 752 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -2409,10 +2537,34 @@
   },
   {
     "department": "BUS",
+    "number": "613",
+    "title": "Human Resources in Indigenous Business",
+    "notes": "Students with credit for BUS 653 under the title \"Managing People and Organizations\" may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
     "number": "614",
     "title": "Entrepreneurship and Innovation in Indigenous Communities",
     "notes": "",
     "prerequisites": "Only for students in the IBL EMBA program.",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "615",
+    "title": "Marketing",
+    "notes": "Students with credit for BUS 556 or BUS 702 or BUS 754 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "621",
+    "title": "Information Technology and Organizational Transformation",
+    "notes": "Students with credit for BUS 554 or BUS 709 or BUS 739 or BUS 756 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -2441,10 +2593,66 @@
   },
   {
     "department": "BUS",
+    "number": "632",
+    "title": "Operations Management",
+    "notes": "Students with credit for BUS 715 or BUS 738 or BUS 758 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "645",
+    "title": "Capstone Simulation",
+    "notes": "Students with credit for BUS 729 or BUS 782 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "647",
+    "title": "Entrepreneurship and Innovation",
+    "notes": "Students with credit for BUS 714 or BUS 734 or BUS 783 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "649",
+    "title": "Corporate Responsibility",
+    "notes": "Students with credit for BUS 716 or BUS 735 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "650",
+    "title": "Business Ethics",
+    "notes": "Students with credit for BUS 511 or BUS 707 or BUS 753 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "651",
+    "title": "Managerial Economics",
+    "notes": "Students with credit for BUS 552 or BUS 703 or BUS 751 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
     "number": "657",
     "title": "Marketing Strategies for Indigenous Leadership",
     "notes": "",
     "prerequisites": "Only for students in the IBL EMBA program.",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "662",
+    "title": "Negotiations",
+    "notes": "Students with credit for BUS 711 or BUS 733 or BUS 757 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -2461,6 +2669,14 @@
     "title": "Financial Management for Indigenous Leadership",
     "notes": "",
     "prerequisites": "Only for students in the IBL EMBA program.",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "670",
+    "title": "Accounting for Decision Making",
+    "notes": "Students with credit for BUS 510 or BUS 705 or BUS 766 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -2485,6 +2701,14 @@
     "title": "Business Strategy for Indigenous Leaders",
     "notes": "",
     "prerequisites": "Only for students in the IBL EMBA program.",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "681",
+    "title": "Leadership and Teamwork",
+    "notes": "Equivalent Courses: MBA681",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -2537,10 +2761,90 @@
   },
   {
     "department": "BUS",
+    "number": "702",
+    "title": "Marketing Management",
+    "notes": "Students with credit for BUS 556 or BUS 615 or BUS 754 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "703",
+    "title": "Managerial Economics",
+    "notes": "Students with credit for BUS 552 or BUS 651 or BUS 751 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "705",
+    "title": "Financial/Managerial Accounting",
+    "notes": "Students with credit for BUS 510 or BUS 670 or BUS 766 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "706",
+    "title": "Business Analytics",
+    "notes": "Students with credit for BUS 553 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "707",
+    "title": "Business Ethics",
+    "notes": "Students with credit for BUS 511 or BUS 650 or BUS 753 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
     "number": "708",
     "title": "Financial Management",
     "notes": "Students with credit for BUS 555 or BUS 606 or BUS 764 may not take this course for further credit.",
     "prerequisites": "BUS 705.",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "709",
+    "title": "Managing Information",
+    "notes": "Students with credit for BUS 554 or BUS 621 or BUS 739 or BUS 756 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "711",
+    "title": "Negotiation and Conflict Resolution",
+    "notes": "Students with credit for BUS 662 or BUS 733 or BUS 757 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "714",
+    "title": "Innovation and Entrepreneurship",
+    "notes": "Students with credit for BUS 647 or BUS 734 or BUS 783 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "715",
+    "title": "Operations Management",
+    "notes": "Students with credit for BUS 632 or BUS 738 or BUS 758 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "716",
+    "title": "Sustainability",
+    "notes": "Students with credit for BUS 649 or BUS 735 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -2553,10 +2857,154 @@
   },
   {
     "department": "BUS",
+    "number": "719",
+    "title": "Managing People and Organizations",
+    "notes": "Students with credit for BUS 557 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
     "number": "730",
     "title": "Indigenous Business Environments in Community",
     "notes": "",
     "prerequisites": "BUS 741.",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "733",
+    "title": "Negotiations",
+    "notes": "Students with credit for BUS 662 or BUS 711 or BUS 757 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "734",
+    "title": "Entrepreneurship",
+    "notes": "Students with credit for BUS 647 or BUS 714 or BUS 783 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "735",
+    "title": "Sustainability",
+    "notes": "Students with credit for BUS 649 or BUS 716 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "737",
+    "title": "Business Strategy",
+    "notes": "Students with credit for BUS 607 or BUS 718 or BUS 752 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "738",
+    "title": "Operations Management",
+    "notes": "Students with credit for BUS 632 or BUS 715 or BUS 758 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "739",
+    "title": "Managing Information",
+    "notes": "Students with credit for BUS 554 or BUS 621 or BUS 709 or BUS 756 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "751",
+    "title": "Managerial Economics for Technology Firms",
+    "notes": "Students with credit for BUS 552 or BUS 651 or BUS 703 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "752",
+    "title": "Strategic Management of Technology-Based Firms",
+    "notes": "Students with credit for BUS 607 or BUS 718 or BUS 737 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "753",
+    "title": "Business Ethics",
+    "notes": "Students with credit for BUS 511 or BUS 650 or BUS 707 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "754",
+    "title": "Marketing Tech-based Products and Services",
+    "notes": "Students with credit for BUS 556 or BUS 615 or BUS 702 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "756",
+    "title": "Strategic Use of Information and Knowledge",
+    "notes": "Students with credit for BUS 554 or BUS 621 or BUS 709 or BUS 739 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "757",
+    "title": "Negotiations",
+    "notes": "Students with credit for BUS 662 or BUS 711 or BUS 733 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "758",
+    "title": "Business Operations Design",
+    "notes": "Students with credit for BUS 632 or BUS 715 or BUS 738 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "764",
+    "title": "Financing the Organization",
+    "notes": "Students with credit for BUS 555 or BUS 606 or BUS 708 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "766",
+    "title": "Financial and Managerial Accounting",
+    "notes": "Students with credit for BUS 510 or BUS 670 or BUS 705 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "783",
+    "title": "Entrepreneurship",
+    "notes": "Students with credit for BUS 647 or BUS 714 or BUS 734 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "BUS",
+    "number": "784",
+    "title": "Special Topics",
+    "notes": "Students with credit for BUS 725 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -2777,6 +3225,22 @@
   },
   {
     "department": "CA",
+    "number": "117",
+    "title": "Modern Art History",
+    "notes": "Students with credit for CA 167 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CA",
+    "number": "118",
+    "title": "Contemporary Art History",
+    "notes": "Students with credit for CA (or FPA) 168 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CA",
     "number": "122",
     "title": "Dance Training and Movement Systems I",
     "notes": "",
@@ -2801,6 +3265,14 @@
   },
   {
     "department": "CA",
+    "number": "127",
+    "title": "History of Dance: From the 20th Century to the Present",
+    "notes": "Students with credit for CA 227 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CA",
     "number": "129",
     "title": "Movement Fundamentals",
     "notes": "",
@@ -2821,6 +3293,14 @@
     "title": "Filmmaking I",
     "notes": "Students with credit for FPA 131 may not take this course for further credit.",
     "prerequisites": "CA (or FPA) 130 and prior approval.",
+    "corequisites": ""
+  },
+  {
+    "department": "CA",
+    "number": "137",
+    "title": "The History and Aesthetics of Cinema II",
+    "notes": "Students with credit for FPA 137 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -2857,6 +3337,22 @@
   },
   {
     "department": "CA",
+    "number": "149",
+    "title": "Sound",
+    "notes": "Students with credit for CA 184 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CA",
+    "number": "150",
+    "title": "Introduction to Acting",
+    "notes": "Students with credit for FPA 150 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CA",
     "number": "151",
     "title": "Live Acts I",
     "notes": "",
@@ -2885,6 +3381,14 @@
     "title": "Production Lab I",
     "notes": "Students with credit for CA 170 under the title \"Introduction to Production Technology\" may not take this course for further credit.",
     "prerequisites": "Declared status in the performance production and design major or extended minor, or permission of instructor.",
+    "corequisites": ""
+  },
+  {
+    "department": "CA",
+    "number": "175",
+    "title": "Transforming Objects",
+    "notes": "Students with credit for CA 174 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -2925,6 +3429,14 @@
     "title": "Dance Training and Movement Systems IV",
     "notes": "Students with credit for FPA 221 may not take this course for further credit.",
     "prerequisites": "CA (or FPA) 220.",
+    "corequisites": ""
+  },
+  {
+    "department": "CA",
+    "number": "228W",
+    "title": "Dance Aesthetics",
+    "notes": "Students with credit for FPA 228W may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -3889,6 +4401,14 @@
   },
   {
     "department": "CA",
+    "number": "811",
+    "title": "Interdisciplinary Graduate Seminar I",
+    "notes": "Students with credit for FPA 811 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CA",
     "number": "812",
     "title": "Interdisciplinary Graduate Seminar II",
     "notes": "Students with credit for FPA 812 may not take this course for further credit.",
@@ -3913,10 +4433,50 @@
   },
   {
     "department": "CA",
+    "number": "823",
+    "title": "New Approaches in Visual Art and Culture",
+    "notes": "Students with credit for FPA 823 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CA",
+    "number": "825",
+    "title": "New Approaches in Digital Art Studies",
+    "notes": "Students with credit for FPA 825 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CA",
+    "number": "826",
+    "title": "New Approaches in Performance Studies",
+    "notes": "Students with credit for FPA 826 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CA",
     "number": "829",
     "title": "Extended Essay in Contemporary Arts",
     "notes": "Students with credit for FPA 829 may not take this course for further credit.",
     "prerequisites": "Permission of the graduate program committee.",
+    "corequisites": ""
+  },
+  {
+    "department": "CA",
+    "number": "883",
+    "title": "Studio in Contemporary Arts I",
+    "notes": "Students with credit for FPA 883 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CA",
+    "number": "889",
+    "title": "Directed Study in Contemporary Arts",
+    "notes": "Students with credit for FPA 889 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -3933,6 +4493,14 @@
     "title": "PhD Thesis Prospectus",
     "notes": "",
     "prerequisites": "CA 892.",
+    "corequisites": ""
+  },
+  {
+    "department": "CA",
+    "number": "898",
+    "title": "Master of Fine Arts Graduating Project",
+    "notes": "Students with credit for FPA 898 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -3981,6 +4549,14 @@
     "title": "Environment Practicum V",
     "notes": "",
     "prerequisites": "Readmission into Environment Co-operative Education Program.",
+    "corequisites": ""
+  },
+  {
+    "department": "CENV",
+    "number": "690",
+    "title": "Co-op I",
+    "notes": "Students with credit for MRM 690 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -4433,6 +5009,22 @@
   },
   {
     "department": "CHEM",
+    "number": "740",
+    "title": "Solid State Materials Chemistry",
+    "notes": "Equivalent Courses: CHEM837",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CHEM",
+    "number": "742",
+    "title": "Polymeric Materials",
+    "notes": "Equivalent Courses: CHEM869",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CHEM",
     "number": "808",
     "title": "PhD Candidacy Examination",
     "notes": "",
@@ -4449,10 +5041,26 @@
   },
   {
     "department": "CHIN",
+    "number": "100",
+    "title": "Mandarin Chinese I",
+    "notes": "Students enrolled/placed into other Chinese courses may not take this course for credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CHIN",
     "number": "110",
     "title": "Mandarin Chinese II",
     "notes": "Students enrolled/placed into other Chinese courses may not take this course for credit. Students with credit for CHIN 101 may not take this course for further credit.",
     "prerequisites": "CHIN 100 or equivalent.",
+    "corequisites": ""
+  },
+  {
+    "department": "CHIN",
+    "number": "180",
+    "title": "Intensive Mandarin Chinese for Beginners I",
+    "notes": "Students with credit for CHIN 100 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -4529,6 +5137,14 @@
   },
   {
     "department": "CMNS",
+    "number": "201W",
+    "title": "Empirical Communication Research Methods",
+    "notes": "Students with credit for CMNS 201 or CMNS 260 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CMNS",
     "number": "202",
     "title": "Design and Method in Qualitative Communication Research",
     "notes": "Students with credit for CMNS 262 may not take CMNS 202 for further credit.",
@@ -4565,6 +5181,14 @@
     "title": "Digital Democracies",
     "notes": "",
     "prerequisites": "Six CMNS units with a minimum grade of C-, including CMNS 130.",
+    "corequisites": ""
+  },
+  {
+    "department": "CMNS",
+    "number": "253W",
+    "title": "Introduction to Technology and Society",
+    "notes": "Students with credit for CMNS 253 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -4889,6 +5513,14 @@
   },
   {
     "department": "CMNS",
+    "number": "848",
+    "title": "Communication and Global Social Justice",
+    "notes": "Students with credit for CMNS 858 (Special Topics: CMNS & Global Social Justice) in Spring 2014 & Spring 2015 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CMNS",
     "number": "893",
     "title": "MA Project",
     "notes": "",
@@ -4901,6 +5533,14 @@
     "title": "MA Extended Essays",
     "notes": "",
     "prerequisites": "CMNS 801 and one of CMNS 800, 802, or 804.",
+    "corequisites": ""
+  },
+  {
+    "department": "CMPT",
+    "number": "105W",
+    "title": "Social Issues and Communication Strategies in Computing Science",
+    "notes": "Students with credit for ENSC 102, ENSC 105W, MSE 101W or SEE 101W may not take CMPT 105W for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -5537,6 +6177,22 @@
   },
   {
     "department": "CMPT",
+    "number": "705",
+    "title": "Design and Analysis of Algorithms",
+    "notes": "Students with credit for CMPT 706 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CMPT",
+    "number": "713",
+    "title": "Natural Language Processing",
+    "notes": "Students with credit for CMPT 825 or CMPT 413 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CMPT",
     "number": "722",
     "title": "Rendering and Visual Computing for Artificial Intelligence",
     "notes": "",
@@ -5601,6 +6257,14 @@
   },
   {
     "department": "CMPT",
+    "number": "769",
+    "title": "Computational Photography and Image Manipulation",
+    "notes": "Students with credit for CMPT 461 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CMPT",
     "number": "782",
     "title": "Cybersecurity Lab I",
     "notes": "",
@@ -5617,10 +6281,26 @@
   },
   {
     "department": "CMPT",
+    "number": "820",
+    "title": "Multimedia Systems",
+    "notes": "Equivalent Courses: CMPT880",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "CMPT",
     "number": "839",
     "title": "Advanced Natural Language Processing and Understanding",
     "notes": "",
     "prerequisites": "CMPT 413 or CMPT 713, CMPT 726 or CMPT 728.",
+    "corequisites": ""
+  },
+  {
+    "department": "CMPT",
+    "number": "863",
+    "title": "Advanced Topics in Human-Computer Interaction",
+    "notes": "Students with credit for CMPT 888 or CMPT 985 under the title \"Special Topics in Human-Computer Interaction\" may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -6833,6 +7513,22 @@
   },
   {
     "department": "ECON",
+    "number": "113",
+    "title": "Introduction to Microeconomics",
+    "notes": "Students who have taken ECON 103 first may not then take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "ECON",
+    "number": "115",
+    "title": "Introduction to Macroeconomics",
+    "notes": "Students who have taken ECON 105 first may not then take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "ECON",
     "number": "201",
     "title": "Microeconomic Theory I: Competitive Behavior",
     "notes": "",
@@ -7385,6 +8081,14 @@
   },
   {
     "department": "EDUC",
+    "number": "252",
+    "title": "Introduction to Reflective Practice",
+    "notes": "Students enrolled in or with credit for EDUC 401, 402, 403 or holding a teaching certificate may not take this course for credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "EDUC",
     "number": "311",
     "title": "Foundations in Indigenous Education, Language, and Culture",
     "notes": "",
@@ -7541,6 +8245,14 @@
     "title": "Struggle with Mathematics: Sources and Recovery",
     "notes": "Students who have credit for or are currently enrolled in EDUC 415 or EDUC 475 may not take this course for further credit.\r\n",
     "prerequisites": "EDUC 401/402 or corequisite EDUC 403.",
+    "corequisites": ""
+  },
+  {
+    "department": "EDUC",
+    "number": "376",
+    "title": "Introduction to Educational Leadership",
+    "notes": "Students who have taken EDUC 392 ST-Leadership & EDUC may not take EDUC 376 for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -8017,6 +8729,30 @@
   },
   {
     "department": "EDUC",
+    "number": "843",
+    "title": "Embodiment and Curriculum Inquiry",
+    "notes": "Equivalent Courses: EDUC712",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "EDUC",
+    "number": "852",
+    "title": "Inquiry, Creativity and Community: Drama in Education",
+    "notes": "Equivalent Courses: EDUC721",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "EDUC",
+    "number": "856",
+    "title": "Sociocultural Perspectives on Education and Identity",
+    "notes": "Equivalent Courses: EDUC713",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "EDUC",
     "number": "857",
     "title": "Issues and Topics in Environmental Education",
     "notes": "",
@@ -8037,6 +8773,14 @@
     "title": "Quantitative Methods in Educational Research",
     "notes": "",
     "prerequisites": "EDUC 810 or 864.",
+    "corequisites": ""
+  },
+  {
+    "department": "EDUC",
+    "number": "864",
+    "title": "Research Designs in Education",
+    "notes": "Equivalent Courses: EDUC814",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -8077,6 +8821,14 @@
     "title": "Group Counselling",
     "notes": "Students with credit for EDUC 720 may not take this course for further credit.",
     "prerequisites": "EDUC 874.",
+    "corequisites": ""
+  },
+  {
+    "department": "EDUC",
+    "number": "881",
+    "title": "Project",
+    "notes": "Students with credit for EDUC 889 cannot take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -8129,6 +8881,22 @@
   },
   {
     "department": "EDUC",
+    "number": "921",
+    "title": "Seminar in Philosophy and Educational Theory",
+    "notes": "Students with credit for EDUC 831 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "EDUC",
+    "number": "922",
+    "title": "Advanced Seminar in Epistemology and Education",
+    "notes": "Students with credit for EDUC 836 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "EDUC",
     "number": "932",
     "title": "Doctoral Seminar II in Educational Technology and Learning Design",
     "notes": "",
@@ -8165,6 +8933,38 @@
     "title": "Advanced Topics in Educational Psychology",
     "notes": "Students with credit for EDUC 865 may not take this course for further credit.",
     "prerequisites": "EDUC 860.",
+    "corequisites": ""
+  },
+  {
+    "department": "ENGL",
+    "number": "111W",
+    "title": "Literary Classics in English",
+    "notes": "Students with credit for ENGL 101W may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "ENGL",
+    "number": "113W",
+    "title": "Literature and Performance",
+    "notes": "Students with credit for ENGL 103W may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "ENGL",
+    "number": "114W",
+    "title": "Language and Purpose",
+    "notes": "Students with credit for ENGL 104W may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "ENGL",
+    "number": "115W",
+    "title": "Literature and Culture",
+    "notes": "Students with credit for ENGL 105W may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -8629,6 +9429,14 @@
     "title": "Introduction to Engineering Analysis",
     "notes": "",
     "prerequisites": "(ENSC 151 or CMPT 120 or CMPT 130) and (MATH 151 or MATH 150), all with a minimum grade of C-. Corequisite: MATH 152 and MATH 232.",
+    "corequisites": ""
+  },
+  {
+    "department": "ENSC",
+    "number": "204",
+    "title": "Graphical Communication for Engineering",
+    "notes": "Students who have taken ENSC 104, MSE 100 or SEE 100 first may not then take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -9225,6 +10033,14 @@
   },
   {
     "department": "EVSC",
+    "number": "100",
+    "title": "Introduction to Environmental Science",
+    "notes": "Students who have completed EVSC 200 may not complete this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "EVSC",
     "number": "201W",
     "title": "Environmental Science in Practice",
     "notes": "",
@@ -9385,10 +10201,26 @@
   },
   {
     "department": "FAN",
+    "number": "X91",
+    "title": "Foundations of Analytical and Quantitative Reasoning I",
+    "notes": "Students who have taken any MATH course numbered 100 or higher or FAN X92 or FAN X99 first may not then take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "FAN",
     "number": "X92",
     "title": "Foundations of Analytical and Quantitative Reasoning II",
     "notes": "Students who have taken any MATH course numbered 100 or higher first may not then take this course for further credit. Students with credit for FAN X99 may not take this course for further credit.",
     "prerequisites": "FAN X91 with a grade of at least a C.",
+    "corequisites": ""
+  },
+  {
+    "department": "FAN",
+    "number": "X99",
+    "title": "Foundations of Analytical and Quantitative Reasoning",
+    "notes": "Students who have taken, have received transfer credit for, or are currently taking FAN X92 or any MATH class numbered 100 or higher may not take FAN X99 for credit without the permission from the Department of Mathematics.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -9457,6 +10289,14 @@
   },
   {
     "department": "FASS",
+    "number": "305",
+    "title": "STT-Centring Justice, Equity, Diversity, and Inclusion (JEDI) in Practical Life Settings",
+    "notes": "Students with credit for FASS 805 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "FASS",
     "number": "401",
     "title": "FASS Co-op Practicum IV",
     "notes": "",
@@ -9477,6 +10317,22 @@
     "title": "STT-FASS Dean's Leadership Seminar",
     "notes": "",
     "prerequisites": "Open to FASS Undergraduate Student Fellows, who will be selected by the faculty.",
+    "corequisites": ""
+  },
+  {
+    "department": "FASS",
+    "number": "805",
+    "title": "STT-Centring Justice, Equity, Diversity, and Inclusion (JEDI) in Practical Life Settings",
+    "notes": "Students with credit for FASS 305 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "FREN",
+    "number": "101",
+    "title": "Elementary French I",
+    "notes": "Students with credit for FREN 120 or FREN 121 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -9817,6 +10673,14 @@
   },
   {
     "department": "GA",
+    "number": "101",
+    "title": "Introduction to Global Asia",
+    "notes": "Students with credit for ASC 101 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GA",
     "number": "202",
     "title": "Studies in Global Asia",
     "notes": "Students with credit for ASC 202 may not take this course for further credit.",
@@ -9905,6 +10769,14 @@
   },
   {
     "department": "GEOG",
+    "number": "104",
+    "title": "Climate Change, Water, and Society",
+    "notes": "Students who have completed GEOG 102 prior to the fall 2011 term may not complete this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GEOG",
     "number": "213",
     "title": "Introduction to Geomorphology",
     "notes": "",
@@ -9941,6 +10813,14 @@
     "title": "People, Place, Society",
     "notes": "",
     "prerequisites": "One of GEOG 100, INDG 101, SA 101, or SA 150.",
+    "corequisites": ""
+  },
+  {
+    "department": "GEOG",
+    "number": "255",
+    "title": "Geographical Information Science I",
+    "notes": "Students with credit for GEOG 354 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -10289,6 +11169,70 @@
   },
   {
     "department": "GEOG",
+    "number": "600",
+    "title": "Introduction to Graduate Studies: Fall Semester",
+    "notes": "Students with credit for GEOG 700 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GEOG",
+    "number": "601",
+    "title": "Introduction to Graduate Studies: Spring Semester",
+    "notes": "Students with credit for GEOG 701 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GEOG",
+    "number": "603",
+    "title": "Theory and Methods for Human Geographers",
+    "notes": "Students with credit for GEOG 604 and GEOG 605 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GEOG",
+    "number": "606",
+    "title": "Research Design and Analytical Techniques in Physical Geography",
+    "notes": "Equivalent Courses: GEOG706",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GEOG",
+    "number": "612",
+    "title": "Glacial Geomorphology",
+    "notes": "Equivalent Courses: GEOG728",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GEOG",
+    "number": "614",
+    "title": "Climatology",
+    "notes": "Equivalent Courses: GEOG723",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GEOG",
+    "number": "651",
+    "title": "Advanced Spatial Analysis and Modeling",
+    "notes": "Equivalent Courses: GEOG714",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GEOG",
+    "number": "655",
+    "title": "Advanced Principles of Geographic Information Science",
+    "notes": "Equivalent Courses: GEOG715",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GEOG",
     "number": "658",
     "title": "Advanced Ecohydrology",
     "notes": "Students with credit for GEOG 418 may not take this course for further credit.",
@@ -10328,6 +11272,38 @@
     "corequisites": ""
   },
   {
+    "department": "GEOG",
+    "number": "681",
+    "title": "Law and the Geographies of Power",
+    "notes": "Equivalent Courses: GEOG755",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GEOG",
+    "number": "691",
+    "title": "Directed Readings",
+    "notes": "Equivalent Courses: GEOG791",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GEOG",
+    "number": "699",
+    "title": "PhD Thesis",
+    "notes": "Students with credit for GEOG 799 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GERM",
+    "number": "100",
+    "title": "Introductory German I",
+    "notes": "Students with credit for GERM 102 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
     "department": "GERM",
     "number": "110",
     "title": "Introductory German II",
@@ -10357,6 +11333,14 @@
     "title": "Advanced German: Composition and Conversation",
     "notes": "",
     "prerequisites": "GERM 202 or consent of the instructor.",
+    "corequisites": ""
+  },
+  {
+    "department": "GERO",
+    "number": "101",
+    "title": "Aging and Society",
+    "notes": "Students who have taken GERO 300 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -10433,6 +11417,14 @@
   },
   {
     "department": "GERO",
+    "number": "822",
+    "title": "Families, Communities and Health",
+    "notes": "Equivalent Courses: GERO840",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GERO",
     "number": "850",
     "title": "MA Practicum",
     "notes": "",
@@ -10465,6 +11457,14 @@
   },
   {
     "department": "GRK",
+    "number": "100",
+    "title": "Introductory Modern Greek I",
+    "notes": "Students with credit for GRK 110, GRK 191 or LANG 110 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GRK",
     "number": "111",
     "title": "Introductory Modern Greek II",
     "notes": "Students with credit for GRK 160, GRK 192 or LANG 160 may not take this course for further credit.",
@@ -10485,6 +11485,54 @@
     "title": "Intermediate Modern Greek II",
     "notes": "Students with credit for GRK 260, GRK 292 or LANG 260 may not take this course for further credit.",
     "prerequisites": "GRK 200 (or GRK 291) or equivalent.",
+    "corequisites": ""
+  },
+  {
+    "department": "GSWS",
+    "number": "100",
+    "title": "Sex Talk: Introduction to Contemporary Issues in Sexuality Studies",
+    "notes": "Students who have completed GDST 200 may not complete this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GSWS",
+    "number": "101",
+    "title": "Gender Talk",
+    "notes": "Students who have completed WS 101 may not take GSWS 101 for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GSWS",
+    "number": "102",
+    "title": "Feminist Action",
+    "notes": "Students who have completed WS 102 may not take GSWS 102 for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GSWS",
+    "number": "204",
+    "title": "Sex and the City",
+    "notes": "Students who have completed WS 204 may not complete this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GSWS",
+    "number": "205",
+    "title": "Gender and Popular Culture",
+    "notes": "Students who have completed WS 205 may not complete this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "GSWS",
+    "number": "212",
+    "title": "Gender and Sexualities in Asia",
+    "notes": "Students with credit for GSWS 212 STT may not take this course for further credit unless a different topic is offered.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -10705,6 +11753,22 @@
   },
   {
     "department": "HIST",
+    "number": "102W",
+    "title": "Canada since Confederation",
+    "notes": "Students with credit for HIST 102 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "HIST",
+    "number": "111",
+    "title": "Histories of Technology",
+    "notes": "Students with credit for HIST 363 cannot take HIST 111 for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "HIST",
     "number": "204",
     "title": "The Social History of Canada",
     "notes": "",
@@ -10725,6 +11789,22 @@
     "title": "The United States Since 1877",
     "notes": "",
     "prerequisites": "Recommended: HIST 212.",
+    "corequisites": ""
+  },
+  {
+    "department": "HIST",
+    "number": "243",
+    "title": "A Brief History of Modern India - from British Colony to Independent Republic",
+    "notes": "Students who have previously taken HIST 243 STT may not take HIST 243 for further credit. ",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "HIST",
+    "number": "276",
+    "title": "History of the Modern Mediterranean World 1500 to the Present",
+    "notes": "Students with credit for HS 276 or HUM 276 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -11189,6 +12269,14 @@
     "title": "Honours Essay",
     "notes": "",
     "prerequisites": "Admission to the honours program in History.",
+    "corequisites": ""
+  },
+  {
+    "department": "HSCI",
+    "number": "100",
+    "title": "Human Biology",
+    "notes": "Students with credit for BISC 101 may not take HSCI 100 for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -11825,6 +12913,22 @@
   },
   {
     "department": "HUM",
+    "number": "110",
+    "title": "The Greek World",
+    "notes": "Students with credit for HS 100 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "HUM",
+    "number": "150",
+    "title": "Warfare: From Plato to NATO",
+    "notes": "Students with credit for HS 150 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "HUM",
     "number": "162",
     "title": "Latin II",
     "notes": "",
@@ -11837,6 +12941,22 @@
     "title": "Great Religious Texts",
     "notes": "",
     "prerequisites": "HUM 130 is recommended.",
+    "corequisites": ""
+  },
+  {
+    "department": "HUM",
+    "number": "231",
+    "title": "Daily Life in Ancient Greece and Rome",
+    "notes": "Students with credit for HS 231 or HUM 216 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "HUM",
+    "number": "232",
+    "title": "The Religions of Ancient Greece and Rome",
+    "notes": "Students with credit for HS 232 or HUM 216 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -12061,6 +13181,14 @@
     "title": "Advanced Topics in the Humanities",
     "notes": "",
     "prerequisites": "45 units, including HUM 101.",
+    "corequisites": ""
+  },
+  {
+    "department": "IAT",
+    "number": "106",
+    "title": "Spatial Thinking and Communicating",
+    "notes": "Students with credit for SEE 100 cannot take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -12553,6 +13681,30 @@
   },
   {
     "department": "INDG",
+    "number": "101",
+    "title": "Introduction to Indigenous Studies",
+    "notes": "Students with credit for FNST 101 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "INDG",
+    "number": "110W",
+    "title": "International Indigenous Lifewriting",
+    "notes": "Students with credit for FNST 110W may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "INDG",
+    "number": "201W",
+    "title": "Indigenous Peoples' Perspectives on History",
+    "notes": "Students with credit for FNST 201W may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "INDG",
     "number": "210",
     "title": "Introduction to Indigenous Digital Media",
     "notes": "Students who took FNST 222-Special Topics in Spring 2019 (1191) with Dr. Maddie Knickerbocker or INDG 222-Special Topics in Fall 2020 (1207) with Dr. Kathryn Shield (both courses titled Introduction to Indigenous Digital Media) cannot take INDG 210 for further credit. ",
@@ -12785,10 +13937,34 @@
   },
   {
     "department": "INLG",
+    "number": "133",
+    "title": "Introduction to Indigenous Language I",
+    "notes": "Students who have credit for FNLG 231 may not take this course for further credit for the same designated language.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "INLG",
     "number": "134",
     "title": "Introduction to INLG II",
     "notes": "Students who have completed FNLG 134 or FNLG 232 or LING 232 may not complete this course for further credit for the same designated language. ",
     "prerequisites": "INLG (or FNLG) 133.",
+    "corequisites": ""
+  },
+  {
+    "department": "INLG",
+    "number": "158",
+    "title": "Indigenous Language Immersion I",
+    "notes": "Students who have completed LANG 132, 158 or 224 for a designated language may not complete this course for further credit for the same designated language. Students with credit for FNLG 158 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "INLG",
+    "number": "200",
+    "title": "Introduction to Grammar in an Indigenous Language",
+    "notes": "Students with credit for FNLG 200 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -12805,6 +13981,14 @@
     "title": "Description and Analysis of an Indigenous Language II",
     "notes": "Students with credit for FNLG 332 may not take this course for further credit for the same designated language. ",
     "prerequisites": "INLG (or FNLG) 233.",
+    "corequisites": ""
+  },
+  {
+    "department": "INLG",
+    "number": "258",
+    "title": "Indigenous Language Immersion II",
+    "notes": "Students who have completed LANG 248 for a designated language may not complete this course for further credit for the same designated language. Students with credit for FNLG 258 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -12885,6 +14069,22 @@
     "title": "Comprehensive Exam",
     "notes": "",
     "prerequisites": "Permission of the department.",
+    "corequisites": ""
+  },
+  {
+    "department": "IS",
+    "number": "221",
+    "title": "Workers in the Global Economy: Globalization, Labour and Uneven Development",
+    "notes": "Students with credit for LBST 201 or LBST 230 under the title \"Workers and Global Capitalism\" may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "IS",
+    "number": "265",
+    "title": "Global History from the Revolutionary Age to the Present",
+    "notes": "Students with credit for HIST 265 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -13161,10 +14361,34 @@
   },
   {
     "department": "IS",
+    "number": "822",
+    "title": "Central Asia: Conflict and Security",
+    "notes": "Students with credit for IS 808 under the title \"Central Asia: Conflict and Security\" may not take this course for further credit. Students with credit for IS 322 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "IS",
     "number": "830",
     "title": "Analytic Approaches for International Studies",
     "notes": "",
     "prerequisites": "Acceptance into the MA in International Studies Program. Undergraduate course work in methods is highly recommended.",
+    "corequisites": ""
+  },
+  {
+    "department": "IS",
+    "number": "842",
+    "title": "Global Security Governance",
+    "notes": "Students with credit for IS 808 under the title \"Global Security Governance\" may not take this course for further credit. Students with credit for IS 402 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "IS",
+    "number": "844",
+    "title": "Inside Diplomacy: A Practitioner's Perspective",
+    "notes": "Students with credit for IS 808 under the title \"Inside Diplomacy: A Practitioner's Perspective\" may not take this course for further credit. Students with credit for IS 444 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -13237,6 +14461,14 @@
     "title": "Topics in Italian Literature: Contemporary Prose, Poetry and Theatre",
     "notes": "",
     "prerequisites": "ITAL 300 or permission from the instructor.",
+    "corequisites": ""
+  },
+  {
+    "department": "JAPN",
+    "number": "100",
+    "title": "Japanese I",
+    "notes": "Students enrolled directly into JAPN 110 may not take this course for credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -13413,6 +14645,30 @@
     "title": "Directed Readings in Labour Studies",
     "notes": "",
     "prerequisites": "45 units including nine units of lower division labour studies. Recommended: At least three upper division courses in labour studies.",
+    "corequisites": ""
+  },
+  {
+    "department": "LING",
+    "number": "111",
+    "title": "The Wonder of Words",
+    "notes": "Students with credit for LING 110 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "LING",
+    "number": "190",
+    "title": "The Science of Speech",
+    "notes": "Students with credit for LING 290 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "LING",
+    "number": "250",
+    "title": "Computational Text Analysis",
+    "notes": "Students with credit for SDA 250 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -14337,6 +15593,166 @@
   },
   {
     "department": "MATH",
+    "number": "701",
+    "title": "Computer Algebra",
+    "notes": "Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "708",
+    "title": "Discrete Optimization",
+    "notes": "Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "709",
+    "title": "Numerical Linear Algebra and Optimization",
+    "notes": "Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "716",
+    "title": "Numerical Analysis II",
+    "notes": "Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "718",
+    "title": "Partial Differential Equations",
+    "notes": "Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "719",
+    "title": "Linear Analysis",
+    "notes": "Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "725",
+    "title": "Real Analysis",
+    "notes": " Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "726",
+    "title": "Probability",
+    "notes": "Students with credit for MATH 426 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "740",
+    "title": "Galois Theory",
+    "notes": "Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "742",
+    "title": "Cryptography",
+    "notes": "Students may not take a 700 division course if it is being offered in conjunction with a 400 division course which they have taken previously.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "743",
+    "title": "Combinatorial Theory",
+    "notes": "Students with credit for MATH 443 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "747",
+    "title": "Coding Theory",
+    "notes": "Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "748",
+    "title": "Network Flows",
+    "notes": "Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "750",
+    "title": "Introduction to Topology",
+    "notes": "Students with credit for MATH 450 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "762",
+    "title": "Fluid Dynamics",
+    "notes": "Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "769",
+    "title": "Topics in Graphs and Trees in Biomathematics",
+    "notes": "Students with credit for MATH 469 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "775",
+    "title": "Mathematical Data Science",
+    "notes": "Students with credit for MATH 475 may not take this course for further credit. APMA 940 will be accepted in lieu of MATH 775.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "795",
+    "title": "Selected Topics in Applied Mathematics",
+    "notes": "Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "796",
+    "title": "Selected Topics in Mathematics",
+    "notes": "Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
+    "number": "801",
+    "title": "Computer Algebra",
+    "notes": "Students who have credit for either MACM 401 or MATH 701 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MATH",
     "number": "875",
     "title": "PhD Preliminary Examination",
     "notes": "Students with credit for MATH 878 may not take this course for further credit.",
@@ -14753,6 +16169,14 @@
   },
   {
     "department": "MBB",
+    "number": "729",
+    "title": "RNA-mediated Gene Regulation",
+    "notes": "Students who have taken MBB 420 or MBB 829 under the same title cannot take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MBB",
     "number": "730",
     "title": "Mechanisms of Secretory Transport",
     "notes": "",
@@ -14777,6 +16201,14 @@
   },
   {
     "department": "MBB",
+    "number": "745",
+    "title": "Infectious Disease Mechanisms",
+    "notes": "Students who have taken this topic under MBB 829 or MBB 839 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MBB",
     "number": "747",
     "title": "Stem Cell Biology and Applications",
     "notes": "Students with credit for MBB 447 or BISC 447 may not take this course for further credit. Students with credit for MBB 440, BISC 472, MBB 839 or BISC 881 under the title \"Stem Cell Biology and Applications\" may not take this course for further credit.",
@@ -14797,6 +16229,14 @@
     "title": "Cancer Genomics",
     "notes": "",
     "prerequisites": "Permission of the department. Recommended: MBB 331 and MBB 342 or equivalent.",
+    "corequisites": ""
+  },
+  {
+    "department": "MBB",
+    "number": "778",
+    "title": "Molecular Epidemiology of Infectious Disease",
+    "notes": "Students with credit for MBB 478, HSCI 478, or HSCI 778 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -14829,6 +16269,38 @@
     "title": "Biomolecular Structure and Function Colloquium",
     "notes": "",
     "prerequisites": "BISC 331/MBB 331 or equivalent.",
+    "corequisites": ""
+  },
+  {
+    "department": "MSE",
+    "number": "100",
+    "title": "Engineering Graphics and Design",
+    "notes": "Students with credit for SEE 100 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MSE",
+    "number": "101W",
+    "title": "Process, Form, and Convention in Professional Genres",
+    "notes": "Students with credit for CMPT 105W, SEE 101W, ENSC 102 or ENSC 105W may not take MSE 101W for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MSE",
+    "number": "102",
+    "title": "Applied Science, Technology and Society",
+    "notes": "Students with credit for CMPT 106, ENSC 100 or ENSC 106 may not take MSE 102 for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MSE",
+    "number": "110",
+    "title": "Mechatronics Design I",
+    "notes": "Students with credit for ENSC 182 may not take MSE 110 for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -15265,6 +16737,22 @@
   },
   {
     "department": "MSE",
+    "number": "753",
+    "title": "Hybrid Thermal Electric Microgrids I",
+    "notes": "Students with credit for MSE 453 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MSE",
+    "number": "754",
+    "title": "Hybrid Thermal Electric Microgrids II",
+    "notes": "Students with credit for MSE 454 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "MSE",
     "number": "782",
     "title": "Introduction to State Space Control Systems",
     "notes": "",
@@ -15408,6 +16896,54 @@
     "corequisites": ""
   },
   {
+    "department": "PERS",
+    "number": "100",
+    "title": "Introductory Persian I",
+    "notes": "Students who have taken LANG 118 with this topic may not take this course for further credit. Students with credit for PERS 118 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "PHIL",
+    "number": "100W",
+    "title": "Knowledge and Reality",
+    "notes": "Students with credit for PHIL 100 or PHIL 300 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "PHIL",
+    "number": "105",
+    "title": "Critical Thinking",
+    "notes": "Students with credit for PHIL XX1 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "PHIL",
+    "number": "120W",
+    "title": "Moral and Legal Problems",
+    "notes": "Students with credit for PHIL 120 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "PHIL",
+    "number": "144",
+    "title": "Introduction to Philosophy of Science",
+    "notes": "Students with credit for PHIL 244 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "PHIL",
+    "number": "150",
+    "title": "Great Works in the History of Philosophy",
+    "notes": "Students with credit for PHIL 151 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
     "department": "PHIL",
     "number": "201",
     "title": "Epistemology",
@@ -15429,6 +16965,14 @@
     "title": "Ethical Theory",
     "notes": "",
     "prerequisites": "One of PHIL 100, 100W, 120, 120W, 121, 144, 150, 151, or 300.",
+    "corequisites": ""
+  },
+  {
+    "department": "PHIL",
+    "number": "270",
+    "title": "Data, Ethics and Society",
+    "notes": "Students with credit for SDA 270 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -15717,6 +17261,14 @@
     "title": "Studio Physics - Optics, Electricity and Magnetism",
     "notes": "Students with credit for PHYS 126 or 121 or 102 may not take this course for further credit.",
     "prerequisites": "PHYS 120 or PHYS 125 or PHYS 140 or MSE 103, with a minimum grade of C-, or PHYS 101 with a minimum grade of B. Corequisite: MATH 152 or MATH 155.",
+    "corequisites": ""
+  },
+  {
+    "department": "PHYS",
+    "number": "190",
+    "title": "Introduction to Astronomy",
+    "notes": "Students who have received credit for PHYS 121, 126, or 141 may not take PHYS 190 for further credit. ",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -16120,6 +17672,22 @@
     "corequisites": ""
   },
   {
+    "department": "PHYS",
+    "number": "890",
+    "title": "General Relativity and Gravitation",
+    "notes": "Students with credit for PHYS 490 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "PLAN",
+    "number": "100",
+    "title": "Introduction to Planning",
+    "notes": "Students with credit for PLAN 200 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
     "department": "PLAN",
     "number": "300",
     "title": "Planning Methods and Analysis",
@@ -16201,6 +17769,14 @@
   },
   {
     "department": "PLCY",
+    "number": "200",
+    "title": "Introduction to Public Policy",
+    "notes": "POL 253 will be accepted in lieu of this course.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "PLCY",
     "number": "300",
     "title": "Applied Public Policy Analysis",
     "notes": "",
@@ -16277,6 +17853,30 @@
     "title": "Extended Policy Analysis",
     "notes": "",
     "prerequisites": "PLCY 802, PLCY 804, PLCY 806, PLCY 807 and approval of the department.",
+    "corequisites": ""
+  },
+  {
+    "department": "POL",
+    "number": "100",
+    "title": "Introduction to Politics and Government",
+    "notes": "Students with credit for POL 101W may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "POL",
+    "number": "141",
+    "title": "International Relations",
+    "notes": "Students who have taken POL 241 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "POL",
+    "number": "200W",
+    "title": "Investigating Politics: An Introduction to Political Analysis",
+    "notes": "Students with credit for POL 200 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -16553,6 +18153,14 @@
   },
   {
     "department": "POL",
+    "number": "452W",
+    "title": "Energy Policy",
+    "notes": "Students who have completed POL 459 in 2009 and 2010 may not complete this course for further credit",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "POL",
     "number": "455",
     "title": "States and Markets",
     "notes": "",
@@ -16641,10 +18249,26 @@
   },
   {
     "department": "POL",
+    "number": "801",
+    "title": "Epistemological and Theoretical Perspectives in Political Science",
+    "notes": "Students with credit for POL 813 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "POL",
     "number": "804",
     "title": "Topics in Advanced Political Research Design and Methodology",
     "notes": "",
     "prerequisites": "POL 800.",
+    "corequisites": ""
+  },
+  {
+    "department": "POL",
+    "number": "855",
+    "title": "Science, Technology and Public Policy",
+    "notes": "Students with credit for SEE 773 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -17353,6 +18977,14 @@
   },
   {
     "department": "PUB",
+    "number": "210W",
+    "title": "Professional Writing Workshop",
+    "notes": "Students who have credit for PUB 210 may not take PUB 210W for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "PUB",
     "number": "231",
     "title": "Graphic Design Fundamentals",
     "notes": "Students who have taken PUB 230 may not take PUB 231 for credit.",
@@ -17584,6 +19216,14 @@
     "corequisites": ""
   },
   {
+    "department": "PUNJ",
+    "number": "100",
+    "title": "Introductory Punjabi I",
+    "notes": "Students with credit for LANG 148 Special Topic-Intro to Punjabi I may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
     "department": "REM",
     "number": "200",
     "title": "Introduction to Resource and Environmental Management in Canada",
@@ -17801,10 +19441,26 @@
   },
   {
     "department": "REM",
+    "number": "610",
+    "title": "Applied Environmental Toxicology and Environmental Management of Contaminants",
+    "notes": "Equivalent Courses: MRM610  MRM660",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "REM",
     "number": "612",
     "title": "Simulation Modelling in Natural Resource Management",
     "notes": "",
     "prerequisites": "REM 611 or permission of the instructor.",
+    "corequisites": ""
+  },
+  {
+    "department": "REM",
+    "number": "613",
+    "title": "Methods in Fisheries Assessment",
+    "notes": "Equivalent Courses: MRM613",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -17817,10 +19473,66 @@
   },
   {
     "department": "REM",
+    "number": "642",
+    "title": "Sustainable Community Planning and Regional Development",
+    "notes": "Equivalent Courses: MRM642",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "REM",
+    "number": "644",
+    "title": "Policy Analysis for Social and Environmental Change",
+    "notes": "Equivalent Courses: MRM644",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "REM",
+    "number": "690",
+    "title": "Co-op I",
+    "notes": "Students with credit for MRM 690 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "REM",
     "number": "691",
     "title": "Co-op II",
     "notes": "",
     "prerequisites": "Students must have completed at least one term's courses and permission of REM's co-op co-ordinator.",
+    "corequisites": ""
+  },
+  {
+    "department": "REM",
+    "number": "698",
+    "title": "Field Resource Management Workshop",
+    "notes": "Equivalent Courses: MRM698",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "REM",
+    "number": "699",
+    "title": "Research Project",
+    "notes": "Students with credit for MRM 699 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "REM",
+    "number": "899",
+    "title": "PhD Thesis",
+    "notes": "Students with credit for MRM 899 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "RISK",
+    "number": "101",
+    "title": "Introduction to Insurance",
+    "notes": "Students with credit for ACMA 101 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -17897,10 +19609,42 @@
   },
   {
     "department": "SA",
+    "number": "200W",
+    "title": "Power, Conflict and Change in Canadian Society (SA)",
+    "notes": "Students with credit for SA 100W are not eligible to take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "SA",
     "number": "201W",
     "title": "Anthropology and Contemporary Life (A)",
     "notes": "",
     "prerequisites": "Recommended: SA 101.",
+    "corequisites": ""
+  },
+  {
+    "department": "SA",
+    "number": "216",
+    "title": "Sociology of Indigenous-Settler Relations (S)",
+    "notes": "Students who have taken SA 442 under the title \"Sociology of Indigenous-Settler Relations\" in Fall 2021, Fall 2022, or Fall 2023 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "SA",
+    "number": "218",
+    "title": "Illness, Culture and Society (A)",
+    "notes": "Students with credit for SA 460 when offered as Medical Anthropology are not eligible to take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "SA",
+    "number": "219",
+    "title": "Culture, Mental Health, and Therapeutic Governance (A)",
+    "notes": "Students who have taken SA 359 under the title \"Culture, Mental Health, and Therapeutic Governance\" in Fall 2017, Fall 2019, or Fall 2020 may not take this course further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -18281,6 +20025,14 @@
   },
   {
     "department": "SD",
+    "number": "281",
+    "title": "Introduction to Sustainability",
+    "notes": "Students with credit for REM 281 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "SD",
     "number": "381",
     "title": "Building Sustainable Communities",
     "notes": "Students with credit for REM 381 may not take this course for further credit.",
@@ -18313,10 +20065,50 @@
   },
   {
     "department": "SDA",
+    "number": "100",
+    "title": "Data Visualization",
+    "notes": "Students who have taken ECON 334, POL 390, STAT 240, or STAT 310 first may not then take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "SDA",
+    "number": "250",
+    "title": "Computational Text Analysis",
+    "notes": "Students with credit for LING 250 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "SDA",
+    "number": "270",
+    "title": "Data, Ethics and Society",
+    "notes": "Students with credit for PHIL 270 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "SDA",
     "number": "490",
     "title": "Capstone Project Seminar",
     "notes": "",
     "prerequisites": "Admission into the Social Data Analytics Minor and 18 units completed in the minor.",
+    "corequisites": ""
+  },
+  {
+    "department": "SEE",
+    "number": "100",
+    "title": "Engineering Graphics and Software for Design",
+    "notes": "Students with credit for MSE 100 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "SEE",
+    "number": "101W",
+    "title": "Process, Form and Convention in Professional Genres",
+    "notes": "Students with credit for CMPT 105W, ENSC 102, ENSC 105W, or MSE 101W may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -18633,6 +20425,14 @@
   },
   {
     "department": "SEE",
+    "number": "773",
+    "title": "Sustainable Energy Policy",
+    "notes": "Students with credit for POL 452W or POL 855 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "SEE",
     "number": "810",
     "title": "Sustainability and Sustainable Energy Technologies",
     "notes": "",
@@ -18713,6 +20513,14 @@
   },
   {
     "department": "SPAN",
+    "number": "100",
+    "title": "Introductory Spanish I",
+    "notes": "Students with credit for SPAN 102 may not take this course for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "SPAN",
     "number": "110",
     "title": "Introductory Spanish II",
     "notes": "Students with credit for SPAN 103 may not take this course for further credit.",
@@ -18749,6 +20557,14 @@
     "title": "Spanish Conversation Through Cinema",
     "notes": "",
     "prerequisites": "SPAN 202 or equivalent.",
+    "corequisites": ""
+  },
+  {
+    "department": "STAT",
+    "number": "100",
+    "title": "Statistics in Everyday Life",
+    "notes": "Students may not obtain credit for STAT 100 if they have credit for - or are taking concurrently - any upper division STAT course.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -19177,10 +20993,34 @@
   },
   {
     "department": "STAT",
+    "number": "894",
+    "title": "Reading",
+    "notes": "Equivalent Courses: MATH894",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "STAT",
+    "number": "895",
+    "title": "Reading",
+    "notes": "Students who have credit for MATH 895 may not take STAT 895 for further credit.",
+    "prerequisites": "",
+    "corequisites": ""
+  },
+  {
+    "department": "STAT",
     "number": "897",
     "title": "PhD Comprehensive Exam",
     "notes": "",
     "prerequisites": "STAT PhD students.",
+    "corequisites": ""
+  },
+  {
+    "department": "URB",
+    "number": "201",
+    "title": "Urban Inquiry and Practice",
+    "notes": "GEOG 266W will be accepted in lieu of URB 201. Students with credit for FASS 211 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
@@ -19221,6 +21061,14 @@
     "title": "Urban Innovation Lab",
     "notes": "",
     "prerequisites": "60 units and permission of the instructor. Students should seek permission from the instructor prior to the term in which they wish to enroll.",
+    "corequisites": ""
+  },
+  {
+    "department": "URB",
+    "number": "663",
+    "title": "Diversity and Equity in Cities",
+    "notes": "Students with credit for URB 463 or POL 463 may not take this course for further credit.",
+    "prerequisites": "",
     "corequisites": ""
   },
   {
