@@ -2,8 +2,8 @@ import { promises as fs } from 'fs';
 import path from 'path';
 
 const OUTLINES_URL = 'https://api.sfucourses.com/v1/rest/outlines/all';
-const OUTLINES_PATH = path.join(__dirname, 'data', 'outlines_all.json');
-const VITAL_DATA_PATH = path.join(__dirname, 'data', 'vital_data.json');
+const OUTLINES_PATH = path.join(__dirname, 'source_data', 'outlines_all.json');
+const VITAL_DATA_PATH = path.join(__dirname, 'source_data', 'vital_data.json');
 
 async function fetchAndSaveOutlines() {
     const res = await fetch(OUTLINES_URL);

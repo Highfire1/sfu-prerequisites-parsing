@@ -1,0 +1,111 @@
+[
+  {
+    "department": "ACMA",
+    "number": "101",
+    "rSchema": "SFUv1",
+    "corequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "150"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "151"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "154"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "157"
+        }
+      ]
+    },
+    "original_title": "Introduction to Insurance",
+    "original_prerequisites": "",
+    "original_corequisites": "MATH 150, 151, 154 or 157.",
+    "original_notes": "",
+    "timestamp": "2025-06-30T01:22:07.094Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "201",
+    "rSchema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "152",
+          "minGrade": "C"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "155",
+              "minGrade": "B"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "158",
+              "minGrade": "B"
+            }
+          ]
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "subject": "ACMA",
+        "course": "210"
+      }
+    ],
+    "original_title": "Interest Theory and Applications",
+    "original_prerequisites": "MATH 152 with a minimum grade of C; or MATH 155 or MATH 158, with a grade of at least B.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 210 cannot take ACMA 201 for further credit.",
+    "timestamp": "2025-06-30T01:28:36.009Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "231",
+    "rSchema": "SFUv1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "HSCourse",
+          "course": "BC Mathematics 12",
+          "orEquivalent": "true"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "1XX",
+          "minGrade": "C"
+        }
+      ]
+    },
+    "original_title": "Tools for Data-Driven Decision Making",
+    "original_prerequisites": "BC Mathematics 12 (or equivalent) or any 100-level MATH course with a minimum grade of C.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-06-30T01:29:28.136Z"
+  }
+]

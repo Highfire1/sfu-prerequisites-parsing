@@ -1,21 +1,11 @@
+```js
 const SCHEMA_VERSION = 'SFUv1';
-
-// Import types
-interface CourseCondensedInfo {
-    department: string;
-    number: string;
-    title: string;
-    notes: string;
-    prerequisites: string;
-    corequisites: string;
-}
 
 interface Course {
     subject: string;
     course: string;
 }
 
-// Simplified interface for LLM parsing (without metadata fields)
 interface ParsedCourseRequirements {
     department: string;
     number: string;
@@ -26,26 +16,6 @@ interface ParsedCourseRequirements {
     recommended_corequisite?: RequirementNode;
     credit_conflicts?: Course[];
     rawResponse?: string;
-}
-
-// data that is saved to file
-interface SaveCourseRequirements {
-    department: string;
-    number: string;
-    rSchema: string;
-    prerequisite?: RequirementNode;
-    corequisite?: RequirementNode;
-    recommended_prerequisite?: RequirementNode;
-    recommended_corequisite?: RequirementNode;
-    credit_conflicts?: Course[];
-    
-    // Original course data
-    original_title: string;
-    original_prerequisites: string;
-    original_corequisites: string;
-    original_notes: string;
-    
-    timestamp: string; // ISO 8601 format
 }
 
 
@@ -119,7 +89,5 @@ interface BlacklistedCourse {
     department: string;
     course_code: string;
     reason: string;
-    timestamp: string; // ISO 8601 format
 }
-
-export type {CourseCondensedInfo, Course, SaveCourseRequirements as CourseRequirements, ParsedCourseRequirements, RequirementNode, RequirementGroup, RequirementProgram, RequirementCGPA, RequirementUDGPA, RequirementCourse, RequirementHSCourse, RequirementCreditCount, RequirementCourseCount, RequirementPermission, RequirementOther, BlacklistedCourse};
+```

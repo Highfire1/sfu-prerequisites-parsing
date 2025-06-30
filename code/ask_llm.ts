@@ -4,7 +4,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import * as readline from 'readline';
 
-import type { Course, CourseRequirements, RequirementNode, CourseCondensedInfo, BlacklistedCourse } from './types.js';
+import type { Course, CourseRequirements, ParsedCourseRequirements, RequirementNode, CourseCondensedInfo, BlacklistedCourse } from './types.ts';
 import { prettyPrintRequirement, readablePrintRequirement } from './utilities.js';
 
 // Load environment variables
@@ -17,7 +17,7 @@ interface LLMError {
     confidence: number;
 }
 
-type LLMResponse = CourseRequirements | LLMError;
+type LLMResponse = ParsedCourseRequirements | LLMError;
 
 const client = new OpenAI({
     apiKey: process.env.OPENROUTER_API_KEY,
@@ -38,7 +38,7 @@ function askUserChoice(question: string): Promise<string> {
     });
 }
 
-const typesPath = path.join(__dirname, 'types.ts');
+const typesPath = path.join(__dirname, 'source_data/types.md');
 const types = await fs.readFile(typesPath, 'utf-8');
 
 const systemPrompt = `You are an expert at parsing university course prerequisites and corequisites from natural language text into structured data.
@@ -46,7 +46,7 @@ const systemPrompt = `You are an expert at parsing university course prerequisit
 Your task is to parse the prerequisites and corequisites for a course into a specific JSON schema. 
 
 SCHEMA DEFINITIONS:
-- CourseRequirements: Main output structure
+- ParsedCourseRequirements: Main output structure 
 - RequirementNode: Can be a group (ALL_OF/ONE_OF/TWO_OF logic) or specific requirement types
 - Types: 'group', 'course', 'creditCount', 'courseCount', 'CGPA', 'UDGPA', 'HSCourse', 'program', 'permission', 'other'
 
@@ -63,7 +63,7 @@ PARSING RULES:
 10. For permission requirements (e.g., "Students must apply and receive permission from the co-op coordinator", "Approval of Senior Supervisor is needed"), use:
     {
       "type": "permission",
-      "note": "Permission from the co-op coordinator is required"
+      "note": "Students must apply and receive permission from the co-op coordinator"
     }
 11. For credit conflicts in notes (e.g., "Students with credit for ACMA 210 cannot take ACMA 201 for further credit"), extract them into credit_conflicts array:
     {
@@ -89,8 +89,13 @@ CONFIDENCE REQUIREMENTS:
   - Missing context for proper interpretation
 
 OUTPUT FORMAT:
-Return ONLY valid JSON - either a CourseRequirements object or an error object:
+Return ONLY valid JSON - either a ParsedCourseRequirements object or an error object:
 You do not have to include spacing or formatting, just the JSON structure.
+
+IMPORTANT: Do NOT include the following fields in your output as they will be added automatically:
+- original_title, original_prerequisites, original_corequisites, original_notes
+- timestamp
+- rawResponse
 
 {
   "error": true,
@@ -105,7 +110,7 @@ Some example outputs:
 {
     "department": "MATH",
     "number": "",
-    "rSchema": "SFUv0.10",
+    "rSchema": "SFUv1",
     "prerequisite": {
         "type": "group",
         "logic": "ONE_OF",
@@ -122,7 +127,7 @@ Some example outputs:
 {
     "department": "CMPT",
     "number": "383",
-    "rSchema": "SFUv0.10",
+    "rSchema": "SFUv1",
     "prerequisite": {
         "type": "course",
         "department": "CMPT",
@@ -135,7 +140,7 @@ Note: "Students with credit for ACMA 210 cannot take ACMA 201 for further credit
 {
     "department": "ACMA",
     "number": "201",
-    "rSchema": "SFUv0.10",
+    "rSchema": "SFUv1",
     "credit_conflicts": [
         { "subject": "ACMA", "course": "210" }
     ]
@@ -219,8 +224,8 @@ async function parseCourseRequirements(course: CourseCondensedInfo): Promise<LLM
 }
 
 async function processAllCourses() {
-    const VITAL_DATA_PATH = path.join(__dirname, 'data', 'vital_data.json');
-    const OUTPUT_PATH = path.join(__dirname, 'data', 'parsed_requirements.json');
+    const VITAL_DATA_PATH = path.join(__dirname, 'source_data', 'vital_data.json');
+    const OUTPUT_PATH = path.join(__dirname, 'generated_data', 'parsed_requirements.json');
 
     try {
         // Load the vital data
@@ -337,6 +342,9 @@ Respond with ONLY one of the following options:
 
 If ambiguous or not equivalent, briefly explain why.
 
+Notes:
+- sometimes in the original course info, the corequisite is also listed in the prerequisite field, which is a problem that we want fixed in our parsed json.
+
 Original course info:
 Department: ${course.department}
 Number: ${course.number}
@@ -379,13 +387,13 @@ ${JSON.stringify(parsed, null, 2)}
             const schemaCheckPrompt = `
 You are a strict JSON schema validator for course requirements.
 
-Given the following JSON object, check if it strictly matches the CourseRequirements schema as defined below.
+Given the following JSON object, check if it strictly matches the ParsedCourseRequirements schema as defined below.
 - Only check for schema validity (types, required fields, allowed values, structure).
 - Do NOT check for logical equivalence or correctness of the requirements.
 - If valid, respond with "Valid".
 - If invalid, respond with "Invalid" and list all schema violations.
 
-CourseRequirements schema (TypeScript types):
+ParsedCourseRequirements schema (TypeScript types):
 ${types}
 
 JSON to validate:
@@ -487,10 +495,24 @@ ${JSON.stringify(parsedForSchemaCheck, null, 2)}
             // Save the result if requested
             // don't save errors
             if (shouldSave && !('error' in parsed)) {
-                if ('rawResponse' in parsed) {
-                    delete parsed.rawResponse;
-                }
-                results.push(parsed);
+                // Convert ParsedCourseRequirements to CourseRequirements with metadata
+                const enhancedResult: CourseRequirements = {
+                    department: parsed.department,
+                    number: parsed.number,
+                    rSchema: parsed.rSchema,
+                    prerequisite: parsed.prerequisite,
+                    corequisite: parsed.corequisite,
+                    recommended_prerequisite: parsed.recommended_prerequisite,
+                    recommended_corequisite: parsed.recommended_corequisite,
+                    credit_conflicts: parsed.credit_conflicts,
+                    original_title: course.title,
+                    original_prerequisites: course.prerequisites,
+                    original_corequisites: course.corequisites,
+                    original_notes: course.notes,
+                    timestamp: new Date().toISOString()
+                };
+                
+                results.push(enhancedResult);
                 processedCourses.add(courseKey);
 
                 // Save to file immediately
@@ -524,7 +546,7 @@ ${JSON.stringify(parsedForSchemaCheck, null, 2)}
 
 // Blacklist utility functions
 async function loadBlacklist(): Promise<BlacklistedCourse[]> {
-    const BLACKLIST_PATH = path.join(__dirname, 'data', 'blacklisted.json');
+    const BLACKLIST_PATH = path.join(__dirname, 'generated_data', 'blacklisted.json');
     try {
         const content = await fs.readFile(BLACKLIST_PATH, 'utf-8');
         return JSON.parse(content);
@@ -535,7 +557,7 @@ async function loadBlacklist(): Promise<BlacklistedCourse[]> {
 }
 
 async function saveBlacklist(blacklist: BlacklistedCourse[]): Promise<void> {
-    const BLACKLIST_PATH = path.join(__dirname, 'data', 'blacklisted.json');
+    const BLACKLIST_PATH = path.join(__dirname, 'generated_data', 'blacklisted.json');
     await fs.writeFile(BLACKLIST_PATH, JSON.stringify(blacklist, null, 2), 'utf-8');
 }
 
@@ -544,7 +566,8 @@ async function addToBlacklist(department: string, courseCode: string, reason: st
     const newEntry: BlacklistedCourse = {
         department,
         course_code: courseCode,
-        reason
+        reason,
+        timestamp: new Date().toISOString()
     };
     
     // Check if already blacklisted
