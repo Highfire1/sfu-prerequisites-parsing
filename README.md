@@ -1,10 +1,8 @@
 # SFU-prerequisites-to-data
 
-Success Progress:  [███████████████████████████████░░░░░░░░░░░░░░░░░░░] 62.4%
+Success Progress:  [█████████████████████████████████░░░░░░░░░░░░░░░░░] 66.5%
 
 A project to convert SFU course prerequisites from text to data.
-
-Work in progress.
 
 initialize data with
 `bun run initialize`

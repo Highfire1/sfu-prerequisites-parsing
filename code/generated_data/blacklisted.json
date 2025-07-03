@@ -7,33 +7,9 @@
   },
   {
     "department": "ARCH",
-    "number": "348",
-    "reason": "Ambiguity issue: - The schema does not explicitly support specifying a minimum number of units within a specific department as a prerequisite, only a general unit count. While \"Six units in Archaeology\" is provided, the schema's ability to parse this specific departmental unit requirement is not clear from the provided capabilities.",
-    "timestamp": "2025-07-03T04:53:52.741Z"
-  },
-  {
-    "department": "ARCH",
-    "number": "375",
-    "reason": "Ambiguity issue: - The schema does not explicitly support a requirement that is a combination of a specific course count and a unit count (e.g., \"ARCH 101, ARCH 201, or 45 units\"). It's unclear if the \"45 units\" is an alternative to *both* ARCH 101 and ARCH 201, or if it's an alternative to *either* ARCH 101 or ARCH 201.",
-    "timestamp": "2025-07-03T04:56:24.360Z"
-  },
-  {
-    "department": "ARCH",
-    "number": "377",
-    "reason": "Ambiguity issue: - The schema does not explicitly support specifying \"one lower division ARCH course\" as a prerequisite. It's unclear if this refers to any 100 or 200 level ARCH course, or if there's a specific set of courses intended.",
-    "timestamp": "2025-07-03T05:02:10.926Z"
-  },
-  {
-    "department": "ARCH",
     "number": "390",
     "reason": "Ambiguity issue: - The prerequisite \"ARCH 101 or ARCH 201 and either ARCH 272/272W or 273\" is ambiguous due to the placement of \"and\". It's unclear if the \"and\" applies to the entire preceding \"or\" statement or only to the \"ARCH 201\" part. The schema needs to support more complex logical nesting or the requirement needs to be rephrased for clarity.",
     "timestamp": "2025-07-03T05:04:27.211Z"
-  },
-  {
-    "department": "ACMA",
-    "number": "336",
-    "reason": "the llm always eats it on this course for no reason so i'm skipping it for now",
-    "timestamp": "2025-07-03T05:06:01.626Z"
   },
   {
     "department": "ARCH",
@@ -46,12 +22,6 @@
     "number": "452",
     "reason": "Ambiguity issue: - The prerequisite states \"ARCH 373 or HSCI 321, HSCI 324, BPK 303, BPK 324, BPK 325, BPK 326.\" This phrasing is ambiguous as it's unclear if the \"or\" applies only to ARCH 373, or if it means \"ARCH 373 OR (HSCI 321 AND HSCI 324 AND BPK 303 AND BPK 324 AND BPK 325 AND BPK 326)\". The schema's logical groupings (ALL_OF, ONE_OF) would be needed to clarify this. Additionally, the note about not taking the course for further credit if ARCH 332 was taken under this topic is a restriction that might not be directly representable as a prerequisite or corequisite without a specific schema field for such exclusions.",
     "timestamp": "2025-07-03T05:10:15.084Z"
-  },
-  {
-    "department": "BISC",
-    "number": "100",
-    "reason": "Ambiguity issue: - The prerequisite statement is a recommendation (\"encouraged to proceed\") rather than a strict requirement, and it applies only to a specific subset of students (\"considering a BISC major\"). The schema's ability to represent conditional recommendations is unclear.",
-    "timestamp": "2025-07-03T05:29:28.898Z"
   },
   {
     "department": "BISC",
@@ -250,12 +220,6 @@
     "number": "316",
     "reason": "Ambiguity issue: - The schema does not explicitly support specifying unit requirements *within* a logical grouping (e.g., \"45 units\" applying to both \"BUS 312 and BUS 336\" and \"STAT 285 and BUS 312\"). While the schema can handle unit requirements and logical groupings separately, combining them in this manner is not clearly supported by the examples.",
     "timestamp": "2025-07-03T06:02:42.532Z"
-  },
-  {
-    "department": "BUS",
-    "number": "330",
-    "reason": "Ambiguity issue: - The schema does not support specifying a negative prerequisite (i.e., \"Students who have taken BUS 329 first may not then take this course for further credit.\").",
-    "timestamp": "2025-07-03T06:02:56.162Z"
   },
   {
     "department": "BUS",
@@ -4960,5 +4924,323 @@
     "number": "497",
     "reason": "Ambiguity issue: - The schema does not support representing conditional requirements. The phrase \"Students must successfully complete a Criminal Record Check, if required\" indicates that the criminal record check requirement is conditional. While the schema can represent the existence of a criminal record check requirement (e.g., using `RequirementPermission` with a note), it cannot capture the \"if required\" conditionality, making the full requirement's applicability ambiguous.",
     "timestamp": "2025-07-03T11:57:36.370Z"
+  },
+  {
+    "department": "IS",
+    "number": "830",
+    "reason": "Ambiguity issue: - The phrase \"Undergraduate course work in methods\" in the recommended prerequisite cannot be clearly and unambiguously represented by the schema. The schema requires specific course codes (department and number) for `RequirementCourse`, or a count of courses/credits with optional department/level for `RequirementCourseCount` and `RequirementCreditCount`. \"Methods\" is too vague to map to a specific department, course, or quantifiable measure supported by the schema.",
+    "timestamp": "2025-07-03T11:58:11.456Z"
+  },
+  {
+    "department": "LBST",
+    "number": "201",
+    "reason": "Ambiguity issue: - The schema does not support specifying multiple titles for a course conflict (e.g., \"LBST 230 under title A or title B\") nor does it support representing AND logic between different credit conflict conditions within the `credit_conflicts` array.",
+    "timestamp": "2025-07-03T11:59:26.325Z"
+  },
+  {
+    "department": "LBST",
+    "number": "330",
+    "reason": "Ambiguity issue: - The phrase \"and/or\" in \"LBST 101 and/or 301\" is ambiguous. It is unclear whether this means students must complete LBST 101 OR LBST 301 (ONE_OF), or LBST 101 AND LBST 301 (ALL_OF), or some other combination. The schema can represent these logical structures, but the natural language description does not clearly specify which one is intended.",
+    "timestamp": "2025-07-03T12:00:07.767Z"
+  },
+  {
+    "department": "MACM",
+    "number": "203",
+    "reason": "Ambiguity issue: - The schema does not provide a structured way to represent credit conflicts based on a cumulative unit count threshold. The statement \"Students in excess of 80 units may not take MACM 203 for further credit\" involves a condition (excess of 80 units) that cannot be directly mapped to a specific field within the `credit_conflicts` section, other than a generic `note` field, which does not offer a clear and unambiguous structured representation of this condition.",
+    "timestamp": "2025-07-03T12:00:32.241Z"
+  },
+  {
+    "department": "MACM",
+    "number": "476",
+    "reason": "Ambiguity issue: - The schema does not support specifying date ranges or specific terms (e.g., \"Summer 2020 and 2021\") for credit conflicts, only the course and an optional title.",
+    "timestamp": "2025-07-03T12:00:35.559Z"
+  },
+  {
+    "department": "MATH",
+    "number": "251",
+    "reason": "Ambiguity issue: - The requirement \"for students in the life sciences\" introduces a conditional prerequisite that cannot be represented by the current schema, which lacks support for conditional logic based on student program or status.",
+    "timestamp": "2025-07-03T12:01:41.165Z"
+  },
+  {
+    "department": "MATH",
+    "number": "338",
+    "reason": "Ambiguity issue: The prerequisite phrasing \"MATH 340 or 332, with a minimum grade of C- or permission of the instructor\" is ambiguous. It could be interpreted as either:\n1.  (MATH 340 with a minimum grade of C-) OR (MATH 332 with a minimum grade of C-) OR (General permission of the instructor). This interpretation is representable by the schema.\n2.  (MATH 340 with a minimum grade of C-) OR (MATH 340 with permission of the instructor) OR (MATH 332 with a minimum grade of C-) OR (MATH 332 with permission of the instructor). This interpretation is not clearly representable because the `RequirementPermission` node is a standalone type and cannot be structured to specifically modify or be an alternative to the grade for individual courses within a group. The `note` field in `RequirementPermission` is not a structured way to link permission to a specific course.\n\nDue to this ambiguity in the source text, the requirements cannot be clearly and unambiguously represented by the provided schema.",
+    "timestamp": "2025-07-03T12:02:10.641Z"
+  },
+  {
+    "department": "MATH",
+    "number": "360",
+    "reason": "Ambiguity issue: - The phrase \"Corequisite: BISC 204 may be taken as a corequisite\" within the prerequisites field indicates that BISC 204 is not a mandatory corequisite but rather an optional one. The provided schema does not have a specific type or field to represent optional or permissive corequisites, as the `corequisite` field expects a defined requirement.",
+    "timestamp": "2025-07-03T12:02:36.824Z"
+  },
+  {
+    "department": "MATH",
+    "number": "498",
+    "reason": "Ambiguity issue: - The requirement \"Students must have an approved project prior to enrollment\" is phrased as a prerequisite (must be completed before enrollment), but it is listed under \"Corequisites\". The schema's `RequirementPermission` and `RequirementOther` types, which are the closest representations for such conditions, do not have a `canBeTakenConcurrently` flag, implying they are prerequisites. Therefore, listing a prerequisite-like condition as a corequisite is ambiguous.",
+    "timestamp": "2025-07-03T12:02:47.319Z"
+  },
+  {
+    "department": "MATH",
+    "number": "775",
+    "reason": "Ambiguity issue: The phrase \"APMA 940 will be accepted in lieu of MATH 775\" implies that APMA 940 is a prerequisite that can substitute for MATH 775. The schema has a `RequirementCourse` type with an `orEquivalent` field. However, `orEquivalent` is typically used for cases like \"MATH 101 or equivalent,\" meaning the *course itself* (MATH 101) has equivalents. The phrasing here is about an *alternative prerequisite*.\n\nThe most direct interpretation is that APMA 940 is the prerequisite. The schema can represent this as `prerequisite: { type: 'course', department: 'APMA', number: '940' }`. The nuance of \"in lieu of MATH 775\" is not directly captured by a specific field in the schema. While `orEquivalent` exists, its application here is ambiguous. If `orEquivalent: 'true'` on `RequirementCourse` means \"this course can be satisfied by another course,\" it doesn't specify *which* other course.\n\nGiven the schema's structure, the most accurate representation of \"APMA 940 will be accepted in lieu of MATH 775\" is to list APMA 940 as the prerequisite. The schema does not have a dedicated field to specify that a prerequisite course is accepted *in lieu of* another specific course. Therefore, while the core prerequisite can be captured, the specific relationship (\"in lieu of\") is lost.\n\nHowever, the question is whether the requirements can be *clearly and unambiguously represented*. The phrase \"accepted in lieu of\" is a common way to state that an alternative course fulfills a requirement. The schema's `RequirementCourse` type with `orEquivalent` is the closest fit, but it's not a perfect match for specifying *which* alternative.\n\nLet's re-evaluate:\n1.  \"Students with credit for MATH 475 may not take this course for further credit.\"\n    *   This is a credit conflict. It can be represented as:\n        ```json\n        \"credit_conflicts\": [\n          {\n            \"type\": \"conflict_course\",\n            \"department\": \"MATH\",\n            \"number\": \"475\"\n          }\n        ]\n        ```\n    *   This is clearly supported.\n\n2.  \"APMA 940 will be accepted in lieu of MATH 775.\"\n    *   This means APMA 940 is a prerequisite.\n    *   The schema has `RequirementCourse` with `orEquivalent?: 'true'`.\n    *   If we interpret \"accepted in lieu of\" as a form of equivalence for the prerequisite, we could try to fit it.\n    *   Option A: `prerequisite: { type: 'course', department: 'APMA', number: '940' }`. This captures that APMA 940 is required, but loses the \"in lieu of MATH 775\" context.\n    *   Option B: `prerequisite: { type: 'course', department: 'MATH', number: '775', orEquivalent: 'true' }`. This implies MATH 775 itself has equivalents, which isn't quite right. It doesn't specify *what* is equivalent.\n    *   The schema lacks a direct way to say \"Prerequisite: Course A, which is accepted in lieu of Course B\". The `orEquivalent` field is on the *course being satisfied*, not the *alternative course*.\n\nThe most common interpretation of \"X will be accepted in lieu of Y\" is that X is a prerequisite. The schema *can* represent this as `prerequisite: { type: 'course', department: 'APMA', number: '940' }`. The nuance that APMA 940 is specifically \"in lieu of MATH 775\" is not directly captured by a dedicated field. However, the *requirement* itself (APMA 940) is representable.\n\nThe question is about *clear and unambiguous representation*. While the *exact phrasing* \"accepted in lieu of\" might not have a perfect one-to-one mapping, the *functional requirement* (APMA 940 is a prerequisite) is clear and representable. The `orEquivalent` field is the closest, but its placement and typical usage suggest it's for the course *itself* having equivalents, not for an alternative prerequisite.\n\nGiven the schema, the most reasonable interpretation is that APMA 940 is a prerequisite. The schema doesn't have a field to specify *why* it's a prerequisite (i.e., in lieu of another course). This lack of specificity for the \"in lieu of\" context could be considered a limitation, but not necessarily an ambiguity that prevents representation of the core requirement.\n\nLet's consider if there's any other interpretation. If the intent was that MATH 775 is a prerequisite, and APMA 940 is an alternative *to taking MATH 775*, that's different. But \"accepted in lieu of MATH 775\" usually means APMA 940 is the prerequisite.\n\nThe schema does not have a field to specify that a prerequisite course is accepted *in lieu of* another specific course. It only allows specifying the prerequisite course itself. The `orEquivalent` field on `RequirementCourse` is for when the *required course itself* has equivalents.\n\nTherefore, the phrase \"APMA 940 will be accepted in lieu of MATH 775\" can be represented as a prerequisite of APMA 940, but the specific context of it being \"in lieu of MATH 775\" is not explicitly captured by a dedicated field. This is a limitation in expressiveness, but the core requirement is representable.\n\nThe question is about *clear and unambiguous representation*. The fact that the schema doesn't have a specific field for \"accepted in lieu of\" means that this particular nuance cannot be *unambiguously* represented. While we can represent APMA 940 as a prerequisite, the *reason* for that prerequisite (as a substitute for MATH 775) is lost. This is a lack of schema support for a specific nuance.\n\nFinal check:\n- Credit conflict: Supported.\n- Prerequisite (APMA 940): Supported as a course prerequisite.\n- Nuance of \"in lieu of MATH 775\": Not directly supported by a specific field. The `orEquivalent` field is for the course itself having equivalents.\n\nThis lack of a specific field for \"accepted in lieu of\" means the requirement cannot be *fully and unambiguously* represented in its entirety.\n\n. The phrase \"APMA 940 will be accepted in lieu of MATH 775\" implies that APMA 940 is a prerequisite that substitutes for MATH 775. The schema has `RequirementCourse` with an `orEquivalent` field, but this field is typically used when the *course itself* has equivalents (e.g., \"MATH 101 or equivalent\"). There isn't a specific field to denote that one prerequisite course is accepted *in lieu of* another specific course. While APMA 940 can be represented as a prerequisite, the specific context of it being a substitute for MATH 775 is not directly captured by the schema, leading to a loss of clarity and unambiguous representation of this specific nuance.\n\n```json\n{\n  \"schema_version\": \"SFUv1.1\",\n  \"department\": \"MATH\",\n  \"number\": \"775\",\n  \"credit_conflicts\": [\n    {\n      \"type\": \"conflict_course\",\n      \"department\": \"MATH\",\n      \"number\": \"475\"\n    }\n  ],\n  \"prerequisite\": {\n    \"type\": \"course\",\n    \"department\": \"APMA\",\n    \"number\": \"940\"\n  }\n}\n```\nThis representation captures the credit conflict and the prerequisite, but the \"in lieu of MATH 775\" aspect is lost. The schema does not have a field to explicitly state this relationship. Therefore, it's not fully and unambiguously representable.\n\nAMBIGUOUS. The phrase \"APMA 940 will be accepted in lieu of MATH 775\" implies that APMA 940 is a prerequisite that substitutes for MATH 775. The schema has a `RequirementCourse` type with an `orEquivalent` field, but this field is typically used when the *course itself* has equivalents (e.g., \"MATH 101 or equivalent\"). There isn't a specific field to denote that one prerequisite course is accepted *in lieu of* another specific course. While APMA 940 can be represented as a prerequisite, the specific context of it being a substitute for MATH 775 is not directly captured by the schema, leading to a loss of clarity and unambiguous representation of this specific nuance.AMBIGUOUS. The phrase \"APMA 940 will be accepted in lieu of MATH 775\" implies that APMA 940 is a prerequisite that substitutes for MATH 775. The schema has a `RequirementCourse` type with an `orEquivalent` field, but this field is typically used when the *course itself* has equivalents (e.g., \"MATH 101 or equivalent\"). There isn't a specific field to denote that one prerequisite course is accepted *in lieu of* another specific course. While APMA 940 can be represented as a prerequisite, the specific context of it being a substitute for MATH 775 is not directly captured by the schema, leading to a loss of clarity and unambiguous representation of this specific nuance.",
+    "timestamp": "2025-07-03T12:04:49.166Z"
+  },
+  {
+    "department": "MBB",
+    "number": "201",
+    "reason": "Ambiguity issue: - The schema does not support representing a single course requirement that can be satisfied as either a prerequisite or a corequisite. The `prerequisite` and `corequisite` fields are distinct, and there is no mechanism to express this \"either/or\" flexibility for a single course.",
+    "timestamp": "2025-07-03T12:05:28.161Z"
+  },
+  {
+    "department": "MBB",
+    "number": "490",
+    "reason": "Ambiguity issue: - The phrase \"Usually, upper level standing with at least 60 units in a Biochemistry major, minor or honours program will be required\" is ambiguous because:\n*   The term \"Usually\" indicates a non-mandatory requirement, which the schema does not explicitly support for specific conditions within a prerequisite.\n*   \"Upper level standing\" is vague and not directly representable by a schema type.\n*   The schema does not support specifying that units must be earned within a particular major, minor, or honours program.",
+    "timestamp": "2025-07-03T12:06:33.124Z"
+  },
+  {
+    "department": "MBB",
+    "number": "496",
+    "reason": "Ambiguity issue: - The schema does not support representing \"upper division standing\" within a specific program. The `RequirementProgram` type only allows specifying the program name, not the academic level or standing within that program.",
+    "timestamp": "2025-07-03T12:06:38.079Z"
+  },
+  {
+    "department": "MBB",
+    "number": "747",
+    "reason": "Ambiguity issue: - The schema does not support logical grouping (e.g., OR conditions) for credit conflicts. The notes section contains phrases like \"Students with credit for MBB 447 or BISC 447\" and \"Students with credit for MBB 440, BISC 472, MBB 839 or BISC 881\", which imply an OR relationship between courses that constitute a credit conflict. The `credit_conflicts` array in the schema is a flat list, and each entry is treated as a distinct conflict, preventing the unambiguous representation of these OR conditions.",
+    "timestamp": "2025-07-03T12:07:20.667Z"
+  },
+  {
+    "department": "MSE",
+    "number": "211",
+    "reason": "Ambiguity issue: - The note contains a credit conflict (\"Students with credit for SEE 242 may not take this course for further credit\") and a permission requirement (\"permission from MSE is required\"). While the schema can represent each of these individually (as a `credit_conflicts` item and a `prerequisite` item respectively), it cannot unambiguously represent the conditional relationship implied by the phrasing. The note suggests that the permission is required specifically as an override for the credit conflict for students who have credit for SEE 242. The schema lacks a mechanism to link a permission requirement directly to a specific credit conflict as a conditional bypass.",
+    "timestamp": "2025-07-03T12:08:34.754Z"
+  },
+  {
+    "department": "MSE",
+    "number": "353",
+    "reason": "Ambiguity issue: - The prerequisite \"MSE 251 (previously ENSC 226)\" is ambiguous. The schema's `orEquivalent` field is the closest representation, but it does not clarify whether \"previously ENSC 226\" means ENSC 226 is still a currently accepted alternative or if it was only an equivalent in the past. This lack of clarity on the temporal aspect of equivalence prevents unambiguous representation.",
+    "timestamp": "2025-07-03T12:08:42.091Z"
+  },
+  {
+    "department": "MSE",
+    "number": "411",
+    "reason": "Ambiguity issue: - The schema does not provide a specific type to represent the restriction \"Must not be taken concurrently with MSE 493 or MSE 494\". The `canBeTakenConcurrently` field is designed for the prerequisite course (allowing it to be taken concurrently), not for restricting the current course's concurrency with other courses. This type of rule would have to be represented as a generic `RequirementOther` note, which is not a clear or unambiguous representation of a concurrency restriction.",
+    "timestamp": "2025-07-03T12:09:01.540Z"
+  },
+  {
+    "department": "MSE",
+    "number": "429",
+    "reason": "Ambiguity issue: - The schema does not support representing program-based prohibitions or restrictions. The note \"ENSC students declared as Systems Option majors may not take this course\" is a restriction that cannot be structured within the provided `ParsedCourseRequirements` interface fields like `prerequisite`, `corequisite`, or `credit_conflicts`.",
+    "timestamp": "2025-07-03T12:09:19.881Z"
+  },
+  {
+    "department": "MSE",
+    "number": "452",
+    "reason": "Ambiguity issue: - The credit conflict note specifies a temporal condition (\"in Summer 2014, 2015, 2016 or 2017\") for the conflict with MSE 490. The `ConflictEquivalentCourse` schema type does not support specifying date or term restrictions, meaning this temporal aspect of the requirement cannot be unambiguously represented in a structured manner.",
+    "timestamp": "2025-07-03T12:09:25.016Z"
+  },
+  {
+    "department": "MSE",
+    "number": "795",
+    "reason": "Ambiguity issue: - The schema does not support specifying course levels like \"700-level or higher\" for credit count requirements.",
+    "timestamp": "2025-07-03T12:10:05.129Z"
+  },
+  {
+    "department": "PHIL",
+    "number": "105",
+    "reason": "Ambiguity issue: - The note \"Students with credit for PHIL XX1 may not take this course for further credit\" indicates a credit conflict. The schema supports `credit_conflicts` with `ConflictEquivalentCourse`, which requires a specific `department` and `number`. The course number \"XX1\" is not a specific course identifier and the schema does not support pattern matching for course numbers in this context.",
+    "timestamp": "2025-07-03T12:11:43.236Z"
+  },
+  {
+    "department": "PHIL",
+    "number": "455W",
+    "reason": "Ambiguity issue: - The schema lacks support for representing recommended prerequisites based on subject areas or topics (e.g., \"metaphysics\", \"epistemology\"), which are not specific courses or quantifiable units.",
+    "timestamp": "2025-07-03T12:11:53.201Z"
+  },
+  {
+    "department": "PHIL",
+    "number": "467W",
+    "reason": "Ambiguity issue: - The requirements involve conditional logic based on the student's program enrollment status, which cannot be directly represented by the provided schema. Specifically, the schema lacks support for \"if-then-else\" structures where the alternative requirements depend on whether a student is in a particular program (e.g., \"Students not in a philosophy major... can take... only with special permission\").",
+    "timestamp": "2025-07-03T12:11:59.826Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "336",
+    "reason": "Ambiguity issue: - The phrase \"Students should apply to the department at least one term in advance\" is listed as a prerequisite but uses advisory language (\"should\"). The schema does not support representing advisory requirements within the `prerequisite` field, nor does it distinguish between mandatory and advisory conditions for types like `RequirementPermission` or `RequirementOther`. This makes its representation ambiguous.",
+    "timestamp": "2025-07-03T12:14:47.353Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "344",
+    "reason": "Ambiguity issue: - The phrase \"both with a minimum grade of C-\" applies a general minimum grade of C- to both the PHYS prerequisite options and the MATH 251 prerequisite. However, one of the PHYS prerequisite options, PHYS 102, is specified with its own minimum grade of B. The schema does not support applying a general minimum grade to a group of courses when one of the courses within that group has a specific, conflicting minimum grade. This creates an ambiguity or an unrepresentable condition.",
+    "timestamp": "2025-07-03T12:14:58.416Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "346",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: Unable to connect. Is the computer able to access the url?",
+    "timestamp": "2025-07-03T12:15:12.805Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "416",
+    "reason": "Ambiguity issue: - The schema does not support an \"or equivalent\" clause that applies to a complex logical combination of courses. The `orEquivalent` property is only available for individual `RequirementCourse` or `RequirementHSCourse` types, but the \"or equivalent\" in this prerequisite applies to the entire preceding condition (\"PHYS 385; PHYS 384 or both MATH 314 and MATH 419\").",
+    "timestamp": "2025-07-03T12:15:51.998Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "436",
+    "reason": "Ambiguity issue: - The phrase \"followed by\" implies a temporal sequence (PHYS 435 must be completed before the 12 units are counted or the course is taken). The provided schema, while capable of representing logical ANDs (`ALL_OF`), does not have a specific type or mechanism to represent temporal ordering between prerequisites. Therefore, the sequential nature of this requirement cannot be unambiguously represented.",
+    "timestamp": "2025-07-03T12:17:38.054Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "816",
+    "reason": "Ambiguity issue: - The phrase \"PHYS 384 or MATH 314 and 419, or equivalent\" is ambiguous regarding the scope of \"or equivalent\". The schema supports `orEquivalent` only on individual `RequirementCourse` or `RequirementHSCourse` nodes, not on complex logical groups of courses. If \"or equivalent\" is intended to apply to the entire preceding clause (\"PHYS 384 or MATH 314 and 419\"), then it cannot be unambiguously represented by the current schema.",
+    "timestamp": "2025-07-03T12:18:05.734Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "849",
+    "reason": "Ambiguity issue: - The schema for `RequirementCourse` does not support descriptive titles for courses (e.g., \"(Semiconductor Devices)\", \"(Solid State Physics)\"), which are part of the stated prerequisites.",
+    "timestamp": "2025-07-03T12:18:40.015Z"
+  },
+  {
+    "department": "PLAN",
+    "number": "319",
+    "reason": "Ambiguity issue: - The schema does not support specifying a year for credit conflicts, making the restriction \"in 2012\" for ENV 399-3 not clearly representable.",
+    "timestamp": "2025-07-03T12:18:54.797Z"
+  },
+  {
+    "department": "PLCY",
+    "number": "824",
+    "reason": "Ambiguity issue: - The prerequisite \"MPP 801 and MPP 802 or equivalent\" is ambiguous. It is unclear whether \"or equivalent\" applies to MPP 802 individually, or to the combination of MPP 801 and MPP 802. The schema supports `orEquivalent` for individual courses but not for groups of courses or combinations of requirements, making the more complex interpretation unrepresentable.",
+    "timestamp": "2025-07-03T12:19:55.605Z"
+  },
+  {
+    "department": "PLCY",
+    "number": "829",
+    "reason": "Ambiguity issue: - The phrase \"or equivalent\" at the end of the prerequisite string applies to the entire preceding condition (\"PLCY 801 and PLCY 802 or, MPP 801 and MPP 802\"). The schema does not provide a structured way to represent an equivalence to a group of courses or a complex condition. The `orEquivalent` property is only available for individual `RequirementCourse` or `RequirementHSCourse` types, not for groups or other requirement types. While the text could be placed in a `RequirementOther` node, this does not constitute a clear and unambiguous *structured representation* of the equivalence itself.",
+    "timestamp": "2025-07-03T12:20:08.861Z"
+  },
+  {
+    "department": "POL",
+    "number": "452W",
+    "reason": "Ambiguity issue: - The schema does not support specifying a date range or temporal condition for credit conflicts involving specific courses. The `conflict_course` type lacks a field for such temporal constraints.",
+    "timestamp": "2025-07-03T12:21:34.047Z"
+  },
+  {
+    "department": "POL",
+    "number": "498",
+    "reason": "Ambiguity issue: - The phrase \"Students may count only one readings course as credit towards their upper division political science requirements\" cannot be unambiguously represented. The schema lacks support for specifying a qualitative course category like \"readings course\" or the specific purpose of credit accumulation (e.g., \"towards upper division political science requirements\") within structured requirement types like `courseCount` or `creditCount`.",
+    "timestamp": "2025-07-03T12:21:49.495Z"
+  },
+  {
+    "department": "POL",
+    "number": "880",
+    "reason": "Ambiguity issue: - The schema lacks a specific type to represent \"admitted graduate student\" status.",
+    "timestamp": "2025-07-03T12:21:53.822Z"
+  },
+  {
+    "department": "POL",
+    "number": "898",
+    "reason": "Ambiguity issue: - The schema does not support specifying that courses must be taken \"while in the MA program\" or be part of a specific program's curriculum when counting courses. The `RequirementCourseCount` type only allows filtering by `department` and `level`, not by program enrollment or program-specific course lists.",
+    "timestamp": "2025-07-03T12:22:01.689Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "821A",
+    "reason": "Ambiguity issue: - The requirement \"Students must successfully complete a Criminal Record Check\" does not map clearly to a specific type within the schema. While it could potentially be represented using `RequirementPermission` or `RequirementOther`, the schema lacks specific definitions or examples for these types that would unambiguously guide the categorization of an administrative check like a criminal record verification. This makes the representation of this particular requirement ambiguous.",
+    "timestamp": "2025-07-03T12:22:51.873Z"
+  },
+  {
+    "department": "REM",
+    "number": "319",
+    "reason": "Ambiguity issue: - The note \"Students who have taken ENV 399-3 \"Special Topics in Environmental Law\" in 2012 may not take this course for further credit\" includes a year restriction (\"in 2012\") which cannot be represented in the `credit_conflicts` schema.",
+    "timestamp": "2025-07-03T12:23:29.601Z"
+  },
+  {
+    "department": "REM",
+    "number": "357",
+    "reason": "Ambiguity issue: - The `credit_conflicts` schema does not support specifying particular semesters or date ranges for a course conflict. The note specifies a restriction based on taking REM 363-3 \"Special Topics\" in Spring 2019 and Fall 2019, which cannot be fully and unambiguously represented by the `ConflictEquivalentCourse` type.",
+    "timestamp": "2025-07-03T12:23:57.668Z"
+  },
+  {
+    "department": "RISK",
+    "number": "336",
+    "reason": "Ambiguity issue: - The schema does not support qualifying requirements as \"normally required\" versus strictly mandatory. The phrase \"They will normally be required\" introduces a nuance that cannot be captured, making the representation of the strength of the 45 units and 2.50 GPA requirements ambiguous.",
+    "timestamp": "2025-07-03T12:26:15.980Z"
+  },
+  {
+    "department": "RISK",
+    "number": "436",
+    "reason": "Ambiguity issue: - The prerequisite \"Job Practicum II from another department\" cannot be unambiguously represented. The schema's `RequirementCourse` type requires a specific `department` and `number`. \"Job Practicum II\" appears to be a course title, which the schema does not support. Furthermore, the phrase \"from another department\" implies flexibility in the department, which the schema does not support for specifying a course requirement (it doesn't allow for \"any department\" or \"any department except X\").",
+    "timestamp": "2025-07-03T12:26:25.405Z"
+  },
+  {
+    "department": "RISK",
+    "number": "438",
+    "reason": "Ambiguity issue: - The phrase \"Job Practicum IV from another department\" cannot be unambiguously represented. \"Job Practicum IV\" appears to be a course title, not a specific course number, and the `RequirementCourse` schema type requires both a specific department and number. Additionally, \"from another department\" implies a variable or unspecified department, which the `RequirementCourse` type does not support.",
+    "timestamp": "2025-07-03T12:26:32.380Z"
+  },
+  {
+    "department": "SA",
+    "number": "216",
+    "reason": "Ambiguity issue: - The schema does not support specifying date ranges or specific terms for credit conflicts.",
+    "timestamp": "2025-07-03T12:26:34.656Z"
+  },
+  {
+    "department": "SA",
+    "number": "219",
+    "reason": "Ambiguity issue: - The schema does not support specifying temporal conditions (specific terms or dates) for credit conflicts.",
+    "timestamp": "2025-07-03T12:26:46.790Z"
+  },
+  {
+    "department": "SEE",
+    "number": "351",
+    "reason": "Ambiguity issue: The sentence \"MSE students who completed MSE 321 can take this course upon approval of the course instructor\" is a rule that applies to a specific group of students.\nThe ambiguity is whether this rule is an alternative to the main prerequisites or an additional requirement.\nThe schema does not have a mechanism to represent \"IF [condition about student] THEN [requirement]\".\n\nThe sentence is not a direct prerequisite like \"MATH 101\". It's a conditional statement about a subset of students.\nThe schema can represent the *components* of this statement (program, course, permission) and can combine them using `ALL_OF` or `ONE_OF`.\nHowever, the *logical relationship* between this statement and the primary prerequisites is not explicitly defined by the source text.\n\nThe sentence \"MSE students who completed MSE 321 can take this course upon approval of the course instructor\" is a rule that applies to a specific group of students.\nThe ambiguity is whether this rule is an alternative to the main prerequisites or an additional requirement.\nThe schema does not have a mechanism to represent \"IF [condition about student] THEN [requirement]\".\n\nThe sentence is not a direct prerequisite like \"MATH 101\". It's a conditional statement about a subset of students.\nThe schema can represent the *components* of this statement (program, course, permission) and can combine them using `ALL_OF` or `ONE_OF`.\nHowever, the *logical relationship* between this statement and the primary prerequisites is not explicitly defined by the source text.\n\nThe sentence \"MSE students who completed MSE 321 can take this course upon approval of the course instructor\" is a rule that applies to a specific group of students.\nThe ambiguity is whether this rule is an alternative to the main prerequisites or an additional requirement.\nThe schema does not have a mechanism to represent \"IF [condition about student] THEN [requirement]\".\n\nThe sentence is not a direct prerequisite like \"MATH 101\". It's a conditional statement about a subset of students.\nThe schema can represent the *components* of this statement (program, course, permission) and can combine them using `ALL_OF` or `ONE_OF`.\nHowever, the *logical relationship* between this statement and the primary prerequisites is not explicitly defined by the source text.\n\nThe sentence \"MSE students who completed MSE 321 can take this course upon approval of the course instructor\" is a rule that applies to a specific group of students.\nThe ambiguity is whether this rule is an alternative to the main prerequisites or an additional requirement.\nThe schema does not have a mechanism to represent \"IF [condition about student] THEN [requirement]\".\n\nThe sentence is not a direct prerequisite like \"MATH 101\". It's a conditional statement about a subset of students.\nThe schema can represent the *components* of this statement (program, course, permission) and can combine them using `ALL_OF` or `ONE_OF`.\nHowever, the *logical relationship* between this statement and the primary prerequisites is not explicitly defined by the source text.\n\nThe sentence \"MSE students who completed MSE 321 can take this course upon approval of the course instructor\" is a rule that applies to a specific group of students.\nThe ambiguity is whether this rule is an alternative to the main prerequisites or an additional requirement.\nThe schema does not have a mechanism to represent \"IF [condition about student] THEN [requirement]\".\n\nThe sentence is not a direct prerequisite like \"MATH 101\". It's a conditional statement about a subset of students.\nThe schema can represent the *components* of this statement (program, course, permission) and can combine them using `ALL_OF` or `ONE_OF`.\nHowever, the *logical relationship* between this statement and the primary prerequisites is not explicitly defined by the source text.\n\nThe sentence \"MSE students who completed MSE 321 can take this course upon approval of the course instructor\" is a rule that applies to a specific group of students.\nThe ambiguity is whether this rule is an alternative to the main prerequisites or an additional requirement.\nThe schema does not have a mechanism to represent \"IF [condition about student] THEN [requirement]\".\n\nThe sentence is not a direct prerequisite like \"MATH 101\". It's a conditional statement about a subset of students.\nThe schema can represent the *components* of this statement (program, course, permission) and can combine them using `ALL_OF` or `ONE_OF`.\nHowever, the *logical relationship* between this statement and the primary prerequisites is not explicitly defined by the source text.\n\nThe sentence \"MSE students who completed MSE 321 can take this course upon approval of the course instructor\" is a rule that applies to a specific group of students.\nThe ambiguity is whether this rule is an alternative to the main prerequisites or an additional requirement.\nThe schema does not have a mechanism to represent \"IF [condition about student] THEN [requirement]\".\n\nThe sentence is not a direct prerequisite like \"MATH 101\". It's a conditional statement about a subset of students.\nThe schema can represent the *components* of this statement (program, course, permission) and can combine them using `ALL_OF` or `ONE_OF`.\nHowever, the *logical relationship* between this statement and the primary prerequisites is not explicitly defined by the source text.\n\nThe sentence \"MSE students who completed MSE 321 can take this course upon approval of the course instructor\" is a rule that applies to a specific group of students.\nThe ambiguity is whether this rule is an alternative to the main prerequisites or an additional requirement.\nThe schema does not have a mechanism to represent \"IF [condition about student] THEN [requirement]\".\n\nThe sentence is not a direct prerequisite like \"MATH 101\". It's a conditional statement about a subset of students.\nThe schema can represent the *components* of this statement (program, course, permission) and can combine them using `ALL_OF` or `ONE_OF`.\nHowever, the *logical relationship* between this statement and the primary prerequisites is not explicitly defined by the source text.\n\nThe sentence \"MSE students who completed MSE 321 can take this course upon approval of the course instructor\" is a rule that applies to a specific group of students.\nThe ambiguity is whether this rule is an alternative to the main prerequisites or an additional requirement.\nThe schema does not have a mechanism to represent \"IF [condition about student] THEN [requirement]\".\n\nThe sentence is not a direct prerequisite like \"MATH 101\". It's a conditional statement about a subset of students.\nThe schema can represent the *components* of this statement (program, course, permission) and can combine them using `ALL_OF` or `ONE_OF`.\nHowever, the *logical relationship* between this statement and the primary prerequisites is not explicitly defined by the source text.\n\nThe sentence \"MSE students who completed MSE 321 can take this course upon approval of the course instructor\" is a rule that applies to a specific group of students.\nThe ambiguity is whether this rule is an alternative to the main prerequisites or an additional requirement.\nThe schema does not have a mechanism to represent \"IF [condition about student] THEN [requirement]\".\n\nThe sentence is not a direct prerequisite like \"MATH 101\". It's a conditional statement about a subset of students.\nThe schema can represent the *components* of this statement (program, course, permission) and can combine them using `ALL_OF` or `ONE_OF`.\nHowever, the *logical relationship* between this statement and the primary prerequisites is not explicitly defined by the source text.\n\nThe sentence \"MSE students who completed MSE 321 can take this course upon approval of the course instructor\" is a rule that applies to a specific group of students.\nThe ambiguity is whether this rule is an alternative to the main prerequisites or an additional requirement.\nThe schema does not have a mechanism to represent \"IF [condition about student] THEN [requirement]\".\n\nThe sentence is not a direct prerequisite like \"MATH 101\". It's a conditional statement about a subset of students.\nThe schema can represent the *components* of this statement (program, course, permission) and can combine them using `ALL_OF` or `ONE_OF`.\nHowever, the *logical relationship* between this statement and the primary prerequisites is not explicitly defined by the source text.\n\nThe sentence \"MSE students who completed MSE 321 can take this course upon approval of the course instructor\" is a rule that applies to a specific group of students.\nThe ambiguity is whether this rule is an alternative to the main prerequisites or an additional requirement.\nThe schema does not have a mechanism to represent \"IF [condition about student] THEN [requirement]\".\n\nThe sentence is not a direct prerequisite like \"MATH 101\". It's a conditional statement about a subset of students.\nThe schema can represent the *components* of this statement (program, course, permission) and can combine them using `ALL_OF` or `ONE_OF`.\nHowever, the *logical relationship* between this statement and the primary prerequisites is not explicitly defined by the source text.\n\nThe sentence \"MSE students who completed MSE 321 can take this course upon approval of the course instructor\" is a rule that applies to a specific group of students.\nThe ambiguity is whether this rule is an alternative to the main prerequisites or an additional requirement.\nThe schema does not have a mechanism to represent \"IF [condition about student] THEN [requirement]\".\n\nThe sentence is not a direct prerequisite like \"MATH 101\". It's a conditional statement about a subset of students.\nThe schema can represent the *components* of this statement (program, course, permission) and can combine them using `ALL_OF` or `ONE_OF`.\nHowever, the *logical relationship* between this statement and the primary prerequisites is not explicitly defined by the source text.\n\nThe sentence \"MSE students who completed MSE 321 can take this course upon approval of the course instructor\" is a rule that applies to a specific group of students.\nThe ambiguity is whether this rule is an alternative to the main prerequisites or an additional requirement.\nThe schema does not have a mechanism to represent \"IF [condition about student] THEN [requirement]\".\n\nThe sentence is not a direct prerequisite like \"MATH 101\". It's a conditional statement about a subset of students.\nThe schema can represent the *components* of this statement (program, course, permission) and can combine them using `ALL_OF` or `ONE_OF`.\nHowever, the *logical relationship* between this statement and the primary prerequisites is not explicitly defined by the source text.\n\nThe sentence \"MSE students who completed MSE 321 can take this course upon approval of the course instructor\" is a rule that applies to a specific group of students.\nThe ambiguity is whether this rule is an alternative to the main prerequisites or an additional requirement.\nThe schema does not have a mechanism to represent \"IF [condition about student] THEN [requirement]\".\n\nThe sentence is not a direct prerequisite like \"MATH 101\". It's a conditional statement about a subset of students.\nThe schema can represent the *components* of this statement (program, course, permission) and can combine them using `ALL_OF` or `ONE_OF`.\nHowever, the *logical relationship* between this statement and the primary prerequisites is not explicitly defined by the source text.\n\nThe sentence \"MSE students who completed MSE 321 can take this course upon approval of the course instructor\" is a rule that applies to a specific group of students.\nThe ambiguity is whether this rule is an alternative to the main prerequisites or an additional requirement.\nThe schema does not have a mechanism to represent \"IF [condition about student] THEN [requirement]\".\n\nThe sentence is not a direct prerequisite like \"MATH 101\". It's a conditional statement about a subset of students.\nThe schema can represent the *components* of this statement (program",
+    "timestamp": "2025-07-03T12:29:47.228Z"
+  },
+  {
+    "department": "SEE",
+    "number": "464",
+    "reason": "Ambiguity issue: - The schema does not support conditional prerequisites based on student program (e.g., \"MSE students\") or complex conditional logic (e.g., \"if X, then Y\"). The alternative path for MSE students who completed MSE 321, requiring instructor approval, cannot be unambiguously represented.",
+    "timestamp": "2025-07-03T12:29:56.050Z"
+  },
+  {
+    "department": "STAT",
+    "number": "100",
+    "reason": "Ambiguity issue: - The schema's `credit_conflicts` structure, specifically the `conflict_course` type, requires a specific course `number`. The note specifies a conflict with \"any upper division STAT course,\" which is a category of courses and cannot be represented by a single course number within the `conflict_course` type. The `conflict_other` type would capture the text but not the structured meaning of the conflict.",
+    "timestamp": "2025-07-03T12:31:19.840Z"
+  },
+  {
+    "department": "STAT",
+    "number": "336",
+    "reason": "Ambiguity issue: 2. \"\" - The phrase \"normally be required\" introduces a degree of flexibility or exception that the schema's structured types (like `creditCount` and `CGPA`) do not support, as they imply strict requirements. The schema lacks a mechanism to represent requirements with such qualifiers, making the exact strictness of the requirement unclear and not fully representable.",
+    "timestamp": "2025-07-03T12:32:10.999Z"
+  },
+  {
+    "department": "URB",
+    "number": "201",
+    "reason": "Ambiguity issue: - The statement \"GEOG 266W will be accepted in lieu of URB 201\" describes an equivalency of URB 201 itself, not a prerequisite or corequisite for URB 201. The provided schema does not have a field to represent such equivalency statements. The `orEquivalent` field in `RequirementCourse` is for specifying that a *prerequisite* course has an equivalent, not for stating that the course itself is equivalent to another.",
+    "timestamp": "2025-07-03T12:33:19.074Z"
+  },
+  {
+    "department": "URB",
+    "number": "423",
+    "reason": "Ambiguity issue: - The credit conflict for \"URB 695 (Fall 2020) under the title \"Women in Cities\"\" cannot be fully represented because the schema does not support specifying a semester or date for credit conflicts, which may be a critical condition for this particular conflict.",
+    "timestamp": "2025-07-03T12:33:29.193Z"
+  },
+  {
+    "department": "URB",
+    "number": "702",
+    "reason": "Ambiguity issue: - The prerequisite \"Cooperative Education Practicum I\" is a course name, but the schema's `RequirementCourse` type requires specific `department` and `number` fields, which are not provided in the input. This prevents unambiguous representation.",
+    "timestamp": "2025-07-03T12:33:49.109Z"
+  },
+  {
+    "department": "WL",
+    "number": "403",
+    "reason": "Ambiguity issue: - The term \"humanities\" in the prerequisite \"60 units including two 300-level courses in world literature, English, and/or humanities\" is ambiguous. The schema's `department` field expects specific department codes (e.g., \"HIST\", \"PHIL\", \"ENGL\"). While \"world literature\" and \"English\" can likely be mapped to specific department codes (e.g., \"WL\", \"ENGL\"), \"humanities\" is a broad academic field. The schema does not provide a mechanism to interpret or expand such general categories into a list of specific department codes. Without a predefined mapping for \"humanities\" to specific department codes, this part of the requirement cannot be unambiguously represented by the schema.",
+    "timestamp": "2025-07-03T12:34:10.702Z"
   }
 ]

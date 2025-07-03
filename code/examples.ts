@@ -535,6 +535,17 @@ const examples: ExampleEntry[] = [
     },
 
     {
+        keyword: "as stated",
+        example: "As stated by department at time of offering.",
+        json: {
+            prerequisite: {
+                type: "other",
+                note: "As stated by department at time of offering."
+            }
+        }
+    },
+
+    {
         keyword: "recommended",
         example: "ARCH 373. Recommended: ARCH 282",
         json: {
@@ -683,6 +694,28 @@ const examples: ExampleEntry[] = [
                     "level": "LD"
                 }
             ]
+            }
+        }
+    },
+
+    {
+        keyword: "courses in ",
+        example: "It is strongly recommended that students have taken prior courses in metaphysics and epistemology.",
+        json: {
+            recommended_prerequisite: {
+                type: "other",
+                note: "It is strongly recommended that students have taken prior courses in metaphysics and epistemology."
+            }
+        }
+    },
+
+    {
+        keyword: "practicum",
+        example: "Job Practicum IV from another department.",
+        json: {
+            prerequisite: {
+                type: "other",
+                note: "Job Practicum IV from another department."
             }
         }
     }

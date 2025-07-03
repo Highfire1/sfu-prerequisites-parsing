@@ -160,6 +160,8 @@ Respond with ONLY one of the following:
 
 If AMBIGUOUS, briefly explain why (missing schema support, contradictory statements, unclear language, etc.).
 
+However, please be creative in your analysis and do not just say "ambiguous" for every course. Use the examples provided to determine if the requirements can be clearly represented.
+
 Response:`;
 
     try {
