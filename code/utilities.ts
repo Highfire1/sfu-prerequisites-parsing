@@ -1,30 +1,75 @@
-import type { RequirementNode, RequirementGroup, RequirementCourseCount, ParsedCourseRequirements, CreditConflict } from "./types";
+import type { RequirementNode, RequirementGroup, RequirementCourseCount, ParsedCourseRequirements, CreditConflict, LLMResponse } from "./types";
+
+function prettyPrintCourseRequirements(req:LLMResponse) {
+    if ('error' in req) {
+        return `Error: ${req.reason}`;
+    }
+
+    const lines: string[] = [];
+    
+    if (req.prerequisite) {
+        lines.push('Prerequisite:');
+        lines.push(prettyPrintRequirement(req.prerequisite));
+    }
+    
+    if (req.corequisite) {
+        lines.push('Corequisite:');
+        lines.push(prettyPrintRequirement(req.corequisite));
+    }
+    
+    if (req.recommended_prerequisite) {
+        lines.push('Recommended Prerequisite:');
+        lines.push(prettyPrintRequirement(req.recommended_prerequisite));
+    }
+    
+    if (req.recommended_corequisite) {
+        lines.push('Recommended Corequisite:');
+        lines.push(prettyPrintRequirement(req.recommended_corequisite));
+    }
+    
+    if (req.credit_conflicts && req.credit_conflicts.length > 0) {
+        lines.push('Credit Conflicts:');
+        for (const conflict of req.credit_conflicts) {
+            if (conflict.type === 'conflict_course') {
+                lines.push(`  Course Conflict: ${conflict.department} ${conflict.number}${conflict.title ? ` (${conflict.title})` : ''}`);
+            } else if (conflict.type === 'conflict_other') {
+                lines.push(`  Other Conflict: ${conflict.note}`);
+            }
+        }
+    }
+
+    return lines.join('\n');
+}
 
 
 function prettyPrintRequirement(node: RequirementNode, indent = 0): string {
     const prefix = '  '.repeat(indent);
 
     switch (node.type) {
-        case 'group':
-            // This is a RequirementGroup
+        case 'group': {
             const lines = [`${prefix}Group (${node.logic}):`];
             for (const child of node.children) {
                 lines.push(prettyPrintRequirement(child, indent + 1));
             }
             return lines.join('\n');
+        }
 
-        case 'course':
+        case 'course': {
             const gradeStr = node.minGrade ? ` (minimum "${node.minGrade}")` : '';
-            const concurrentStr = node.canBeTakenConcurrently ? ' (can be taken concurrently)' : '';
-            const equivalentStr = node.orEquivalent ? ' (or equivalent)' : '';
+            const concurrentStr = node.canBeTakenConcurrently === 'true' ? ' (can be taken concurrently)' : '';
+            const equivalentStr = node.orEquivalent === 'true' ? ' (or equivalent)' : '';
             return `${prefix}${node.department} ${node.number}${gradeStr}${concurrentStr}${equivalentStr}`;
+        }
 
-        case 'creditCount':
-            const deptStr = Array.isArray(node.department)
-                ? node.department.join(', ')
-                : node.department || '';
+        case 'creditCount': {
+            let deptStr = '';
+            if (Array.isArray(node.department)) {
+                deptStr = node.department.join(', ');
+            } else if (typeof node.department === 'string') {
+                deptStr = node.department;
+            }
             const levelStr = node.level ? ` level ${node.level}` : '';
-            const creditConcurrentStr = node.canBeTakenConcurrently ? ' (can be taken concurrently)' : '';
+            const creditConcurrentStr = node.canBeTakenConcurrently === 'true' ? ' (can be taken concurrently)' : '';
             if (!deptStr && !levelStr) {
                 return `${prefix}${node.credits} units${creditConcurrentStr}.`;
             }
@@ -35,16 +80,23 @@ function prettyPrintRequirement(node: RequirementNode, indent = 0): string {
                 return `${prefix}${node.credits} units in ${deptStr}${creditConcurrentStr}.`;
             }
             return `${prefix}${node.credits} units in ${deptStr}${levelStr}${creditConcurrentStr}.`;
+        }
 
-        case 'courseCount':
-            const courseDeptStr = Array.isArray(node.department)
-                ? node.department.join(', ')
-                : node.department || 'any department';
+        case 'courseCount': {
+            let courseDeptStr = '';
+            if (Array.isArray(node.department)) {
+                courseDeptStr = node.department.join(', ');
+            } else if (typeof node.department === 'string') {
+                courseDeptStr = node.department;
+            } else {
+                courseDeptStr = 'any department';
+            }
             const courseLevelStr = node.level ? ` level ${node.level}` : '';
             const courseGradeStr = node.minGrade ? ` (minimum "${node.minGrade}")` : '';
-            const courseConcurrentStr = node.canBeTakenConcurrently ? ' (can be taken concurrently)' : '';
+            const courseConcurrentStr = node.canBeTakenConcurrently === 'true' ? ' (can be taken concurrently)' : '';
             const courseWord = node.count === 1 ? 'course' : 'courses';
             return `${prefix}${node.count} ${courseWord} from ${courseDeptStr}${courseLevelStr}${courseGradeStr}${courseConcurrentStr}`;
+        }
 
         case 'CGPA':
             return `${prefix}CGPA of ${node.minCGPA}`;
@@ -52,10 +104,11 @@ function prettyPrintRequirement(node: RequirementNode, indent = 0): string {
         case 'UDGPA':
             return `${prefix}Upper Division GPA of ${node.minUDGPA}`;
 
-        case 'HSCourse':
+        case 'HSCourse': {
             const hsGradeStr = node.minGrade ? ` (minimum "${node.minGrade}")` : '';
-            const hsEquivalentStr = node.orEquivalent ? ' (or equivalent)' : '';
+            const hsEquivalentStr = node.orEquivalent === 'true' ? ' (or equivalent)' : '';
             return `${prefix}High School: ${node.course}${hsGradeStr}${hsEquivalentStr}`;
+        }
 
         case 'program':
             return `${prefix}Program: ${node.program}`;
@@ -252,30 +305,30 @@ function validateCreditConflict(conflict: any, path: string): string[] {
     const errors: string[] = [];
     
     if (!isObject(conflict)) {
-        errors.push(`${path}: Must be an object`);
+        errors.push(`${path}: Must be an object, got ${typeof conflict}: ${JSON.stringify(conflict)}`);
         return errors;
     }
     
     const conflictObj = conflict as Record<string, any>;
     
     if (!isString(conflictObj.type)) {
-        errors.push(`${path}.type: Must be a string`);
+        errors.push(`${path}.type: Must be a string, got ${typeof conflictObj.type}: ${JSON.stringify(conflictObj.type)}`);
     } else if (conflictObj.type !== 'conflict_course' && conflictObj.type !== 'conflict_other') {
-        errors.push(`${path}.type: Must be either 'conflict_course' or 'conflict_other'`);
+        errors.push(`${path}.type: Must be either 'conflict_course' or 'conflict_other', got '${conflictObj.type}'`);
     }
     
     if (conflictObj.type === 'conflict_course') {
-        if (!isString(conflictObj.subject)) {
-            errors.push(`${path}.subject: Must be a string`);
+        if (!isString(conflictObj.department)) {
+            errors.push(`${path}.department: Must be a string, got ${typeof conflictObj.department}: ${JSON.stringify(conflictObj.department)}`);
         }
-        if (!isString(conflictObj.course)) {
-            errors.push(`${path}.course: Must be a string`);
+        if (!isString(conflictObj.number)) {
+            errors.push(`${path}.number: Must be a string, got ${typeof conflictObj.number}: ${JSON.stringify(conflictObj.number)}`);
         }
         if (conflictObj.title !== undefined && !isString(conflictObj.title)) {
-            errors.push(`${path}.title: Must be a string if provided`);
+            errors.push(`${path}.title: Must be a string if provided, got ${typeof conflictObj.title}: ${JSON.stringify(conflictObj.title)}`);
         }
         // Check for invalid properties
-        const validProps = ['type', 'subject', 'course', 'title'];
+        const validProps = ['type', 'department', 'number', 'title'];
         Object.keys(conflictObj).forEach(key => {
             if (!validProps.includes(key)) {
                 errors.push(`${path}.${key}: Invalid property for conflict_course type`);
@@ -283,7 +336,7 @@ function validateCreditConflict(conflict: any, path: string): string[] {
         });
     } else if (conflictObj.type === 'conflict_other') {
         if (!isString(conflictObj.note)) {
-            errors.push(`${path}.note: Must be a string`);
+            errors.push(`${path}.note: Must be a string, got ${typeof conflictObj.note}: ${JSON.stringify(conflictObj.note)}`);
         }
         // Check for invalid properties
         const validProps = ['type', 'note'];
@@ -302,27 +355,27 @@ function validateRequirementNode(node: any, path: string): string[] {
     const errors: string[] = [];
     
     if (!isObject(node)) {
-        errors.push(`${path}: Must be an object`);
+        errors.push(`${path}: Must be an object, got ${typeof node}: ${JSON.stringify(node)}`);
         return errors;
     }
     
     const nodeObj = node as Record<string, any>;
     
     if (!isString(nodeObj.type)) {
-        errors.push(`${path}.type: Must be a string`);
+        errors.push(`${path}.type: Must be a string, got ${typeof nodeObj.type}: ${JSON.stringify(nodeObj.type)}`);
         return errors;
     }
     
     switch (nodeObj.type) {
         case 'group':
             if (!isString(nodeObj.logic)) {
-                errors.push(`${path}.logic: Must be a string`);
+                errors.push(`${path}.logic: Must be a string, got ${typeof nodeObj.logic}: ${JSON.stringify(nodeObj.logic)}`);
             } else if (!['ALL_OF', 'ONE_OF', 'TWO_OF'].includes(nodeObj.logic)) {
-                errors.push(`${path}.logic: Must be 'ALL_OF', 'ONE_OF', or 'TWO_OF'`);
+                errors.push(`${path}.logic: Must be 'ALL_OF', 'ONE_OF', or 'TWO_OF', got '${nodeObj.logic}'`);
             }
             
             if (!isArray(nodeObj.children)) {
-                errors.push(`${path}.children: Must be an array`);
+                errors.push(`${path}.children: Must be an array, got ${typeof nodeObj.children}: ${JSON.stringify(nodeObj.children)}`);
             } else {
                 nodeObj.children.forEach((child: any, index: number) => {
                     errors.push(...validateRequirementNode(child, `${path}.children[${index}]`));
@@ -332,114 +385,114 @@ function validateRequirementNode(node: any, path: string): string[] {
             
         case 'course':
             if (!isString(nodeObj.department)) {
-                errors.push(`${path}.department: Must be a string`);
+                errors.push(`Course ${path}.department: Must be a string, got ${typeof nodeObj.department}: ${JSON.stringify(nodeObj.department)}`);
             }
             if (!isString(nodeObj.number)) {
-                errors.push(`${path}.number: Must be a string`);
+                errors.push(`Course ${path}.number: Must be a string, got ${typeof nodeObj.number}: ${JSON.stringify(nodeObj.number)}`);
             }
             if (nodeObj.minGrade !== undefined && !isString(nodeObj.minGrade)) {
-                errors.push(`${path}.minGrade: Must be a string if provided`);
+                errors.push(`Course ${path}.minGrade: Must be a string if provided, got ${typeof nodeObj.minGrade}: ${JSON.stringify(nodeObj.minGrade)}`);
             }
             if (nodeObj.canBeTakenConcurrently !== undefined && nodeObj.canBeTakenConcurrently !== 'true') {
-                errors.push(`${path}.canBeTakenConcurrently: Must be 'true' if provided`);
+                errors.push(`${path}.canBeTakenConcurrently: Must be 'true' if provided, got ${typeof nodeObj.canBeTakenConcurrently}: ${JSON.stringify(nodeObj.canBeTakenConcurrently)}`);
             }
             if (nodeObj.orEquivalent !== undefined && nodeObj.orEquivalent !== 'true') {
-                errors.push(`${path}.orEquivalent: Must be 'true' if provided`);
+                errors.push(`${path}.orEquivalent: Must be 'true' if provided, got ${typeof nodeObj.orEquivalent}: ${JSON.stringify(nodeObj.orEquivalent)}`);
             }
             break;
             
         case 'HSCourse':
             if (!isString(nodeObj.course)) {
-                errors.push(`${path}.course: Must be a string`);
+                errors.push(`${path}.course: Must be a string, got ${typeof nodeObj.course}: ${JSON.stringify(nodeObj.course)}`);
             }
             if (nodeObj.minGrade !== undefined && !isString(nodeObj.minGrade)) {
-                errors.push(`${path}.minGrade: Must be a string if provided`);
+                errors.push(`${path}.minGrade: Must be a string if provided, got ${typeof nodeObj.minGrade}: ${JSON.stringify(nodeObj.minGrade)}`);
             }
             if (nodeObj.orEquivalent !== undefined && nodeObj.orEquivalent !== 'true') {
-                errors.push(`${path}.orEquivalent: Must be 'true' if provided`);
+                errors.push(`${path}.orEquivalent: Must be 'true' if provided, got ${typeof nodeObj.orEquivalent}: ${JSON.stringify(nodeObj.orEquivalent)}`);
             }
             break;
             
         case 'creditCount':
             if (!isNumber(nodeObj.credits)) {
-                errors.push(`${path}.credits: Must be a number`);
+                errors.push(`${path}.credits: Must be a number, got ${typeof nodeObj.credits}: ${JSON.stringify(nodeObj.credits)}`);
             }
             if (nodeObj.department !== undefined) {
                 if (!isString(nodeObj.department) && !isArray(nodeObj.department)) {
-                    errors.push(`${path}.department: Must be a string or array of strings if provided`);
+                    errors.push(`${path}.department: Must be a string or array of strings if provided, got ${typeof nodeObj.department}: ${JSON.stringify(nodeObj.department)}`);
                 } else if (isArray(nodeObj.department)) {
                     nodeObj.department.forEach((dept: any, index: number) => {
                         if (!isString(dept)) {
-                            errors.push(`${path}.department[${index}]: Must be a string`);
+                            errors.push(`${path}.department[${index}]: Must be a string, got ${typeof dept}: ${JSON.stringify(dept)}`);
                         }
                     });
                 }
             }
             if (nodeObj.level !== undefined) {
                 if (!isString(nodeObj.level) || !['1XX', '2XX', '3XX', '4XX', 'LD', 'UD'].includes(nodeObj.level)) {
-                    errors.push(`${path}.level: Must be '1XX', '2XX', '3XX', '4XX', 'LD', or 'UD' if provided`);
+                    errors.push(`${path}.level: Must be '1XX', '2XX', '3XX', '4XX', 'LD', or 'UD' if provided, got ${typeof nodeObj.level}: ${JSON.stringify(nodeObj.level)}`);
                 }
             }
             if (nodeObj.canBeTakenConcurrently !== undefined && nodeObj.canBeTakenConcurrently !== 'true') {
-                errors.push(`${path}.canBeTakenConcurrently: Must be 'true' if provided`);
+                errors.push(`${path}.canBeTakenConcurrently: Must be 'true' if provided, got ${typeof nodeObj.canBeTakenConcurrently}: ${JSON.stringify(nodeObj.canBeTakenConcurrently)}`);
             }
             break;
             
         case 'courseCount':
             if (!isNumber(nodeObj.count)) {
-                errors.push(`${path}.count: Must be a number`);
+                errors.push(`${path}.count: Must be a number, got ${typeof nodeObj.count}: ${JSON.stringify(nodeObj.count)}`);
             }
             if (nodeObj.department !== undefined) {
                 if (!isString(nodeObj.department) && !isArray(nodeObj.department)) {
-                    errors.push(`${path}.department: Must be a string or array of strings if provided`);
+                    errors.push(`${path}.department: Must be a string or array of strings if provided, got ${typeof nodeObj.department}: ${JSON.stringify(nodeObj.department)}`);
                 } else if (isArray(nodeObj.department)) {
                     nodeObj.department.forEach((dept: any, index: number) => {
                         if (!isString(dept)) {
-                            errors.push(`${path}.department[${index}]: Must be a string`);
+                            errors.push(`${path}.department[${index}]: Must be a string, got ${typeof dept}: ${JSON.stringify(dept)}`);
                         }
                     });
                 }
             }
             if (nodeObj.level !== undefined) {
                 if (!isString(nodeObj.level) || !['1XX', '2XX', '3XX', '4XX', 'LD', 'UD'].includes(nodeObj.level)) {
-                    errors.push(`${path}.level: Must be '1XX', '2XX', '3XX', '4XX', 'LD', or 'UD' if provided`);
+                    errors.push(`${path}.level: Must be '1XX', '2XX', '3XX', '4XX', 'LD', or 'UD' if provided, got ${typeof nodeObj.level}: ${JSON.stringify(nodeObj.level)}`);
                 }
             }
             if (nodeObj.minGrade !== undefined && !isString(nodeObj.minGrade)) {
-                errors.push(`${path}.minGrade: Must be a string if provided`);
+                errors.push(`${path}.minGrade: Must be a string if provided, got ${typeof nodeObj.minGrade}: ${JSON.stringify(nodeObj.minGrade)}`);
             }
             if (nodeObj.canBeTakenConcurrently !== undefined && nodeObj.canBeTakenConcurrently !== 'true') {
-                errors.push(`${path}.canBeTakenConcurrently: Must be 'true' if provided`);
+                errors.push(`${path}.canBeTakenConcurrently: Must be 'true' if provided, got ${typeof nodeObj.canBeTakenConcurrently}: ${JSON.stringify(nodeObj.canBeTakenConcurrently)}`);
             }
             break;
             
         case 'CGPA':
             if (!isNumber(nodeObj.minCGPA)) {
-                errors.push(`${path}.minCGPA: Must be a number`);
+                errors.push(`${path}.minCGPA: Must be a number, got ${typeof nodeObj.minCGPA}: ${JSON.stringify(nodeObj.minCGPA)}`);
             }
             break;
             
         case 'UDGPA':
             if (!isNumber(nodeObj.minUDGPA)) {
-                errors.push(`${path}.minUDGPA: Must be a number`);
+                errors.push(`${path}.minUDGPA: Must be a number, got ${typeof nodeObj.minUDGPA}: ${JSON.stringify(nodeObj.minUDGPA)}`);
             }
             break;
             
         case 'program':
             if (!isString(nodeObj.program)) {
-                errors.push(`${path}.program: Must be a string`);
+                errors.push(`${path}.program: Must be a string, got ${typeof nodeObj.program}: ${JSON.stringify(nodeObj.program)}`);
             }
             break;
             
         case 'permission':
             if (!isString(nodeObj.note)) {
-                errors.push(`${path}.note: Must be a string`);
+                errors.push(`${path}.note: Must be a string, got ${typeof nodeObj.note}: ${JSON.stringify(nodeObj.note)}`);
             }
             break;
             
         case 'other':
             if (!isString(nodeObj.note)) {
-                errors.push(`${path}.note: Must be a string`);
+                errors.push(`${path}.note: Must be a string, got ${typeof nodeObj.note}: ${JSON.stringify(nodeObj.note)}`);
             }
             break;
             
@@ -465,17 +518,8 @@ function validateParsedCourseRequirements(parsed: any): ValidationResult {
     
     const parsedObj = parsed as Record<string, any>;
     
-    // Validate required fields
-    if (!isString(parsedObj.department)) {
-        errors.push('department: Must be a string');
-    }
-    
-    if (!isString(parsedObj.number)) {
-        errors.push('number: Must be a string');
-    }
-    
     if (!isString(parsedObj.r_schema)) {
-        errors.push('r_schema: Must be a string');
+        errors.push(`r_schema: Must be a string, got ${typeof parsedObj.r_schema}: ${JSON.stringify(parsedObj.r_schema)}`);
     }
     
     // Validate optional requirement fields
@@ -489,17 +533,12 @@ function validateParsedCourseRequirements(parsed: any): ValidationResult {
     // Validate credit_conflicts if present
     if (parsedObj.credit_conflicts !== undefined) {
         if (!isArray(parsedObj.credit_conflicts)) {
-            errors.push('credit_conflicts: Must be an array if provided');
+            errors.push(`credit_conflicts: Must be an array if provided, got ${typeof parsedObj.credit_conflicts}: ${JSON.stringify(parsedObj.credit_conflicts)}`);
         } else {
             parsedObj.credit_conflicts.forEach((conflict: any, index: number) => {
                 errors.push(...validateCreditConflict(conflict, `credit_conflicts[${index}]`));
             });
         }
-    }
-    
-    // Validate rawResponse if present (should be string)
-    if (parsedObj.rawResponse !== undefined && !isString(parsedObj.rawResponse)) {
-        errors.push('rawResponse: Must be a string if provided');
     }
     
     // Check for unexpected properties
@@ -520,5 +559,5 @@ function validateParsedCourseRequirements(parsed: any): ValidationResult {
     };
 }
 
-export { prettyPrintRequirement, readablePrintRequirement, validateParsedCourseRequirements };
+export { prettyPrintCourseRequirements, validateParsedCourseRequirements };
 export type { ValidationResult };

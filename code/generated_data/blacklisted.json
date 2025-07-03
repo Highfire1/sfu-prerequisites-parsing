@@ -1,42 +1,3194 @@
 [
   {
-    "department": "ARCH",
-    "course_code": "377",
-    "reason": "Sanity check: Ambiguous\nThe original text is ambiguous. It is unclear if the \"one lower division ARCH course\" must be a separate course from the one used to satisfy the \"ARCH 101 or ARCH 201\" requirement. The JSON represents a literal interpretation where a single course (e.g., ARCH 101) could satisfy both conditions, which may not be the intended meaning."
+    "department": "APMA",
+    "number": "995",
+    "reason": "Ambiguity issue: - The schema does not support specifying a time limit for program completion (e.g., \"within first six terms of the program\").",
+    "timestamp": "2025-07-03T04:45:09.065Z"
   },
   {
     "department": "ARCH",
-    "course_code": "390",
-    "reason": "Sanity check: Ambiguous\nThe original prerequisite \"ARCH 101 or ARCH 201 and either ARCH 272/272W or 273\" is ambiguous. It could be interpreted in two ways:\n1. `(ARCH 101 or ARCH 201) AND (ARCH 272/272W or 273)`\n2. `ARCH 101 OR (ARCH 201 AND (ARCH 272/272W or 273))`\n\nThe parsed JSON represents the first interpretation, but the second is also a plausible reading of the text. Without clarification, it is impossible to determine the intended logic."
+    "number": "348",
+    "reason": "Ambiguity issue: - The schema does not explicitly support specifying a minimum number of units within a specific department as a prerequisite, only a general unit count. While \"Six units in Archaeology\" is provided, the schema's ability to parse this specific departmental unit requirement is not clear from the provided capabilities.",
+    "timestamp": "2025-07-03T04:53:52.741Z"
   },
   {
     "department": "ARCH",
-    "course_code": "451",
-    "reason": "missed the readmission thing, maybe we need a way to reprompt the model with some text, although that adds even more spagetti to the code",
-    "timestamp": "2025-06-30T02:43:33.171Z"
+    "number": "375",
+    "reason": "Ambiguity issue: - The schema does not explicitly support a requirement that is a combination of a specific course count and a unit count (e.g., \"ARCH 101, ARCH 201, or 45 units\"). It's unclear if the \"45 units\" is an alternative to *both* ARCH 101 and ARCH 201, or if it's an alternative to *either* ARCH 101 or ARCH 201.",
+    "timestamp": "2025-07-03T04:56:24.360Z"
   },
   {
     "department": "ARCH",
-    "course_code": "452",
-    "reason": "llm thought that this was all OR but i think it is a ALL_OF",
-    "timestamp": "2025-06-30T02:44:47.377Z"
+    "number": "377",
+    "reason": "Ambiguity issue: - The schema does not explicitly support specifying \"one lower division ARCH course\" as a prerequisite. It's unclear if this refers to any 100 or 200 level ARCH course, or if there's a specific set of courses intended.",
+    "timestamp": "2025-07-03T05:02:10.926Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "390",
+    "reason": "Ambiguity issue: - The prerequisite \"ARCH 101 or ARCH 201 and either ARCH 272/272W or 273\" is ambiguous due to the placement of \"and\". It's unclear if the \"and\" applies to the entire preceding \"or\" statement or only to the \"ARCH 201\" part. The schema needs to support more complex logical nesting or the requirement needs to be rephrased for clarity.",
+    "timestamp": "2025-07-03T05:04:27.211Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "336",
+    "reason": "the llm always eats it on this course for no reason so i'm skipping it for now",
+    "timestamp": "2025-07-03T05:06:01.626Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "442",
+    "reason": "Ambiguity issue: - The prerequisite states \"ARCH 373 or CRIM 357, BPK 303, BPK 324, BPK 325, BPK 326.\" This implies that either ARCH 373 is a prerequisite OR CRIM 357 AND all the BPK courses are prerequisites. However, the phrasing \"ARCH 373 is recommended\" contradicts the prerequisite statement. It's unclear if ARCH 373 is a required prerequisite or only recommended.",
+    "timestamp": "2025-07-03T05:09:26.414Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "452",
+    "reason": "Ambiguity issue: - The prerequisite states \"ARCH 373 or HSCI 321, HSCI 324, BPK 303, BPK 324, BPK 325, BPK 326.\" This phrasing is ambiguous as it's unclear if the \"or\" applies only to ARCH 373, or if it means \"ARCH 373 OR (HSCI 321 AND HSCI 324 AND BPK 303 AND BPK 324 AND BPK 325 AND BPK 326)\". The schema's logical groupings (ALL_OF, ONE_OF) would be needed to clarify this. Additionally, the note about not taking the course for further credit if ARCH 332 was taken under this topic is a restriction that might not be directly representable as a prerequisite or corequisite without a specific schema field for such exclusions.",
+    "timestamp": "2025-07-03T05:10:15.084Z"
   },
   {
     "department": "BISC",
-    "course_code": "100",
-    "reason": "we aren't capturing the \"or succeeding biology courses\" part",
-    "timestamp": "2025-06-30T02:50:43.003Z"
+    "number": "100",
+    "reason": "Ambiguity issue: - The prerequisite statement is a recommendation (\"encouraged to proceed\") rather than a strict requirement, and it applies only to a specific subset of students (\"considering a BISC major\"). The schema's ability to represent conditional recommendations is unclear.",
+    "timestamp": "2025-07-03T05:29:28.898Z"
   },
   {
     "department": "BISC",
-    "course_code": "106",
-    "reason": "Sanity check: Not Equivalent\nThe `credit_conflicts` field is incomplete. The original notes state \"BISC 101 or higher level BISC courses\", but the JSON only captures the conflict with BISC 101.",
-    "timestamp": "2025-06-30T02:53:52.462Z"
+    "number": "171",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a \"fewer than X units\" condition as a prerequisite or corequisite. While it can handle credit count requirements, it's unclear if it can handle a negative constraint like this.",
+    "timestamp": "2025-07-03T05:32:41.678Z"
   },
   {
     "department": "BISC",
-    "course_code": "406",
-    "reason": "Sanity check: Not Equivalent\nThe original text \"with a grade of C- or better\" is ambiguous, but it most likely applies to both BISC 306 and BISC 316. The JSON incorrectly applies the minimum grade requirement only to BISC 316.",
-    "timestamp": "2025-06-30T03:38:31.568Z"
+    "number": "490",
+    "reason": "Ambiguity issue: - The schema does not support representing \"courses appropriate to the subject of the intended research as determined by the departmental undergraduate curriculum committee\" as this is a subjective and committee-dependent requirement.",
+    "timestamp": "2025-07-03T05:44:27.994Z"
+  },
+  {
+    "department": "BISC",
+    "number": "491",
+    "reason": "Ambiguity issue: - The phrase \"upper division BISC courses appropriate to the subject of the intended research as determined by the departmental undergraduate curriculum committee\" cannot be unambiguously represented by the schema as it relies on subjective committee determination rather than specific course codes or quantifiable criteria.",
+    "timestamp": "2025-07-03T05:44:54.573Z"
+  },
+  {
+    "department": "BISC",
+    "number": "492W",
+    "reason": "Ambiguity issue: - The phrase \"upper division BISC courses appropriate to the subject of the intended research as determined by the departmental undergraduate curriculum committee\" is too subjective and cannot be unambiguously represented by the schema.",
+    "timestamp": "2025-07-03T05:45:00.142Z"
+  },
+  {
+    "department": "BISC",
+    "number": "497W",
+    "reason": "Ambiguity issue: - The schema does not support representing \"completion of lower division course requirements\" as it is too general and lacks specific course details or a defined set of courses that constitute \"lower division course requirements\" for this context.",
+    "timestamp": "2025-07-03T05:45:03.524Z"
+  },
+  {
+    "department": "BISC",
+    "number": "498",
+    "reason": "Ambiguity issue: - The schema does not support representing \"completion of lower division course requirements\" as it is too general and lacks specific course details or a defined set of courses that constitute \"lower division course requirements\" for this context.",
+    "timestamp": "2025-07-03T05:45:08.339Z"
+  },
+  {
+    "department": "BISC",
+    "number": "499",
+    "reason": "Ambiguity issue: - The schema does not support representing \"completion of lower division course requirements\" as it is too general and does not specify which lower division courses are required.",
+    "timestamp": "2025-07-03T05:45:11.554Z"
+  },
+  {
+    "department": "BPK",
+    "number": "105",
+    "reason": "Ambiguity issue: - The schema does not support representing \"Grade 11 Biology, Chemistry and Physics\" as a prerequisite. It also does not support the exclusion of credit for specific student groups or the substitution of courses for specific programs. The statement \"No student may take both BPK 105 and BPK 208 for credit\" is also not directly representable as a prerequisite or corequisite.",
+    "timestamp": "2025-07-03T05:45:40.830Z"
+  },
+  {
+    "department": "BPK",
+    "number": "143",
+    "reason": "Ambiguity issue: - The note \"BPK major and honours students who have taken BPK 141 must also take BPK 143\" implies a mandatory requirement for a specific student group, which is not explicitly supported by the schema's prerequisite/corequisite structure. The schema primarily handles course-to-course dependencies, not program-based mandatory course enrollment that overrides standard prerequisites.",
+    "timestamp": "2025-07-03T05:49:14.040Z"
+  },
+  {
+    "department": "BPK",
+    "number": "205",
+    "reason": "Ambiguity issue: - The note \"BPK Major and Honours students who have taken BPK 105 must also take BPK 205\" implies a conditional requirement that is not directly supported by the schema's standard prerequisite/corequisite structure. Additionally, the statement \"For students taking both of these courses, credit will only be given for BPK 205\" is a credit-related rule that might not be representable.",
+    "timestamp": "2025-07-03T05:49:32.465Z"
+  },
+  {
+    "department": "BPK",
+    "number": "208",
+    "reason": "Ambiguity issue: - The notes section contains several conditions that cannot be directly represented by the schema. Specifically, the conditions regarding program restrictions (\"students in the Kinesiology Minor program\"), credit exclusion for specific student groups (\"BPK Major and Honours students may not receive credit for BPK 208\"), and mutual exclusion of courses for credit (\"No student may take both BPK 105 and BPK 208 for credit, or both BPK 205 and BPK 208 for credit\") are not supported by the provided schema capabilities.",
+    "timestamp": "2025-07-03T05:49:39.072Z"
+  },
+  {
+    "department": "BPK",
+    "number": "305",
+    "reason": "Ambiguity issue: - The schema does not support representing conditional prerequisites based on major status (\"Majors from outside BPK require...\"). It also doesn't clearly support the nested OR conditions within the prerequisites for non-BPK majors.",
+    "timestamp": "2025-07-03T05:49:59.600Z"
+  },
+  {
+    "department": "BPK",
+    "number": "306",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing conditional prerequisites based on major status (\"Majors from outside BPK require...\"). While it can handle multiple options within a prerequisite (e.g., \"or\"), the conditional nature of the requirement based on the student's major is not directly supported.",
+    "timestamp": "2025-07-03T05:50:31.545Z"
+  },
+  {
+    "department": "BPK",
+    "number": "307",
+    "reason": "Ambiguity issue: - The statement \"students who took BPK 306 prior to Fall 2017, cannot take this course\" is a negative constraint that cannot be directly represented by the schema's positive prerequisite/corequisite structure.",
+    "timestamp": "2025-07-03T05:51:13.843Z"
+  },
+  {
+    "department": "BPK",
+    "number": "326",
+    "reason": "Ambiguity issue: - The note \"BPK major and honours students who have taken BPK 325 must also take BPK 326. For students taking both of these courses, credit will only be given for BPK 326\" introduces a conditional requirement that is not clearly supported by the schema's ability to represent concurrent enrollment or specific credit handling for overlapping courses. The note implies a special rule for a subset of students, which is difficult to model as a standard prerequisite or corequisite.",
+    "timestamp": "2025-07-03T05:51:34.238Z"
+  },
+  {
+    "department": "BPK",
+    "number": "343",
+    "reason": "Ambiguity issue: - The note \"For students taking both of these courses, credit will only be given for BPK 343\" implies a potential for duplicate credit or a specific credit allocation rule that is not directly supported by the schema's core prerequisite/corequisite representation. While the prerequisites and corequisites themselves are representable, this specific credit rule introduces ambiguity regarding how it would be enforced or displayed within the schema.",
+    "timestamp": "2025-07-03T05:53:03.627Z"
+  },
+  {
+    "department": "BPK",
+    "number": "351",
+    "reason": "Ambiguity issue: - The prerequisite contains a requirement for \"Bridging Online\" which is not a standard course and its completion is tied to a specific timeframe (\"at least two terms before co-op placement\"), making it difficult to represent as a direct course prerequisite. Additionally, the requirement for applying to the BPK co-op program by a specific week and having a minimum GPA of 2.50 are program-specific administrative requirements rather than academic course prerequisites.",
+    "timestamp": "2025-07-03T05:54:42.491Z"
+  },
+  {
+    "department": "BPK",
+    "number": "443",
+    "reason": "Ambiguity issue: - The phrase \"one of which may be taken as a corequisite\" creates ambiguity. It's unclear if this applies to BPK 304W, 310, or 343, or if it means any one of them can be a corequisite. The schema does not explicitly support this type of conditional corequisite.",
+    "timestamp": "2025-07-03T06:00:59.606Z"
+  },
+  {
+    "department": "BPK",
+    "number": "448",
+    "reason": "Ambiguity issue: - The schema does not explicitly support conditional prerequisites based on student program (e.g., \"for biomedical engineering students\"). While it can handle logical groupings (OR, AND), the nested conditionality based on program type creates ambiguity.",
+    "timestamp": "2025-07-03T06:01:09.978Z"
+  },
+  {
+    "department": "BPK",
+    "number": "459",
+    "reason": "Ambiguity issue: - The schema does not support representing a requirement that a student must be enrolled in a specific program (Honours Program of the B.Sc. in Behavioural Neuroscience) as a corequisite. It also doesn't explicitly support a requirement for seeking permission from a supervisor to enroll in additional courses concurrently.",
+    "timestamp": "2025-07-03T06:01:27.489Z"
+  },
+  {
+    "department": "BPK",
+    "number": "496",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"upper level standing with at least 75 units in the Biomedical Physiology and Kinesiology program\" as a prerequisite. While it can handle unit counts and program restrictions, the combination and specific phrasing of this requirement are not directly covered by the provided schema capabilities.",
+    "timestamp": "2025-07-03T06:01:43.364Z"
+  },
+  {
+    "department": "BPK",
+    "number": "498",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"upper level standing with at least 75 units in the Biomedical Physiology and Kinesiology program\" as a prerequisite. While it can handle unit counts and program restrictions, the specific combination and phrasing are not directly covered.",
+    "timestamp": "2025-07-03T06:01:44.529Z"
+  },
+  {
+    "department": "BUS",
+    "number": "100",
+    "reason": "Ambiguity issue: - The schema does not support specifying admission streams or specific admission cohorts (e.g., \"Fall 2022 and onward\") as prerequisites.",
+    "timestamp": "2025-07-03T06:01:52.275Z"
+  },
+  {
+    "department": "BUS",
+    "number": "201",
+    "reason": "Ambiguity issue: - The schema does not support restrictions based on the number of units a student has completed (\"Students with more than 30 units may not take this course.\").",
+    "timestamp": "2025-07-03T06:01:53.493Z"
+  },
+  {
+    "department": "BUS",
+    "number": "202",
+    "reason": "Ambiguity issue: - The schema does not explicitly support \"approved business administration majors, joint majors, or second degree students admitted to the faculty through the Business Foundation Pathways - Transfer Pathway\" as a program restriction. It also doesn't support \"P grade\" as a minimum grade.",
+    "timestamp": "2025-07-03T06:01:54.496Z"
+  },
+  {
+    "department": "BUS",
+    "number": "203",
+    "reason": "Ambiguity issue: - The schema does not support specifying admission streams or specific admission terms (\"highschool or transfer stream in Fall 2022 and onward\").",
+    "timestamp": "2025-07-03T06:01:55.550Z"
+  },
+  {
+    "department": "BUS",
+    "number": "217W",
+    "reason": "Ambiguity issue: - The schema does not support representing multiple, distinct prerequisite paths that are mutually exclusive (OR conditions) with complex combinations of unit requirements and major restrictions within a single prerequisite statement. The \"OR\" logic here is applied to several different scenarios, some of which involve unit counts and specific majors, making it difficult to parse into the defined logical groupings.",
+    "timestamp": "2025-07-03T06:02:00.046Z"
+  },
+  {
+    "department": "BUS",
+    "number": "232",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a unit requirement as a corequisite. While it can handle unit requirements and corequisites separately, combining them in this manner is not directly supported by the provided schema capabilities.",
+    "timestamp": "2025-07-03T06:02:01.175Z"
+  },
+  {
+    "department": "BUS",
+    "number": "300",
+    "reason": "Ambiguity issue: - The schema does not support specifying admission dates (\"Fall 2022 and onward\") or specific major admission cohorts (\"approved business administration majors admitted to the faculty\").",
+    "timestamp": "2025-07-03T06:02:25.348Z"
+  },
+  {
+    "department": "BUS",
+    "number": "311",
+    "reason": "Ambiguity issue: - The schema does not support representing date-based restrictions on program admission (e.g., \"between Fall 2012 - Summer 2016\" and \"Fall 2016 - onwards\").",
+    "timestamp": "2025-07-03T06:02:32.920Z"
+  },
+  {
+    "department": "BUS",
+    "number": "312",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a distinction between \"students\" (e.g., \"actuarial science students\") as a condition for a prerequisite, nor does it clearly support applying a unit requirement (\"45 units\") to a specific branch of an OR condition.",
+    "timestamp": "2025-07-03T06:02:33.939Z"
+  },
+  {
+    "department": "BUS",
+    "number": "315",
+    "reason": "Ambiguity issue: - The schema does not explicitly support specifying different prerequisite sets based on student program/major (e.g., \"actuarial science students\"). While it can handle logical groupings and grade minimums, the conditional nature of the prerequisite based on student status is not directly supported.",
+    "timestamp": "2025-07-03T06:02:41.457Z"
+  },
+  {
+    "department": "BUS",
+    "number": "316",
+    "reason": "Ambiguity issue: - The schema does not explicitly support specifying unit requirements *within* a logical grouping (e.g., \"45 units\" applying to both \"BUS 312 and BUS 336\" and \"STAT 285 and BUS 312\"). While the schema can handle unit requirements and logical groupings separately, combining them in this manner is not clearly supported by the examples.",
+    "timestamp": "2025-07-03T06:02:42.532Z"
+  },
+  {
+    "department": "BUS",
+    "number": "330",
+    "reason": "Ambiguity issue: - The schema does not support specifying a negative prerequisite (i.e., \"Students who have taken BUS 329 first may not then take this course for further credit.\").",
+    "timestamp": "2025-07-03T06:02:56.162Z"
+  },
+  {
+    "department": "BUS",
+    "number": "338",
+    "reason": "Ambiguity issue: - The schema does not support conditional prerequisites based on admission date or minor status. The \"OR\" condition within the prerequisite statement creates a complex branching logic that the current schema capabilities do not fully encompass.",
+    "timestamp": "2025-07-03T06:03:04.070Z"
+  },
+  {
+    "department": "BUS",
+    "number": "340",
+    "reason": "Ambiguity issue: - The schema does not support date-based restrictions on program admission (e.g., \"between Fall 2012 - Summer 2016 and ... Fall 2016 - onwards\").",
+    "timestamp": "2025-07-03T06:03:05.361Z"
+  },
+  {
+    "department": "BUS",
+    "number": "341",
+    "reason": "Ambiguity issue: - The schema does not support date range restrictions for program admission (e.g., \"between Fall 2012 - Summer 2016 and Fall 2016 - onwards\").",
+    "timestamp": "2025-07-03T06:03:06.367Z"
+  },
+  {
+    "department": "BUS",
+    "number": "345",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a combined unit requirement (45 units) that applies to different branches of an OR condition within the prerequisite. It's unclear if the 45 units must be met by *all* students, or only by those meeting the first part of the OR condition.",
+    "timestamp": "2025-07-03T06:03:10.221Z"
+  },
+  {
+    "department": "BUS",
+    "number": "347",
+    "reason": "Ambiguity issue: - The schema does not support conditional prerequisites based on admission date (\"admitted Fall 2025 - onwards\").",
+    "timestamp": "2025-07-03T06:03:14.397Z"
+  },
+  {
+    "department": "BUS",
+    "number": "360W",
+    "reason": "Ambiguity issue: - The schema does not appear to support the complex nested logical conditions and multiple distinct pathways for admission described in the prerequisites. Specifically, the \"OR\" conditions that lead to entirely different sets of prerequisite courses, some of which are themselves complex combinations, would be difficult to represent unambiguously. The \"open to students admitted to...\" clauses also suggest program/major restrictions that might be handled, but the combination with specific course prerequisites makes it complex.",
+    "timestamp": "2025-07-03T06:03:15.559Z"
+  },
+  {
+    "department": "BUS",
+    "number": "361",
+    "reason": "Ambiguity issue: - The schema does not support conditional requirements based on admission date (\"admitted Fall 2025 - onwards\").",
+    "timestamp": "2025-07-03T06:03:16.699Z"
+  },
+  {
+    "department": "BUS",
+    "number": "374",
+    "reason": "Ambiguity issue: - The schema does not support conditional prerequisites based on admission date (\"admitted Fall 2025 - onwards\").",
+    "timestamp": "2025-07-03T06:03:28.171Z"
+  },
+  {
+    "department": "BUS",
+    "number": "381",
+    "reason": "Ambiguity issue: - The schema does not support representing conditional requirements based on admission date or specific minor status. The \"OR\" clause introduces a conditionality that cannot be directly mapped.",
+    "timestamp": "2025-07-03T06:03:29.195Z"
+  },
+  {
+    "department": "BUS",
+    "number": "401",
+    "reason": "Ambiguity issue: - The schema does not explicitly support specifying a minimum grade for multiple prerequisite courses when they are grouped with an \"OR\" condition (e.g., \"BUS 311 (or BUS 254 and BUS 312)\"). It's unclear if the \"C-\" applies to all options or just the primary one.",
+    "timestamp": "2025-07-03T06:03:35.861Z"
+  },
+  {
+    "department": "BUS",
+    "number": "439",
+    "reason": "Ambiguity issue: - The schema does not support representing alternative prerequisite sets with different major restrictions and varying course requirements within those sets. The \"OR\" clause introduces complexity that the current schema structure may not fully accommodate.",
+    "timestamp": "2025-07-03T06:04:33.937Z"
+  },
+  {
+    "department": "BUS",
+    "number": "443",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing conditional prerequisites based on program enrollment (e.g., \"innovation and entrepreneurship certificate students\"). While it can handle \"ALL_OF\", \"ONE_OF\", and specific course requirements with grade minimums, the branching logic for certificate students creates ambiguity.",
+    "timestamp": "2025-07-03T06:04:41.636Z"
+  },
+  {
+    "department": "BUS",
+    "number": "449",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing conditional prerequisites based on program enrollment (e.g., \"corporate environmental and social sustainability certificate students\"). While it can handle \"upper division Writing (W) course,\" the specific condition tied to certificate students makes the overall prerequisite structure ambiguous within the given schema capabilities.",
+    "timestamp": "2025-07-03T06:05:01.455Z"
+  },
+  {
+    "department": "BUS",
+    "number": "453",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"certificate students\" as a prerequisite condition. While it can handle program/major restrictions, the specific nature of a certificate program's student status as a prerequisite is not clearly defined within the provided schema capabilities.",
+    "timestamp": "2025-07-03T06:05:06.500Z"
+  },
+  {
+    "department": "BUS",
+    "number": "462",
+    "reason": "Ambiguity issue: - The prerequisite states \"BUS 336 can be taken concurrently\" while also listing \"BUS 336\" as a prerequisite. This creates a contradiction.",
+    "timestamp": "2025-07-03T06:05:12.667Z"
+  },
+  {
+    "department": "BUS",
+    "number": "473",
+    "reason": "Ambiguity issue: - The schema does not support representing different prerequisite rules based on admission dates (e.g., \"Students admitted prior to Fall 2023\" vs. \"students admitted Fall 2023 onward\").",
+    "timestamp": "2025-07-03T06:05:26.522Z"
+  },
+  {
+    "department": "BUS",
+    "number": "474",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing different prerequisite rules based on admission dates (\"Students admitted prior to Fall 2023\" vs. \"students admitted Fall 2023 onward\").",
+    "timestamp": "2025-07-03T06:05:27.476Z"
+  },
+  {
+    "department": "BUS",
+    "number": "475",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a prerequisite that is conditional on a certificate program (\"corporate environmental and social sustainability certificate students\") combined with a general course requirement (\"upper division Writing (W) course\").",
+    "timestamp": "2025-07-03T06:05:28.510Z"
+  },
+  {
+    "department": "BUS",
+    "number": "489",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a \"certificate\" as a prerequisite. It also doesn't clearly define how to handle a combination of a certificate and a general course requirement (\"upper division Writing (W) course\") within a single prerequisite clause.",
+    "timestamp": "2025-07-03T06:06:07.119Z"
+  },
+  {
+    "department": "BUS",
+    "number": "492",
+    "reason": "Ambiguity issue: - The phrase \"As stated by the faculty at the time of offering\" is too vague and cannot be represented by the current schema.",
+    "timestamp": "2025-07-03T06:06:08.257Z"
+  },
+  {
+    "department": "BUS",
+    "number": "496",
+    "reason": "Ambiguity issue: - The schema does not explicitly support specifying a date range for program admission (\"Fall 2022 and onward\").",
+    "timestamp": "2025-07-03T06:06:09.237Z"
+  },
+  {
+    "department": "BUS",
+    "number": "600",
+    "reason": "Ambiguity issue: - The schema does not support program/major restrictions as a prerequisite.",
+    "timestamp": "2025-07-03T06:06:36.333Z"
+  },
+  {
+    "department": "CA",
+    "number": "123",
+    "reason": "Ambiguity issue: - The prerequisite states \"CA (or FPA) 122\", which implies a choice between two departments for the same course number. The schema's ability to handle departmental equivalencies or choices within a prerequisite is not explicitly demonstrated in the examples. Additionally, the corequisite states \"CA 123 and CA 124 must be taken concurrently,\" which is a self-referential corequisite for CA 123, making it impossible to fulfill.",
+    "timestamp": "2025-07-03T06:11:30.897Z"
+  },
+  {
+    "department": "CA",
+    "number": "129",
+    "reason": "Ambiguity issue: - The schema does not explicitly support \"audition\" as a prerequisite type. While \"permission\" is supported, \"audition\" is a more specific requirement that might need a dedicated field or a more flexible interpretation of the permission field.",
+    "timestamp": "2025-07-03T06:11:37.738Z"
+  },
+  {
+    "department": "CA",
+    "number": "143",
+    "reason": "Ambiguity issue: - The schema does not support representing a corequisite that is dependent on a prerequisite condition (e.g., \"CA 145 or permission of instructor\" as a corequisite, where the prerequisite itself has an \"or\" condition).",
+    "timestamp": "2025-07-03T06:11:47.869Z"
+  },
+  {
+    "department": "CA",
+    "number": "216",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a prerequisite that is a combination of a course count (e.g., \"one of\") and a unit count (e.g., \"or 30 units\"). It's unclear if the \"30 units\" is an alternative to taking one of the listed courses, or if it's a separate requirement.",
+    "timestamp": "2025-07-03T06:12:21.991Z"
+  },
+  {
+    "department": "CA",
+    "number": "217",
+    "reason": "Ambiguity issue: - The schema does not explicitly support specifying \"history/theory course within the School for the Contemporary Arts\" as a prerequisite. It's unclear how to represent this specific type of course requirement within the existing structure.",
+    "timestamp": "2025-07-03T06:12:22.935Z"
+  },
+  {
+    "department": "CA",
+    "number": "235",
+    "reason": "Ambiguity issue: - The schema does not support a logical OR condition between a set of courses and a unit count requirement.",
+    "timestamp": "2025-07-03T06:12:45.637Z"
+  },
+  {
+    "department": "CA",
+    "number": "238W",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"prior approval\" as a prerequisite. While \"permission requirements\" are mentioned, the phrasing \"prior approval\" is less specific than a typical department approval.",
+    "timestamp": "2025-07-03T06:12:46.691Z"
+  },
+  {
+    "department": "CA",
+    "number": "245",
+    "reason": "Ambiguity issue: - The schema does not explicitly support specifying a minimum grade requirement for a prerequisite course. While it mentions \"grade minimums,\" it's unclear if this applies to individual prerequisite courses or a general GPA.",
+    "timestamp": "2025-07-03T06:12:59.098Z"
+  },
+  {
+    "department": "CA",
+    "number": "249",
+    "reason": "Ambiguity issue: - The schema does not explicitly support \"and/or\" logic for prerequisites, making it unclear if both \"CA 140\" and \"prior approval\" are required, or if either one is sufficient.",
+    "timestamp": "2025-07-03T06:13:06.812Z"
+  },
+  {
+    "department": "CA",
+    "number": "316",
+    "reason": "Ambiguity issue: - The schema does not explicitly support specifying a minimum number of units *within* a specific department as a prerequisite, only a total unit count or a count of courses within a department. \"Nine units in CA courses\" is not directly representable.",
+    "timestamp": "2025-07-03T06:14:33.695Z"
+  },
+  {
+    "department": "CA",
+    "number": "326",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a \"technique course at an appropriate level\" as a corequisite, which implies a flexible or context-dependent selection rather than a fixed list of courses. While the example list of courses (CA 220, CA 320, CA 322, CA 420, and CA 421) is provided, the phrasing \"at an appropriate level\" suggests that other courses not on this list might also qualify, making it difficult to represent unambiguously.",
+    "timestamp": "2025-07-03T06:14:54.352Z"
+  },
+  {
+    "department": "CA",
+    "number": "327",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"prior approval\" as a prerequisite. While \"Enrollment requires approval of the department\" is an example, \"prior approval\" is less specific and could imply a different process.",
+    "timestamp": "2025-07-03T06:14:55.309Z"
+  },
+  {
+    "department": "CA",
+    "number": "338W",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"prior approval\" as a prerequisite. While \"permission requirements\" are mentioned, \"prior approval\" is a more general statement that might imply a different process than a formal permission override.",
+    "timestamp": "2025-07-03T06:15:12.380Z"
+  },
+  {
+    "department": "CA",
+    "number": "416",
+    "reason": "Ambiguity issue: - The schema does not explicitly support nested OR conditions within a single prerequisite statement like \"CA (or FPA) 316 (or 337)\". It's unclear if this means (CA 316 or CA 337) or (FPA 316 or FPA 337), or if it means (CA 316 or FPA 337) or (CA 337 or FPA 316).",
+    "timestamp": "2025-07-03T06:17:32.113Z"
+  },
+  {
+    "department": "CHEM",
+    "number": "110",
+    "reason": "Ambiguity issue: - The note \"No previous training in chemistry is required for this course\" contradicts the exclusion in the \"Notes\" section for students with credit for CHEM 111 or any university chemistry course.",
+    "timestamp": "2025-07-03T06:19:30.826Z"
+  },
+  {
+    "department": "CHEM",
+    "number": "111",
+    "reason": "Ambiguity issue: - The note \"Students with a grade of B or better in Chemistry 12 (or equivalent), or who have credit for CHEM 110, or any university chemistry course may not take this course for further credit\" functions as a restriction or exclusion, which is not explicitly supported by the provided schema capabilities.",
+    "timestamp": "2025-07-03T06:19:31.823Z"
+  },
+  {
+    "department": "CHEM",
+    "number": "115",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a prerequisite that is an \"or\" condition between a high school course and a university course, followed by another \"or\" condition with a university course. The \"either may be taken concurrently\" applies to MATH 100 or MATH 110, but it's unclear if it also applies to the \"permission of the department\" option.",
+    "timestamp": "2025-07-03T06:19:32.977Z"
+  },
+  {
+    "department": "CHEM",
+    "number": "230",
+    "reason": "Ambiguity issue: - The schema does not support representing a conditional recommendation for concurrent enrollment based on future course plans. The statement \"Students who expect to take further courses in inorganic chemistry should take CHEM 230 concurrently with CHEM 236W\" is a recommendation, not a strict prerequisite or corequisite, and its conditional nature is not directly supported.",
+    "timestamp": "2025-07-03T06:19:57.370Z"
+  },
+  {
+    "department": "CHEM",
+    "number": "260",
+    "reason": "Ambiguity issue: - The schema does not explicitly support \"in lieu of\" requirements, which is a form of equivalency but presented in a way that might not be directly mappable to existing equivalency fields.",
+    "timestamp": "2025-07-03T06:20:01.205Z"
+  },
+  {
+    "department": "CHEM",
+    "number": "306",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"first-year calculus, chemistry and physics\" as a group of specific course types without knowing their exact department and course numbers. It also doesn't clearly support the \"or permission of co-op co-ordinator\" as a direct alternative to the CGPA requirement within the same prerequisite statement.",
+    "timestamp": "2025-07-03T06:20:29.916Z"
+  },
+  {
+    "department": "CHEM",
+    "number": "340",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"first year chemistry, physics and calculus\" as a general requirement without specific course numbers or a way to define \"first year\" across different departments.",
+    "timestamp": "2025-07-03T06:20:45.203Z"
+  },
+  {
+    "department": "CHEM",
+    "number": "364",
+    "reason": "Ambiguity issue: - The note \"PHYS 385 will be accepted in lieu of CHEM 364\" contradicts the prerequisite \"CHEM 260 or PHYS 285\". If PHYS 385 is accepted in lieu of CHEM 364, it implies PHYS 385 is a substitute for the course itself, not a prerequisite for it. This creates ambiguity about the actual requirements.",
+    "timestamp": "2025-07-03T06:20:49.900Z"
+  },
+  {
+    "department": "CHEM",
+    "number": "481",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"knowledge of chemistry at an advanced level\" or \"Normally taken after completion of 300-level course requirements\" as specific, quantifiable prerequisites. While \"permission of the department\" is supported, the other two conditions are too vague for direct schema representation.",
+    "timestamp": "2025-07-03T06:21:46.950Z"
+  },
+  {
+    "department": "CHEM",
+    "number": "484",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"knowledge of chemistry at an advanced level\" or \"Normally taken after completion of 300-level course requirements\" as specific, quantifiable prerequisites. While \"Permission of the Department\" can be handled, the other two are too qualitative.",
+    "timestamp": "2025-07-03T06:21:54.016Z"
+  },
+  {
+    "department": "CHIN",
+    "number": "100",
+    "reason": "Ambiguity issue: - The note \"Students enrolled/placed into other Chinese courses may not take this course for credit\" implies a restriction based on prior enrollment or placement, which is not directly supported by the provided schema capabilities. The schema focuses on explicit prerequisites and corequisites, not on preventing credit for students who have already taken or been placed into other courses within the same department.",
+    "timestamp": "2025-07-03T06:22:05.955Z"
+  },
+  {
+    "department": "CHIN",
+    "number": "190",
+    "reason": "Ambiguity issue: - The schema does not support representing qualitative or origin-based restrictions like \"students of Chinese origin\" or \"native or near native speaking ability.\"",
+    "timestamp": "2025-07-03T06:22:16.881Z"
+  },
+  {
+    "department": "CHIN",
+    "number": "290",
+    "reason": "Ambiguity issue: - The schema does not support representing \"students of Chinese origin\" or \"near native speaking ability\" as a requirement.",
+    "timestamp": "2025-07-03T06:22:24.292Z"
+  },
+  {
+    "department": "CHIN",
+    "number": "291",
+    "reason": "Ambiguity issue: - The schema does not support representing the \"heritage\" or \"origin\" based restriction, nor the \"near native speaking ability\" requirement.",
+    "timestamp": "2025-07-03T06:22:25.239Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "486",
+    "reason": "Ambiguity issue: - The schema does not support representing a prerequisite that is dependent on a topic published before enrollment. This is a dynamic requirement that cannot be statically defined.",
+    "timestamp": "2025-07-03T06:24:27.530Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "487",
+    "reason": "Ambiguity issue: - The schema does not support representing a prerequisite that is dependent on a topic published before enrollment, as it lacks a mechanism to link to external, dynamically determined information.",
+    "timestamp": "2025-07-03T06:24:28.676Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "488",
+    "reason": "Ambiguity issue: - The schema does not support representing prerequisites that are dependent on a \"topic\" and published before enrollment. This is a dynamic requirement that cannot be statically defined within the given schema.",
+    "timestamp": "2025-07-03T06:24:29.702Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "497",
+    "reason": "Ambiguity issue: - The schema does not support representing \"Students accepted into honours program only\" as a prerequisite. This is a program-level restriction, not a specific course or credit requirement.",
+    "timestamp": "2025-07-03T06:24:41.699Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "276",
+    "reason": "Ambiguity issue: - The schema does not explicitly support substituting one prerequisite for another based on a higher grade (e.g., \"MATH 154 or MATH 157 with at least a B+ may be substituted for MATH 151 or MATH 150\"). While it can handle equivalencies, this specific conditional substitution based on grade is not directly covered.",
+    "timestamp": "2025-07-03T06:25:31.582Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "295",
+    "reason": "Ambiguity issue: - The schema does not support conditional prerequisites based on program enrollment (e.g., \"for students in an Applied Physics program\").",
+    "timestamp": "2025-07-03T06:25:32.451Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "307",
+    "reason": "Ambiguity issue: - The schema does not explicitly support conditional equivalencies or substitutions for prerequisites. The statement \"MATH 154 or MATH 157 with a grade of at least B+ may be substituted for MATH 150 or MATH 151\" introduces a layer of complexity that the current schema capabilities might not fully capture without additional clarification or a more robust way to represent conditional substitutions.",
+    "timestamp": "2025-07-03T06:25:42.653Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "426",
+    "reason": "Ambiguity issue: - The prerequisite mentions \"Bridging Online\" which is not a standard course and its completion is tied to a process rather than a course enrollment. The schema does not appear to support this type of requirement.",
+    "timestamp": "2025-07-03T06:27:11.568Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "494",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"Successful Capstone Project Proposal\" as a prerequisite. It's unclear if this refers to a specific course, a grade, or a separate approval process.",
+    "timestamp": "2025-07-03T06:28:23.891Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "495",
+    "reason": "Ambiguity issue: - The schema does not support representing temporal constraints like \"must be taken in the term immediately following\" or project/supervisor continuity.",
+    "timestamp": "2025-07-03T06:28:24.769Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "496",
+    "reason": "Ambiguity issue: - The schema does not support representing procedural requirements such as \"proposal must be submitted to the undergraduate chair at least 15 days in advance of the term\" or \"proposal must be signed by the supervisor(s) and the undergraduate chair.\"",
+    "timestamp": "2025-07-03T06:28:25.806Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "497",
+    "reason": "Ambiguity issue: - The schema does not support representing a \"satisfactory capstone project proposal\" as a prerequisite. This is a qualitative requirement that cannot be directly translated into course codes, credit counts, or GPA.",
+    "timestamp": "2025-07-03T06:28:26.697Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "498",
+    "reason": "Ambiguity issue: - The schema does not support representing procedural requirements such as \"proposal must be submitted to the Undergraduate Chair at least 15 days in advance of the term\" and \"proposal must be signed by the supervisor(s) and the undergraduate chair.\"",
+    "timestamp": "2025-07-03T06:28:27.714Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "732",
+    "reason": "Ambiguity issue: - The schema does not support program enrollment restrictions as a prerequisite. It only supports program requirements as a restriction on who can take the course, not as a prerequisite that must be met.",
+    "timestamp": "2025-07-03T06:28:51.136Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "742",
+    "reason": "Ambiguity issue: - The schema does not support program enrollment restrictions as a prerequisite.",
+    "timestamp": "2025-07-03T06:28:54.616Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "757",
+    "reason": "Ambiguity issue: - The schema does not support program enrollment restrictions as a prerequisite. It can handle course, credit, CGPA, and permission requirements, but not specific program enrollment.",
+    "timestamp": "2025-07-03T06:29:01.732Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "782",
+    "reason": "Ambiguity issue: - The schema does not support program enrollment restrictions as a prerequisite. It only supports program requirements as a restriction on who can take the course, not as a prerequisite that must be met.",
+    "timestamp": "2025-07-03T06:29:08.297Z"
+  },
+  {
+    "department": "COGS",
+    "number": "490",
+    "reason": "Ambiguity issue: - The schema does not explicitly support specifying a minimum number of courses within a specific program (e.g., \"7 upper division courses within the Cognitive Science Honours program requirements\"). It can handle \"7 upper division courses\" but not the program-specific restriction.",
+    "timestamp": "2025-07-03T06:29:38.499Z"
+  },
+  {
+    "department": "CRIM",
+    "number": "370",
+    "reason": "Ambiguity issue: - The schema does not support representing a \"written application\" requirement or a \"may not be taken concurrently\" restriction.",
+    "timestamp": "2025-07-03T06:31:26.329Z"
+  },
+  {
+    "department": "CRIM",
+    "number": "487",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"and/or\" logic for prerequisites, nor does it clearly define how to handle conditional requirements like \"A criminal record check may be required dependent on agency.\"",
+    "timestamp": "2025-07-03T06:32:37.702Z"
+  },
+  {
+    "department": "CRIM",
+    "number": "489",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a \"criminal record check may be required dependent on agency\" as a prerequisite or corequisite.",
+    "timestamp": "2025-07-03T06:32:42.399Z"
+  },
+  {
+    "department": "CRIM",
+    "number": "490",
+    "reason": "Ambiguity issue: - The schema does not support program admission requirements as prerequisites. It only supports course-based prerequisites.",
+    "timestamp": "2025-07-03T06:32:43.283Z"
+  },
+  {
+    "department": "CRIM",
+    "number": "491",
+    "reason": "Ambiguity issue: - The schema does not support program admission requirements as prerequisites.",
+    "timestamp": "2025-07-03T06:32:44.151Z"
+  },
+  {
+    "department": "CRIM",
+    "number": "897",
+    "reason": "Ambiguity issue: - The schema does not support representing \"completion of all coursework within a program\" as a prerequisite. It lacks a mechanism to track program completion status.",
+    "timestamp": "2025-07-03T06:33:00.840Z"
+  },
+  {
+    "department": "DIAL",
+    "number": "390W",
+    "reason": "Ambiguity issue: - The schema does not support representing program enrollment options with different unit requirements and course combinations (e.g., Summer Institute vs. Semester in Dialogue). The note about DIAL 393 also implies a restriction that is not directly a prerequisite or corequisite.",
+    "timestamp": "2025-07-03T06:33:05.272Z"
+  },
+  {
+    "department": "DIAL",
+    "number": "391W",
+    "reason": "Ambiguity issue: - The prerequisite section contains program-level restrictions and unit requirements that are intertwined with course enrollment options (Summer Institute vs. Semester in Dialogue), making it difficult to represent the distinct choices and their associated unit requirements clearly within the schema. The \"45 units\" prerequisite is also not clearly tied to a specific type of coursework (e.g., university, major).",
+    "timestamp": "2025-07-03T06:33:06.302Z"
+  },
+  {
+    "department": "DIAL",
+    "number": "392W",
+    "reason": "Ambiguity issue: - The schema does not support representing program structure or the choice between two distinct program pathways (Summer Institute vs. Semester in Dialogue) with associated course and unit requirements for each. The note about not taking the course for further credit if DIAL 395 has been taken is also not directly supported by the schema's stated capabilities.",
+    "timestamp": "2025-07-03T06:33:07.314Z"
+  },
+  {
+    "department": "EASC",
+    "number": "408",
+    "reason": "Ambiguity issue: - The prerequisite is listed under the \"Prerequisites\" field but is described as a \"Corequisite\". This is a contradiction in terminology.",
+    "timestamp": "2025-07-03T06:34:45.549Z"
+  },
+  {
+    "department": "EASC",
+    "number": "421",
+    "reason": "Ambiguity issue: - The corequisite field contains a prerequisite statement.",
+    "timestamp": "2025-07-03T06:34:55.277Z"
+  },
+  {
+    "department": "EASC",
+    "number": "601",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a \"recommended\" prerequisite that is also tied to a \"permission of instructor\" option. While \"recommended\" is supported, the combination with a conditional permission is not clearly defined.",
+    "timestamp": "2025-07-03T06:35:10.688Z"
+  },
+  {
+    "department": "EASC",
+    "number": "603",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"undergraduate courses in physical and chemical hydrogeology\" as a prerequisite. It can handle specific course numbers or levels, but not broad subject area requirements without specific course mappings.",
+    "timestamp": "2025-07-03T06:35:11.625Z"
+  },
+  {
+    "department": "EASC",
+    "number": "609",
+    "reason": "Ambiguity issue: - The schema does not support representing \"undergraduate courses in advanced mathematics, remote sensing, geophysics, natural hazards\" as a general category without specific course numbers or departments. It also doesn't explicitly support \"or permission of instructor\" as a direct alternative to a set of courses.",
+    "timestamp": "2025-07-03T06:35:17.853Z"
+  },
+  {
+    "department": "EASC",
+    "number": "610",
+    "reason": "Ambiguity issue: - The schema does not support representing \"prior knowledge and/or experience\" as a prerequisite. It requires specific course codes or quantifiable measures.",
+    "timestamp": "2025-07-03T06:35:18.774Z"
+  },
+  {
+    "department": "EASC",
+    "number": "620",
+    "reason": "Ambiguity issue: - The schema does not support representing \"undergraduate course in petrology\" and \"undergraduate course in structural geology\" without specifying the department and course number.",
+    "timestamp": "2025-07-03T06:35:22.816Z"
+  },
+  {
+    "department": "EASC",
+    "number": "622",
+    "reason": "Ambiguity issue: - The schema does not support representing \"Advanced undergraduate sedimentology course\" as a prerequisite. It requires specific course codes or a more granular definition of \"advanced undergraduate.\"",
+    "timestamp": "2025-07-03T06:35:23.934Z"
+  },
+  {
+    "department": "EASC",
+    "number": "624",
+    "reason": "Ambiguity issue: - The schema does not support representing a broad \"undergraduate background\" requirement that specifies multiple subject areas without specific course codes or levels. The requirement for \"courses at any level in structural geology, plate tectonics, geochemistry, geophysics, petrology (sedimentary, metamorphic, and igneous)\" is too general for the current schema's ability to specify exact courses or course ranges.",
+    "timestamp": "2025-07-03T06:35:25.060Z"
+  },
+  {
+    "department": "EASC",
+    "number": "635",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"undergraduate physical hydrogeology and aqueous geochemistry courses\" as a prerequisite. It can handle specific course numbers or general levels, but not broad subject area requirements without further definition.",
+    "timestamp": "2025-07-03T06:35:33.273Z"
+  },
+  {
+    "department": "ECON",
+    "number": "222",
+    "reason": "Ambiguity issue: - The prerequisite statement \"ECON 103, MATH 150, MATH 151, MATH 154, or MATH 157, with a minimum grade of C-, or ECON 113 with a minimum grade of A-\" is ambiguous. It is unclear if the minimum grade of C- applies to all the MATH courses listed, or only to ECON 103. The schema needs to support specifying grade requirements for individual courses within a logical grouping.",
+    "timestamp": "2025-07-03T06:36:14.382Z"
+  },
+  {
+    "department": "ECON",
+    "number": "233",
+    "reason": "Ambiguity issue: - The schema does not explicitly support \"in lieu of\" requirements, which are present in the notes section. While the schema can handle equivalencies, the phrasing \"will be accepted in lieu of this course\" suggests a substitution that might not be directly mappable to a standard prerequisite/corequisite structure.",
+    "timestamp": "2025-07-03T06:36:15.575Z"
+  },
+  {
+    "department": "ECON",
+    "number": "305",
+    "reason": "Ambiguity issue: - The schema does not support conditional concurrent enrollment based on specific course grades and unit counts, nor does it support the process of contacting an undergraduate advisor for permission under these specific circumstances.",
+    "timestamp": "2025-07-03T06:36:31.420Z"
+  },
+  {
+    "department": "ECON",
+    "number": "310",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a combination of \"OR\" conditions for prerequisites where each \"OR\" branch has a different minimum grade requirement for the same course (e.g., ECON 103 with C- OR ECON 113 with A-). While the schema can handle \"OR\" conditions and minimum grades, the nested and specific grade requirements within the \"OR\" structure might not be directly parsable without further clarification or schema extension.",
+    "timestamp": "2025-07-03T06:36:32.558Z"
+  },
+  {
+    "department": "ECON",
+    "number": "333",
+    "reason": "Ambiguity issue: - The schema does not explicitly support conditional prerequisites based on the number of units completed (e.g., \"after 30 units\"). While it can handle minimum grades and alternative courses, the specific timing condition for waiving certain prerequisites based on unit count is not directly representable.",
+    "timestamp": "2025-07-03T06:36:41.708Z"
+  },
+  {
+    "department": "ECON",
+    "number": "334",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing multiple, independent prerequisite conditions that are linked by an \"OR\" relationship, where each condition itself has multiple \"OR\" options with different grade requirements. The current structure implies a single set of OR conditions.",
+    "timestamp": "2025-07-03T06:36:42.693Z"
+  },
+  {
+    "department": "ECON",
+    "number": "342",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a combination of \"60 units\" OR \"permission of the department\" as a prerequisite. While it can handle each individually, the logical OR between a unit count and a permission requirement is not clearly defined.",
+    "timestamp": "2025-07-03T06:36:46.323Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "211",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a conditional prerequisite that requires instructor permission based on prior course credit. The current schema might represent the prior courses, but the \"permission of the instructor\" aspect is not directly modeled as a conditional requirement tied to specific prior courses.",
+    "timestamp": "2025-07-03T06:39:19.015Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "212",
+    "reason": "Ambiguity issue: - The prerequisite statement is unclear about whether it applies to students who *have* credit for those math courses, or if those math courses are themselves prerequisites. It also states a permission requirement for EDUC 211 and EDUC 212, but the course being analyzed is only EDUC 212.",
+    "timestamp": "2025-07-03T06:39:20.180Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "252",
+    "reason": "Ambiguity issue: - The schema does not support \"may not take this course for credit\" restrictions, which function as a negative prerequisite or exclusion.",
+    "timestamp": "2025-07-03T06:39:23.678Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "313",
+    "reason": "Ambiguity issue: - The schema does not support representing a prerequisite that is either a course OR a corequisite of another course. The \"or\" connects a prerequisite condition to a corequisite condition, which is not a standard logical structure for prerequisites.",
+    "timestamp": "2025-07-03T06:39:27.237Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "324",
+    "reason": "Ambiguity issue: - The schema does not support combining a course prerequisite with a unit requirement within a single prerequisite statement using logical operators. It's unclear if \"60 units\" applies to both \"EDUC 220\" and \"PSYC 250\" or if it's a separate, independent requirement.",
+    "timestamp": "2025-07-03T06:39:39.825Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "326",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a prerequisite that is a combination of a course OR a corequisite of another course. The \"EDUC 401/402\" notation is also unclear if it means \"EDUC 401 OR EDUC 402\" or \"EDUC 401 AND EDUC 402\".",
+    "timestamp": "2025-07-03T06:39:43.672Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "328",
+    "reason": "Ambiguity issue: - The prerequisite \"corequisite EDUC 403\" is unclear. It's not specified if EDUC 403 is a prerequisite or a corequisite in this context, and the schema does not support embedding corequisite requirements within a prerequisite statement.",
+    "timestamp": "2025-07-03T06:39:47.525Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "375",
+    "reason": "Ambiguity issue: - The schema does not support representing a prerequisite that is a choice between a course *or* a corequisite. The prerequisite states \"EDUC 401/402 or corequisite EDUC 403\", which implies a logical OR between two distinct types of requirements (a prerequisite course and a corequisite course).",
+    "timestamp": "2025-07-03T06:40:10.414Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "398",
+    "reason": "Ambiguity issue: - The schema does not support representing a prerequisite that is determined at a later time (\"Will be announced prior to the beginning of each term\").",
+    "timestamp": "2025-07-03T06:40:20.119Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "404",
+    "reason": "Ambiguity issue: - The schema does not support representing a prerequisite that is also a corequisite. The prerequisite states \"EDUC 401/402 or corequisite EDUC 403\", which implies that EDUC 403 can be taken either before or at the same time as EDUC 404. This creates a conflict with the standard definition of prerequisites and corequisites.",
+    "timestamp": "2025-07-03T06:40:33.496Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "405",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"Criminal Record Check\" as a prerequisite. While it can handle course prerequisites and permission requirements, a background check is a different type of requirement.",
+    "timestamp": "2025-07-03T06:40:34.507Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "406",
+    "reason": "Ambiguity issue: - The schema does not support representing \"previous teaching experience\" or \"Criminal Record Check\" as prerequisites. These are external conditions rather than specific courses or academic achievements that can be directly mapped.",
+    "timestamp": "2025-07-03T06:40:35.493Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "407",
+    "reason": "Ambiguity issue: - The schema does not support representing a \"Criminal Record Check\" as a prerequisite or corequisite.",
+    "timestamp": "2025-07-03T06:40:36.492Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "412W",
+    "reason": "Ambiguity issue: - The prerequisite \"EDUC 401/402 or corequisite EDUC 403\" is unclear. It's ambiguous whether the \"or\" applies to the entire preceding phrase or just to \"corequisite EDUC 403\". It's also unclear if \"EDUC 401/402\" implies a choice between the two or a sequence.",
+    "timestamp": "2025-07-03T06:40:50.247Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "414",
+    "reason": "Ambiguity issue: - The schema does not support representing a prerequisite that is either a course OR a corequisite. The current structure implies prerequisites and corequisites are separate and mutually exclusive categories.",
+    "timestamp": "2025-07-03T06:40:51.332Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "415",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a prerequisite that is a combination of an \"OR\" group and an \"AND\" group with a corequisite. Specifically, \"One of MATH 152, 155, or 158, and either EDUC 401/402 or corequisite EDUC 403\" is difficult to parse into the provided logical groupings. The \"EDUC 401/402\" part also implies an \"OR\" relationship that isn't clearly defined for a prerequisite.",
+    "timestamp": "2025-07-03T06:40:52.507Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "416",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a prerequisite that is *either* a specific course *or* a corequisite of another course. The \"or corequisite EDUC 403\" part is problematic as it mixes prerequisite and corequisite conditions in a way that the schema might not be able to parse directly.",
+    "timestamp": "2025-07-03T06:40:53.656Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "422",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a prerequisite that is also a corequisite. The statement \"PSYC 250 or corequisite of EDUC 315 or 473\" implies a conditional prerequisite where the student can either take PSYC 250 as a prerequisite OR take EDUC 315 or 473 as a corequisite. This complex conditional logic is not directly supported by the described schema capabilities.",
+    "timestamp": "2025-07-03T06:40:54.891Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "423",
+    "reason": "Ambiguity issue: - The schema does not support representing a requirement that is *either* a prerequisite *or* a corequisite. The provided course lists it as a prerequisite with an \"Or corequisite\" clause, which is unclear.",
+    "timestamp": "2025-07-03T06:40:55.861Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "426",
+    "reason": "Ambiguity issue: - The prerequisite statement contains a mix of conditions that are not clearly delineated. It's unclear if \"60 units including EDUC 220 or PSYC 250\" is a single requirement or if the \"60 units\" applies to all subsequent options. The \"or EDUC 401/402 or Corequsite: EDUC 403\" part is also ambiguous. It's unclear if \"EDUC 401/402\" are alternatives to the previous options, or if \"EDUC 403\" is a corequisite that must be taken concurrently with the prerequisite courses. The \"Criminal Record Check\" is a condition, not a course prerequisite, and its placement within the prerequisite string is unusual.",
+    "timestamp": "2025-07-03T06:41:01.261Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "430",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a prerequisite that is either a course OR a corequisite. The current structure implies prerequisites are separate from corequisites.",
+    "timestamp": "2025-07-03T06:41:02.186Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "452",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a prerequisite that is either a specific course OR a corequisite. The \"or\" between \"EDUC 401W/402W\" and \"Corequisite: EDUC 403\" creates an ambiguity in how to structure this requirement.",
+    "timestamp": "2025-07-03T06:41:15.106Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "454",
+    "reason": "Ambiguity issue: - The prerequisite statement \"EDUC 401 and EDUC 402 or Corequisite: EDUC 403\" is ambiguous. It's unclear if the \"or Corequisite: EDUC 403\" applies to the entire preceding prerequisite (EDUC 401 and EDUC 402) or if it's a separate, alternative requirement. The schema needs to support a clear distinction between \"AND\" and \"OR\" relationships when a corequisite is introduced within a prerequisite statement.",
+    "timestamp": "2025-07-03T06:41:16.247Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "457",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a prerequisite that is an \"OR\" condition between a course with a slash (implying an equivalency or choice) and a corequisite. The \"401/402\" notation is unclear if it means \"401 OR 402\" or \"401 AND 402\" or if it represents a single course with two numbers.",
+    "timestamp": "2025-07-03T06:41:19.980Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "459",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a prerequisite that is either a specific course OR a corequisite of another specific course. The \"or\" creates a logical OR between a prerequisite and a corequisite, which is not directly supported.",
+    "timestamp": "2025-07-03T06:41:23.614Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "464",
+    "reason": "Ambiguity issue: - The prerequisite \"EDUC 401/402 or PSYC 250 or corequisite EDUC 403\" is ambiguous. It's unclear if \"EDUC 401/402\" means either EDUC 401 OR EDUC 402, or if it's a single course with a slash indicating an alternative numbering or a combined course. Additionally, the \"corequisite EDUC 403\" is listed as a prerequisite, which is a contradiction in terms.",
+    "timestamp": "2025-07-03T06:41:24.866Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "467",
+    "reason": "Ambiguity issue: - The prerequisite \"six units of EDUC course work\" is ambiguous as it does not specify the level or department for the six units.",
+    "timestamp": "2025-07-03T06:41:31.041Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "472",
+    "reason": "Ambiguity issue: - The schema does not support representing a prerequisite that is either a specific course OR a corequisite of another specific course. The \"or\" creates ambiguity in how to structure this requirement.",
+    "timestamp": "2025-07-03T06:41:40.273Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "473W",
+    "reason": "Ambiguity issue: - The schema does not support representing a prerequisite that is either a course OR a corequisite. The prerequisite states \"EDUC 401/402 or corequisite EDUC 403\", which implies a choice between two specific courses or a corequisite.",
+    "timestamp": "2025-07-03T06:41:41.180Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "474",
+    "reason": "Ambiguity issue: - The schema does not support representing a prerequisite that is also a corequisite. The statement \"EDUC 401/402 or corequisite EDUC 403\" implies that EDUC 403 can be taken either before or at the same time as EDUC 474, but the schema does not have a clear way to express this dual nature for a single course.",
+    "timestamp": "2025-07-03T06:41:42.322Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "475",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a \"successful completion\" requirement for an external process like a criminal records check.",
+    "timestamp": "2025-07-03T06:41:43.252Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "476",
+    "reason": "Ambiguity issue: - The schema does not support representing a prerequisite that is also a corequisite. The statement \"EDUC 401/402 or corequisite EDUC 403\" implies that EDUC 403 can be taken either before or concurrently with EDUC 476, which is not directly supported by separate prerequisite and corequisite fields.",
+    "timestamp": "2025-07-03T06:41:44.317Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "477",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a prerequisite that is *either* a specific course *or* a corequisite of another specific course. The \"or\" here connects two different types of requirements (prerequisite and corequisite) in a way that is not directly supported by the logical groupings.",
+    "timestamp": "2025-07-03T06:41:45.346Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "478",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a prerequisite that is also a corequisite. The statement \"EDUC 401/402 or corequisite EDUC 403\" implies that EDUC 403 can be taken either before or concurrently with EDUC 478, which is not directly supported by separate prerequisite and corequisite fields.",
+    "timestamp": "2025-07-03T06:41:46.472Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "481",
+    "reason": "Ambiguity issue: - The prerequisite \"EDUC 401/402 (French Immersion)\" is unclear. It's not specified if both EDUC 401 and 402 are required, or if either one is sufficient. The schema needs to support a clearer way to represent this \"OR\" relationship between specific course versions or streams.",
+    "timestamp": "2025-07-03T06:41:51.754Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "799",
+    "reason": "Ambiguity issue: - The schema does not support representing non-course-based requirements such as a \"Criminal Record Check.\"",
+    "timestamp": "2025-07-03T06:42:06.742Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "807",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:15.938Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "843",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:16.236Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "852",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:16.545Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "856",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:16.856Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "857",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:17.252Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "862",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:17.545Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "863",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:17.831Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "864",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:19.038Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "867",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:19.362Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "870",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:19.697Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "871",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:20.024Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "874",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:20.344Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "878",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:20.698Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "881",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:21.019Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "889",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:21.435Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "895",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:21.748Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "901A",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:22.097Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "901B",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:22.413Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "902A",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:22.792Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "902B",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:23.114Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "921",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:23.423Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "922",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:23.748Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "932",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:24.045Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "934",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:24.444Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "935",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:24.729Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "946",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:25.098Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "971",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:25.477Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "111W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:25.797Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "113W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:26.168Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "114W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:26.479Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "115W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:26.810Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "199W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:27.152Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "202",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:27.489Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "204",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:27.772Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "209",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:28.137Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "210",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:28.479Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "211",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:28.829Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "213",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:29.136Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "214",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:29.431Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "216",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:29.712Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "272",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:30.046Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "300",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:30.330Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "304",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:30.657Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "310",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:31.003Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "312",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:31.287Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "320",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:31.603Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "330",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:31.928Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "341",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:32.269Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "345",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:32.675Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "355",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:33.010Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "360",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:33.330Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "361",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:33.672Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "362",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:33.954Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "363",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:34.264Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "364",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:34.596Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "371",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:34.959Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "372",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:35.300Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "374",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:35.614Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "375",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:35.988Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "376",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:36.269Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "383",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:36.588Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "385",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:36.874Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "387",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:37.260Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "411W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:37.548Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "413W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:37.937Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "414W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:38.308Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "415W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:38.642Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "417W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:38.961Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "418W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:39.301Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "431W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:39.598Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "433W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:39.900Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "437W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:40.212Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "439W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:40.532Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "443W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:40.846Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "470W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:41.199Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "472W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:41.519Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "474W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:41.813Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "475W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:42.214Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "490",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:42.529Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "491",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:42.818Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "493W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:43.139Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "494",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:43.452Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "496",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:43.792Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "894",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:44.093Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "100W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:44.403Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "105W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:44.717Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "120",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:45.031Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "151",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:45.359Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "180",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:45.677Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "204",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:45.993Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "220",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:46.305Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "225",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:46.650Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "251",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:46.953Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "252",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:47.286Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "254",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:47.579Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "280",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:47.854Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "295",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:48.182Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "296",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:48.550Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "316",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:48.858Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "320",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:49.147Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "324",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:49.465Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "325",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:49.749Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "327",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:50.044Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "350",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:50.326Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "351",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:50.610Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "370",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:50.933Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "380",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:51.278Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "383",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:51.640Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "385",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:51.918Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "386",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:52.287Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "387",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:52.590Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "395",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:52.974Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "396",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:53.315Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "403",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:53.617Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "405W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:53.976Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "406",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:54.261Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "410",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:54.778Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "413",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:55.079Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "416",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:55.418Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "424",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:55.792Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "425",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:56.109Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "426",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:56.489Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "427",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:56.782Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "428",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:57.092Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "429",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:57.396Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "440",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:57.767Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "450",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:58.044Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "452",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:58.361Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "453",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:58.683Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "461",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:58.974Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "462",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:59.329Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "470",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:59.612Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "474",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:42:59.911Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "475",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:00.207Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "476",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:00.532Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "477",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:00.817Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "482",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:01.141Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "483",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:01.487Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "488",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:01.768Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "495",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:02.073Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "498",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:02.494Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "499",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:02.807Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "701",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:03.131Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "704",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:03.481Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "801",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:03.778Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "802",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:04.076Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "805",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:04.394Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "812",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:04.718Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "813",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:05.023Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "835",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:05.471Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "859",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:05.765Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "861",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:06.141Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "870",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:06.493Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "875",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:06.770Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "880",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:07.133Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "884",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:07.432Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "887",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:07.781Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "890",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:08.109Z"
+  },
+  {
+    "department": "ENV",
+    "number": "302",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:08.419Z"
+  },
+  {
+    "department": "ENV",
+    "number": "303",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:08.733Z"
+  },
+  {
+    "department": "ENV",
+    "number": "402",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:09.030Z"
+  },
+  {
+    "department": "ENV",
+    "number": "403",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:09.333Z"
+  },
+  {
+    "department": "ENV",
+    "number": "404",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:09.729Z"
+  },
+  {
+    "department": "ENV",
+    "number": "645",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:10.023Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "100",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:10.331Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "201W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:10.631Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "206",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:10.942Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "300",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:11.232Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "305",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:11.631Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "320",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:11.944Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "380",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:12.281Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "381",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:12.569Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "391",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:12.954Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "400",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:13.260Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "410",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:13.593Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "445",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:14.016Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "460",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:14.319Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "480",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:14.624Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "481",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:14.978Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "482",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:15.312Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "489",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:15.611Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "490W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:15.969Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "491",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:16.299Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "645",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:16.579Z"
+  },
+  {
+    "department": "EVSC",
+    "number": "660",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:16.848Z"
+  },
+  {
+    "department": "FAN",
+    "number": "X91",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:17.165Z"
+  },
+  {
+    "department": "FAN",
+    "number": "X92",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:17.488Z"
+  },
+  {
+    "department": "FAN",
+    "number": "X99",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:17.800Z"
+  },
+  {
+    "department": "FASS",
+    "number": "121",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:18.101Z"
+  },
+  {
+    "department": "FASS",
+    "number": "201",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:18.410Z"
+  },
+  {
+    "department": "FASS",
+    "number": "222",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:18.720Z"
+  },
+  {
+    "department": "FASS",
+    "number": "223",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:19.064Z"
+  },
+  {
+    "department": "FASS",
+    "number": "224",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:19.403Z"
+  },
+  {
+    "department": "FASS",
+    "number": "225",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:19.748Z"
+  },
+  {
+    "department": "FASS",
+    "number": "301",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:20.060Z"
+  },
+  {
+    "department": "FASS",
+    "number": "302",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:20.367Z"
+  },
+  {
+    "department": "FASS",
+    "number": "305",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:20.657Z"
+  },
+  {
+    "department": "FASS",
+    "number": "401",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:20.972Z"
+  },
+  {
+    "department": "FASS",
+    "number": "402",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:21.387Z"
+  },
+  {
+    "department": "FASS",
+    "number": "499",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:21.675Z"
+  },
+  {
+    "department": "FASS",
+    "number": "805",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:22.069Z"
+  },
+  {
+    "department": "FREN",
+    "number": "101",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:22.415Z"
+  },
+  {
+    "department": "FREN",
+    "number": "102",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:22.732Z"
+  },
+  {
+    "department": "FREN",
+    "number": "120",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:23.004Z"
+  },
+  {
+    "department": "FREN",
+    "number": "121",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:23.319Z"
+  },
+  {
+    "department": "FREN",
+    "number": "201",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:23.592Z"
+  },
+  {
+    "department": "FREN",
+    "number": "202",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:23.919Z"
+  },
+  {
+    "department": "FREN",
+    "number": "203",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:24.260Z"
+  },
+  {
+    "department": "FREN",
+    "number": "221",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:24.667Z"
+  },
+  {
+    "department": "FREN",
+    "number": "222",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:24.946Z"
+  },
+  {
+    "department": "FREN",
+    "number": "245",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:25.218Z"
+  },
+  {
+    "department": "FREN",
+    "number": "275",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:25.537Z"
+  },
+  {
+    "department": "FREN",
+    "number": "300",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:25.864Z"
+  },
+  {
+    "department": "FREN",
+    "number": "301W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:26.258Z"
+  },
+  {
+    "department": "FREN",
+    "number": "302",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:26.578Z"
+  },
+  {
+    "department": "FREN",
+    "number": "303",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:26.886Z"
+  },
+  {
+    "department": "FREN",
+    "number": "304",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:27.224Z"
+  },
+  {
+    "department": "FREN",
+    "number": "330",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:27.507Z"
+  },
+  {
+    "department": "FREN",
+    "number": "331",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:27.889Z"
+  },
+  {
+    "department": "FREN",
+    "number": "332",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:28.159Z"
+  },
+  {
+    "department": "FREN",
+    "number": "333",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:28.489Z"
+  },
+  {
+    "department": "FREN",
+    "number": "334",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:28.770Z"
+  },
+  {
+    "department": "FREN",
+    "number": "340",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:29.126Z"
+  },
+  {
+    "department": "FREN",
+    "number": "341",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:29.478Z"
+  },
+  {
+    "department": "FREN",
+    "number": "344",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:29.816Z"
+  },
+  {
+    "department": "FREN",
+    "number": "345",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:30.159Z"
+  },
+  {
+    "department": "FREN",
+    "number": "350",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:30.445Z"
+  },
+  {
+    "department": "FREN",
+    "number": "351",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:30.744Z"
+  },
+  {
+    "department": "FREN",
+    "number": "352",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:31.077Z"
+  },
+  {
+    "department": "FREN",
+    "number": "355",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:31.349Z"
+  },
+  {
+    "department": "FREN",
+    "number": "365",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:31.656Z"
+  },
+  {
+    "department": "FREN",
+    "number": "401",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:31.978Z"
+  },
+  {
+    "department": "FREN",
+    "number": "416",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:32.256Z"
+  },
+  {
+    "department": "FREN",
+    "number": "420",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:32.663Z"
+  },
+  {
+    "department": "FREN",
+    "number": "423",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:32.963Z"
+  },
+  {
+    "department": "FREN",
+    "number": "425",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:33.267Z"
+  },
+  {
+    "department": "FREN",
+    "number": "430",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:33.551Z"
+  },
+  {
+    "department": "FREN",
+    "number": "440",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:33.829Z"
+  },
+  {
+    "department": "FREN",
+    "number": "442",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:34.128Z"
+  },
+  {
+    "department": "FREN",
+    "number": "444",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:34.445Z"
+  },
+  {
+    "department": "FREN",
+    "number": "452",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:34.774Z"
+  },
+  {
+    "department": "FREN",
+    "number": "455",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:35.107Z"
+  },
+  {
+    "department": "FREN",
+    "number": "465",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:35.404Z"
+  },
+  {
+    "department": "FREN",
+    "number": "480",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:35.705Z"
+  },
+  {
+    "department": "GA",
+    "number": "101",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:35.979Z"
+  },
+  {
+    "department": "GA",
+    "number": "202",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:36.250Z"
+  },
+  {
+    "department": "GA",
+    "number": "210",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:36.573Z"
+  },
+  {
+    "department": "GA",
+    "number": "211",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:36.903Z"
+  },
+  {
+    "department": "GA",
+    "number": "301",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:37.200Z"
+  },
+  {
+    "department": "GA",
+    "number": "302",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:37.503Z"
+  },
+  {
+    "department": "GA",
+    "number": "303",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:37.836Z"
+  },
+  {
+    "department": "GA",
+    "number": "304",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:38.177Z"
+  },
+  {
+    "department": "GA",
+    "number": "333",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:38.523Z"
+  },
+  {
+    "department": "GA",
+    "number": "388",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:38.821Z"
+  },
+  {
+    "department": "GA",
+    "number": "400",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:39.103Z"
+  },
+  {
+    "department": "GA",
+    "number": "401",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:39.398Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "104",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:39.721Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "213",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:40.065Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "214",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:40.380Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "215",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:40.675Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "221",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:40.945Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "241",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:41.315Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "255",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:41.608Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "261",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:41.899Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "266W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:42.208Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "267",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:42.539Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "304",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:42.813Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "310",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:43.110Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "311",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:43.451Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "312",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:43.750Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "313",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:44.038Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "314",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:44.345Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "315",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:44.641Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "316",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:44.970Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "317",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:45.245Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "321",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:45.578Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "324",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:45.878Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "327",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:46.244Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "328",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:46.544Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "333",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:46.852Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "340",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:47.242Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "351",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:47.565Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "352",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:47.847Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "353",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:48.153Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "355",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:48.513Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "356",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:48.878Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "362W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:49.149Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "363",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:49.511Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "364",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:49.790Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "382",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:50.127Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "385",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:50.445Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "389W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:50.731Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "404",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:51.100Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "405",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:51.410Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "409",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:51.702Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "412W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:52.084Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "414",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:52.374Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "418",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:52.691Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "429",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:52.981Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "432",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:53.347Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "441",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:53.725Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "451",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:54.021Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "455W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:54.294Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "457",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:54.607Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "465",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:54.970Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "491",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:55.328Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "600",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:55.612Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "601",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:55.987Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "603",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:56.307Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "606",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:56.661Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "612",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:57.011Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "614",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:57.308Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "651",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:57.593Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "655",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:57.948Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "658",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:58.301Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "671",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:58.624Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "677",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:58.929Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "678",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:59.239Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "679",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:59.517Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "681",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:43:59.816Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "691",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:00.134Z"
+  },
+  {
+    "department": "GEOG",
+    "number": "699",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:00.583Z"
+  },
+  {
+    "department": "GERM",
+    "number": "100",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:00.923Z"
+  },
+  {
+    "department": "GERM",
+    "number": "110",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:01.253Z"
+  },
+  {
+    "department": "GERM",
+    "number": "200",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:01.626Z"
+  },
+  {
+    "department": "GERM",
+    "number": "210",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:01.922Z"
+  },
+  {
+    "department": "GERM",
+    "number": "300",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:02.289Z"
+  },
+  {
+    "department": "GERO",
+    "number": "101",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:02.571Z"
+  },
+  {
+    "department": "GERO",
+    "number": "300",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:02.860Z"
+  },
+  {
+    "department": "GERO",
+    "number": "301",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:03.242Z"
+  },
+  {
+    "department": "GERO",
+    "number": "302",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:03.646Z"
+  },
+  {
+    "department": "GERO",
+    "number": "404",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:03.941Z"
+  },
+  {
+    "department": "GERO",
+    "number": "408",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:04.276Z"
+  },
+  {
+    "department": "GERO",
+    "number": "410",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:04.569Z"
+  },
+  {
+    "department": "GERO",
+    "number": "411",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:04.891Z"
+  },
+  {
+    "department": "GERO",
+    "number": "413",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:05.191Z"
+  },
+  {
+    "department": "GERO",
+    "number": "420",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:05.499Z"
+  },
+  {
+    "department": "GERO",
+    "number": "822",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:05.845Z"
+  },
+  {
+    "department": "GERO",
+    "number": "850",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:06.125Z"
+  },
+  {
+    "department": "GERO",
+    "number": "994",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:06.475Z"
+  },
+  {
+    "department": "GERO",
+    "number": "995",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:06.774Z"
+  },
+  {
+    "department": "GERO",
+    "number": "996",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:07.105Z"
+  },
+  {
+    "department": "GRK",
+    "number": "100",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:07.399Z"
+  },
+  {
+    "department": "GRK",
+    "number": "111",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:07.686Z"
+  },
+  {
+    "department": "GRK",
+    "number": "200",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:07.972Z"
+  },
+  {
+    "department": "GRK",
+    "number": "211",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:08.372Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "100",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:08.697Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "101",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:09.017Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "102",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:09.309Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "204",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:09.611Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "205",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:09.897Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "212",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:10.184Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "305",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:10.501Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "306",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:10.804Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "312",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:11.149Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "314",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:11.551Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "315",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:11.866Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "316",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:12.155Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "318",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:12.431Z"
   }
 ]

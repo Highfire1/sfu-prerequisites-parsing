@@ -1,0 +1,78 @@
+[
+  {
+    "department": "ARCH",
+    "course_code": "377",
+    "reason": "Sanity check: Ambiguous\nThe original text is ambiguous. It is unclear if the \"one lower division ARCH course\" must be a separate course from the one used to satisfy the \"ARCH 101 or ARCH 201\" requirement. The JSON represents a literal interpretation where a single course (e.g., ARCH 101) could satisfy both conditions, which may not be the intended meaning."
+  },
+  {
+    "department": "ARCH",
+    "course_code": "390",
+    "reason": "Sanity check: Ambiguous\nThe original prerequisite \"ARCH 101 or ARCH 201 and either ARCH 272/272W or 273\" is ambiguous. It could be interpreted in two ways:\n1. `(ARCH 101 or ARCH 201) AND (ARCH 272/272W or 273)`\n2. `ARCH 101 OR (ARCH 201 AND (ARCH 272/272W or 273))`\n\nThe parsed JSON represents the first interpretation, but the second is also a plausible reading of the text. Without clarification, it is impossible to determine the intended logic."
+  },
+  {
+    "department": "ARCH",
+    "course_code": "451",
+    "reason": "missed the readmission thing, maybe we need a way to reprompt the model with some text, although that adds even more spagetti to the code",
+    "timestamp": "2025-06-30T02:43:33.171Z"
+  },
+  {
+    "department": "ARCH",
+    "course_code": "452",
+    "reason": "llm thought that this was all OR but i think it is a ALL_OF",
+    "timestamp": "2025-06-30T02:44:47.377Z"
+  },
+  {
+    "department": "BISC",
+    "course_code": "100",
+    "reason": "we aren't capturing the \"or succeeding biology courses\" part",
+    "timestamp": "2025-06-30T02:50:43.003Z"
+  },
+  {
+    "department": "BISC",
+    "course_code": "106",
+    "reason": "Sanity check: Not Equivalent\nThe `credit_conflicts` field is incomplete. The original notes state \"BISC 101 or higher level BISC courses\", but the JSON only captures the conflict with BISC 101.",
+    "timestamp": "2025-06-30T02:53:52.462Z"
+  },
+  {
+    "department": "BISC",
+    "course_code": "406",
+    "reason": "Sanity check: Not Equivalent\nThe original text \"with a grade of C- or better\" is ambiguous, but it most likely applies to both BISC 306 and BISC 316. The JSON incorrectly applies the minimum grade requirement only to BISC 316.",
+    "timestamp": "2025-06-30T03:38:31.568Z"
+  },
+  {
+    "department": "BISC",
+    "course_code": "490",
+    "reason": "cannot capture \"all lower division biological sciences courses\"",
+    "timestamp": "2025-07-01T03:26:42.612Z"
+  },
+  {
+    "department": "BISC",
+    "course_code": "491",
+    "reason": "same as above",
+    "timestamp": "2025-07-01T03:26:50.991Z"
+  },
+  {
+    "department": "BISC",
+    "course_code": "492W",
+    "reason": "same as above",
+    "timestamp": "2025-07-01T03:26:57.380Z"
+  },
+  {
+    "department": "BISC",
+    "course_code": "497W",
+    "reason": "unknown requirements",
+    "timestamp": "2025-07-01T03:27:21.758Z"
+  },
+  {
+    "department": "BISC",
+    "course_code": "498",
+    "reason": "unknown requirements",
+    "timestamp": "2025-07-01T03:27:31.561Z"
+  },
+  {
+    "department": "BISC",
+    "course_code": "499",
+    "reason": "same as above",
+    "timestamp": "2025-07-01T03:27:38.423Z"
+  }
+]

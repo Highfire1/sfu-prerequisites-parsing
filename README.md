@@ -5,10 +5,13 @@ A project to convert SFU course prerequisites from text to data.
 Work in progress.
 
 initialize data with
-`bun run fetch-data`
+`bun run initialize`
 
 then run with
 `bun run parse`
+
+create csv's with links and nodes using
+`bun run export`
 
 You will need an `OPENROUTER_API_KEY` in a `.env` file.
 

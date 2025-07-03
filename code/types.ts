@@ -1,6 +1,6 @@
 const SCHEMA_VERSION = 'SFUv1.1';
 
-// Import types
+// the type in source_data/vital_data.json
 interface CourseCondensedInfo {
     department: string;
     number: string;
@@ -10,10 +10,32 @@ interface CourseCondensedInfo {
     corequisites: string;
 }
 
+
+
+interface LLMError {
+    error: true;
+    reason: string;
+}
+
+interface LLMParseOutput {
+    department: string;
+    number: string;
+    r_schema: string;
+    prerequisite?: RequirementNode;
+    corequisite?: RequirementNode;
+    recommended_prerequisite?: RequirementNode;
+    recommended_corequisite?: RequirementNode;
+    credit_conflicts?: CreditConflict[];
+}
+
+export type LLMResponse = LLMParseOutput | LLMError;
+
+
+
 interface ConflictEquivalentCourse {
     type: 'conflict_course';
-    subject: string;
-    course: string;
+    department: string;
+    number: string;
     title?: string;
 }
 
@@ -125,11 +147,53 @@ interface RequirementOther {
     note: string;
 }
 
+
+
+
 interface BlacklistedCourse {
     department: string;
-    course_code: string;
+    number: string;
     reason: string;
     timestamp: string; // ISO 8601 format
 }
 
 export type {CourseCondensedInfo, CreditConflict, SaveCourseRequirements as CourseRequirements, ParsedCourseRequirements, RequirementNode, RequirementGroup, RequirementProgram, RequirementCGPA, RequirementUDGPA, RequirementCourse, RequirementHSCourse, RequirementCreditCount, RequirementCourseCount, RequirementPermission, RequirementOther, BlacklistedCourse};
+
+export interface ParseResult {
+    success: boolean;
+    data?: ParsedCourseRequirements;
+    error?: string;
+    confidence?: number;
+    attempts: number;
+    schemaValid: boolean;
+    ambiguityCheckPassed: boolean;
+}
+
+export interface ProcessingStats {
+    total: number;
+    processed: number;
+    skipped: number;
+    successful: number;
+    failed: number;
+    errors: string[];
+}
+
+export interface CourseProcessingResult {
+    course: CourseCondensedInfo;
+    result: ParseResult;
+    saved: boolean;
+}
+
+export interface AmbiguityCheckResult {
+    passed: boolean;
+    reason?: string;
+    confidence?: number;
+}
+
+export interface RetryContext {
+    attempt: number;
+    maxAttempts: number;
+    previousError?: string;
+    schemaErrors?: string[];
+    ambiguityIssues?: string;
+}

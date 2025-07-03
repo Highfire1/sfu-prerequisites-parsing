@@ -1,0 +1,1023 @@
+[
+  {
+    "department": "ACMA",
+    "number": "101",
+    "r_schema": "SFUv1.1",
+    "corequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "150"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "151"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "154"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "157"
+        }
+      ]
+    },
+    "original_title": "Introduction to Insurance",
+    "original_prerequisites": "",
+    "original_corequisites": "MATH 150, 151, 154 or 157.",
+    "original_notes": "",
+    "timestamp": "2025-07-03T04:23:05.222Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "201",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "152",
+          "minGrade": "C"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "155",
+              "minGrade": "B"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "158",
+              "minGrade": "B"
+            }
+          ]
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ACMA",
+        "number": "210"
+      }
+    ],
+    "original_title": "Interest Theory and Applications",
+    "original_prerequisites": "MATH 152 with a minimum grade of C; or MATH 155 or MATH 158, with a grade of at least B.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 210 cannot take ACMA 201 for further credit.",
+    "timestamp": "2025-07-03T04:16:10.578Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "301",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ACMA",
+              "number": "201",
+              "minGrade": "C"
+            },
+            {
+              "type": "course",
+              "department": "ACMA",
+              "number": "210",
+              "minGrade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "STAT",
+      "number": "285"
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ACMA",
+        "number": "320"
+      }
+    ],
+    "original_title": "Long-Term Actuarial Mathematics I",
+    "original_prerequisites": "ACMA 201 (or 210), with a minimum grade of C. Corequisite: STAT 285.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 320 cannot take ACMA 301 for further credit.",
+    "timestamp": "2025-07-03T04:16:22.261Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "321",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "course",
+      "department": "ACMA",
+      "number": "101",
+      "minGrade": "C"
+    },
+    "corequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "STAT",
+          "number": "330"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "231"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ACMA",
+        "number": "355"
+      }
+    ],
+    "original_title": "Fundamentals of Short-Term Insurance",
+    "original_prerequisites": "ACMA 101 with a minimum grade of C. Corequisite: STAT 330, ACMA 231.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 355 may not take this course for further credit.",
+    "timestamp": "2025-07-03T04:16:40.134Z"
+  },
+  {
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "permission",
+          "note": "Students must apply and receive permission from the co-op coordinator at least one but preferably two terms in advance."
+        },
+        {
+          "type": "creditCount",
+          "credits": 45
+        },
+        {
+          "type": "CGPA",
+          "minCGPA": 2.5
+        }
+      ]
+    },
+    "department": "ACMA",
+    "number": "336",
+    "r_schema": "SFUv1.1",
+    "original_title": "Job Practicum I",
+    "original_prerequisites": "Students must apply and receive permission from the co-op coordinator at least one but preferably two terms in advance. They will normally be required to have completed 45 units with a GPA of 2.50 before they may take this practicum course.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-02T01:53:59.510Z"
+  },
+  {
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ACMA",
+              "number": "336"
+            },
+            {
+              "type": "other",
+              "note": "Job Practicum I from another department"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "Students must apply and receive permission from the co-op coordinator at least one term in advance."
+        }
+      ]
+    },
+    "department": "ACMA",
+    "number": "337",
+    "r_schema": "SFUv1.1",
+    "original_title": "Job Practicum II",
+    "original_prerequisites": "ACMA 336 or Job Practicum I from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-02T01:54:01.892Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "231",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "HSCourse",
+          "course": "BC Mathematics 12",
+          "orEquivalent": "true"
+        },
+        {
+          "type": "courseCount",
+          "count": 1,
+          "department": "MATH",
+          "level": "1XX",
+          "minGrade": "C"
+        }
+      ]
+    },
+    "original_title": "Tools for Data-Driven Decision Making",
+    "original_prerequisites": "BC Mathematics 12 (or equivalent) or any 100-level MATH course with a minimum grade of C.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T04:16:15.490Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "360W",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "301",
+          "minGrade": "C"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "320",
+          "minGrade": "C"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "STAT",
+        "number": "300W"
+      }
+    ],
+    "original_title": "Actuarial Communication",
+    "original_prerequisites": "ACMA 301 (or 320), with a minimum grade of C.",
+    "original_corequisites": "",
+    "original_notes": "Students who have taken STAT 300W first may not then take this course for further credit.",
+    "timestamp": "2025-07-03T00:17:37.952Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "401",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "301",
+          "minGrade": "C"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "320",
+          "minGrade": "C"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ACMA",
+        "number": "425"
+      }
+    ],
+    "original_title": "Long-Term Actuarial Mathematics II",
+    "original_prerequisites": "ACMA 301 (or 320), with a minimum grade of C.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 425 cannot take ACMA 401 for further credit.",
+    "timestamp": "2025-07-03T00:17:43.943Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "421",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "course",
+      "department": "ACMA",
+      "number": "321",
+      "minGrade": "C"
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "STAT",
+      "number": "350"
+    },
+    "original_title": "Advanced Models for Short-Term Insurance",
+    "original_prerequisites": "ACMA 321 with a minimum grade of C. Corequisite: STAT 350.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T00:17:47.217Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "437",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ACMA",
+              "number": "436"
+            },
+            {
+              "type": "other",
+              "note": "Job Practicum III from another department"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "Students must apply and receive permission from the co-op coordinator at least one term in advance."
+        }
+      ]
+    },
+    "original_title": "Job Practicum IV",
+    "original_prerequisites": "ACMA 436 or Job Practicum III from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T00:23:43.955Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "438",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ACMA",
+              "number": "437"
+            },
+            {
+              "type": "other",
+              "note": "Job Practicum IV from another department"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "Students must apply and receive permission from the co-op coordinator at least one term in advance."
+        }
+      ]
+    },
+    "original_title": "Job Practicum V",
+    "original_prerequisites": "ACMA 437 or Job Practicum IV from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T00:23:50.101Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "455",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "course",
+      "department": "ACMA",
+      "number": "355",
+      "minGrade": "C"
+    },
+    "original_title": "Loss Models II",
+    "original_prerequisites": "ACMA 355 with a minimum grade of C.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T00:23:52.887Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "495",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "permission",
+      "note": "Written permission from the Department of Statistics and Actuarial Science undergraduate curriculum committee."
+    },
+    "original_title": "Directed Studies in Actuarial Science",
+    "original_prerequisites": "Written permission from the Department of Statistics and Actuarial Science undergraduate curriculum committee.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T00:23:55.788Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "831",
+    "r_schema": "SFUv1.1",
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ACMA",
+        "number": "821"
+      }
+    ],
+    "original_title": "Advanced Actuarial Models",
+    "original_prerequisites": "",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 821 may not take this course for further credit.",
+    "timestamp": "2025-07-03T00:23:58.662Z"
+  },
+  {
+    "department": "ARAB",
+    "number": "100",
+    "r_schema": "SFUv1.1",
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "LANG",
+        "number": "134"
+      },
+      {
+        "type": "conflict_course",
+        "department": "ARAB",
+        "number": "134"
+      }
+    ],
+    "original_title": "Introductory Arabic I",
+    "original_prerequisites": "",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for LANG 134 or ARAB 134 may not take this course for further credit.",
+    "timestamp": "2025-07-03T00:24:02.901Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "101",
+    "r_schema": "SFUv1.1",
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ARCH",
+        "number": "201"
+      }
+    ],
+    "original_title": "Reconstructing the Human Past",
+    "original_prerequisites": "",
+    "original_corequisites": "",
+    "original_notes": "Students who have taken ARCH 201 may not enroll in ARCH 101.",
+    "timestamp": "2025-07-03T00:31:08.968Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "200",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "creditCount",
+      "credits": 30
+    },
+    "original_title": "Special Topics in Archaeology",
+    "original_prerequisites": "30 units.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T00:31:11.954Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "252",
+    "r_schema": "SFUv1.1",
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ARCH",
+        "number": "200"
+      }
+    ],
+    "original_title": "Ancient Egypt and Africa",
+    "original_prerequisites": "",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ARCH 200 under this title may not take this course for further credit.",
+    "timestamp": "2025-07-03T00:31:14.668Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "271",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    },
+    "original_title": "Interpreting the Past: An Introduction to Archaeological Theory",
+    "original_prerequisites": "ARCH 101 or ARCH 201.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T00:31:17.547Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "272W",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    },
+    "original_title": "Archaeology of the Old World",
+    "original_prerequisites": "ARCH 100, 101, or 201.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T00:31:20.342Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "273",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "EVSC",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "GEOG",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "REM",
+          "number": "100"
+        }
+      ]
+    },
+    "original_title": "Archaeology of the New World",
+    "original_prerequisites": "Any one of the following: ARCH 100, ARCH 101, EVSC 100, GEOG 100, or REM 100.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T00:31:23.647Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "282",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ARCH",
+        "number": "372"
+      }
+    ],
+    "original_title": "Material Culture Analysis",
+    "original_prerequisites": "ARCH 101 or ARCH 201.",
+    "original_corequisites": "",
+    "original_notes": "Students who have completed ARCH 372 cannot take ARCH 282 for additional credit.",
+    "timestamp": "2025-07-03T00:31:26.536Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "285",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "creditCount",
+      "credits": 12
+    },
+    "original_title": "Archaeological Science",
+    "original_prerequisites": "12 units.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T00:31:29.165Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "286",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 30
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "100"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "201"
+            },
+            {
+              "type": "course",
+              "department": "EVSC",
+              "number": "100"
+            },
+            {
+              "type": "course",
+              "department": "GEOG",
+              "number": "100"
+            },
+            {
+              "type": "course",
+              "department": "REM",
+              "number": "100"
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Cultural Heritage Management",
+    "original_prerequisites": "30 units including one of ARCH 100, ARCH 101, ARCH 201, EVSC 100, GEOG 100, or REM 100.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T00:31:32.600Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "301",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "creditCount",
+      "credits": 45
+    },
+    "original_title": "Ancient Visual Art",
+    "original_prerequisites": "45 credit hours.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T00:32:14.973Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "312",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "201"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "100"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "231"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "232"
+        },
+        {
+          "type": "course",
+          "department": "HS",
+          "number": "277"
+        },
+        {
+          "type": "course",
+          "department": "HIST",
+          "number": "277"
+        },
+        {
+          "type": "permission",
+          "note": "by permission of the instructor"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "HS",
+        "number": "312"
+      },
+      {
+        "type": "conflict_course",
+        "department": "ARCH",
+        "number": "321",
+        "title": "Select Regions in World Archaeology I: Greece"
+      }
+    ],
+    "original_title": "Greek Art and Archaeology",
+    "original_prerequisites": "One of the following courses: ARCH 100, ARCH 101, ARCH 201, HS 100, HS 231, HS 232, HS 277, HIST 277 or by permission of the instructor.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for HS 312 cannot take this course for further credit. Students with credit for ARCH 321 under the title \"Select Regions in World Archaeology I: Greece\" may not take this course for further credit.",
+    "timestamp": "2025-07-03T00:32:18.345Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "101",
+    "r_schema": "SFUv1.1",
+    "corequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "150"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "151"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "154"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "157"
+        }
+      ]
+    },
+    "original_title": "Introduction to Insurance",
+    "original_prerequisites": "",
+    "original_corequisites": "MATH 150, 151, 154 or 157.",
+    "original_notes": "",
+    "timestamp": "2025-07-03T04:23:33.493Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "201",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "152",
+          "minGrade": "C"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "155",
+              "minGrade": "B"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "158",
+              "minGrade": "B"
+            }
+          ]
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ACMA",
+        "number": "210"
+      }
+    ],
+    "original_title": "Interest Theory and Applications",
+    "original_prerequisites": "MATH 152 with a minimum grade of C; or MATH 155 or MATH 158, with a grade of at least B.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 210 cannot take ACMA 201 for further credit.",
+    "timestamp": "2025-07-03T04:27:54.385Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "231",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "HSCourse",
+          "course": "BC Mathematics 12",
+          "orEquivalent": "true"
+        },
+        {
+          "type": "courseCount",
+          "count": 1,
+          "department": "MATH",
+          "level": "1XX",
+          "minGrade": "C"
+        }
+      ]
+    },
+    "original_title": "Tools for Data-Driven Decision Making",
+    "original_prerequisites": "BC Mathematics 12 (or equivalent) or any 100-level MATH course with a minimum grade of C.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T04:28:03.291Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "301",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ACMA",
+              "number": "201",
+              "minGrade": "C"
+            },
+            {
+              "type": "course",
+              "department": "ACMA",
+              "number": "210",
+              "minGrade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "STAT",
+      "number": "285"
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ACMA",
+        "number": "320"
+      }
+    ],
+    "original_title": "Long-Term Actuarial Mathematics I",
+    "original_prerequisites": "ACMA 201 (or 210), with a minimum grade of C. Corequisite: STAT 285.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 320 cannot take ACMA 301 for further credit.",
+    "timestamp": "2025-07-03T04:28:15.156Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "321",
+    "r_schema": "SFUv1.1",
+    "prerequisite": {
+      "type": "course",
+      "department": "ACMA",
+      "number": "101",
+      "minGrade": "C"
+    },
+    "corequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "STAT",
+          "number": "330"
+        },
+        {
+          "type": "course",
+          "department": "ACMA",
+          "number": "231"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ACMA",
+        "number": "355"
+      }
+    ],
+    "original_title": "Fundamentals of Short-Term Insurance",
+    "original_prerequisites": "ACMA 101 with a minimum grade of C. Corequisite: STAT 330, ACMA 231.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ACMA 355 may not take this course for further credit.",
+    "timestamp": "2025-07-03T04:28:26.418Z"
+  }
+]
