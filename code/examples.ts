@@ -117,6 +117,25 @@ const examples: ExampleEntry[] = [
     //     }
     // },
 
+    {
+        keyword: "corequisite",
+        example: "Prerequisite: BPK 491 (minimum grade of B). Corequisite: BPK 499. (NOTE: if you see a corequisite in the prequisite field, this is ok, treat it as a corequisite)",
+        json: {
+            prerequisite: {
+                type: "course",
+                department: "BPK",
+                number: "491",
+                minGrade: "B"
+            },
+            corequisite: {
+                type: "course",
+                department: "BPK",
+                number: "499"
+            }
+        }
+    },
+
+
     // corequisite
     {
         keyword: "corequisite",
@@ -421,6 +440,36 @@ const examples: ExampleEntry[] = [
     },
 
     {
+        keyword: "subject of the course",
+        example: "Students who have taken BUS 493 when the subject of the course was Sports and Entertainment Marketing may not take BUS 446 for further credit.",
+        json: {
+            credit_conflicts: [
+                {
+                    type: "conflict_course",
+                    department: "BUS",
+                    number: "493",
+                    title: "Sports and Entertainment Marketing"
+                }
+            ]
+        }
+    },
+
+    {
+        keyword: "under the topic",
+        example: `Students with credit for HIST 307 under the topic "Glory to Debt" may not take this course for further credit.`,
+        json: {
+            credit_conflicts: [
+                {
+                    type: "conflict_course",
+                    department: "HIST",
+                    number: "307",
+                    title: "Glory to Debt"
+                }
+            ]
+        }
+    },
+
+    {
         keyword: "may not enroll",
         example: "Students who have taken ARCH 201 may not enroll in ARCH 101.",
         json: {
@@ -430,6 +479,23 @@ const examples: ExampleEntry[] = [
                     department: "ARCH",
                     number: "201"
                 }
+            ]
+        }
+    },
+
+    {
+        keyword: "higher level",
+        example: "Students who have taken BISC 101 or higher level BISC courses first may not then take this course for further credit.",
+        json: {
+            credit_conflicts: [
+                {
+                    type: "conflict_course",
+                    department: "BISC",
+                    number: "101"
+                },
+                {
+                    type: "conflict_other",
+                    note: "Students who have taken higher level BISC courses first may not then take this course for further credit."}
             ]
         }
     },
@@ -513,6 +579,22 @@ const examples: ExampleEntry[] = [
         }
     },
 
+    // some crosslisted courses have this but others don't
+    // oh well, we try our best
+    // {
+    //     keyword: "equivalent courses",
+    //     example: "Equivalent Courses: MBA603",
+    //     json: {
+    //         credit_conflicts: [
+    //             {
+    //                 type: "conflict_course",
+    //                 department: "MBA",
+    //                 number: "603"
+    //             }
+    //         ]
+    //     }
+    // },
+
     // only one course asks for grade 11 courses
     // {
     //     keyword: "grade 11",
@@ -530,13 +612,77 @@ const examples: ExampleEntry[] = [
     //     }
     // }
 
+    // {
+    //     keyword: "grade 12",
+    //     example: "Grade 12 Anatomy and Physiology",
+    //     json: {
+    //         prerequisite: {
+    //             type: "HSCourse",
+    //             course: "Grade 12 Anatomy and Physiology"
+    //         }
+    //     }
+    // },
+
     {
         keyword: "grade 12",
-        example: "Grade 12 Anatomy and Physiology",
+        example: "One of Grade 12 Anatomy and Physiology, Biology, Chemistry or Physics with a grade of B or better",
         json: {
             prerequisite: {
-                type: "HSCourse",
-                course: "Grade 12 Anatomy and Physiology"
+                type: "group",
+                logic: "ONE_OF",
+                children: [
+                    { type: "HSCourse", course: "Grade 12 Anatomy and Physiology", minGrade: "B" },
+                    { type: "HSCourse", course: "Grade 12 Biology", minGrade: "B" },
+                    { type: "HSCourse", course: "Grade 12 Chemistry", minGrade: "B" },
+                    { type: "HSCourse", course: "Grade 12 Physics", minGrade: "B" }
+                ]
+            }
+        }
+    },
+
+    {
+        keyword: "fee",
+        example: "A course materials fee is required.",
+        json: {
+            prerequisite: {
+                type: "other",
+                note: "A course materials fee is required."
+            }
+        }
+    },
+
+    {
+        keyword: "division",
+        example: "one 100-division English course",
+        json: {
+            prerequisite: {
+                type: "courseCount",
+                count: 1,
+                department: "ENGL",
+                level: "1XX"
+            }
+        }
+    },
+
+    {
+        keyword: ", including",
+        example: "45 units, including six units of lower division history",
+        json: {
+            "prerequisite": {
+            "type": "group",
+            "logic": "ALL_OF",
+            "children": [
+                {
+                    "type": "creditCount",
+                    "credits": 45
+                },
+                {
+                    "type": "creditCount",
+                    "credits": 6,
+                    "department": "history",
+                    "level": "LD"
+                }
+            ]
             }
         }
     }

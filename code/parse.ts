@@ -102,10 +102,8 @@ function createSystemPrompt(relevantExamples: typeof examples): string {
 
 Your task is to parse the prerequisites and corequisites for a course into a specific JSON schema.
 
-SCHEMA DEFINITIONS:
-- ParsedCourseRequirements: Main output structure 
-- RequirementNode: Can be a group (ALL_OF/ONE_OF/TWO_OF logic) or specific requirement types
-- Types: 'group', 'course', 'creditCount', 'courseCount', 'CGPA', 'UDGPA', 'HSCourse', 'program', 'permission', 'other'
+You must follow the following schema in your output:
+${types}
 
 PARSING RULES:
 1. Course numbers like "HSCI 200-level" means department: 'HSCI', level: '2XX'
@@ -120,50 +118,33 @@ PARSING RULES:
 10. For permission requirements, use type: "permission" with note field
 11. For credit conflicts in notes, extract them into credit_conflicts array
 12. Group logic types: ALL_OF, ONE_OF, TWO_OF
+13. If there is information that is not prerequisite, corequisite,reccomended prerequisite/corequisite, or course conflict, do not include it in the output.
 
 CONFIDENCE REQUIREMENTS:
-- Only return a parsed result if you are highly confident (>85%) in your parsing
+- Only return a parsed result if you are mediumly confident (>85%) in your parsing
 - If confidence is low, return an error with specific reasons
 
 OUTPUT FORMAT:
 Return ONLY valid JSON - either a ParsedCourseRequirements object or an error object.
 
-IMPORTANT: Do NOT include original_title, original_prerequisites, original_corequisites, original_notes, timestamp, or rawResponse fields.
-
-You must conform to the following format for your output:
-${types}
-
-You must follow the format given in the correct parsing examples below.
+Follow the format given in the correct parsing examples below.
 ${examplesText}`;
 }
 
 // Step 2: Parse requirements with LLM
 // Step 1: Check for ambiguity before parsing (no JSON generation)
 async function checkForAmbiguityInCourseDescription(course: CourseCondensedInfo, examplesForCourse: typeof examples, llmResponses?: Array<any>): Promise<AmbiguityCheckResult> {
+    const examplesText = formatExamplesForPrompt(examplesForCourse);
+
     const ambiguityPrompt = `You are an expert at analyzing university course prerequisites and corequisites for parsing feasibility.
 
-Given the course information below, determine if the requirements can be clearly and unambiguously represented using the provided schema and examples.
-
-Respond with ONLY one of the following:
-1. "CLEAR" - if the requirements can be unambiguously represented with the schema
-2. "AMBIGUOUS" - if the requirements are unclear, contradictory, or cannot be represented with the schema
-
-If AMBIGUOUS, briefly explain why (missing schema support, contradictory statements, unclear language, etc.).
-
-SCHEMA CAPABILITIES:
-- Course requirements (with departments, numbers, levels like 200-level, upper/lower division)
-- Credit count requirements (e.g., "60 units")
-- Course count requirements (e.g., "two courses")
-- CGPA and UDGPA requirements
-- High school course requirements
-- Program requirements (Faculty/Major restrictions)
-- Permission requirements
-- Logical groupings (ALL_OF, ONE_OF, TWO_OF)
-- Grade minimums, concurrent enrollment, equivalencies
-- Reccomended prerequisites/corequisites
+Typing system:
+${types}
 
 EXAMPLES OF WHAT THE SCHEMA CAN HANDLE:
-${examplesForCourse.map(ex => `- "${ex.example}"`).join('\n')}
+${examplesText}
+
+Given the course information below, determine if the requirements can be clearly and unambiguously represented using the provided schema and examples. Look for any language that is unclear, contradictory, or cannot be represented with the schema.
 
 Course to analyze:
 Department: ${course.department}
@@ -172,6 +153,12 @@ Title: ${course.title}
 Prerequisites: "${course.prerequisites}"
 Corequisites: "${course.corequisites}"
 Notes: "${course.notes}"
+
+Respond with ONLY one of the following:
+1. "CLEAR" - if the requirements can be unambiguously represented with the schema
+2. "AMBIGUOUS" - if there is any language that is unclear, contradictory, or cannot be represented with the schema
+
+If AMBIGUOUS, briefly explain why (missing schema support, contradictory statements, unclear language, etc.).
 
 Response:`;
 
@@ -183,6 +170,7 @@ Response:`;
                 { role: 'user', content: ambiguityPrompt }
             ],
             temperature: 0.1,
+            reasoning_effort: 'medium',
         });
 
         const content = response.choices[0]?.message?.content?.trim() || '';
@@ -255,6 +243,7 @@ Return the parsed requirements JSON or an error if not confident enough.`;
                 { role: 'user', content: userPrompt }
             ],
             temperature: 0.1,
+            reasoning_effort: 'medium',
         });
 
         const content = response.choices[0]?.message?.content;
@@ -308,7 +297,7 @@ Return the parsed requirements JSON or an error if not confident enough.`;
             if (!('error' in parsed)) {
                 parsed.department = course.department;
                 parsed.number = course.number;
-                parsed.r_schema = 'SFUv1.1';
+                parsed.schema_version = 'SFUv1.1';
             }
 
             return parsed;
@@ -359,28 +348,34 @@ async function validateWithLLM(
     llmResponses?: Array<any>,
     attemptNum: number = 1
 ): Promise<LLMValidationResponse> {
-    const validationPrompt = `You are an expert at verifying the logical equivalence of course prerequisite/corequisite requirements.
+    const validationPrompt = `You are validating if a parsed JSON correctly represents course requirements.
 
-Given the original course info and the parsed JSON, determine if the parsed JSON is logically equivalent to the original requirements. Please follow the format given in the correct parsing examples.
+TASK: Compare the original text with the parsed JSON. Are they logically equivalent?
 
-Respond with ONLY one of the following options:
-1. "VALID" - if the JSON matches the requirements exactly
-2. "INVALID" - if the JSON does not match the requirements or has logical errors
-
-If INVALID, explain why, and how the json should be changed and/or restructured to be more accurate. If you suggest a corrected JSON, include it as a JSON code block.
-
-EXAMPLES OF CORRECT PARSING PATTERNS:
-${formatExamplesForPrompt(examplesForCourse)}
-
-Those were the examples. Here is information about the course that we are verifying right now:
-Department: ${course.department}
-Number: ${course.number}
+ORIGINAL COURSE INFO:
 Prerequisites: "${course.prerequisites}"
 Corequisites: "${course.corequisites}"
 Notes: "${course.notes}"
 
-JSON to validate:
-${JSON.stringify(parsed, null, 2)}`;
+PARSED JSON:
+${JSON.stringify(parsed, null, 2)}
+
+VALIDATION RULES:
+1. All courses mentioned in the original text should appear in the JSON
+2. All grade requirements should be correctly assigned
+3. Logical words like "and" = ALL_OF, "or" = ONE_OF should match
+4. Credit conflicts in notes should be in credit_conflicts array
+5. Only flag as INVALID if there are actual logical errors
+6. If a corequisite is in the prerequisite field in the original course info, it should be treated as a corequisite in the JSON
+
+Respond with:
+- "VALID" if the JSON correctly represents the original text
+- "INVALID [reason]" if there are logical errors, then provide corrected JSON
+
+You are allowed to have some flexibility in interpretation (eg synonyms or common sense), but you must be confident that the requirements can be represented without ambiguity.
+
+
+Response:`;
 
     try {
         const response = await client.chat.completions.create({
@@ -390,6 +385,8 @@ ${JSON.stringify(parsed, null, 2)}`;
                 { role: 'user', content: validationPrompt }
             ],
             temperature: 0.1,
+            reasoning_effort: 'medium',
+            max_completion_tokens: 10000
         });
 
         const content = response.choices[0]?.message?.content?.trim() || '';
@@ -422,6 +419,12 @@ ${JSON.stringify(parsed, null, 2)}`;
             if (match && match[1]) {
                 try {
                     suggestedChanges = JSON.parse(match[1]);
+                    
+                    // Check if suggested changes are identical to original parse
+                    if (suggestedChanges && JSON.stringify(suggestedChanges, null, 2) === JSON.stringify(parsed, null, 2)) {
+                        console.log('   🔍 LLM suggested identical JSON - treating as VALID');
+                        return { isValid: true };
+                    }
                 } catch {
                     // Ignore parse error, leave suggestedChanges undefined
                 }
@@ -490,6 +493,7 @@ Please provide a corrected ParsedCourseRequirements JSON that addresses the vali
                 { role: 'user', content: retryPrompt }
             ],
             temperature: 0.1,
+            reasoning_effort: 'medium',
         });
 
         const content = response.choices[0]?.message?.content;
@@ -542,7 +546,7 @@ Please provide a corrected ParsedCourseRequirements JSON that addresses the vali
             if (!('error' in parsed)) {
                 parsed.department = course.department;
                 parsed.number = course.number;
-                parsed.r_schema = 'SFUv1.1';
+                parsed.schema_version = 'SFUv1.1';
             }
 
             return parsed;
@@ -702,10 +706,13 @@ async function processCourse(course: CourseCondensedInfo): Promise<ParseResult> 
     if (!ambiguityCheck.passed) {
         console.log(`❌ Ambiguity in course description detected: ${ambiguityCheck.reason}`);
 
+        // await askUserChoice('Press Enter to continue...');
+
         // Add to blacklist if ambiguity is found
         await addToBlacklist(course.department, course.number, `Ambiguity issue: ${ambiguityCheck.reason}`);
 
-        // await askUserChoice('Press Enter to continue...');
+        const courseKey = `${course.department} ${course.number}`;
+        await saveLLMDebugInfo(courseKey, llmResponses);
 
         return {
             success: false,
@@ -728,7 +735,13 @@ async function processCourse(course: CourseCondensedInfo): Promise<ParseResult> 
         console.log(`❌ LLM Error: ${parsed.reason}`);
 
         // Go directly to human interaction
+        await askUserChoice('Press Enter to continue...');
+
+        
         const humanDecision = await humanInteraction(course, undefined, parsed.reason, llmResponses);
+
+        const courseKey = `${course.department} ${course.number}`;
+        await saveLLMDebugInfo(courseKey, llmResponses);
 
         return {
             success: false,
@@ -832,6 +845,7 @@ async function processCourse(course: CourseCondensedInfo): Promise<ParseResult> 
         console.log()
 
         // Wait for 2 seconds before proceeding
+        // await askUserChoice('Press Enter to continue...');
         // await new Promise(resolve => setTimeout(resolve, 2000));
     }
 
@@ -882,7 +896,7 @@ function needsReparsing(course: CourseCondensedInfo, existing: CourseRequirement
         existing.original_prerequisites !== course.prerequisites ||
         existing.original_corequisites !== course.corequisites ||
         existing.original_notes !== course.notes ||
-        existing.r_schema !== 'SFUv1.1'
+        existing.schema_version !== 'SFUv1.1'
     );
 }
 
@@ -951,7 +965,7 @@ async function addToBlacklist(department: string, courseCode: string, reason: st
 
     blacklist.push(newEntry);
     await saveBlacklist(blacklist);
-    console.log(`  🚫 Added ${department} ${courseCode} to blacklist: ${reason}`);
+    console.log(`  🚫 Added ${department} ${courseCode} to blacklist.`);
 }
 
 function isBlacklisted(course: CourseCondensedInfo, blacklist: BlacklistedCourse[]): boolean {
@@ -1056,7 +1070,7 @@ async function main(): Promise<void> {
                 existing.original_prerequisites !== course.prerequisites ||
                 existing.original_corequisites !== course.corequisites ||
                 existing.original_notes !== course.notes ||
-                existing.r_schema !== 'SFUv1.1';
+                existing.schema_version !== 'SFUv1.1';
 
             if (!shouldReparse) {
                 console.log(`⏭️  Skipping (already up to date).`);

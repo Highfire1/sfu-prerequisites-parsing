@@ -7,6 +7,7 @@ interface ParseStatistics {
     successfullyParsed: number;
     blacklisted: number;
     attempted: number;
+    covered: number;
     notAttempted: number;
     successPercentage: number;
     coveragePercentage: number;
@@ -50,17 +51,23 @@ async function getAttemptedCourses(): Promise<Set<string>> {
     
     try {
         const debugPath = path.join(__dirname, 'generated_data', 'llm_debug');
+        console.log('🔍 Checking debug path:', debugPath);
+        
         const files = await fs.readdir(debugPath);
+        console.log('📁 Found files in llm_debug:', files.length);
         
         for (const file of files) {
-            if (file.endsWith('.json')) {
-                // Extract course key from filename (e.g., "ACMA-231.json" -> "ACMA-231")
-                const courseKey = file.replace('.json', '');
+            if (file.endsWith('_debug.json')) {
+                // Extract course key from filename (e.g., "ACMA 231_debug.json" -> "ACMA-231")
+                const courseKey = file.replace('_debug.json', '').replace(' ', '-');
+                // console.log('📝 Adding course key:', courseKey);
                 attemptedCourses.add(courseKey);
             }
         }
+        
+        console.log('✅ Total attempted courses found:', attemptedCourses.size);
     } catch (error) {
-        console.log('No llm_debug directory found or error reading it');
+        console.log('❌ Error reading llm_debug directory:', error);
     }
     
     return attemptedCourses;
@@ -71,7 +78,7 @@ function createCourseKey(course: CourseCondensedInfo): string {
 }
 
 function hasRequirements(course: CourseCondensedInfo): boolean {
-    return !!(course.prerequisites?.trim() || course.corequisites?.trim());
+    return !!(course.prerequisites?.trim() || course.corequisites?.trim() || course.notes?.trim());
 }
 
 async function generateStatistics(): Promise<ParseStatistics> {
@@ -93,20 +100,48 @@ async function generateStatistics(): Promise<ParseStatistics> {
     const parsedCourseKeys = new Set(parsedCourses.map(course => `${course.department}-${course.number}`));
     const blacklistedCourseKeys = new Set(blacklistedCourses.map(course => `${course.department}-${course.number}`));
     
-    // Count statistics
-    const successfullyParsed = parsedCourses.length;
-    const blacklisted = blacklistedCourses.length;
-    const attempted = attemptedCourses.size;
-    const notAttempted = totalCourses - attempted;
+    // Count each course's actual status
+    let successfullyParsed = 0;
+    let blacklisted = 0;
+    let attempted = 0;
+    let covered = 0;
+    let notAttempted = 0;
+    
+    for (const course of coursesWithRequirements) {
+        const courseKey = `${course.department}-${course.number}`;
+        
+        const isParsed = parsedCourseKeys.has(courseKey);
+        const isBlacklisted = blacklistedCourseKeys.has(courseKey);
+        const isAttempted = attemptedCourses.has(courseKey);
+        
+        if (isParsed) {
+            successfullyParsed++;
+        }
+        
+        if (isBlacklisted) {
+            blacklisted++;
+        }
+        
+        if (isAttempted) {
+            attempted++;
+        }
+        
+        if (isParsed || isBlacklisted || isAttempted) {
+            covered++;
+        } else {
+            notAttempted++;
+        }
+    }
     
     const successPercentage = totalCourses > 0 ? (successfullyParsed / totalCourses) * 100 : 0;
-    const coveragePercentage = totalCourses > 0 ? (attempted / totalCourses) * 100 : 0;
+    const coveragePercentage = totalCourses > 0 ? (covered / totalCourses) * 100 : 0;
     
     return {
         totalCourses,
         successfullyParsed,
         blacklisted,
         attempted,
+        covered,
         notAttempted,
         successPercentage,
         coveragePercentage
@@ -124,31 +159,31 @@ function printStatistics(stats: ParseStatistics): void {
     console.log(`   Successfully parsed:               ${stats.successfullyParsed.toLocaleString()}`);
     console.log(`   Blacklisted:                       ${stats.blacklisted.toLocaleString()}`);
     console.log(`   Attempted (has debug logs):        ${stats.attempted.toLocaleString()}`);
+    console.log(`   Covered (attempted + blacklisted): ${stats.covered.toLocaleString()}`);
     console.log(`   Not yet attempted:                 ${stats.notAttempted.toLocaleString()}`);
     console.log();
     
     console.log('📊 PROGRESS METRICS:');
     console.log(`   Success rate:                      ${stats.successPercentage.toFixed(1)}%`);
-    console.log(`   Coverage (attempted):              ${stats.coveragePercentage.toFixed(1)}%`);
+    console.log(`   Coverage (attempted + blacklisted): ${stats.coveragePercentage.toFixed(1)}%`);
     console.log();
     
     // Progress bar for success rate
-    const successBarLength = Math.round(stats.successPercentage / 2); // Scale to 50 chars max
+    const successBarLength = Math.max(0, Math.min(50, Math.round(stats.successPercentage / 2))); // Scale to 50 chars max, bound between 0-50
     const successBar = '█'.repeat(successBarLength) + '░'.repeat(50 - successBarLength);
     console.log(`   Success Progress:  [${successBar}] ${stats.successPercentage.toFixed(1)}%`);
     
     // Progress bar for coverage
-    const coverageBarLength = Math.round(stats.coveragePercentage / 2); // Scale to 50 chars max
+    const coverageBarLength = Math.max(0, Math.min(50, Math.round(stats.coveragePercentage / 2))); // Scale to 50 chars max, bound between 0-50
     const coverageBar = '█'.repeat(coverageBarLength) + '░'.repeat(50 - coverageBarLength);
     console.log(`   Coverage Progress: [${coverageBar}] ${stats.coveragePercentage.toFixed(1)}%`);
     console.log();
     
     // Status breakdown
-    const remaining = stats.totalCourses - stats.successfullyParsed - stats.blacklisted;
     console.log('🎯 STATUS BREAKDOWN:');
     console.log(`   ✅ Completed (parsed):             ${stats.successfullyParsed.toLocaleString()} (${((stats.successfullyParsed / stats.totalCourses) * 100).toFixed(1)}%)`);
     console.log(`   ⚫ Blacklisted (problematic):       ${stats.blacklisted.toLocaleString()} (${((stats.blacklisted / stats.totalCourses) * 100).toFixed(1)}%)`);
-    console.log(`   🔄 Remaining to process:            ${remaining.toLocaleString()} (${((remaining / stats.totalCourses) * 100).toFixed(1)}%)`);
+    console.log(`   🔄 Remaining to process:            ${stats.notAttempted.toLocaleString()} (${((stats.notAttempted / stats.totalCourses) * 100).toFixed(1)}%)`);
     console.log();
     
     console.log('='.repeat(60));

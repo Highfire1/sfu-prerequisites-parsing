@@ -518,8 +518,8 @@ function validateParsedCourseRequirements(parsed: any): ValidationResult {
     
     const parsedObj = parsed as Record<string, any>;
     
-    if (!isString(parsedObj.r_schema)) {
-        errors.push(`r_schema: Must be a string, got ${typeof parsedObj.r_schema}: ${JSON.stringify(parsedObj.r_schema)}`);
+    if (!isString(parsedObj.schema_version)) {
+        errors.push(`schema_version: Must be a string, got ${typeof parsedObj.schema_version}: ${JSON.stringify(parsedObj.schema_version)}`);
     }
     
     // Validate optional requirement fields
@@ -543,7 +543,7 @@ function validateParsedCourseRequirements(parsed: any): ValidationResult {
     
     // Check for unexpected properties
     const validTopLevelProps = [
-        'department', 'number', 'r_schema', 
+        'department', 'number', 'schema_version', 
         'prerequisite', 'corequisite', 'recommended_prerequisite', 'recommended_corequisite',
         'credit_conflicts', 'rawResponse'
     ];

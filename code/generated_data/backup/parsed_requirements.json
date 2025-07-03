@@ -5,7 +5,7 @@
     "original_prerequisites": "",
     "original_corequisites": "MATH 150, 151, 154 or 157.",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "corequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -41,7 +41,7 @@
     "original_prerequisites": "BC Mathematics 12 (or equivalent) or any 100-level MATH course with a minimum grade of C.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -69,7 +69,7 @@
     "original_prerequisites": "Students must apply and receive permission from the co-op coordinator at least one but preferably two terms in advance. They will normally be required to have completed 45 units with a GPA of 2.50 before they may take this practicum course.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -97,7 +97,7 @@
     "original_prerequisites": "ACMA 336 or Job Practicum I from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -132,7 +132,7 @@
     "original_prerequisites": "ACMA 201 (or 210), with a minimum grade of C. Corequisite: STAT 285.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -165,7 +165,7 @@
     "original_prerequisites": "ACMA 321 with a minimum grade of C. Corequisite: STAT 350.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "course",
       "department": "ACMA",
@@ -186,7 +186,7 @@
     "original_prerequisites": "ACMA 337 or Job Practicum II from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -221,7 +221,7 @@
     "original_prerequisites": "ACMA 436 or Job Practicum III from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -256,7 +256,7 @@
     "original_prerequisites": "ACMA 437 or Job Practicum IV from another department. Students must apply and receive permission from the co-op coordinator at least one term in advance.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -291,7 +291,7 @@
     "original_prerequisites": "ACMA 355 with a minimum grade of C.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "course",
       "department": "ACMA",
@@ -307,7 +307,7 @@
     "original_prerequisites": "Written permission from the Department of Statistics and Actuarial Science undergraduate curriculum committee.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "permission",
       "note": "Written permission from the Department of Statistics and Actuarial Science undergraduate curriculum committee."
@@ -321,7 +321,7 @@
     "original_prerequisites": "Applied Mathematics PhD stream students only. Must be completed within first six terms of the program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -345,7 +345,7 @@
     "original_prerequisites": "30 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "creditCount",
       "credits": 30
@@ -359,7 +359,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -385,7 +385,7 @@
     "original_prerequisites": "ARCH 100, 101, or 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -416,7 +416,7 @@
     "original_prerequisites": "Any one of the following: ARCH 100, ARCH 101, EVSC 100, GEOG 100, or REM 100.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -457,7 +457,7 @@
     "original_prerequisites": "12 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "creditCount",
       "credits": 12
@@ -471,7 +471,7 @@
     "original_prerequisites": "30 units including one of ARCH 100, ARCH 101, ARCH 201, EVSC 100, GEOG 100, or REM 100.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -527,7 +527,7 @@
     "original_prerequisites": "45 credit hours.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "creditCount",
       "credits": 45
@@ -541,7 +541,7 @@
     "original_prerequisites": "ARCH 272W or 273 or by permission of instructor. Other prerequisites may be required, but will vary according to topic.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -581,7 +581,7 @@
     "original_prerequisites": "ARCH 131.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "course",
       "department": "ARCH",
@@ -596,7 +596,7 @@
     "original_prerequisites": "ARCH 131 or any lower division biology course.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -623,7 +623,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -649,7 +649,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -675,7 +675,7 @@
     "original_prerequisites": "Six units in Archaeology, including ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -712,7 +712,7 @@
     "original_prerequisites": "Acceptance in the Environment Co-operative Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "program",
       "program": "Environment Co-operative Education Program"
@@ -726,7 +726,7 @@
     "original_prerequisites": "ARCH 350 and readmission to the Environment Co-operative Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -751,7 +751,7 @@
     "original_prerequisites": "ARCH 100 or ARCH 101 or ARCH 201, and 45 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -792,7 +792,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201; or any two of ARCH 100, REM 100, GEOG 100, EVSC 100; and 45 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -860,7 +860,7 @@
     "original_prerequisites": "ARCH 131 or any lower division ARCH, BISC, HSCI, or BPK course.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -892,7 +892,7 @@
     "original_prerequisites": "ARCH 101 (or ARCH 201). Recommended: ARCH 282 (or ARCH 372) and ARCH 271.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -945,7 +945,7 @@
     "original_prerequisites": "ARCH 101, ARCH 201, or 45 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -975,7 +975,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201, and any one of ARCH 285, GEOG 251, PSYC 210, STAT 101, STAT 201, STAT 203, or STAT 205.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1048,7 +1048,7 @@
     "original_prerequisites": "ARCH 273.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "course",
       "department": "ARCH",
@@ -1063,7 +1063,7 @@
     "original_prerequisites": "Any lower division ARCH, BISC, BPK, CHEM, CRIM or HSCI course.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "courseCount",
       "count": 1,
@@ -1086,7 +1086,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1112,7 +1112,7 @@
     "original_prerequisites": "ARCH 282 or 372 and permission of the department. Normally taken concurrently with ARCH 434 and 435.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1164,7 +1164,7 @@
     "original_prerequisites": "ARCH 282 or 372 and permission of the department. Normally taken concurrently with ARCH 433 and 435.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1216,7 +1216,7 @@
     "original_prerequisites": "ARCH 282 or 372 and permission of the department. Normally taken concurrently with ARCH 433 and 434.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1268,7 +1268,7 @@
     "original_prerequisites": "ARCH 373 and permission of the department. Normally taken concurrently with ARCH 433 and ARCH 434.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1309,7 +1309,7 @@
     "original_prerequisites": "ARCH 373 or CRIM 357, BPK 303, BPK 324, BPK 325, BPK 326. ARCH 373 is recommended.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1366,7 +1366,7 @@
     "original_prerequisites": "ARCH 351 and readmission to the Environment Co-operative Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1391,7 +1391,7 @@
     "original_prerequisites": "ARCH 101, 131, 201, 272W and 273.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1432,7 +1432,7 @@
     "original_prerequisites": "45 units, including ARCH 282 or 372, and permission of the department.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1472,7 +1472,7 @@
     "original_prerequisites": "45 units, including ARCH 282 or 372, and permission of the department.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1512,7 +1512,7 @@
     "original_prerequisites": "ARCH 383 or approval by the instructor after the interview.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1537,7 +1537,7 @@
     "original_prerequisites": "Permission of the department.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "permission",
       "note": "Permission of the department."
@@ -1551,7 +1551,7 @@
     "original_prerequisites": "Permission of the department.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "permission",
       "note": "Permission of the department."
@@ -1565,7 +1565,7 @@
     "original_prerequisites": "Enrollment in the MA or Certificate in HRM.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1589,7 +1589,7 @@
     "original_prerequisites": "Enrollment in the MA or Certificate in HRM.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1613,7 +1613,7 @@
     "original_prerequisites": "10 units, consent of supervising faculty member, and approval of the director of the HRM program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1641,7 +1641,7 @@
     "original_prerequisites": "Only available to students in the Archaeology PhD program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "program",
       "program": "Archaeology PhD program"
@@ -1655,7 +1655,7 @@
     "original_prerequisites": "Only available to students in the Archaeology PhD program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "program",
       "program": "Archaeology PhD program"
@@ -1669,7 +1669,7 @@
     "original_prerequisites": "Biology 12 (or equivalent) with a minimum grade of C (or BISC 100 with a minimum grade of C-, or BISC 113 with a minimum grade of C+, or BPK 105 with a minimum grade of C+, or HSCI 100 with a minimum grade of C+); and Chemistry 12 (or equivalent) with a minimum grade of C (or CHEM 111 with a minimum grade of C-).",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1739,7 +1739,7 @@
     "original_prerequisites": "Biology 12 (or equivalent) with a minimum grade of C (or BISC 100 with a minimum grade of C-, or BISC 113 with a minimum grade of C+, or BPK 105 with a minimum grade of C+, or HSCI 100 with a minimum grade of C+).",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1785,7 +1785,7 @@
     "original_prerequisites": "",
     "original_corequisites": "BISC 101 or 102; and completion of fewer than 60 units.",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "corequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1821,7 +1821,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1849,7 +1849,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1877,7 +1877,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-, and completion of less than 60 units; or permission of the instructor.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -1919,7 +1919,7 @@
     "original_prerequisites": "BISC 202 with a minimum grade of C-. Recommended: BISC 204.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "course",
       "department": "BISC",
@@ -1940,7 +1940,7 @@
     "original_prerequisites": "BISC 202 and MBB 222, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -1968,7 +1968,7 @@
     "original_prerequisites": "BISC 102, MBB 222, and MBB 231, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2002,7 +2002,7 @@
     "original_prerequisites": "(BISC 205 or BPK 205) and MBB 231, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2042,7 +2042,7 @@
     "original_prerequisites": "BISC 101, 102, and (BISC 204 or GEOG 215), all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2088,7 +2088,7 @@
     "original_prerequisites": "BISC 101, 102, and (BISC 204 or GEOG 215), all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2134,7 +2134,7 @@
     "original_prerequisites": "BISC 204 with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "course",
       "department": "BISC",
@@ -2150,7 +2150,7 @@
     "original_prerequisites": "BISC 101 and (BISC 204, or BISC 205, or GEOG 215, or MBB 231), both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2202,7 +2202,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2230,7 +2230,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2258,7 +2258,7 @@
     "original_prerequisites": "BISC 101, 102, and (BISC 204 or HSCI 212), all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2304,7 +2304,7 @@
     "original_prerequisites": "BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2338,7 +2338,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2366,7 +2366,7 @@
     "original_prerequisites": "Acceptance in the Biological Sciences Co-operative Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "permission",
       "note": "Acceptance in the Biological Sciences Co-operative Education Program."
@@ -2380,7 +2380,7 @@
     "original_prerequisites": "BISC 341 and readmission to the Science Co-op Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2405,7 +2405,7 @@
     "original_prerequisites": "BISC 202, (BISC 204 or GEOG 215), and STAT 201, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2451,7 +2451,7 @@
     "original_prerequisites": "BISC 205 and MBB 231, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2479,7 +2479,7 @@
     "original_prerequisites": "A minimum of 45 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "creditCount",
       "credits": 45
@@ -2493,7 +2493,7 @@
     "original_prerequisites": "60 units.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "creditCount",
       "credits": 60
@@ -2507,7 +2507,7 @@
     "original_prerequisites": "Students complete one of: (BISC 205 and MBB 231), or (BPK 205 and MBB 231), or BPK 306, or HSCI 321; each with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -2571,7 +2571,7 @@
     "original_prerequisites": "BISC 102, (BISC 204 or GEOG 215), and MATH 154, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2617,7 +2617,7 @@
     "original_prerequisites": "BISC 102 and (BISC 204 or GEOG 215), both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2657,7 +2657,7 @@
     "original_prerequisites": "BISC 101, 102, and (BISC 204 or GEOG 215), all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2703,7 +2703,7 @@
     "original_prerequisites": "BISC 204 with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "course",
       "department": "BISC",
@@ -2719,7 +2719,7 @@
     "original_prerequisites": "BISC 204 or GEOG 215, with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -2747,7 +2747,7 @@
     "original_prerequisites": "BISC 204 or GEOG 215, with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -2775,7 +2775,7 @@
     "original_prerequisites": "BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-. Recommended: BISC 333 or MBB 331.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2825,7 +2825,7 @@
     "original_prerequisites": "BISC 202, MBB 222, MBB 231, and (BISC 357 or MBB 331), all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2877,7 +2877,7 @@
     "original_prerequisites": "(BISC 205 or BPK 205) and MBB 231, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2917,7 +2917,7 @@
     "original_prerequisites": "MBB 231 and (BISC 303, or BISC 328, or BISC 337, or BISC 366), both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -2969,7 +2969,7 @@
     "original_prerequisites": "BISC 300 and STAT 201, both with a minimum grade of C+, and (75 units or permission of the instructor).",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3011,7 +3011,7 @@
     "original_prerequisites": "BISC 202 or 204, both with a minimum grade of C-. Recommended: BISC 300.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3044,7 +3044,7 @@
     "original_prerequisites": "MATH 152 with a minimum grade of C; or MATH 155 or MATH 158, with a grade of at least B.",
     "original_corequisites": "",
     "original_notes": "Students with credit for ACMA 210 cannot take ACMA 201 for further credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3091,7 +3091,7 @@
     "original_prerequisites": "ACMA 201 (or 210), with a minimum grade of C. Corequisite: STAT 285.",
     "original_corequisites": "",
     "original_notes": "Students with credit for ACMA 320 cannot take ACMA 301 for further credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3131,7 +3131,7 @@
     "original_prerequisites": "ACMA 101 with a minimum grade of C. Corequisite: STAT 330, ACMA 231.",
     "original_corequisites": "",
     "original_notes": "Students with credit for ACMA 355 may not take this course for further credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "course",
       "department": "ACMA",
@@ -3170,7 +3170,7 @@
     "original_prerequisites": "ACMA 301 (or 320), with a minimum grade of C.",
     "original_corequisites": "",
     "original_notes": "Students who have taken STAT 300W first may not then take this course for further credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3205,7 +3205,7 @@
     "original_prerequisites": "ACMA 301 (or 320), with a minimum grade of C.",
     "original_corequisites": "",
     "original_notes": "Students with credit for ACMA 425 cannot take ACMA 401 for further credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3240,7 +3240,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201.",
     "original_corequisites": "",
     "original_notes": "Students who have completed ARCH 372 cannot take ARCH 282 for additional credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3273,7 +3273,7 @@
     "original_prerequisites": "One of the following courses: ARCH 100, ARCH 101, ARCH 201, HS 100, HS 231, HS 232, HS 277, HIST 277 or by permission of the instructor.",
     "original_corequisites": "",
     "original_notes": "Students with credit for HS 312 cannot take this course for further credit. Students with credit for ARCH 321 under the title \"Select Regions in World Archaeology I: Greece\" may not take this course for further credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3346,7 +3346,7 @@
     "original_prerequisites": "One of the following courses: ARCH 100, ARCH 201, HS 100, HS 231, HS 232, HS/HIST 277 or by permission of the instructor.",
     "original_corequisites": "",
     "original_notes": "Students with credit for HS 313 cannot take this course for further credit. Students with credit for ARCH 332 under the title \"Special Topics in Archaeology I: Roman Art and Archaeology\" may not take this course for further credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3414,7 +3414,7 @@
     "original_prerequisites": "ARCH 131 or any lower division biology course.",
     "original_corequisites": "",
     "original_notes": "Students with credit for ARCH 333 Special Topics in Archaeology II: Primate Behaviour may not take this course for further credit.  ",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3449,7 +3449,7 @@
     "original_prerequisites": "ARCH 101 or ARCH 201, and 45 units.",
     "original_corequisites": "",
     "original_notes": "Students with credit for ARCH 332 Special Topics in Archaeology I: Mgt. of Archaeological Collections and ARCH 333 Special Topics in Archaeology II: Mgt. of Archaeological Collections  may not take this course for further credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3499,7 +3499,7 @@
     "original_prerequisites": "ARCH 282 or 372.",
     "original_corequisites": "",
     "original_notes": "Students with credit for ARCH 485 may not take this course for further credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3532,7 +3532,7 @@
     "original_prerequisites": "BISC 101, BISC 102, and PHYS 101, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "Students who have taken BISC 305 or BISC 366 first may not then take this course for further credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3578,7 +3578,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "Students who have taken BISC 326 first may not then take this course for further credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3613,7 +3613,7 @@
     "original_prerequisites": "BISC 101 and 102, both with a minimum grade of C-. Recommended: BISC 204.",
     "original_corequisites": "",
     "original_notes": "Students who have taken BISC 326 first may not then take this course for further credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3653,7 +3653,7 @@
     "original_prerequisites": "BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-. Recommended: MBB 331.",
     "original_corequisites": "",
     "original_notes": "Students with credit for MBB 308 may not take this course for further credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3699,7 +3699,7 @@
     "original_prerequisites": "BISC 101, BISC 102, MBB 222, and MBB 231, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "Students who have completed BISC 472 under the title \"Advanced Cell Biology\" may not take this course for further credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3747,7 +3747,7 @@
     "original_prerequisites": "MBB 222, MBB 231, and BISC 303, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "Students with credit for BISC 475 under the title \"Environmental Microbiology\" may not take this course for further credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3789,7 +3789,7 @@
     "original_prerequisites": "BISC 342 and readmission to the Science Co-op Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3814,7 +3814,7 @@
     "original_prerequisites": "BISC 443 and re-admission to the science co-operative education program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3839,7 +3839,7 @@
     "original_prerequisites": "BISC 205 and MBB 231, both with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3867,7 +3867,7 @@
     "original_prerequisites": "BISC 444 and readmission to the Science Co-op Education Program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3892,7 +3892,7 @@
     "original_prerequisites": "MBB 322 or BISC 333, with a minimum grade of C.",
     "original_corequisites": "",
     "original_notes": "Students with credit for MBB 447 may not take this course for further credit. Students with credit for MBB 440 or BISC 472 under the title \"Stem Cell Biology and Applications\" may not take this course for further credit.",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -3939,7 +3939,7 @@
     "original_prerequisites": "BISC 202, MBB 222, and MBB 231, all with a minimum grade of C-.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -3973,7 +3973,7 @@
     "original_prerequisites": "To be announced.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "other",
       "note": "To be announced."
@@ -3987,7 +3987,7 @@
     "original_prerequisites": "To be announced.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "1.1",
+    "schema_version": "1.1",
     "prerequisite": {
       "type": "other",
       "note": "To be announced."
@@ -4002,7 +4002,7 @@
     "original_prerequisites": "To be announced.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "schema_version": "SFUv1",
     "prerequisite": {
       "type": "other",
       "note": "To be announced."
@@ -4016,7 +4016,7 @@
     "original_prerequisites": "BISC 313.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "schema_version": "SFUv1",
     "prerequisite": {
       "type": "course",
       "department": "BISC",
@@ -4031,7 +4031,7 @@
     "original_prerequisites": "BISC 313.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "schema_version": "SFUv1",
     "prerequisite": {
       "type": "course",
       "department": "BISC",
@@ -4046,7 +4046,7 @@
     "original_prerequisites": "BISC 313 or permission of the department.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "schema_version": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ONE_OF",
@@ -4071,7 +4071,7 @@
     "original_prerequisites": "BISC 313 or equivalent.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "schema_version": "SFUv1",
     "prerequisite": {
       "type": "course",
       "department": "BISC",
@@ -4087,7 +4087,7 @@
     "original_prerequisites": "Acceptance into the environmental toxicology program.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "schema_version": "SFUv1",
     "prerequisite": {
       "type": "program",
       "program": "environmental toxicology program"
@@ -4101,7 +4101,7 @@
     "original_prerequisites": "Permission of the course co-ordinator.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "schema_version": "SFUv1",
     "prerequisite": {
       "type": "permission",
       "note": "Permission of the course co-ordinator."
@@ -4115,7 +4115,7 @@
     "original_prerequisites": "BISC 101, 312, CHEM 102, and 103. Recommended: BISC 414.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "schema_version": "SFUv1",
     "prerequisite": {
       "type": "group",
       "logic": "ALL_OF",
@@ -4156,7 +4156,7 @@
     "original_prerequisites": "BISC 313.",
     "original_corequisites": "",
     "original_notes": "",
-    "r_schema": "SFUv1",
+    "schema_version": "SFUv1",
     "prerequisite": {
       "type": "course",
       "department": "BISC",

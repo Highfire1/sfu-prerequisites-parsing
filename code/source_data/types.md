@@ -1,12 +1,26 @@
 ```js
-const SCHEMA_VERSION = 'SFUv1';
+const SCHEMA_VERSION = 'SFUv1.1';
 
+// What you should return
+interface ParsedCourseRequirements {
+    department: string;
+    number: string;
+    schema_version: string;
+    prerequisite?: RequirementNode;
+    corequisite?: RequirementNode;
+    recommended_prerequisite?: RequirementNode;
+    recommended_corequisite?: RequirementNode;
+    credit_conflicts?: CreditConflict[];
+}
+
+// for credit_conficts only
+type CreditConflict = ConflictEquivalentCourse | ConflictOther;
 
 interface ConflictEquivalentCourse {
     type: 'conflict_course';
-    subject: string;
-    course: string;
-    title?: string;
+    department: string;
+    number: string;
+    title?: string; // if specified
 }
 
 interface ConflictOther {
@@ -14,20 +28,8 @@ interface ConflictOther {
     note: string;
 }
 
-type CreditConflict = ConflictEquivalentCourse | ConflictOther;
 
-interface ParsedCourseRequirements {
-    department: string;
-    number: string;
-    r_schema: string;
-    prerequisite?: RequirementNode;
-    corequisite?: RequirementNode;
-    recommended_prerequisite?: RequirementNode;
-    recommended_corequisite?: RequirementNode;
-    credit_conflicts?: CreditConflict[];
-    rawResponse?: string;
-}
-
+// for prerequisites and corequisites
 interface RequirementGroup {
     type: 'group';
     logic: 'ALL_OF' | 'ONE_OF' | 'TWO_OF';
@@ -72,6 +74,7 @@ interface RequirementCreditCount {
     credits: number;
     department?: string | string[];
     level?: '1XX' | '2XX' | '3XX' | '4XX' | 'LD' | 'UD';
+    minGrade?: string;
     canBeTakenConcurrently?: 'true';
 }
 
@@ -92,11 +95,5 @@ interface RequirementPermission {
 interface RequirementOther {
     type: 'other';
     note: string;
-}
-
-interface BlacklistedCourse {
-    department: string;
-    course_code: string;
-    reason: string;
 }
 ```

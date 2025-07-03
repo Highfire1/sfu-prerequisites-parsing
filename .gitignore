@@ -1,6 +1,10 @@
 # dependencies (bun install)
 node_modules
 
+
+# debug folder
+llm_debug/
+
 # output
 out
 dist

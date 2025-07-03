@@ -20,7 +20,7 @@ interface LLMError {
 interface LLMParseOutput {
     department: string;
     number: string;
-    r_schema: string;
+    schema_version: string;
     prerequisite?: RequirementNode;
     corequisite?: RequirementNode;
     recommended_prerequisite?: RequirementNode;
@@ -50,7 +50,7 @@ type CreditConflict = ConflictEquivalentCourse | ConflictOther;
 interface ParsedCourseRequirements {
     department: string;
     number: string;
-    r_schema: string;
+    schema_version: string;
     prerequisite?: RequirementNode;
     corequisite?: RequirementNode;
     recommended_prerequisite?: RequirementNode;
@@ -70,7 +70,7 @@ interface SaveCourseRequirements {
     original_notes: string;
 
 
-    r_schema: string;
+    schema_version: string;
     prerequisite?: RequirementNode;
     corequisite?: RequirementNode;
     recommended_prerequisite?: RequirementNode;
@@ -125,6 +125,7 @@ interface RequirementCreditCount {
     credits: number;
     department?: string | string[];
     level?: '1XX' | '2XX' | '3XX' | '4XX' | 'LD' | 'UD';
+    minGrade?: string;
     canBeTakenConcurrently?: 'true';
 }
 

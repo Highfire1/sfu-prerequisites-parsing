@@ -1,5 +1,7 @@
 # SFU-prerequisites-to-data
 
+Success Progress:  [███████████████████████████████░░░░░░░░░░░░░░░░░░░] 62.4%
+
 A project to convert SFU course prerequisites from text to data.
 
 Work in progress.
@@ -15,7 +17,7 @@ create csv's with links and nodes using
 
 You will need an `OPENROUTER_API_KEY` in a `.env` file.
 
-Parsing one course costs 2.3 cents on average (so far)
+Parsing one course costs ~0.1 cents on average (estimate)
 
 
 ### Currently Known Issues

@@ -3190,5 +3190,1775 @@
     "number": "318",
     "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
     "timestamp": "2025-07-03T06:44:12.431Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "319",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:12.765Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "320",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:13.277Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "321",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:13.806Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "331",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:14.374Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "332",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:14.651Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "333",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:15.231Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "341",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:15.622Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "388",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:16.109Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "398W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:16.715Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "399",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:17.122Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "401",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:17.618Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "402",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:18.018Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "403",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:18.519Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "411",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:18.806Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "414",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:19.316Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "416",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:19.659Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "431",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:20.085Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "433",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:20.498Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "844",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:21.148Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "999",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:21.647Z"
+  },
+  {
+    "department": "HIST",
+    "number": "102W",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:22.189Z"
+  },
+  {
+    "department": "HIST",
+    "number": "111",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:22.506Z"
+  },
+  {
+    "department": "HIST",
+    "number": "204",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:22.806Z"
+  },
+  {
+    "department": "HIST",
+    "number": "212",
+    "reason": "Ambiguity issue: Error during ambiguity check: Error: 403 Key limit exceeded. Manage it using https://openrouter.ai/settings/keys",
+    "timestamp": "2025-07-03T06:44:23.078Z"
+  },
+  {
+    "department": "HIST",
+    "number": "432",
+    "reason": "Ambiguity issue: - The schema does not support specifying a minimum number of units *within* a specific department as part of a prerequisite. It can handle \"45 units\" and \"nine units of lower division history\" separately, but not the combination of \"45 units *including* nine units of lower division history.\"",
+    "timestamp": "2025-07-03T06:47:08.586Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "199",
+    "reason": "Ambiguity issue: - The schema does not support representing variable prerequisites or corequisites that depend on the specific topic of a special topics course. The statement \"Will vary according to topic\" is too vague for a structured representation.",
+    "timestamp": "2025-07-03T06:48:07.153Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "350",
+    "reason": "Ambiguity issue: - The schema does not support representing program acceptance as a prerequisite. It can handle course-based prerequisites, GPA, or credit requirements, but not a status or acceptance into a specific program.",
+    "timestamp": "2025-07-03T06:49:08.197Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "372",
+    "reason": "Ambiguity issue: - The prerequisite \"Will vary according to topic\" cannot be represented by the schema, as it does not allow for dynamic or topic-dependent prerequisites.",
+    "timestamp": "2025-07-03T06:49:11.569Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "449",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a \"Criminal Record Check\" as a requirement.",
+    "timestamp": "2025-07-03T06:49:50.055Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "471",
+    "reason": "Ambiguity issue: - The prerequisite \"Will vary according to topic\" cannot be represented by the schema as it does not specify concrete courses, credit counts, or other quantifiable requirements.",
+    "timestamp": "2025-07-03T06:50:00.455Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "472",
+    "reason": "Ambiguity issue: - The schema does not support representing variable prerequisites based on topic.",
+    "timestamp": "2025-07-03T06:50:01.171Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "481",
+    "reason": "Ambiguity issue: - The phrase \"Other prerequisites may vary according to topic\" indicates that the prerequisites are not fully defined by the provided text and cannot be unambiguously represented by the schema.",
+    "timestamp": "2025-07-03T06:50:17.039Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "485",
+    "reason": "Ambiguity issue: - The phrase \"Other prerequisites may vary according to topic\" introduces an unknown and variable set of prerequisites that cannot be represented by the current schema.",
+    "timestamp": "2025-07-03T06:50:26.862Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "486",
+    "reason": "Ambiguity issue: - The phrase \"Other prerequisites may vary according to topic\" indicates that the stated prerequisites are not exhaustive and can change, making it impossible to represent all potential requirements with a static schema.",
+    "timestamp": "2025-07-03T06:50:27.721Z"
+  },
+  {
+    "department": "HUM",
+    "number": "390",
+    "reason": "Ambiguity issue: - The schema does not support specifying \"any 300-division global humanities courses\" without listing them individually. It also does not support the restriction \"This course may be used only once for credit towards a degree\".",
+    "timestamp": "2025-07-03T06:52:17.601Z"
+  },
+  {
+    "department": "IAT",
+    "number": "201",
+    "reason": "Ambiguity issue: - The schema does not support specifying a minimum number of units from a specific category (e.g., \"lower division 'W' course\"). It can handle \"60 units of university coursework\" or \"one lower division CMPT course,\" but not a combination of unit count and a specific course attribute like \"W\" designation.",
+    "timestamp": "2025-07-03T06:52:32.997Z"
+  },
+  {
+    "department": "IAT",
+    "number": "333",
+    "reason": "Ambiguity issue: - The schema does not support date-based restrictions on prerequisites. The phrase \"completed before the Spring 2025 term\" cannot be represented.",
+    "timestamp": "2025-07-03T06:53:11.045Z"
+  },
+  {
+    "department": "IAT",
+    "number": "386",
+    "reason": "Ambiguity issue: - The schema does not support representing a limit on the *number of times* a specific course (Directed Studies) can be taken within a program. The \"No more than six units of Directed Studies may be taken\" is a program-level restriction on the course itself, not a prerequisite for *this specific instance* of IAT 386.",
+    "timestamp": "2025-07-03T06:53:45.022Z"
+  },
+  {
+    "department": "IAT",
+    "number": "486",
+    "reason": "Ambiguity issue: - The schema does not support representing a limit on the number of times a specific course (Directed Studies) can be taken.",
+    "timestamp": "2025-07-03T06:54:15.409Z"
+  },
+  {
+    "department": "IAT",
+    "number": "488",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a limit on the *number of times* a course can be taken (\"No more than six units of Directed Studies may be taken\"). While it can represent a prerequisite of \"69 units\" and \"permission of the instructor and school,\" the restriction on the total units of \"Directed Studies\" courses is not directly supported.",
+    "timestamp": "2025-07-03T06:54:19.091Z"
+  },
+  {
+    "department": "IAT",
+    "number": "490",
+    "reason": "Ambiguity issue: - The schema does not support representing \"accepted into Honours Program\" or \"project accepted by a supervisor\" as prerequisites. These are not standard course or program requirements that can be directly mapped.",
+    "timestamp": "2025-07-03T06:54:19.772Z"
+  },
+  {
+    "department": "IAT",
+    "number": "491",
+    "reason": "Ambiguity issue: - The schema does not support representing \"accepted into Honours Program\" or \"project accepted by a supervisor\" as prerequisites. These are not standard course or GPA requirements.",
+    "timestamp": "2025-07-03T06:54:20.610Z"
+  },
+  {
+    "department": "IAT",
+    "number": "803",
+    "reason": "Ambiguity issue: - The schema does not support specifying a student's program/status (e.g., \"SIAT Graduate Student\") as a prerequisite.",
+    "timestamp": "2025-07-03T06:54:26.312Z"
+  },
+  {
+    "department": "IAT",
+    "number": "804",
+    "reason": "Ambiguity issue: - The schema does not support specifying program/student status as a prerequisite. It only supports course-based prerequisites.",
+    "timestamp": "2025-07-03T06:54:27.023Z"
+  },
+  {
+    "department": "IAT",
+    "number": "806",
+    "reason": "Ambiguity issue: - The schema does not support specifying a student's program or status (e.g., \"SIAT Graduate Student\") as a prerequisite.",
+    "timestamp": "2025-07-03T06:54:29.644Z"
+  },
+  {
+    "department": "INDG",
+    "number": "210",
+    "reason": "Ambiguity issue: - The prerequisite \"or Corequisite: INDG 101 or INDG 201W\" is unclear. It's not specified whether the \"or\" applies to the prerequisite status or the course options. It's also unclear if INDG 101 and INDG 201W are prerequisites or corequisites.",
+    "timestamp": "2025-07-03T06:54:45.788Z"
+  },
+  {
+    "department": "INDG",
+    "number": "222",
+    "reason": "Ambiguity issue: - The schema does not support representing prerequisites that vary by topic and require consultation of a course outline.",
+    "timestamp": "2025-07-03T06:54:46.453Z"
+  },
+  {
+    "department": "INDG",
+    "number": "322",
+    "reason": "Ambiguity issue: - The schema does not support representing variable prerequisites based on topic. The statement \"Will vary according to the topic\" is too vague to be parsed into specific course requirements.",
+    "timestamp": "2025-07-03T06:55:00.810Z"
+  },
+  {
+    "department": "INDG",
+    "number": "410",
+    "reason": "Ambiguity issue: - The prerequisite states \"or Corequisite: INDG 101 or 201W.\" This implies that either a prerequisite or a corequisite is required, but the specific relationship (prerequisite vs. corequisite) is unclear due to the \"or\" conjunction. The schema needs to support a clear distinction between prerequisites and corequisites when both are presented in a single statement with an \"or\" condition.",
+    "timestamp": "2025-07-03T06:55:37.414Z"
+  },
+  {
+    "department": "INDG",
+    "number": "422",
+    "reason": "Ambiguity issue: - The schema does not support representing variable prerequisites based on topic.",
+    "timestamp": "2025-07-03T06:55:41.858Z"
+  },
+  {
+    "department": "INDG",
+    "number": "435",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a \"Criminal Record Check\" as a requirement.",
+    "timestamp": "2025-07-03T06:55:49.512Z"
+  },
+  {
+    "department": "INDG",
+    "number": "447",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a variable corequisite that \"varies depending on topic.\"",
+    "timestamp": "2025-07-03T06:55:52.590Z"
+  },
+  {
+    "department": "INLG",
+    "number": "130",
+    "reason": "Ambiguity issue: - The schema does not support conditional prerequisites based on program enrollment (\"Students in the Indigenous Studies program should complete...\").",
+    "timestamp": "2025-07-03T06:55:53.273Z"
+  },
+  {
+    "department": "INLG",
+    "number": "158",
+    "reason": "Ambiguity issue: - The note contains a contradiction. It states that students who have completed INLG 158 may not complete this course for further credit, but INLG 158 is the course being described. This makes the requirement unclear.",
+    "timestamp": "2025-07-03T06:55:58.702Z"
+  },
+  {
+    "department": "INLG",
+    "number": "300",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"completion of a certificate\" as a prerequisite. Additionally, the use of \"(or FNLG)\" and \"(or LING)\" within the prerequisite and notes sections introduces ambiguity regarding whether these are alternative departments or specific course prefixes that must be met. The phrase \"same language as INLG (or FNLG) 300\" is also unclear without further context on how \"language\" is defined and tracked.",
+    "timestamp": "2025-07-03T06:56:11.011Z"
+  },
+  {
+    "department": "INLG",
+    "number": "435",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"Topics\" courses where the specific topic can affect credit for the current course. The note \"Students who have completed FNLG 435 for a designated topic may not complete this course for further credit for the same designated topic\" implies a dependency on the specific topic of a previously taken course, which is not directly modeled.",
+    "timestamp": "2025-07-03T06:56:30.805Z"
+  },
+  {
+    "department": "IS",
+    "number": "428",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a \"written application to the school no later than the last day of classes of the preceding term\" as a prerequisite.",
+    "timestamp": "2025-07-03T06:57:38.229Z"
+  },
+  {
+    "department": "JAPN",
+    "number": "110",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a requirement for instructor evaluation or contact before enrollment, which is a key part of the prerequisite statement.",
+    "timestamp": "2025-07-03T06:58:30.921Z"
+  },
+  {
+    "department": "JAPN",
+    "number": "351",
+    "reason": "Ambiguity issue: - The schema does not support representing a \"placement interview\" as a prerequisite, nor does it have a clear way to represent a \"kanji count\" or \"ability to follow instructions in Japanese\" as a prerequisite.",
+    "timestamp": "2025-07-03T06:58:41.086Z"
+  },
+  {
+    "department": "LBST",
+    "number": "309",
+    "reason": "Ambiguity issue: - The schema does not explicitly support \"strongly recommended\" prerequisites, only \"recommended\". It also does not specify how to handle \"at least one other Labour Studies course\" which implies a count of courses within a department without a specific course number.",
+    "timestamp": "2025-07-03T06:58:57.188Z"
+  },
+  {
+    "department": "LBST",
+    "number": "431",
+    "reason": "Ambiguity issue: - The prerequisite \"Will vary according to topic\" cannot be represented by the schema as it implies dynamic or variable requirements that are not defined at the time of schema definition.",
+    "timestamp": "2025-07-03T06:59:14.428Z"
+  },
+  {
+    "department": "LING",
+    "number": "480",
+    "reason": "Ambiguity issue: - The schema does not support representing variable requirements based on the specific topic offered for a course.",
+    "timestamp": "2025-07-03T06:59:55.213Z"
+  },
+  {
+    "department": "LING",
+    "number": "481",
+    "reason": "Ambiguity issue: - The schema does not support representing variable prerequisites based on the specific topic offered for a course.",
+    "timestamp": "2025-07-03T06:59:55.862Z"
+  },
+  {
+    "department": "LING",
+    "number": "894",
+    "reason": "Ambiguity issue: - The schema does not support representing \"All PhD coursework in Linguistics\" as a prerequisite. It lacks the ability to define a prerequisite based on the completion of an entire program of study or a set of courses that are not explicitly listed.",
+    "timestamp": "2025-07-03T06:59:58.630Z"
+  },
+  {
+    "department": "LING",
+    "number": "895",
+    "reason": "Ambiguity issue: - The schema does not support representing \"All PhD coursework in Linguistics\" as a prerequisite. It lacks the ability to define a broad category of courses based on program level and department without specifying individual courses or a defined set of courses.",
+    "timestamp": "2025-07-03T06:59:59.395Z"
+  },
+  {
+    "department": "MACM",
+    "number": "316",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"computing experience\" as a prerequisite.",
+    "timestamp": "2025-07-03T07:00:24.284Z"
+  },
+  {
+    "department": "MACM",
+    "number": "409",
+    "reason": "Ambiguity issue: - The schema does not support representing \"programming experience\" as a prerequisite.",
+    "timestamp": "2025-07-03T07:00:27.655Z"
+  },
+  {
+    "department": "MASC",
+    "number": "400",
+    "reason": "Ambiguity issue: - The schema does not support representing prerequisites that are \"set by\" an external institution and only provide a general guideline (\"normally include completion of lower division core courses\") without specifying the exact courses or departments.",
+    "timestamp": "2025-07-03T07:00:36.430Z"
+  },
+  {
+    "department": "MASC",
+    "number": "401",
+    "reason": "Ambiguity issue: - The schema does not support representing prerequisites that are \"set by\" an external institution or that are \"normally\" met. The phrase \"lower division core courses\" is too vague without specifying the departments or course numbers.",
+    "timestamp": "2025-07-03T07:00:37.162Z"
+  },
+  {
+    "department": "MASC",
+    "number": "410",
+    "reason": "Ambiguity issue: - The schema does not support representing prerequisites that are \"set by\" an external body and are \"normally\" a set of courses without specifying those courses. The phrase \"lower division core courses\" is too vague.",
+    "timestamp": "2025-07-03T07:00:37.918Z"
+  },
+  {
+    "department": "MASC",
+    "number": "414",
+    "reason": "Ambiguity issue: - The prerequisite \"normally include completion of lower division core courses\" is too vague and cannot be translated into specific course requirements without further clarification.",
+    "timestamp": "2025-07-03T07:00:38.603Z"
+  },
+  {
+    "department": "MASC",
+    "number": "415",
+    "reason": "Ambiguity issue: - The schema does not support representing prerequisites that are \"set by\" an external body (Bamfield Marine Science Centre) and are described as \"normally include completion of lower division core courses\" without specifying which lower division core courses.",
+    "timestamp": "2025-07-03T07:00:39.443Z"
+  },
+  {
+    "department": "MASC",
+    "number": "417",
+    "reason": "Ambiguity issue: - The prerequisite \"normally include completion of lower division core courses\" is too vague and cannot be unambiguously represented by the schema without further clarification on what constitutes \"lower division core courses\" within the Bamfield Marine Science Centre.",
+    "timestamp": "2025-07-03T07:00:40.162Z"
+  },
+  {
+    "department": "MASC",
+    "number": "419",
+    "reason": "Ambiguity issue: - The prerequisite \"Prerequisites are set by Bamfield Marine Science Centre, and normally include completion of lower division core courses\" is too vague. It does not specify which lower division core courses are required, nor does it provide a clear mechanism for referencing external prerequisite rules set by another institution.",
+    "timestamp": "2025-07-03T07:00:40.949Z"
+  },
+  {
+    "department": "MASC",
+    "number": "420",
+    "reason": "Ambiguity issue: - The prerequisite \"normally include completion of lower division core courses\" is too vague. The schema requires specific course names or at least a clear definition of \"lower division core courses\" (e.g., a specific set of courses or a minimum number of credits from a particular department).",
+    "timestamp": "2025-07-03T07:00:41.657Z"
+  },
+  {
+    "department": "MASC",
+    "number": "421",
+    "reason": "Ambiguity issue: - The prerequisite \"normally include completion of lower division core courses\" is too vague. The schema requires specific course names or at least a clear definition of \"lower division core courses\" (e.g., \"any two lower division courses from BIOL, CHEM, PHYS\").",
+    "timestamp": "2025-07-03T07:00:42.351Z"
+  },
+  {
+    "department": "MASC",
+    "number": "425",
+    "reason": "Ambiguity issue: - The schema does not support representing prerequisites that are \"set by\" an external body and are \"normally\" a set of courses without specifying those courses. The phrase \"lower division core courses\" is too vague.",
+    "timestamp": "2025-07-03T07:00:43.185Z"
+  },
+  {
+    "department": "MASC",
+    "number": "430",
+    "reason": "Ambiguity issue: - The schema does not support representing prerequisites that are \"set by\" an external body or that refer to \"lower division core courses\" without specifying the exact courses or departments.",
+    "timestamp": "2025-07-03T07:00:43.886Z"
+  },
+  {
+    "department": "MASC",
+    "number": "435",
+    "reason": "Ambiguity issue: - The prerequisite \"Prerequisites are set by Bamfield Marine Science Centre, and normally include completion of lower division core courses\" is too vague. The schema requires specific course numbers or clear descriptions of course types (e.g., \"any 200-level biology course\") to be represented unambiguously. \"Lower division core courses\" is not specific enough.",
+    "timestamp": "2025-07-03T07:00:44.753Z"
+  },
+  {
+    "department": "MASC",
+    "number": "436",
+    "reason": "Ambiguity issue: - The schema does not support representing prerequisites that are \"set by\" an external body or that are \"normally\" included. It also lacks the ability to represent \"lower division core courses\" without specifying the department or number of those courses.",
+    "timestamp": "2025-07-03T07:00:45.491Z"
+  },
+  {
+    "department": "MASC",
+    "number": "437",
+    "reason": "Ambiguity issue: - The schema does not support representing prerequisites that are \"set by\" an external body or that are generally \"normally included\" without specific course details. The phrase \"lower division core courses\" is too vague without further definition of what constitutes these core courses within the context of the Bamfield Marine Science Centre.",
+    "timestamp": "2025-07-03T07:00:46.222Z"
+  },
+  {
+    "department": "MASC",
+    "number": "471",
+    "reason": "Ambiguity issue: - The schema does not support representing prerequisites that are \"set by\" an external body or that are \"normally\" included. The phrase \"lower division core courses\" is too vague without specifying the department or specific courses.",
+    "timestamp": "2025-07-03T07:00:46.951Z"
+  },
+  {
+    "department": "MASC",
+    "number": "472",
+    "reason": "Ambiguity issue: - The schema does not support representing prerequisites that are \"set by\" an external body or that are \"normally\" included. The phrase \"lower division core courses\" is also too vague without specifying departments or course numbers.",
+    "timestamp": "2025-07-03T07:00:47.634Z"
+  },
+  {
+    "department": "MASC",
+    "number": "479",
+    "reason": "Ambiguity issue: - The schema does not support representing prerequisites that are \"set by\" an external entity or that are \"normally\" included. It also lacks the ability to represent a general \"lower division core courses\" requirement without specifying the departments and course numbers.",
+    "timestamp": "2025-07-03T07:00:48.305Z"
+  },
+  {
+    "department": "MATH",
+    "number": "100",
+    "reason": "Ambiguity issue: - The prerequisite section contains a complex logical structure with multiple \"or\" conditions, some of which have nested \"and\" conditions and grade requirements. The schema's ability to represent such deeply nested and combined logical operators with specific grade requirements for each branch is not explicitly demonstrated in the examples. Specifically, the \"and SFU FAN credit\" part is unclear if it's a prerequisite itself or a condition on the preceding \"Pre-Calculus 12\" requirement. The notes also introduce negative constraints (students who have taken certain courses may not take this course) which might be difficult to represent as a prerequisite or corequisite.",
+    "timestamp": "2025-07-03T07:00:49.321Z"
+  },
+  {
+    "department": "MATH",
+    "number": "110",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"SFU FAN credit\" or \"SFU FAN X92 or X99 course\" as specific prerequisite types. Additionally, the \"satisfactory grade on the Simon Fraser University Quantitative Placement Test\" is a performance-based requirement that may not be directly representable without a defined equivalence or a specific test code.",
+    "timestamp": "2025-07-03T07:00:50.246Z"
+  },
+  {
+    "department": "MATH",
+    "number": "190",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"or equivalent\" for high school courses, nor does it have a clear way to handle the complex conditional logic for the SFU FAN X99 course and the Quantitative Placement Test. Additionally, the restriction on counting the course towards specific math degrees and the permission requirement for students taking or having credit for other MATH courses are complex and may not be fully captured by the current schema's logical groupings and permission fields.",
+    "timestamp": "2025-07-03T07:01:11.228Z"
+  },
+  {
+    "department": "MATH",
+    "number": "292",
+    "reason": "Ambiguity issue: - The schema does not support representing prerequisites that are determined at a later time or are topic-specific without further definition. The statement \"Prerequisites will be specified according to the particular topic or topics offered\" is too vague for direct schema mapping.",
+    "timestamp": "2025-07-03T07:01:35.617Z"
+  },
+  {
+    "department": "MATH",
+    "number": "303",
+    "reason": "Ambiguity issue: - The phrase \"all with a minimum grade of C-\" is ambiguous as it's unclear if it applies to all listed prerequisite courses (MATH 152, 155, 158, 232, 240) or only to the second group (MATH 232 or 240). Additionally, the statement \"There may be additional prerequisites depending on the specific course topic\" indicates a dynamic requirement that cannot be fully captured by a static schema.",
+    "timestamp": "2025-07-03T07:01:41.276Z"
+  },
+  {
+    "department": "MATH",
+    "number": "304",
+    "reason": "Ambiguity issue: - The phrase \"There may be additional prerequisites depending on the specific course topic\" introduces an unquantifiable and variable requirement that cannot be represented by the current schema.",
+    "timestamp": "2025-07-03T07:01:42.023Z"
+  },
+  {
+    "department": "MATH",
+    "number": "314",
+    "reason": "Ambiguity issue: - The schema does not support representing nested \"ONE_OF\" conditions with different grade requirements within a single prerequisite statement. Specifically, the second part of the prerequisite \"one of MATH 251 with a grade of B+, or one of MATH 252 or 254, with a minimum grade of C-\" creates this ambiguity.",
+    "timestamp": "2025-07-03T07:01:47.241Z"
+  },
+  {
+    "department": "MATH",
+    "number": "336",
+    "reason": "Ambiguity issue: - The schema does not support representing a requirement for applying and receiving permission from a specific coordinator. It also does not support the nuanced \"at least one, preferably two, terms in advance\" timing for permission.",
+    "timestamp": "2025-07-03T07:01:52.334Z"
+  },
+  {
+    "department": "MATH",
+    "number": "342",
+    "reason": "Ambiguity issue: - The phrase \"one additional 200-level MATH or MACM course\" is ambiguous. It's unclear if this means one course from the combined set of 200-level MATH and MACM courses, or one 200-level MATH course AND one 200-level MACM course.",
+    "timestamp": "2025-07-03T07:02:02.658Z"
+  },
+  {
+    "department": "MATH",
+    "number": "380W",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"strongly advised\" recommendations as a distinct category from formal prerequisites or corequisites.",
+    "timestamp": "2025-07-03T07:02:13.399Z"
+  },
+  {
+    "department": "MATH",
+    "number": "381W",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"300-division\" as a level requirement, nor does it clearly define how to handle \"or equivalent\" for course prerequisites.",
+    "timestamp": "2025-07-03T07:02:14.112Z"
+  },
+  {
+    "department": "MATH",
+    "number": "418",
+    "reason": "Ambiguity issue: - The schema does not support representing alternative prerequisite paths with different minimum grade requirements for each path. The \"alternative to the above prerequisite\" clause introduces complexity that cannot be directly mapped.",
+    "timestamp": "2025-07-03T07:02:18.613Z"
+  },
+  {
+    "department": "MATH",
+    "number": "462",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing nested logical groupings with different grade requirements within a single prerequisite statement. The \"alternative\" phrasing introduces a complex conditional structure that is difficult to map directly.",
+    "timestamp": "2025-07-03T07:02:44.034Z"
+  },
+  {
+    "department": "MATH",
+    "number": "480W",
+    "reason": "Ambiguity issue: - The prerequisite \"At least one of MACM 201, MATH 240, MATH 242, MATH 251, MATH 252 with a grade of at least A, or both of MACM 203, MACM 204 with a grade of at least A\" is ambiguous. It's unclear if the \"grade of at least A\" applies to both MACM 203 and MACM 204, or if it applies to each individually. Additionally, the \"Students with credit for MATH 370W may not take MATH 480W for credit\" is a restriction, not a prerequisite or corequisite, and the schema does not explicitly support this type of exclusion.",
+    "timestamp": "2025-07-03T07:02:53.626Z"
+  },
+  {
+    "department": "MATH",
+    "number": "495",
+    "reason": "Ambiguity issue: - The prerequisite is not specified and depends on the particular topic, which cannot be represented by the schema.",
+    "timestamp": "2025-07-03T07:02:56.506Z"
+  },
+  {
+    "department": "MATH",
+    "number": "604",
+    "reason": "Ambiguity issue: - The schema does not support representing negative constraints or restrictions on who can take a course (e.g., \"Graduate students in the Department of Mathematics cannot take this course to satisfy their degree requirements.\").",
+    "timestamp": "2025-07-03T07:03:03.862Z"
+  },
+  {
+    "department": "MATH",
+    "number": "701",
+    "reason": "Ambiguity issue: - The note \"Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously\" is unclear. It's not specified which 400-division course(s) are relevant, or if this restriction applies to all 700-division courses or just this specific one. The phrase \"being offered in conjunction with\" is also vague.",
+    "timestamp": "2025-07-03T07:03:04.767Z"
+  },
+  {
+    "department": "MATH",
+    "number": "708",
+    "reason": "Ambiguity issue: - The note \"Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously\" is unclear. It's not a standard prerequisite or corequisite and the condition \"being offered in conjunction with\" is vague. It's unclear if this is a restriction based on current enrollment or past enrollment, and how \"in conjunction with\" is defined.",
+    "timestamp": "2025-07-03T07:03:05.645Z"
+  },
+  {
+    "department": "MATH",
+    "number": "709",
+    "reason": "Ambiguity issue: - The note \"Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously\" is unclear. It's not specified which 400-division courses are relevant, and the condition of \"being offered in conjunction with\" is vague. It's also unclear if this applies to all 700-division courses or just this specific one.",
+    "timestamp": "2025-07-03T07:03:06.425Z"
+  },
+  {
+    "department": "MATH",
+    "number": "716",
+    "reason": "Ambiguity issue: - The note \"Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously\" is unclear. It's not specified which 400-division course(s) are relevant, and the condition of \"being offered in conjunction with\" is vague. It's unclear if this is a prerequisite, corequisite, or a restriction based on past enrollment.",
+    "timestamp": "2025-07-03T07:03:07.346Z"
+  },
+  {
+    "department": "MATH",
+    "number": "718",
+    "reason": "Ambiguity issue: - The note \"Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously\" is unclear. It's not explicitly stated if this applies to *any* 400-division course or a specific one, and the term \"in conjunction with\" is vague. It's also unclear if this is a prerequisite or a restriction.",
+    "timestamp": "2025-07-03T07:03:08.149Z"
+  },
+  {
+    "department": "MATH",
+    "number": "719",
+    "reason": "Ambiguity issue: - The note \"Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously\" is unclear. It's not a standard prerequisite or corequisite and the \"in conjunction with\" phrasing is vague. It's unclear if this means a student cannot have *ever* taken a 400-level course, or if it refers to concurrent enrollment in a specific 400-level course that is being offered at the same time as the 700-level course. The schema does not appear to support this type of conditional exclusion based on past or concurrent enrollment in a broad category of courses.",
+    "timestamp": "2025-07-03T07:03:09.151Z"
+  },
+  {
+    "department": "MATH",
+    "number": "725",
+    "reason": "Ambiguity issue: - The note \"Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously\" is unclear. It's not a standard prerequisite or corequisite and the \"in conjunction with\" phrasing is vague. It's unclear if this means a student cannot be *currently enrolled* in a 400-level course or if it refers to *having previously taken* a 400-level course. The schema does not appear to support this type of conditional restriction based on past or concurrent enrollment in a different course level without a specific course reference.",
+    "timestamp": "2025-07-03T07:03:10.081Z"
+  },
+  {
+    "department": "MATH",
+    "number": "740",
+    "reason": "Ambiguity issue: - The note \"Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously\" is unclear. It's not a standard prerequisite or corequisite and the \"in conjunction with\" phrasing is vague. It's unclear if this refers to concurrent enrollment or a historical enrollment, and what specific 400-division courses are relevant.",
+    "timestamp": "2025-07-03T07:03:12.889Z"
+  },
+  {
+    "department": "MATH",
+    "number": "742",
+    "reason": "Ambiguity issue: - The note \"Students may not take a 700 division course if it is being offered in conjunction with a 400 division course which they have taken previously\" is unclear. It's not a standard prerequisite or corequisite and the conditionality is vague. It's unclear what \"being offered in conjunction with\" means in terms of enrollment or course scheduling.",
+    "timestamp": "2025-07-03T07:03:13.769Z"
+  },
+  {
+    "department": "MATH",
+    "number": "747",
+    "reason": "Ambiguity issue: - The note \"Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously\" is unclear. It's not a standard prerequisite or corequisite and the conditionality (\"if it is being offered in conjunction with\") is difficult to represent without more context on how course offerings and past enrollments are tracked and linked. It also implies a restriction based on *future* enrollment in a 400-level course while taking this 700-level course, which is unusual.",
+    "timestamp": "2025-07-03T07:03:16.364Z"
+  },
+  {
+    "department": "MATH",
+    "number": "748",
+    "reason": "Ambiguity issue: - The note \"Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously\" is unclear. It's not specified which 400-division courses are relevant, and the phrase \"offered in conjunction with\" is vague. It's also unclear if this is a prerequisite, corequisite, or a general restriction.",
+    "timestamp": "2025-07-03T07:03:17.154Z"
+  },
+  {
+    "department": "MATH",
+    "number": "762",
+    "reason": "Ambiguity issue: - The note \"Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously\" is unclear. It's not a standard prerequisite or corequisite and implies a temporal dependency or a restriction based on future or past course offerings that the schema may not be able to capture directly. It's also unclear what \"being offered in conjunction with\" means in this context.",
+    "timestamp": "2025-07-03T07:03:20.053Z"
+  },
+  {
+    "department": "MATH",
+    "number": "795",
+    "reason": "Ambiguity issue: - The note \"Students may not take a 700-division course if it is being offered in conjunction with a 400-division course which they have taken previously\" is too vague. It's unclear what \"in conjunction with\" means in this context (e.g., same semester, same academic year). It also doesn't specify which 400-division courses are relevant, making it impossible to represent as a concrete prerequisite or corequisite.",
+    "timestamp": "2025-07-03T07:03:25.408Z"
+  },
+  {
+    "department": "MATH",
+    "number": "796",
+    "reason": "Ambiguity issue: - The note describes a restriction based on prior enrollment in a related course at a different division level, which is not directly supported by the schema's explicit prerequisite/corequisite fields. The schema can represent \"taken previously\" but not the conditional exclusion based on a 400-level course being offered concurrently with a 700-level course.",
+    "timestamp": "2025-07-03T07:03:26.181Z"
+  },
+  {
+    "department": "MBB",
+    "number": "110",
+    "reason": "Ambiguity issue: - The schema does not explicitly support \"recommended\" prerequisites that are also tied to specific course equivalencies. While \"MATH 12 or equivalent is recommended\" could be represented, the \"in lieu of\" statement for CMPT 120 suggests a direct substitution for MBB 110, which is different from a prerequisite.",
+    "timestamp": "2025-07-03T07:03:34.499Z"
+  },
+  {
+    "department": "MBB",
+    "number": "222",
+    "reason": "Ambiguity issue: - The prerequisite states \"or Corequisite CHEM 281.\" This implies that CHEM 281 can be taken either as a prerequisite or a corequisite, which is not clearly supported by standard prerequisite/corequisite definitions and the schema's logical groupings. It's unclear if this means \"Prerequisite: CHEM 281 OR Corequisite: CHEM 281\" or if it's a poorly phrased way of saying CHEM 281 is a prerequisite.",
+    "timestamp": "2025-07-03T07:03:40.049Z"
+  },
+  {
+    "department": "MBB",
+    "number": "229",
+    "reason": "Ambiguity issue: - The schema does not support representing a requirement that is *either* a prerequisite *or* a corequisite. The provided text states \"or Corequisite: MBB 222 with a minimum grade of C- or better,\" which implies it could be one or the other, but not both. The schema's logical groupings (ALL_OF, ONE_OF, TWO_OF) are for combining multiple requirements, not for defining a choice between a prerequisite and a corequisite for a single course.",
+    "timestamp": "2025-07-03T07:03:41.025Z"
+  },
+  {
+    "department": "MBB",
+    "number": "420",
+    "reason": "Ambiguity issue: - The prerequisite is dependent on future announcements and the specific topic, which cannot be represented by the current schema.",
+    "timestamp": "2025-07-03T07:04:11.392Z"
+  },
+  {
+    "department": "MBB",
+    "number": "441",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a \"minimum grade of C\" applied to a \"3 units of CMPT or equivalent\" requirement, nor does it clearly distinguish between prerequisites that apply to the entire course versus those that are part of a specific pathway within the prerequisites. The phrasing \"MBB 243 or 3 units of CMPT or equivalent with a minimum grade of C, or permission of the instructor; MBB 331 and MBB 342, with a minimum grade of C\" suggests a complex logical structure that might be difficult to fully capture. Specifically, it's unclear if the \"minimum grade of C\" applies to both \"MBB 243\" and \"3 units of CMPT or equivalent\" or just the latter.",
+    "timestamp": "2025-07-03T07:04:25.343Z"
+  },
+  {
+    "department": "MBB",
+    "number": "498",
+    "reason": "Ambiguity issue: - The schema does not support representing negative constraints (i.e., \"Students may not take MBB 498 concurrently with...\").",
+    "timestamp": "2025-07-03T07:05:13.762Z"
+  },
+  {
+    "department": "MBB",
+    "number": "505",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"equivalent bioinformatics course (undergraduate or graduate)\" as a prerequisite. It also doesn't have a clear way to represent the \"cannot take both courses for credit\" restriction, which implies a mutual exclusion requirement.",
+    "timestamp": "2025-07-03T07:05:14.688Z"
+  },
+  {
+    "department": "MSE",
+    "number": "250",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing the \"may be taken concurrently\" condition for a specific prerequisite within a larger AND group. While it can handle concurrent enrollment, applying it to only one part of a complex prerequisite chain is not clearly supported by the examples.",
+    "timestamp": "2025-07-03T07:06:22.186Z"
+  },
+  {
+    "department": "MSE",
+    "number": "410",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"completion of two co-op terms\" as a prerequisite, nor does it have a clear way to handle the negative constraint \"Must not be taken concurrently with MSE 493 or MSE 494.\"",
+    "timestamp": "2025-07-03T07:07:02.613Z"
+  },
+  {
+    "department": "MSE",
+    "number": "802",
+    "reason": "Ambiguity issue: - The schema does not support representing \"research-based program\" as a prerequisite. It lacks the ability to define program types or research status.",
+    "timestamp": "2025-07-03T07:08:11.596Z"
+  },
+  {
+    "department": "MSE",
+    "number": "890",
+    "reason": "Ambiguity issue: - The schema does not support specifying a student's program/status (e.g., \"PhD Students in the School of Mechatronic Systems Engineering\") as a prerequisite. It can handle program restrictions (e.g., \"Major: Computer Science\"), but not a student's current academic standing or enrollment in a specific program.",
+    "timestamp": "2025-07-03T07:08:12.413Z"
+  },
+  {
+    "department": "NUSC",
+    "number": "344",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"first year calculus, chemistry and physics\" as specific course requirements without knowing the exact course codes or departments for these foundational subjects. It also doesn't clearly define how to represent \"completion of 60 units in a science program\" as a prerequisite.",
+    "timestamp": "2025-07-03T07:08:32.323Z"
+  },
+  {
+    "department": "PHIL",
+    "number": "331",
+    "reason": "Ambiguity issue: - The prerequisite \"As stated by department at time of offering\" cannot be represented by the schema, as it relies on external, dynamic information not captured by the schema's static structure.",
+    "timestamp": "2025-07-03T07:09:30.758Z"
+  },
+  {
+    "department": "PHIL",
+    "number": "332",
+    "reason": "Ambiguity issue: - The prerequisite \"As stated by department at time of offering\" cannot be represented by the schema, as it relies on external, dynamic information rather than specific, static course requirements.",
+    "timestamp": "2025-07-03T07:09:31.427Z"
+  },
+  {
+    "department": "PHIL",
+    "number": "341",
+    "reason": "Ambiguity issue: - The prerequisite statement \"Either one of: PHIL 201 or 203; or both of PHIL 100, 100W, or 300, and COGS 200\" is ambiguous. It's unclear if \"and COGS 200\" applies to both PHIL 201/203 and PHIL 100/100W/300, or only to the latter group. The phrasing \"both of PHIL 100, 100W, or 300\" is also unclear; it's not clear if it means \"both of (PHIL 100 and PHIL 100W)\" or \"both of (PHIL 100 and PHIL 300)\" or \"both of (PHIL 100W and PHIL 300)\", or if it implies a selection of two from that list.",
+    "timestamp": "2025-07-03T07:09:32.393Z"
+  },
+  {
+    "department": "PHIL",
+    "number": "342",
+    "reason": "Ambiguity issue: - The schema does not support \"one prior philosophy course\" as a prerequisite, which requires a count of courses within a specific department, excluding a list of specific courses.",
+    "timestamp": "2025-07-03T07:09:33.034Z"
+  },
+  {
+    "department": "PHIL",
+    "number": "343",
+    "reason": "Ambiguity issue: - The prerequisite statement \"Either one of: PHIL 201 or 203; or both of PHIL 100, 100W, or 300, and COGS 200\" is ambiguous. It is unclear if the \"and COGS 200\" applies to both PHIL 100, 100W, or 300, or only to the \"both of PHIL 100, 100W, or 300\" part. The schema's logical groupings (ALL_OF, ONE_OF, TWO_OF) might not be sufficient to represent this nested and potentially conditional \"and\" without further clarification.",
+    "timestamp": "2025-07-03T07:09:33.957Z"
+  },
+  {
+    "department": "PHIL",
+    "number": "344",
+    "reason": "Ambiguity issue: - The prerequisite statement \"Either one of: PHIL 201 or 203; or both of PHIL 100, 100W, or 300, and COGS 200\" is ambiguous. It's unclear if the \"and COGS 200\" applies to both \"PHIL 201 or 203\" and \"PHIL 100, 100W, or 300\", or only to the latter group. The schema's logical groupings (ALL_OF, ONE_OF, TWO_OF) might not be sufficient to represent this complex nested structure without further clarification.",
+    "timestamp": "2025-07-03T07:09:34.994Z"
+  },
+  {
+    "department": "PHIL",
+    "number": "350",
+    "reason": "Ambiguity issue: - The schema does not support excluding specific courses from a general prerequisite like \"one prior philosophy course\".",
+    "timestamp": "2025-07-03T07:09:37.842Z"
+  },
+  {
+    "department": "PHIL",
+    "number": "352",
+    "reason": "Ambiguity issue: - The schema does not support specifying a count of \"one prior philosophy course\" while simultaneously excluding a list of specific philosophy courses. It can handle a list of required courses or a count of courses from a department, but not a combination of a count and exclusions from that count.",
+    "timestamp": "2025-07-03T07:09:38.601Z"
+  },
+  {
+    "department": "PHIL",
+    "number": "356",
+    "reason": "Ambiguity issue: - The schema does not explicitly support excluding specific courses from a general course count requirement (e.g., \"one prior philosophy course (not including...)\"). While the schema can handle general course count requirements, the exclusion of specific courses within that count is not directly supported by the provided capabilities.",
+    "timestamp": "2025-07-03T07:09:39.472Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "100",
+    "reason": "Ambiguity issue: - The note \"Students who have obtained a grade of C+ or better in BC high school Physics 12 (or its equivalent) or who have taken any further physics course normally may not take PHYS 100 for credit\" introduces a restriction that is not directly supported by the schema's prerequisite/corequisite structure. It's a negative constraint based on prior achievement rather than a required course.",
+    "timestamp": "2025-07-03T07:09:52.920Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "101",
+    "reason": "Ambiguity issue: - The schema does not support representing a prerequisite waiver based on performance on a specific exam or the discretion of a department. The note about not taking the course for further credit also implies a restriction that might not be directly representable as a standard prerequisite or corequisite.",
+    "timestamp": "2025-07-03T07:09:53.669Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "120",
+    "reason": "Ambiguity issue: - The schema does not support representing a prerequisite waiver based on performance on a specific exam or departmental discretion.",
+    "timestamp": "2025-07-03T07:09:59.392Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "141",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing multiple, distinct prerequisite conditions with different minimum grade requirements for each condition. The current structure implies a single minimum grade applies to all listed prerequisite courses.",
+    "timestamp": "2025-07-03T07:10:16.412Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "321",
+    "reason": "Ambiguity issue: - The schema does not explicitly support applying a minimum grade to a subset of options within a \"ONE_OF\" logical grouping (e.g., \"PHYS 102 with a minimum grade of B\" within the \"PHYS 121 or PHYS 126 or PHYS 141 or PHYS 102\" prerequisite). While the general statement \"All prerequisite courses require a minimum grade of C-, unless specified\" exists, the specific exception for PHYS 102 creates ambiguity in how to represent this nuanced condition.",
+    "timestamp": "2025-07-03T07:10:38.648Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "335",
+    "reason": "Ambiguity issue: - The schema does not explicitly support \"application to the department at least one term in advance\" as a requirement.",
+    "timestamp": "2025-07-03T07:10:43.551Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "413",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing multiple, distinct prerequisite paths for different student groups (e.g., physics majors vs. non-physics majors) with different course requirements for each path. The \"or permission of the department\" clause also adds a layer of ambiguity if the schema cannot directly handle \"permission of the department\" as a standalone prerequisite.",
+    "timestamp": "2025-07-03T07:11:12.600Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "432",
+    "reason": "Ambiguity issue: - The schema does not support representing a requirement that necessitates consultation with a faculty supervisor. This is a qualitative requirement that cannot be directly translated into the structured format of the schema.",
+    "timestamp": "2025-07-03T07:11:21.107Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "485",
+    "reason": "Ambiguity issue: - The schema does not explicitly support applying a minimum grade to multiple, disjunctive prerequisite conditions within a single requirement string. The phrase \"all with a minimum grade of C-\" is ambiguous as to whether it applies to both \"PHYS 385 or CHEM 364\" AND \"PHYS 313 or permission from instructor\", or if it applies to each part independently.",
+    "timestamp": "2025-07-03T07:11:38.352Z"
+  },
+  {
+    "department": "PLCY",
+    "number": "817",
+    "reason": "Ambiguity issue: - The schema does not support representing a prerequisite that is based on approval from a committee. It can handle specific course prerequisites or GPA requirements, but not a discretionary approval process.",
+    "timestamp": "2025-07-03T07:12:53.545Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "210",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing \"satisfactory grade on the Simon Fraser University Quantitative Placement Test\" as a prerequisite.",
+    "timestamp": "2025-07-03T07:15:04.384Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "391",
+    "reason": "Ambiguity issue: - The phrase \"Other prerequisites vary by topic offering\" cannot be represented by the schema, as it implies a dynamic set of prerequisites that are not explicitly defined.",
+    "timestamp": "2025-07-03T07:16:19.068Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "402",
+    "reason": "Ambiguity issue: - The phrase \"Other prerequisites vary by topic offering\" cannot be represented by the schema, as it implies a dynamic and unspecifiable set of prerequisites.",
+    "timestamp": "2025-07-03T07:16:21.991Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "425",
+    "reason": "Ambiguity issue: - The phrase \"other prerequisites vary by topic offering\" introduces an unknown and variable set of requirements that cannot be explicitly defined within the current schema.",
+    "timestamp": "2025-07-03T07:16:27.126Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "426",
+    "reason": "Ambiguity issue: - The phrase \"other prerequisites vary by topic offering\" cannot be represented by the schema as it implies a dynamic and unspecified set of prerequisites that depend on external factors not captured by the schema.",
+    "timestamp": "2025-07-03T07:16:27.830Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "441",
+    "reason": "Ambiguity issue: - The phrase \"Other prerequisites vary by topic offering\" cannot be represented by the schema, as it implies a dynamic and potentially unspecifiable set of prerequisites that are not explicitly listed.",
+    "timestamp": "2025-07-03T07:16:28.556Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "450",
+    "reason": "Ambiguity issue: - The phrase \"Other prerequisites vary by topic offering\" cannot be represented by the schema, as it implies dynamic or topic-specific requirements not captured by a static schema.",
+    "timestamp": "2025-07-03T07:16:29.225Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "461",
+    "reason": "Ambiguity issue: - The phrase \"Other prerequisites vary by topic offering\" cannot be represented by the schema, as it indicates a dynamic and unspecified set of requirements.",
+    "timestamp": "2025-07-03T07:16:33.839Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "476",
+    "reason": "Ambiguity issue: - The phrase \"Other prerequisites vary by topic offering\" indicates that the prerequisites are not fixed and depend on the specific topic of the course, which cannot be represented by a static schema.",
+    "timestamp": "2025-07-03T07:16:34.543Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "480",
+    "reason": "Ambiguity issue: - The phrase \"Other prerequisites vary by topic offering\" cannot be represented by the schema, as it introduces a variable and unspecified set of requirements.",
+    "timestamp": "2025-07-03T07:16:35.174Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "491",
+    "reason": "Ambiguity issue: - The phrase \"Other prerequisites vary by topic offering\" cannot be represented by the schema, as it implies a dynamic and potentially unknown set of prerequisites that depend on the specific section of the course.",
+    "timestamp": "2025-07-03T07:16:38.029Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "809",
+    "reason": "Ambiguity issue: - The phrase \"Other prerequisites vary by topic offering\" cannot be represented by the schema, as it indicates a dynamic and unspecified set of prerequisites that depend on the specific topic of the course.",
+    "timestamp": "2025-07-03T07:16:55.584Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "881",
+    "reason": "Ambiguity issue: - The schema does not support representing \"successful completion of a Criminal Record Check\" as a prerequisite.",
+    "timestamp": "2025-07-03T07:17:26.200Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "882",
+    "reason": "Ambiguity issue: - The schema does not support representing \"Admission to the clinical program with a specialization in neuropsychology\" as a prerequisite. It also does not support representing \"Students must successfully complete a Criminal Record Check\" as a prerequisite.",
+    "timestamp": "2025-07-03T07:17:26.831Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "886",
+    "reason": "Ambiguity issue: - The schema does not support representing \"Equivalent of the MA clinical program\" or \"successful completion of the PhD comprehensive examinations\" and \"successful defense of the PhD research proposal\" as specific, verifiable prerequisites. It also lacks a mechanism for representing \"Students must successfully complete a Criminal Record Check.\"",
+    "timestamp": "2025-07-03T07:17:27.612Z"
+  },
+  {
+    "department": "PUB",
+    "number": "600",
+    "reason": "Ambiguity issue: - The schema does not support representing \"Admittance to the program\" as a prerequisite. It's unclear what \"the program\" refers to without further context or a way to link it to a specific program or major within the schema.",
+    "timestamp": "2025-07-03T07:18:14.764Z"
+  },
+  {
+    "department": "PUB",
+    "number": "601",
+    "reason": "Ambiguity issue: - The schema does not support representing \"Admittance to the program\" as a prerequisite. This is a general admission requirement rather than a specific course or academic standing.",
+    "timestamp": "2025-07-03T07:18:15.487Z"
+  },
+  {
+    "department": "PUB",
+    "number": "602",
+    "reason": "Ambiguity issue: - The schema does not support representing \"Admittance to the program\" as a prerequisite. This is a program-level restriction, not a specific course or credit requirement.",
+    "timestamp": "2025-07-03T07:18:16.209Z"
+  },
+  {
+    "department": "PUB",
+    "number": "606",
+    "reason": "Ambiguity issue: - The schema does not support representing \"Admittance to the program\" as a prerequisite. This is a general admission status rather than a specific course or academic requirement.",
+    "timestamp": "2025-07-03T07:18:18.802Z"
+  },
+  {
+    "department": "PUB",
+    "number": "607",
+    "reason": "Ambiguity issue: - The schema does not support representing \"admittance to the program\" as a prerequisite. This is a vague requirement that cannot be directly translated into the schema's capabilities.",
+    "timestamp": "2025-07-03T07:18:19.468Z"
+  },
+  {
+    "department": "PUB",
+    "number": "800",
+    "reason": "Ambiguity issue: - The schema does not support representing \"Admittance to the program\" as a prerequisite. It's a general admission status rather than a specific course or academic standing.",
+    "timestamp": "2025-07-03T07:18:20.151Z"
+  },
+  {
+    "department": "PUB",
+    "number": "801",
+    "reason": "Ambiguity issue: - The schema does not support representing \"Admittance to the program\" as a prerequisite. This is a general admission status rather than a specific course or academic requirement.",
+    "timestamp": "2025-07-03T07:18:20.868Z"
+  },
+  {
+    "department": "PUB",
+    "number": "802",
+    "reason": "Ambiguity issue: - The schema does not support representing \"Admittance to the program\" as a prerequisite.",
+    "timestamp": "2025-07-03T07:18:21.474Z"
+  },
+  {
+    "department": "REM",
+    "number": "320W",
+    "reason": "Ambiguity issue: - The schema does not support specifying restrictions on *which* major or minor a student belongs to when fulfilling a prerequisite or restriction. The statement \"Philosophy Majors and Minors may not take this course for credit towards their major or minor degree\" cannot be directly represented.",
+    "timestamp": "2025-07-03T07:18:47.789Z"
+  },
+  {
+    "department": "SA",
+    "number": "499",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a requirement for \"prior agreement from an SA faculty member who has agreed to supervise the honours essay.\" While \"permission from the SA department\" can be handled, the specific faculty agreement is a nuanced condition that might not fit neatly into the existing permission structure.",
+    "timestamp": "2025-07-03T07:22:10.030Z"
+  },
+  {
+    "department": "SA",
+    "number": "897",
+    "reason": "Ambiguity issue: - The schema does not appear to support representing \"All PhD course requirements\" as a prerequisite. It also doesn't explicitly support exceptions to general requirements like \"with the exception of SA 857\".",
+    "timestamp": "2025-07-03T07:22:10.709Z"
+  },
+  {
+    "department": "SDA",
+    "number": "100",
+    "reason": "Ambiguity issue: - The schema does not support \"may not then take this course for further credit\" which implies a restriction on taking the course if certain other courses have already been completed. This is a negative prerequisite or a restriction, not a standard prerequisite or corequisite.",
+    "timestamp": "2025-07-03T07:22:27.568Z"
+  },
+  {
+    "department": "SEE",
+    "number": "300",
+    "reason": "Ambiguity issue: - The schema does not support representing a choice between two different unit minimums as a prerequisite. The \"OR\" condition between \"65 units\" and \"55 units plus two-term co-op work\" creates an ambiguity in how to parse and enforce this requirement.",
+    "timestamp": "2025-07-03T07:22:59.907Z"
+  },
+  {
+    "department": "SEE",
+    "number": "402",
+    "reason": "Ambiguity issue: - The schema does not support representing a disjunction between a unit count and a unit count plus work experience. It's unclear if \"80 units plus two-term co-op work\" is a separate alternative to \"Minimum of 100 units\" or if it's a condition that must be met in addition to the 80 units.",
+    "timestamp": "2025-07-03T07:23:28.245Z"
+  },
+  {
+    "department": "SEE",
+    "number": "410W",
+    "reason": "Ambiguity issue: - The schema does not appear to support specifying \"completion of two co-op terms\" as a prerequisite.",
+    "timestamp": "2025-07-03T07:23:28.878Z"
+  },
+  {
+    "department": "SEE",
+    "number": "411",
+    "reason": "Ambiguity issue: - The requirement \"Must be taken in the term immediately following 410W\" cannot be represented by the current schema, which focuses on course dependencies rather than temporal sequencing.",
+    "timestamp": "2025-07-03T07:23:29.607Z"
+  },
+  {
+    "department": "SEE",
+    "number": "486",
+    "reason": "Ambiguity issue: - The schema does not support representing a prerequisite that is determined by a course supervisor after the fact, as it introduces an unknown variable.",
+    "timestamp": "2025-07-03T07:23:45.231Z"
+  },
+  {
+    "department": "SEE",
+    "number": "810",
+    "reason": "Ambiguity issue: - The schema does not support specifying different corequisites based on student program (MASc vs. PhD).",
+    "timestamp": "2025-07-03T07:23:55.913Z"
+  },
+  {
+    "department": "STAT",
+    "number": "201",
+    "reason": "Ambiguity issue: - The note \"Students cannot obtain credit for STAT 201 if they already have credit for - or are taking concurrently - STAT 101, 203, 205, 285, or any upper division STAT course\" describes a restriction that is not a prerequisite or corequisite in the traditional sense, but rather a prohibition of receiving credit. The schema does not explicitly support representing such negative constraints or prohibitions.",
+    "timestamp": "2025-07-03T07:24:36.243Z"
+  },
+  {
+    "department": "STAT",
+    "number": "203",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a \"research methods course\" as a prerequisite type, nor does it clearly define how to handle \"equivalent\" courses in this context. The note about not obtaining credit for STAT 203 if already having credit for or taking concurrently other STAT courses is a restriction that needs to be clearly modeled.",
+    "timestamp": "2025-07-03T07:24:37.050Z"
+  },
+  {
+    "department": "STAT",
+    "number": "270",
+    "reason": "Ambiguity issue: - The schema does not explicitly support representing a requirement that is *either* a prerequisite *or* a corequisite. The phrasing \"or Corequisite\" creates ambiguity in how to classify this rule within the schema's structure.",
+    "timestamp": "2025-07-03T07:24:47.731Z"
+  },
+  {
+    "department": "STAT",
+    "number": "310",
+    "reason": "Ambiguity issue: - The schema does not explicitly support specifying \"subjects outside of the Faculties of Science and Applied Sciences\" as a prerequisite. It also does not support the negative constraint \"Students who have taken STAT 240, STAT 440, or any 200-level or higher CMPT course first may not then take this course for further credit.\"",
+    "timestamp": "2025-07-03T07:25:00.015Z"
+  },
+  {
+    "department": "STAT",
+    "number": "360",
+    "reason": "Ambiguity issue: - The prerequisite statement \"One of STAT 260 or STAT 341 and one of STAT 302, STAT 305, STAT 350, or ECON 333\" implies a combination of \"ONE_OF\" and \"ALL_OF\" which is not directly supported by the schema's logical grouping capabilities. The schema can handle \"ONE_OF\" or \"ALL_OF\" but not a nested structure like \" (ONE_OF A, B) AND (ONE_OF C, D, E) \".",
+    "timestamp": "2025-07-03T07:25:12.784Z"
+  },
+  {
+    "department": "STAT",
+    "number": "361",
+    "reason": "Ambiguity issue: - The prerequisite statement \"One of STAT 260 or STAT 341 and one of STAT 302, STAT 305, STAT 350, or ECON 333\" implies a logical structure that is not explicitly supported by the schema's `ALL_OF` and `ONE_OF` operators. It's unclear if the \"and\" connects two `ONE_OF` groups or if it implies a more complex nested structure.",
+    "timestamp": "2025-07-03T07:25:13.587Z"
+  },
+  {
+    "department": "STAT",
+    "number": "490",
+    "reason": "Ambiguity issue: - The prerequisite \"Dependent on the topic covered\" is too vague and cannot be represented by the schema, which requires specific course numbers, departments, or general level requirements.",
+    "timestamp": "2025-07-03T07:25:45.419Z"
+  },
+  {
+    "department": "STAT",
+    "number": "603",
+    "reason": "Ambiguity issue: - The prerequisite \"A course in statistics\" is too vague. The schema requires specific course numbers or at least a clear definition of what constitutes \"a course in statistics\" (e.g., a minimum number of credits in statistics, or a specific 200-level statistics course).",
+    "timestamp": "2025-07-03T07:25:48.255Z"
+  },
+  {
+    "department": "STAT",
+    "number": "604",
+    "reason": "Ambiguity issue: - The schema does not appear to support restrictions based on a student's declared department or major (\"Open only to students in departments other than Statistics and Actuarial Science.\").",
+    "timestamp": "2025-07-03T07:25:48.958Z"
+  },
+  {
+    "department": "STAT",
+    "number": "605",
+    "reason": "Ambiguity issue: - The schema does not support specifying \"any course in Statistics\" as a prerequisite. It also does not support restricting enrollment based on a student's department.",
+    "timestamp": "2025-07-03T07:25:49.596Z"
+  },
+  {
+    "department": "STAT",
+    "number": "642",
+    "reason": "Ambiguity issue: - The schema does not explicitly support \"open only to students in departments other than Statistics and Actuarial Science\" as a restriction. While it can handle program/major restrictions, this is a negative restriction based on department exclusion, which might require a more complex logical representation or a dedicated field.",
+    "timestamp": "2025-07-03T07:25:50.345Z"
+  },
+  {
+    "department": "STAT",
+    "number": "675",
+    "reason": "Ambiguity issue: - The schema does not explicitly support \"Open only to graduate students in departments other than Statistics and Actuarial Science\" as a program restriction. While it can handle program restrictions, the specific phrasing here is a negative restriction on specific departments within a graduate level, which might require a more nuanced representation than a simple \"Program: Graduate\" or \"Major: Not Statistics\".",
+    "timestamp": "2025-07-03T07:25:55.605Z"
+  },
+  {
+    "department": "STAT",
+    "number": "685",
+    "reason": "Ambiguity issue: - The schema does not support specifying restrictions on graduate student enrollment based on their department of study (e.g., \"Open only to graduate students in departments other than Statistics and Actuarial Science\").",
+    "timestamp": "2025-07-03T07:25:56.286Z"
+  },
+  {
+    "department": "STAT",
+    "number": "897",
+    "reason": "Ambiguity issue: - The schema does not support specifying program/student type restrictions as prerequisites. It can handle course, credit, CGPA, and permission requirements, but not a general \"STAT PhD students\" requirement.",
+    "timestamp": "2025-07-03T07:26:20.410Z"
+  },
+  {
+    "department": "URB",
+    "number": "696",
+    "reason": "Ambiguity issue: - The schema does not explicitly support conditional prerequisites based on a specific grade (e.g., \"If the grade received in URB 670 is lower than A-, supervisor permission is required\"). While it can handle grade minimums, the conditional nature and the \"supervisor permission\" aspect are not directly covered.",
+    "timestamp": "2025-07-03T07:26:38.961Z"
+  },
+  {
+    "department": "WL",
+    "number": "200",
+    "reason": "Ambiguity issue: - The schema does not support specifying a \"W course\" requirement, which is a specific type of course designation within a department.",
+    "timestamp": "2025-07-03T07:26:47.619Z"
+  },
+  {
+    "department": "WL",
+    "number": "410",
+    "reason": "Ambiguity issue: - The schema does not explicitly support specifying \"and/or\" logic for multiple departments or subject areas within a single prerequisite statement. It's unclear if \"English, and/or humanities\" means any combination of these, or if it implies a choice between English OR humanities, or if it means courses that satisfy both English and humanities.",
+    "timestamp": "2025-07-03T07:27:14.465Z"
+  },
+  {
+    "department": "BPK",
+    "number": "495",
+    "reason": "Ambiguity issue: - The credit conflict \"Students with credit for BPK 499 prior to Fall 2016 may not take this course for further credit\" includes a date restriction (\"prior to Fall 2016\"). The `credit_conflicts` schema, specifically the `ConflictEquivalentCourse` type, does not provide a field to represent date restrictions. While the information can be captured in a `ConflictOther` type using the `note` field, this is not a structured representation of the date restriction itself. Therefore, this specific aspect of the requirement cannot be clearly and unambiguously represented using the schema's structured fields.",
+    "timestamp": "2025-07-03T08:48:15.424Z"
+  },
+  {
+    "department": "BUS",
+    "number": "318",
+    "reason": "Ambiguity issue: - The note \"This course does not count towards the Finance Concentration\" is a curriculum rule that cannot be represented by any of the defined fields in the schema.",
+    "timestamp": "2025-07-03T09:01:26.307Z"
+  },
+  {
+    "department": "BUS",
+    "number": "450",
+    "reason": "Ambiguity issue: - The phrase \"another upper division Writing (W) course\" cannot be unambiguously represented. The schema supports specifying a `department` for courses or course counts, but it does not have a field to represent course attributes or designations like \"(W)\". If \"Writing (W)\" is not a specific department name, this requirement is not directly supported.",
+    "timestamp": "2025-07-03T09:13:14.476Z"
+  },
+  {
+    "department": "BUS",
+    "number": "477",
+    "reason": "Ambiguity issue: - The schema does not support specifying courses based on attributes (e.g., a 'W' designation for writing courses) or a general category of \"writing course\" across multiple departments. The requirement \"an upper division Writing (W) course\" cannot be unambiguously represented.",
+    "timestamp": "2025-07-03T09:14:20.220Z"
+  },
+  {
+    "department": "BUS",
+    "number": "486",
+    "reason": "Ambiguity issue: - The schema does not support representing course ranges (e.g., \"490-495\") within the `ConflictEquivalentCourse` type for credit conflicts.",
+    "timestamp": "2025-07-03T09:14:39.092Z"
+  },
+  {
+    "department": "CA",
+    "number": "110",
+    "reason": "Ambiguity issue: - The phrase \"art, performance and cinema studies majors\" is ambiguous. It is unclear whether this refers to a single program or multiple distinct programs (e.g., majors in Art OR Performance OR Cinema Studies). The schema's `RequirementProgram` type expects a specific program name, and without further clarification or context on program naming conventions, it cannot be unambiguously mapped to a structured requirement.",
+    "timestamp": "2025-07-03T10:22:47.924Z"
+  },
+  {
+    "department": "CA",
+    "number": "319W",
+    "reason": "Ambiguity issue: - The prerequisite \"60 units including at least six units in CA (or FPA) history/theory courses\" cannot be fully represented. The schema supports specifying a number of units and departments/levels, but it lacks the ability to filter courses by subject matter or type (e.g., \"history/theory courses\").",
+    "timestamp": "2025-07-03T10:44:20.211Z"
+  },
+  {
+    "department": "CA",
+    "number": "339",
+    "reason": "Ambiguity issue: - The prerequisite \"CA (or FPA) 231, or CA (or FPA) 251 with prior approval\" contains ambiguous language. The phrase \"with prior approval\" is appended to the second option (\"CA (or FPA) 251\"), but it is unclear whether this approval requirement also applies to the first option (\"CA (or FPA) 231\"). This ambiguity in the source text prevents unambiguous representation.",
+    "timestamp": "2025-07-03T10:45:23.978Z"
+  },
+  {
+    "department": "BPK",
+    "number": "342",
+    "reason": "Ambiguity issue: - The note \"Biomedical Physiology, Behavioural Neuroscience and Kinesiology majors and honours students may not receive credit for BPK 342\" describes a restriction based on program of study that cannot be unambiguously represented by the current schema, which lacks a specific type for program-based exclusions (e.g., `prohibitedProgram` or `restrictedMajor`).",
+    "timestamp": "2025-07-03T10:53:45.598Z"
+  },
+  {
+    "department": "BPK",
+    "number": "426",
+    "reason": "Ambiguity issue: - BPK 306 is listed as both a corequisite and a recommended prerequisite. A corequisite must be taken concurrently, while a recommended prerequisite is advised to be taken prior to enrollment, creating a contradiction.",
+    "timestamp": "2025-07-03T10:56:48.377Z"
+  },
+  {
+    "department": "BPK",
+    "number": "491",
+    "reason": "Ambiguity issue: - The statement \"A minimum grade of B in this course is needed to register in BPK 495 or BPK 499\" describes a condition for taking subsequent courses (BPK 495 or BPK 499), not a prerequisite or corequisite for BPK 491 itself. The provided schema does not have a field to represent such post-requisites or conditions for future course registration.",
+    "timestamp": "2025-07-03T10:57:04.081Z"
+  },
+  {
+    "department": "CA",
+    "number": "371",
+    "reason": "Ambiguity issue: - Unclear language in the prerequisite string \"CA (or FPA) 270 and 271\" regarding the scope of the alternative department \"FPA\". It is not clear if \"or FPA\" applies to each course number individually (e.g., (CA 270 or FPA 270) AND (CA 271 or FPA 271)) or to the entire block of courses (e.g., (CA 270 AND CA 271) OR (FPA 270 AND FPA 271)).",
+    "timestamp": "2025-07-03T10:59:02.918Z"
+  },
+  {
+    "department": "CA",
+    "number": "400",
+    "reason": "Ambiguity issue: - The phrase \"minimum standing of completion of second year\" is not directly supported by the schema. The schema lacks a specific type to represent academic standing or year completion, which may involve criteria beyond simple credit counts or course lists.",
+    "timestamp": "2025-07-03T10:59:53.754Z"
+  },
+  {
+    "department": "CA",
+    "number": "401",
+    "reason": "Ambiguity issue: - The phrase \"completion of second year\" refers to academic standing, for which there is no direct type in the schema. While it might be approximated by credit counts or course levels, it is not explicitly supported. Furthermore, the phrase \"in any of the programs offered in the School for the Contemporary Arts\" is problematic. The schema's `RequirementProgram` type expects a specific program name, not a collection of programs within a school or faculty. The `department` field in `RequirementCreditCount` and `RequirementCourseCount` is for departments, not programs, and does not support the concept of \"any program within a school\".",
+    "timestamp": "2025-07-03T11:00:05.537Z"
+  },
+  {
+    "department": "CA",
+    "number": "412W",
+    "reason": "Ambiguity issue: - The phrasing \"one of CA (or FPA) 210W (or 210), 316 (or 337), 318 (or 335), or 357W\" is ambiguous regarding whether the department prefix \"CA (or FPA)\" applies to all subsequent course numbers (316, 337, 318, 335, 357W). If the prefix does not apply to these, their departments are unspecified, making them unrepresentable. If it does apply, the phrasing is not explicit enough to be unambiguous.",
+    "timestamp": "2025-07-03T11:00:31.285Z"
+  },
+  {
+    "department": "CA",
+    "number": "485",
+    "reason": "Ambiguity issue: The schema does not support GPA requirements based on courses from a specific department (e.g., \"an overall average of 3.5 in CA courses\"), nor does it support filtering courses by type such as \"studio course\".",
+    "timestamp": "2025-07-03T11:01:10.146Z"
+  },
+  {
+    "department": "CHEM",
+    "number": "406",
+    "reason": "Ambiguity issue: - The schema does not support specifying that credits must be earned towards a particular degree type (e.g., BSc).",
+    "timestamp": "2025-07-03T11:02:37.176Z"
+  },
+  {
+    "department": "CHEM",
+    "number": "449",
+    "reason": "Ambiguity issue: - The schema does not support applying a minimum grade to credit count requirements, but the prerequisite states \"12 units of upper division CHEM, all with a minimum grade of C-\", implying the minimum grade applies to the unit count as well as the specific courses.",
+    "timestamp": "2025-07-03T11:03:00.199Z"
+  },
+  {
+    "department": "CHIN",
+    "number": "110",
+    "reason": "Ambiguity issue: - The note \"Students enrolled/placed into other Chinese courses may not take this course for credit\" contains unclear language (\"other Chinese courses\") and a condition (\"enrolled/placed into\") that cannot be unambiguously mapped to specific course identifiers or structured requirement types within the schema.",
+    "timestamp": "2025-07-03T11:03:47.762Z"
+  },
+  {
+    "department": "CHIN",
+    "number": "181",
+    "reason": "Ambiguity issue: The phrasing \"Corequisite: This course may be taken concurrently with CHIN 180\" is unclear. CHIN 180 is also listed as a prerequisite. The \"may be taken concurrently\" clause typically modifies a prerequisite, but it is presented under a \"Corequisite:\" label, creating ambiguity about whether CHIN 180 is intended as a prerequisite that can be taken concurrently, or as a separate corequisite requirement.",
+    "timestamp": "2025-07-03T11:04:02.086Z"
+  },
+  {
+    "department": "CHIN",
+    "number": "191",
+    "reason": "Ambiguity issue: - The prerequisite includes subjective language (\"near native speaking ability\", \"limited knowledge of written Chinese\") that is not clearly definable or programmatically verifiable, making its representation ambiguous even though the text can be stored as a note.",
+    "timestamp": "2025-07-03T11:04:10.897Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "235",
+    "reason": "Ambiguity issue: The schema's `RequirementCreditCount` type does not support a `minGrade` parameter, making it impossible to represent the requirement for \"Six CMNS units with a minimum grade of C-\".",
+    "timestamp": "2025-07-03T11:04:54.362Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "304W",
+    "reason": "Ambiguity issue: - The schema does not support specifying a minimum grade for a `creditCount` requirement (e.g., \"17 CMNS units with a minimum grade of C-\"). The `minGrade` property is only available for `RequirementCourse` and `RequirementCourseCount`, not `RequirementCreditCount`.",
+    "timestamp": "2025-07-03T11:04:58.963Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "311",
+    "reason": "Ambiguity issue: - The schema does not support specifying a minimum grade for credit count requirements (e.g., \"17 CMNS units with a minimum grade of C-\").",
+    "timestamp": "2025-07-03T11:05:02.265Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "424",
+    "reason": "Ambiguity issue: - The prerequisite \"26 CMNS units with a minimum grade of C-\" cannot be represented because the `creditCount` schema type does not support a `minGrade` parameter. The `courseCount` type supports `minGrade`, but the requirement specifies \"units\" not \"courses\".",
+    "timestamp": "2025-07-03T11:05:06.873Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "426",
+    "reason": "Ambiguity issue: - The schema does not support specifying a minimum grade for `creditCount` requirements. The prerequisite \"26 CMNS units with a minimum grade of C-\" cannot be unambiguously represented.",
+    "timestamp": "2025-07-03T11:05:10.875Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "431",
+    "reason": "Ambiguity issue: - The schema does not support specifying a minimum grade for a `creditCount` requirement (e.g., \"26 CMNS units with a minimum grade of C-\"). The `minGrade` property is available for `courseCount` (number of courses), but not for `creditCount` (number of units).",
+    "timestamp": "2025-07-03T11:05:19.689Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "432",
+    "reason": "Ambiguity issue: - The `RequirementCreditCount` schema does not support a `minGrade` field, making the prerequisite \"26 CMNS units with a minimum grade of C-\" unrepresentable.",
+    "timestamp": "2025-07-03T11:05:24.111Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "440",
+    "reason": "Ambiguity issue: - The prerequisite \"26 CMNS units with a minimum grade of C-\" cannot be represented as the `RequirementCreditCount` schema does not support a `minGrade` field. The `minGrade` field is only available for `RequirementCourse` and `RequirementCourseCount`, not for a total number of units.",
+    "timestamp": "2025-07-03T11:05:32.905Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "443",
+    "reason": "Ambiguity issue: - The schema does not support specifying a minimum grade for a `creditCount` requirement (e.g., \"26 CMNS units with a minimum grade of C-\"). The `minGrade` field is only available for `RequirementCourse` and `RequirementCourseCount`, which refer to specific courses or counts of courses, not total units.",
+    "timestamp": "2025-07-03T11:05:38.809Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "452",
+    "reason": "Ambiguity issue: - The schema does not support specifying a minimum grade for `creditCount` requirements. The prerequisite \"26 CMNS units with a minimum grade of C-\" cannot be unambiguously represented as `RequirementCreditCount` does not have a `minGrade` field, and interpreting \"units\" as \"courses\" would be an assumption not directly supported by the text.",
+    "timestamp": "2025-07-03T11:05:49.265Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "453",
+    "reason": "Ambiguity issue: - The schema does not support applying a minimum grade to a credit count requirement. The phrase \"26 CMNS units with a minimum grade of C-\" implies that the courses contributing to the 26 CMNS credits must meet a minimum grade, but the `creditCount` type in the schema does not have a `minGrade` field.",
+    "timestamp": "2025-07-03T11:05:58.704Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "848",
+    "reason": "Ambiguity issue: - The schema does not support specifying temporal conditions (like semesters or dates) for credit conflicts. The note mentions credit for CMNS 858 obtained in \"Spring 2014 & Spring 2015\", which cannot be fully captured by the `ConflictEquivalentCourse` type.",
+    "timestamp": "2025-07-03T11:06:13.959Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "371",
+    "reason": "Ambiguity issue: - The phrase \"MATH 151 (MATH 150)\" within the substitution rule creates ambiguity. It is unclear whether the substitution of \"MATH 154 or MATH 157 with a grade of at least B+\" applies only to MATH 151, or if it also applies to MATH 150. This ambiguity in the source text prevents unambiguous representation.",
+    "timestamp": "2025-07-03T11:08:25.686Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "464",
+    "reason": "Ambiguity issue: - The schema does not provide structured fields to represent date ranges or \"or equivalent\" clauses within credit conflicts.",
+    "timestamp": "2025-07-03T11:09:22.568Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "466",
+    "reason": "Ambiguity issue: - The phrasing \"with a minimum grade of C- or permission of the instructor\" is ambiguous. It is unclear whether the \"permission of the instructor\" applies to each prerequisite course individually or to the entire set of prerequisite courses. The schema's `RequirementPermission` type only has a generic `note` field and lacks the ability to specify which course the permission applies to, making it difficult to unambiguously represent the interpretation where permission is course-specific.",
+    "timestamp": "2025-07-03T11:09:38.159Z"
+  },
+  {
+    "department": "CMPT",
+    "number": "626",
+    "reason": "Ambiguity issue: - The schema does not support specifying course levels like \"700-level or higher\" for `creditCount` requirements. The `level` property only accepts '1XX', '2XX', '3XX', '4XX', 'LD', or 'UD'.",
+    "timestamp": "2025-07-03T11:09:41.338Z"
+  },
+  {
+    "department": "CRIM",
+    "number": "320",
+    "reason": "Ambiguity issue: - The phrase \"CRIM 320 may be taken concurrently with CRIM 321\" is ambiguous. It does not clearly define CRIM 321 as a prerequisite or corequisite for CRIM 320, and the phrasing is inverted relative to the schema's `canBeTakenConcurrently` property, which applies to the prerequisite course itself, not the course it is taken concurrently with.",
+    "timestamp": "2025-07-03T11:11:14.300Z"
+  },
+  {
+    "department": "CRIM",
+    "number": "344",
+    "reason": "Ambiguity issue: - The schema does not support specifying the dates or semesters during which a conflicting course was taken, which is present in the notes for CRIM 416 and CRIM 414.",
+    "timestamp": "2025-07-03T11:11:38.385Z"
+  },
+  {
+    "department": "CRIM",
+    "number": "402",
+    "reason": "Ambiguity issue: - The schema does not support specifying temporal conditions (e.g., specific terms or years) for credit conflicts with courses. The note mentions a conflict with CRIM 416 specifically for credit earned in \"summer 2000 or 2001\", which cannot be fully captured by the `ConflictEquivalentCourse` type.",
+    "timestamp": "2025-07-03T11:11:59.056Z"
+  },
+  {
+    "department": "CRIM",
+    "number": "405",
+    "reason": "Ambiguity issue: - The schema does not support specifying the exact terms (Spring 2016, Fall 2017, Fall 2021) for which the credit conflict with CRIM 313 applies.",
+    "timestamp": "2025-07-03T11:12:03.000Z"
+  },
+  {
+    "department": "CRIM",
+    "number": "406",
+    "reason": "Ambiguity issue: - The schema does not support specifying the terms (e.g., Fall 2017, Spring 2018) during which previously taken courses (CRIM 416, CRIM 319) would cause a credit conflict.",
+    "timestamp": "2025-07-03T11:12:07.450Z"
+  },
+  {
+    "department": "CRIM",
+    "number": "459",
+    "reason": "Ambiguity issue: - The `credit_conflicts` schema does not support specifying the term (e.g., \"Spring 2009\", \"Fall 2009\") for which a credit conflict applies. The note mentions specific terms for the conflicting courses (CRIM 416 and CRIM 313), making the representation of this part of the requirement incomplete or ambiguous within the schema.",
+    "timestamp": "2025-07-03T11:12:26.215Z"
+  },
+  {
+    "department": "CRIM",
+    "number": "470",
+    "reason": "Ambiguity issue: - The phrase \"Reserved for criminology honours and majors\" refers to program eligibility. The schema's `RequirementProgram` type expects specific program names (e.g., \"Criminology Honours\", \"Criminology Major\"), which are not explicitly provided in the course description. This lack of specific program identifiers makes the mapping to the `RequirementProgram` type ambiguous.",
+    "timestamp": "2025-07-03T11:12:37.689Z"
+  },
+  {
+    "department": "CRIM",
+    "number": "480",
+    "reason": "Ambiguity issue: - The prerequisite \"CRlM 380.\" contains a typo in the department name (\"CRlM\" instead of \"CRIM\"), making it impossible to unambiguously parse into the `RequirementCourse` schema without making an assumption.",
+    "timestamp": "2025-07-03T11:12:44.625Z"
+  },
+  {
+    "department": "EASC",
+    "number": "305",
+    "reason": "Ambiguity issue: - The `level` property in `RequirementCreditCount` does not support ranges or combinations of levels (e.g., \"200-division or higher\"), making it impossible to unambiguously represent this part of the prerequisite.",
+    "timestamp": "2025-07-03T11:14:32.977Z"
+  },
+  {
+    "department": "EASC",
+    "number": "310W",
+    "reason": "Ambiguity issue: - The phrase \"All with a grade of C- or better\" is ambiguous. It is unclear whether this minimum grade requirement applies only to the stated prerequisite (EASC 210) or to both the prerequisite (EASC 210) and the recommended prerequisite (BISC 102). This lack of clarity in the source text prevents unambiguous representation.",
+    "timestamp": "2025-07-03T11:14:41.808Z"
+  },
+  {
+    "department": "EASC",
+    "number": "312",
+    "reason": "Ambiguity issue: - The phrase \"All with a grade of C- or better\" is ambiguous regarding its scope. It is unclear whether it applies only to the stated prerequisites (EASC 201 and 204) or to both the prerequisites and the recommended courses (EASC 206 and 302). This lack of clarity in the source text prevents unambiguous representation.",
+    "timestamp": "2025-07-03T11:14:53.681Z"
+  },
+  {
+    "department": "EASC",
+    "number": "315W",
+    "reason": "Ambiguity issue: - The requirement \"Corequisite or prerequisite: EASC 304\" cannot be unambiguously represented as the schema does not support a requirement that can fulfill either a prerequisite or a corequisite role. The schema requires a definitive placement in either the `prerequisite` or `corequisite` field.",
+    "timestamp": "2025-07-03T11:14:59.397Z"
+  },
+  {
+    "department": "EASC",
+    "number": "415",
+    "reason": "Ambiguity issue: - The schema's `ConflictEquivalentCourse` type does not support specifying the term or year of a conflicting course, making the restriction \"in Spring 2016 only\" unrepresentable in a structured manner.",
+    "timestamp": "2025-07-03T11:15:11.582Z"
+  },
+  {
+    "department": "EASC",
+    "number": "498",
+    "reason": "Ambiguity issue: - The phrase \"300-level program requirements\" is too vague. The schema requires specific course numbers, credit counts, course counts, or program names, but \"program requirements\" does not provide this specificity. The term \"normally\" also indicates a soft requirement that the schema does not explicitly support for this type of prerequisite.",
+    "timestamp": "2025-07-03T11:15:17.914Z"
+  },
+  {
+    "department": "EASC",
+    "number": "626",
+    "reason": "Ambiguity issue: - The schema does not support representing subject areas like \"geochemistry\" or \"introductory chemistry\" directly. It requires specific course codes or department/level combinations, which are not provided in the requirement text. The phrasing \"undergraduate courses\" also lacks a specific count or definition within the schema's capabilities for these subject areas.",
+    "timestamp": "2025-07-03T11:15:31.583Z"
+  },
+  {
+    "department": "ECON",
+    "number": "220W",
+    "reason": "Ambiguity issue: - The schema does not support specifying an upper limit on the number of units (e.g., \"no more than 80 units\").",
+    "timestamp": "2025-07-03T11:15:34.102Z"
+  },
+  {
+    "department": "ECON",
+    "number": "427W",
+    "reason": "Ambiguity issue: - The schema's `RequirementCourse` interface defines `department` as a single string, which does not support specifying alternative departments (e.g., \"ECON or BUEC\") for a given course number. The prerequisite \"ECON (or BUEC) 333\" cannot be unambiguously represented.",
+    "timestamp": "2025-07-03T11:16:55.417Z"
+  },
+  {
+    "department": "ECON",
+    "number": "804",
+    "reason": "Ambiguity issue: - The phrase \"ECON 802 and 803 or equivalent\" is ambiguous. It could be interpreted as \"(ECON 802 and 803) or equivalent\" or \"ECON 802 or equivalent AND ECON 803 or equivalent\". The schema does not support applying an \"or equivalent\" condition to a group of courses required together (e.g., an ALL_OF group), making the first, and often intended, interpretation unrepresentable.",
+    "timestamp": "2025-07-03T11:18:05.593Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "315",
+    "reason": "Ambiguity issue: - The phrase \"may be required\" introduces a level of conditionality or uncertainty that is not explicitly supported by the schema's requirement types. The schema cannot distinguish between a definite requirement and a potential one, leading to ambiguity in how the criminal record check condition would be interpreted by a parsing system.",
+    "timestamp": "2025-07-03T11:18:45.210Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "380",
+    "reason": "Ambiguity issue: - The phrase \"FREN 301 or 304 or 370 or equivalent\" is ambiguous. It is unclear whether the \"or equivalent\" applies to all preceding courses (FREN 301, 304, and 370) or only to the last course listed (FREN 370). The schema can represent both interpretations, but the source text does not provide enough clarity to unambiguously select one.",
+    "timestamp": "2025-07-03T11:24:07.735Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "411",
+    "reason": "Ambiguity issue: - The phrase \"appropriate math background\" in the corequisite is not specific enough to be unambiguously represented by the provided schema. The schema lacks a type for qualitative assessments of academic background that are not tied to specific courses, credit counts, or GPAs.",
+    "timestamp": "2025-07-03T11:24:13.645Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "424",
+    "reason": "Ambiguity issue: - The schema does not support a requirement that can be classified as *either* a prerequisite *or* a corequisite. The phrase \"Prerequisite or corequisite: EDUC 422\" is ambiguous because the schema requires a definitive classification for each requirement type, and cannot represent this \"OR\" relationship between requirement types.",
+    "timestamp": "2025-07-03T11:24:19.803Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "480",
+    "reason": "Ambiguity issue: - The prerequisite statement \"EDUC 401/402 or corequisite EDUC 403\" is ambiguous. It attempts to create a logical OR condition between a prerequisite (EDUC 401 or EDUC 402) and a corequisite (EDUC 403). The schema defines separate fields for `prerequisite` and `corequisite` and does not support combining them with a logical OR operator, as this implies a choice between satisfying a prerequisite condition or a corequisite condition, which is not representable.",
+    "timestamp": "2025-07-03T11:25:31.014Z"
+  },
+  {
+    "department": "HIST",
+    "number": "243",
+    "reason": "Ambiguity issue: - The schema's `ConflictEquivalentCourse` type does not support specifying special topic designations (like \"STT\") as part of the course identifier, which is necessary for unambiguous representation of the credit conflict.",
+    "timestamp": "2025-07-03T11:26:03.239Z"
+  },
+  {
+    "department": "HIST",
+    "number": "330W",
+    "reason": "Ambiguity issue: - The credit conflict note \"Students may not take selected topics within HIST 330W for further credit if duplicating content of another history course and vice versa\" cannot be unambiguously represented. The schema's `credit_conflicts` with `ConflictEquivalentCourse` requires specific course department and number, but the note refers to \"selected topics within HIST 330W\" and \"another history course\" without specifying them, which the schema cannot parse into structured data.",
+    "timestamp": "2025-07-03T11:26:11.572Z"
+  },
+  {
+    "department": "HIST",
+    "number": "334",
+    "reason": "Ambiguity issue: - The requirement \"45 units, including six units of lower division history\" cannot be unambiguously represented. The schema can represent \"45 units\" and \"six units of lower division history\" as separate requirements, but combining them with an 'ALL_OF' logic would imply needing 45 units *and* 6 units of lower division history, which could be interpreted as needing 51 units or simply two separate conditions without the explicit \"within\" relationship. The schema lacks a direct way to represent a total credit requirement with a specified composition of those credits.",
+    "timestamp": "2025-07-03T11:26:19.773Z"
+  },
+  {
+    "department": "HIST",
+    "number": "341",
+    "reason": "Ambiguity issue: - The schema does not provide a structured way to represent courses taken under specific topics or titles (e.g., \"GSWS 321 under the topics \"Women\", or \"On Women\"\"). While this information can be captured using the generic `RequirementOther` type with a free-text note, it is not a clear and unambiguous representation within the structured course types like `RequirementCourse` or `ConflictEquivalentCourse`.",
+    "timestamp": "2025-07-03T11:26:30.706Z"
+  },
+  {
+    "department": "HIST",
+    "number": "371",
+    "reason": "Ambiguity issue: - The requirement \"at least one course on modern Japan\" cannot be unambiguously represented as the schema lacks a field for thematic or subject-area requirements, only department or course level.",
+    "timestamp": "2025-07-03T11:26:42.363Z"
+  },
+  {
+    "department": "HIST",
+    "number": "401",
+    "reason": "Ambiguity issue: - The schema does not support representing a requirement for a total number of units that must include a specific number of units from a particular department and level. The phrase \"45 units, including nine units of lower division history\" implies a compositional constraint that cannot be unambiguously modeled by combining separate `creditCount` requirements.",
+    "timestamp": "2025-07-03T11:27:49.349Z"
+  },
+  {
+    "department": "HIST",
+    "number": "419W",
+    "reason": "Ambiguity issue: - The schema does not support representing a requirement for a total number of units that must include a specific number of units from a particular department and level. The phrase \"45 units including nine units of lower division history\" cannot be unambiguously modeled as a single requirement.",
+    "timestamp": "2025-07-03T11:28:08.463Z"
+  },
+  {
+    "department": "HIST",
+    "number": "424",
+    "reason": "Ambiguity issue: - The schema does not support representing a requirement for a total number of units that must include a specific number of units from a particular department or level (e.g., \"45 units including nine units of lower division history\"). The `creditCount` type does not allow for nested or compositional credit requirements, making it impossible to unambiguously represent this condition.",
+    "timestamp": "2025-07-03T11:28:39.855Z"
+  },
+  {
+    "department": "HIST",
+    "number": "428",
+    "reason": "Ambiguity issue: - The requirement \"45 units including nine units of lower division history\" cannot be unambiguously represented. The schema's `creditCount` type allows specifying a total number of credits or credits within a specific department/level, but it does not support expressing a compositional requirement where a portion of a total credit count must meet specific criteria (e.g., \"45 units total, where 9 of those units must be lower division history\"). Representing these as two separate `creditCount` requirements combined with `ALL_OF` would imply two independent conditions rather than a subset relationship.",
+    "timestamp": "2025-07-03T11:29:06.140Z"
+  },
+  {
+    "department": "HIST",
+    "number": "430",
+    "reason": "Ambiguity issue: - The schema does not support representing a total credit count that must include a specific number of credits from a particular department or level. The phrase \"45 units, including nine units of lower division history\" cannot be unambiguously mapped to the `creditCount` type, which only allows specifying a total number of credits, optionally filtered by department/level, but not as a nested subset.",
+    "timestamp": "2025-07-03T11:29:19.174Z"
+  },
+  {
+    "department": "HIST",
+    "number": "435",
+    "reason": "Ambiguity issue: - The schema does not support representing a requirement for a total number of units that must include a specific number of units from a particular department and level (e.g., \"45 units including nine units of lower division history\").",
+    "timestamp": "2025-07-03T11:29:26.128Z"
+  },
+  {
+    "department": "HIST",
+    "number": "476",
+    "reason": "Ambiguity issue: - The credit conflict note specifies \"Students with credit for HS/HIST 307 under the topic \"Glory to Debt\"\". The schema's `ConflictEquivalentCourse` interface does not support specifying a specific topic or title for a course conflict, only the department and number. This part of the requirement cannot be unambiguously represented.",
+    "timestamp": "2025-07-03T11:33:58.411Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "220",
+    "reason": "Ambiguity issue: - The temporal condition on the credit conflict (HSCI 210 taken in Spring 2022 and Fall 2022) cannot be represented structurally within the `conflict_course` type, as it lacks fields for specific terms. This requires using the generic `conflict_other` type with a note, meaning the specific condition is not clearly represented in a structured manner.",
+    "timestamp": "2025-07-03T11:34:55.009Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "310",
+    "reason": "Ambiguity issue: - The credit conflict notes contain qualifiers (\"under this topic\", specific dates) for the conflicting courses (HSCI 372, HSCI 471) that cannot be clearly and unambiguously represented using the structured fields (`department`, `number`, `title`) of the `ConflictEquivalentCourse` schema. The `title` field is intended for the course title, not for such specific contextual qualifiers. While the `ConflictOther` type could capture the full text, it would not represent the conflict as a structured course identifier.",
+    "timestamp": "2025-07-03T11:35:21.892Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "312",
+    "reason": "Ambiguity issue: - The prerequisite \"60 units, including either HSCI 130 or BPK 140, with a minimum grade of C-.\" contains unclear language. It is ambiguous whether the \"minimum grade of C-\" applies to the 60 units of coursework or to the specific courses (HSCI 130 or BPK 140). While the schema can represent both interpretations, the original language does not unambiguously specify which is intended. The credit conflict can be represented using `conflict_other` with a note, but the prerequisite ambiguity prevents a clear and unambiguous representation of all requirements.",
+    "timestamp": "2025-07-03T11:35:40.175Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "336",
+    "reason": "Ambiguity issue: - The credit conflict specifies conditions (\"under this topic in Fall 2021 and Spring 2022\") that cannot be structured within the `ConflictEquivalentCourse` type, making the representation of this specific condition ambiguous.",
+    "timestamp": "2025-07-03T11:36:16.343Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "340",
+    "reason": "Ambiguity issue: - The schema's `canBeTakenConcurrently` property on `RequirementCourseCount` is a boolean flag that applies to the entire requirement. It does not support specifying that only a subset (e.g., \"one of which\") of the counted courses can be taken concurrently, while others cannot. This nuance cannot be unambiguously represented.",
+    "timestamp": "2025-07-03T11:36:20.687Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "345",
+    "reason": "Ambiguity issue: - The schema does not support specifying years for courses listed in credit conflicts, which are present in the provided notes (e.g., \"HSCI 471 (2007)\").",
+    "timestamp": "2025-07-03T11:36:28.318Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "418",
+    "reason": "Ambiguity issue: - The schema lacks structured fields to represent the specific conditions (dates, topic) associated with the credit conflict for HSCI 471. The `conflict_course` type is too simple, and while `conflict_other` can capture the full text, it sacrifices structured data for the conflict itself.",
+    "timestamp": "2025-07-03T11:37:28.419Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "461",
+    "reason": "Ambiguity issue: - The schema does not support specifying temporal conditions (e.g., specific terms like Fall 2019, Fall 2017, Fall 2010) or topical conditions (\"under this topic\") for credit conflicts. While the conflicting course (HSCI 471) can be identified, the specific circumstances that trigger the conflict are not representable, leading to an incomplete and potentially ambiguous representation of the requirement.",
+    "timestamp": "2025-07-03T11:38:39.347Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "477",
+    "reason": "Ambiguity issue: - The phrasing \"with a minimum grade or C- or permission of the instructor\" is ambiguous. It could be interpreted as requiring one of the listed courses with a minimum grade of C-, or alternatively, requiring permission of the instructor (representable by the schema). However, it could also be interpreted as requiring any of the listed courses AND either a minimum grade of C- OR permission of the instructor. The latter interpretation, specifically the \"AND permission\" part, cannot be clearly represented by the schema, as `minGrade` is an attribute of `RequirementCourse` and cannot be combined with `RequirementPermission` using an `AND` logic in a way that allows for an `OR` between the grade and permission conditions.",
+    "timestamp": "2025-07-03T11:39:09.068Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "483",
+    "reason": "Ambiguity issue: - The phrase \"with a minimum grade of C-\" at the end of the prerequisite statement is ambiguous regarding its scope. It is unclear whether it applies only to the specific courses (HSCI 204, HSCI 230/330) or also to the \"90 units\" requirement. While the schema allows `minGrade` to be applied to `RequirementCourse` (for the specific courses) and also to `RequirementCreditCount` (for the 90 units), the latter has an unclear meaning. This ambiguity in the source text prevents a single, clear, and unambiguous representation.",
+    "timestamp": "2025-07-03T11:39:38.688Z"
+  },
+  {
+    "department": "HUM",
+    "number": "476",
+    "reason": "Ambiguity issue: - Missing schema support for course topic qualifiers in credit conflicts.",
+    "timestamp": "2025-07-03T11:40:38.395Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "319W",
+    "reason": "Ambiguity issue: - The schema does not support specifying that a subset of units within a `creditCount` requirement must meet a specific level criterion, as implied by the phrase \"one of which\". The requirement \"nine HSCI units with a minimum grade of C-, one of which must be a 200-division course\" cannot be unambiguously represented because the schema cannot enforce that the 200-division course is one of the nine HSCI units counted towards the total.",
+    "timestamp": "2025-07-03T11:41:54.780Z"
+  },
+  {
+    "department": "IAT",
+    "number": "167",
+    "reason": "Ambiguity issue: The schema does not support specifying course ranges or levels (e.g., \"200-division or higher\") for credit conflicts, only specific course numbers.",
+    "timestamp": "2025-07-03T11:42:30.304Z"
+  },
+  {
+    "department": "IAT",
+    "number": "387",
+    "reason": "Ambiguity issue: - The requirement \"No more than six units of Directed Studies may be taken\" is a general degree limitation or rule about cumulative course credits, not a prerequisite for this specific course. The provided schema is designed for prerequisites and corequisites that must be met *before* or *during* enrollment in the course, and it lacks a specific type to represent such cumulative course limits within the prerequisite/corequisite structure.",
+    "timestamp": "2025-07-03T11:43:40.008Z"
+  },
+  {
+    "department": "IAT",
+    "number": "431",
+    "reason": "Ambiguity issue: - The phrase \"with a minimum grade of C-\" applied to \"60 units\" is typically interpreted as a GPA requirement. The schema provides `minCGPA` which expects a numerical value, not a letter grade like \"C-\". While `minGrade` is available on `RequirementCreditCount`, its precise meaning (e.g., GPA vs. minimum grade in each course) is not explicitly defined, leading to ambiguity in clearly representing a GPA requirement using a letter grade.",
+    "timestamp": "2025-07-03T11:44:16.438Z"
+  },
+  {
+    "department": "IAT",
+    "number": "438",
+    "reason": "Ambiguity issue: - The phrase \"with a minimum grade of C-\" is ambiguous. It is unclear whether the minimum grade applies only to the specific courses \"IAT 309W\" and \"IAT 333\", or if it applies to all coursework contributing to the \"75 units\" requirement. The schema supports applying a minimum grade to both individual courses and to credit counts, allowing for multiple interpretations of this requirement.",
+    "timestamp": "2025-07-03T11:44:28.591Z"
+  },
+  {
+    "department": "IAT",
+    "number": "459",
+    "reason": "Ambiguity issue: - The phrase \"with a minimum grade of C-.\" in the prerequisite is ambiguous. It is unclear whether this minimum grade applies specifically to the courses IAT 339 and IAT 359, or if it applies to all 48 units of coursework required. While the schema can represent both interpretations, the source text does not provide sufficient clarity to unambiguously determine the intended meaning.",
+    "timestamp": "2025-07-03T11:44:42.507Z"
+  },
+  {
+    "department": "IAT",
+    "number": "487",
+    "reason": "Ambiguity issue: - The schema does not support representing maximum limits for credit counts or course counts as prerequisites. The requirement \"No more than six units of Directed Studies may be taken\" is a maximum limit on total accumulation, not a minimum requirement, and thus cannot be structured within the existing `creditCount` or `courseCount` types.",
+    "timestamp": "2025-07-03T11:44:51.072Z"
+  },
+  {
+    "department": "IAT",
+    "number": "499",
+    "reason": "Ambiguity issue: - The requirement includes qualitative criteria (\"strongest student project ideas\") and an unspecified CGPA factor (\"based on CGPA\") which cannot be unambiguously represented by the schema. The mention of competitive enrollment and maximum students describes selection rather than eligibility prerequisites.",
+    "timestamp": "2025-07-03T11:44:58.540Z"
+  },
+  {
+    "department": "INDG",
+    "number": "301",
+    "reason": "Ambiguity issue: - The prerequisite \"One of INDG (or FNST) 101 or 201W and 111\" is ambiguous. The phrasing does not clearly specify whether the \"and 111\" requirement applies to the entire set of options (INDG 101, FNST 101, INDG 201W, FNST 201W) or if it is tied to specific course options, leading to multiple possible logical interpretations that cannot be unambiguously resolved by the schema.",
+    "timestamp": "2025-07-03T11:45:37.959Z"
+  },
+  {
+    "department": "INLG",
+    "number": "233",
+    "reason": "Ambiguity issue: - The credit conflict note \"Students who have completed FNLG 331 for a designated language may not complete this course for further credit for the same designated language\" introduces conditional logic (based on \"designated language\") that cannot be unambiguously represented using the `ConflictEquivalentCourse` type, as it lacks fields to specify such conditions. While `ConflictOther` could capture the text, it sacrifices the structured representation of a course conflict.",
+    "timestamp": "2025-07-03T11:51:54.103Z"
+  },
+  {
+    "department": "INLG",
+    "number": "234",
+    "reason": "Ambiguity issue: - The credit conflict note \"Students with credit for FNLG 332 may not take this course for further credit for the same designated language\" includes a condition (\"for the same designated language\") that cannot be unambiguously represented within the `conflict_course` type, as there is no field to specify such conditions. While it could be captured as a `conflict_other` note, this would lose the structured course conflict information.",
+    "timestamp": "2025-07-03T11:51:59.919Z"
+  },
+  {
+    "department": "INLG",
+    "number": "258",
+    "reason": "Ambiguity issue: - The requirement \"Students who have completed LANG 248 for a designated language may not complete this course for further credit for the same designated language\" cannot be fully represented. The schema's `credit_conflicts` type for courses (`ConflictEquivalentCourse`) does not support conditions related to the *purpose* or *designated language* for which a course was taken, making this specific condition unrepresentable.",
+    "timestamp": "2025-07-03T11:52:05.770Z"
+  },
+  {
+    "department": "INLG",
+    "number": "334",
+    "reason": "Ambiguity issue: Requirements cannot be clearly represented",
+    "timestamp": "2025-07-03T11:53:58.631Z"
+  },
+  {
+    "department": "INLG",
+    "number": "433",
+    "reason": "Ambiguity issue: - The credit conflict note \"Students who have completed FNLG 433 (or LING 433) for a designated language may not complete this course for further credit for the same designated language\" contains a condition (\"for a designated language\") that cannot be explicitly modeled within the `ConflictEquivalentCourse` schema type. The `ConflictEquivalentCourse` schema only allows for department, number, and title, and does not provide a mechanism to capture such conditional relationships based on a specific language context. While the entire note could be placed in a `ConflictOther` type, this would not be a structured representation of the specific course conflict with its associated condition, thus failing to represent it clearly and unambiguously in a structured manner as intended by the schema's design for course conflicts.",
+    "timestamp": "2025-07-03T11:54:31.969Z"
+  },
+  {
+    "department": "INLG",
+    "number": "434",
+    "reason": "Ambiguity issue: - The `credit_conflicts` schema does not support logical operators (like OR) between multiple conflicting courses. The requirement states that completion of \"FNLG 434 (or LING 434)\" prevents further credit, implying an OR relationship, which cannot be unambiguously represented by listing individual courses in the `credit_conflicts` array.",
+    "timestamp": "2025-07-03T11:54:38.610Z"
+  },
+  {
+    "department": "IS",
+    "number": "305",
+    "reason": "Ambiguity issue: - The credit conflict note \"Students who have taken POL 339 or IS 309 with this topic may not take this course for further credit\" contains a condition (\"with this topic\") that cannot be represented within the `ConflictEquivalentCourse` schema type, which only allows for specifying the department and number of the conflicting course. While the information could be captured as a general note using `ConflictOther`, the specific conditional nature of the conflict is not clearly and unambiguously representable in a structured format.",
+    "timestamp": "2025-07-03T11:55:05.205Z"
+  },
+  {
+    "department": "IS",
+    "number": "497",
+    "reason": "Ambiguity issue: - The schema does not support representing conditional requirements. The phrase \"Students must successfully complete a Criminal Record Check, if required\" indicates that the criminal record check requirement is conditional. While the schema can represent the existence of a criminal record check requirement (e.g., using `RequirementPermission` with a note), it cannot capture the \"if required\" conditionality, making the full requirement's applicability ambiguous.",
+    "timestamp": "2025-07-03T11:57:36.370Z"
   }
 ]
