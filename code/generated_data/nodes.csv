@@ -253,7 +253,7 @@ BUS 320,Financial Accounting:  Assets,BUS,1
 BUS 321,Financial Accounting: Equities,BUS,1
 BUS 322,Intermediate Managerial Accounting,BUS,1
 BUS 331,Corporate Taxation,BUS,1
-BUS 330,BUS 330,BUS,1
+BUS 330,Income Taxation for Individuals,BUS,1
 BUS 329,BUS 329,BUS,1
 BUS 336,Data Analytics and Visualization,BUS,1
 BUS 232,BUS 232,BUS,1
@@ -2172,3 +2172,6 @@ URB 697,Research Project,URB,1
 URB 696,URB 696,URB,1
 WL 301W,Writing and Research,WL,1
 WL 404W,Literature and Translation,WL,1
+ARCH 348,Archaeological Conservation,ARCH,1
+ARCH 375,From Soup to Nuts: The Archaeology of Food,ARCH,1
+ARCH 377,Historical Archaeology,ARCH,1

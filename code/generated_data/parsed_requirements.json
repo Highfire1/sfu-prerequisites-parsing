@@ -54385,5 +54385,148 @@
     "original_corequisites": "",
     "original_notes": "",
     "timestamp": "2025-07-03T12:34:20.844Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "348",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 6,
+          "department": "Archaeology"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "201"
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Archaeological Conservation",
+    "original_prerequisites": "Six units in Archaeology, including ARCH 101 or ARCH 201.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T12:38:35.640Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "375",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "201"
+            }
+          ]
+        },
+        {
+          "type": "creditCount",
+          "credits": 45
+        }
+      ]
+    },
+    "original_title": "From Soup to Nuts: The Archaeology of Food",
+    "original_prerequisites": "ARCH 101, ARCH 201, or 45 units.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T12:38:44.470Z"
+  },
+  {
+    "department": "ARCH",
+    "number": "377",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "ARCH",
+              "number": "201"
+            }
+          ]
+        },
+        {
+          "type": "courseCount",
+          "count": 1,
+          "department": "ARCH",
+          "level": "LD"
+        }
+      ]
+    },
+    "original_title": "Historical Archaeology",
+    "original_prerequisites": "ARCH 101 or ARCH 201, and one lower division ARCH course.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-03T12:38:52.071Z"
+  },
+  {
+    "department": "BUS",
+    "number": "330",
+    "schema_version": "SFUv1.1",
+    "corequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "BUS",
+          "number": "320"
+        },
+        {
+          "type": "creditCount",
+          "credits": 45
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "BUS",
+        "number": "329"
+      }
+    ],
+    "original_title": "Income Taxation for Individuals",
+    "original_prerequisites": "",
+    "original_corequisites": "BUS 320, 45 units.",
+    "original_notes": "Students who have taken BUS 329 first may not then take this course for further credit.",
+    "timestamp": "2025-07-03T12:39:10.706Z"
   }
 ]

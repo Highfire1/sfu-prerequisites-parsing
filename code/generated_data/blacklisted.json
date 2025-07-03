@@ -5172,18 +5172,6 @@
     "timestamp": "2025-07-03T12:26:15.980Z"
   },
   {
-    "department": "RISK",
-    "number": "436",
-    "reason": "Ambiguity issue: - The prerequisite \"Job Practicum II from another department\" cannot be unambiguously represented. The schema's `RequirementCourse` type requires a specific `department` and `number`. \"Job Practicum II\" appears to be a course title, which the schema does not support. Furthermore, the phrase \"from another department\" implies flexibility in the department, which the schema does not support for specifying a course requirement (it doesn't allow for \"any department\" or \"any department except X\").",
-    "timestamp": "2025-07-03T12:26:25.405Z"
-  },
-  {
-    "department": "RISK",
-    "number": "438",
-    "reason": "Ambiguity issue: - The phrase \"Job Practicum IV from another department\" cannot be unambiguously represented. \"Job Practicum IV\" appears to be a course title, not a specific course number, and the `RequirementCourse` schema type requires both a specific department and number. Additionally, \"from another department\" implies a variable or unspecified department, which the `RequirementCourse` type does not support.",
-    "timestamp": "2025-07-03T12:26:32.380Z"
-  },
-  {
     "department": "SA",
     "number": "216",
     "reason": "Ambiguity issue: - The schema does not support specifying date ranges or specific terms for credit conflicts.",
@@ -5232,15 +5220,21 @@
     "timestamp": "2025-07-03T12:33:29.193Z"
   },
   {
-    "department": "URB",
-    "number": "702",
-    "reason": "Ambiguity issue: - The prerequisite \"Cooperative Education Practicum I\" is a course name, but the schema's `RequirementCourse` type requires specific `department` and `number` fields, which are not provided in the input. This prevents unambiguous representation.",
-    "timestamp": "2025-07-03T12:33:49.109Z"
-  },
-  {
     "department": "WL",
     "number": "403",
     "reason": "Ambiguity issue: - The term \"humanities\" in the prerequisite \"60 units including two 300-level courses in world literature, English, and/or humanities\" is ambiguous. The schema's `department` field expects specific department codes (e.g., \"HIST\", \"PHIL\", \"ENGL\"). While \"world literature\" and \"English\" can likely be mapped to specific department codes (e.g., \"WL\", \"ENGL\"), \"humanities\" is a broad academic field. The schema does not provide a mechanism to interpret or expand such general categories into a list of specific department codes. Without a predefined mapping for \"humanities\" to specific department codes, this part of the requirement cannot be unambiguously represented by the schema.",
     "timestamp": "2025-07-03T12:34:10.702Z"
+  },
+  {
+    "department": "ACMA",
+    "number": "336",
+    "reason": "Ambiguity issue: - The term 'normally' indicates that the requirement for 45 units and a 2.50 GPA is not strictly enforced, which cannot be unambiguously represented by the schema's structured requirement types (e.g., `creditCount`, `CGPA`) that imply definitive conditions.",
+    "timestamp": "2025-07-03T12:38:26.113Z"
+  },
+  {
+    "department": "BISC",
+    "number": "100",
+    "reason": "Ambiguity issue: The phrase \"succeeding biology courses\" in the notes is too vague and cannot be unambiguously represented by the provided schema, which requires specific course identifiers or clear notes for credit conflicts.",
+    "timestamp": "2025-07-03T12:39:01.705Z"
   }
 ]

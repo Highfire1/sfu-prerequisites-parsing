@@ -669,7 +669,7 @@ const examples: ExampleEntry[] = [
             prerequisite: {
                 type: "courseCount",
                 count: 1,
-                department: "ENGL",
+                department: "English",
                 level: "1XX"
             }
         }
