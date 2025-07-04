@@ -233,6 +233,23 @@ async function main() {
             console.log(`   ... and ${sortedDepts.length - 10} more departments`);
         }
         
+        // Count outgoing links for each node (how many courses each course is a prerequisite for)
+        const outgoingLinkCounts = new Map<string, number>();
+        links.forEach(link => {
+            outgoingLinkCounts.set(link.source, (outgoingLinkCounts.get(link.source) || 0) + 1);
+        });
+        
+        console.log('\n📈 Top 10 Courses (Prerequisite to x courses):');
+        const sortedByLinks = Array.from(outgoingLinkCounts.entries())
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 10);
+        
+        sortedByLinks.forEach(([courseId, linkCount], index) => {
+            const node = nodes.find(n => n.id === courseId);
+            const title = node ? node.title : courseId;
+            console.log(`   ${index + 1}. ${courseId} (${linkCount} courses) - ${title}`);
+        });
+        
     } catch (error) {
         console.error('Error generating links:', error);
         process.exit(1);

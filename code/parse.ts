@@ -158,9 +158,13 @@ Respond with ONLY one of the following:
 1. "CLEAR" - if the requirements can be unambiguously represented with the schema
 2. "AMBIGUOUS" - if there is any language that is unclear, contradictory, or cannot be represented with the schema
 
-If AMBIGUOUS, briefly explain why (missing schema support, contradictory statements, unclear language, etc.).
+If AMBIGUOUS, briefly explain why (missing schema support, contradictory statements, unclear language, etc.). Also, please quote the specific text that causes the ambiguity.
 
 However, please be creative in your analysis and do not just say "ambiguous" for every course. Use the examples provided to determine if the requirements can be clearly represented.
+
+Known data issues:
+- any text that mentions completing a prerequisite during a specific semester is not supported
+- Equivalent courses are not supported
 
 Response:`;
 
@@ -355,6 +359,7 @@ async function validateWithLLM(
 TASK: Compare the original text with the parsed JSON. Are they logically equivalent?
 
 ORIGINAL COURSE INFO:
+Course: ${course.department} ${course.number} - ${course.title}
 Prerequisites: "${course.prerequisites}"
 Corequisites: "${course.corequisites}"
 Notes: "${course.notes}"
@@ -1049,7 +1054,7 @@ async function main(): Promise<void> {
         assert(course, `Course at index ${i} is undefined`);
 
         const courseKey = `${course.department} ${course.number}`;
-        console.log(`\n[${i + 1}/${courses.length}] ${courseKey}`);
+        console.log(`[${i + 1}/${courses.length}] ${courseKey}`);
 
         // Skip if blacklisted
         if (isBlacklisted(course, blacklist)) {
@@ -1075,7 +1080,7 @@ async function main(): Promise<void> {
                 existing.schema_version !== 'SFUv1.1';
 
             if (!shouldReparse) {
-                console.log(`⏭️  Skipping (already up to date).`);
+                // console.log(`⏭️  Skipping (already up to date).`);
                 continue;
             }
 

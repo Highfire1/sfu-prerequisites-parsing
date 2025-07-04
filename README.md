@@ -1,6 +1,6 @@
 # SFU-prerequisites-to-data
 
-Success Progress:  [█████████████████████████████████░░░░░░░░░░░░░░░░░] 66.6%
+Success Progress:  [████████████████████████████████████████░░░░░░░░░░] 80.5%
 
 A project to convert SFU course prerequisites from text to data.
 

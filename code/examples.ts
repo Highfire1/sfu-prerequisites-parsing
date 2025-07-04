@@ -561,15 +561,16 @@ const examples: ExampleEntry[] = [
             }
         }
     },
+    
 
     {
         keyword: "units",
-        example: "Six units in Archaeology",
+        example: "Six units in GSWS or CA.",
         json: {
             prerequisite: {
                 type: "creditCount",
                 credits: 6,
-                department: "Archaeology"
+                department: ["GSWS", "CA"]
             }
         }
     },
@@ -716,6 +717,18 @@ const examples: ExampleEntry[] = [
             prerequisite: {
                 type: "other",
                 note: "Job Practicum IV from another department."
+            }
+        }
+    },
+
+    {
+        keyword: "practicum",
+        example: "Completion of HSCI 351 Co-op Practicum II.",
+        json: {
+            prerequisite: {
+                type: "course",
+                department: "HSCI",
+                number: "351",
             }
         }
     }
