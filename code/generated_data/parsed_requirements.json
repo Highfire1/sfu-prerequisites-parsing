@@ -66247,5 +66247,3922 @@
     "original_corequisites": "",
     "original_notes": "Students with credit for EASC 203 or EASC 310 may not take this course for further credit.",
     "timestamp": "2025-07-04T06:11:47.378Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "424",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 26,
+          "department": "CMNS",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "creditCount",
+              "credits": 60
+            },
+            {
+              "type": "CGPA",
+              "minCGPA": 2
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Colonialism, Culture and Identity",
+    "original_prerequisites": "26 CMNS units with a minimum grade of C- or 60 units with a minimum CGPA of 2.00.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:16:47.614Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "426",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 26,
+          "department": "CMNS",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "creditCount",
+              "credits": 60
+            },
+            {
+              "type": "CGPA",
+              "minCGPA": 2
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Video Design for Social Communication",
+    "original_prerequisites": "26 CMNS units with a minimum grade of C- or 60 units with a minimum CGPA of 2.00.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:17:14.726Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "431",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 26,
+          "department": "CMNS",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "creditCount",
+              "credits": 60
+            },
+            {
+              "type": "CGPA",
+              "minCGPA": 2
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "News Research and Analysis",
+    "original_prerequisites": "26 CMNS units with a minimum grade of C- or 60 units with a minimum CGPA of 2.00.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:17:32.445Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "443",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 26,
+          "department": "CMNS",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "creditCount",
+              "credits": 60
+            },
+            {
+              "type": "CGPA",
+              "minCGPA": 2
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Asian Media and Popular Culture",
+    "original_prerequisites": "26 CMNS units with a minimum grade of C- or 60 units with a minimum CGPA of 2.00.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:18:12.396Z"
+  },
+  {
+    "department": "CMNS",
+    "number": "453",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 26,
+          "department": "CMNS",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "creditCount",
+              "credits": 60
+            },
+            {
+              "type": "CGPA",
+              "minCGPA": 2
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Advanced Topics in Technology and Society",
+    "original_prerequisites": "26 CMNS units with a minimum grade of C- or 60 units with a minimum CGPA of 2.00.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:18:28.048Z"
+  },
+  {
+    "department": "ECON",
+    "number": "222",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "group",
+              "logic": "ALL_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "ECON",
+                  "number": "103",
+                  "minGrade": "C-"
+                },
+                {
+                  "type": "course",
+                  "department": "MATH",
+                  "number": "150",
+                  "minGrade": "C-"
+                },
+                {
+                  "type": "course",
+                  "department": "MATH",
+                  "number": "151",
+                  "minGrade": "C-"
+                },
+                {
+                  "type": "course",
+                  "department": "MATH",
+                  "number": "154",
+                  "minGrade": "C-"
+                }
+              ]
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "157",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "course",
+          "department": "ECON",
+          "number": "113",
+          "minGrade": "A-"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ECON",
+        "number": "282"
+      }
+    ],
+    "original_title": "Introduction to Game Theory",
+    "original_prerequisites": "ECON 103, MATH 150, MATH 151, MATH 154, or MATH 157, with a minimum grade of C-, or ECON 113 with a minimum grade of A-.",
+    "original_corequisites": "",
+    "original_notes": "Students who have taken ECON 282 Selected Topics - Intro Game Theory in Fall 2011, Fall 2016, Spring 2017, or Spring 2019 may not take this course for further credit.",
+    "timestamp": "2025-07-04T06:23:36.500Z"
+  },
+  {
+    "department": "ECON",
+    "number": "334",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ECON",
+              "number": "233",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "BUS",
+              "number": "232",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "270",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "POL",
+              "number": "201",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ECON",
+              "number": "103",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "ECON",
+              "number": "113",
+              "minGrade": "B-"
+            },
+            {
+              "type": "course",
+              "department": "ECON",
+              "number": "105",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "ECON",
+              "number": "115",
+              "minGrade": "B-"
+            }
+          ]
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "POL",
+        "number": "390"
+      },
+      {
+        "type": "conflict_course",
+        "department": "STAT",
+        "number": "341"
+      },
+      {
+        "type": "conflict_course",
+        "department": "STAT",
+        "number": "452"
+      },
+      {
+        "type": "conflict_course",
+        "department": "ECON",
+        "number": "387",
+        "title": "Applied Data Analysis"
+      }
+    ],
+    "original_title": "Data Visualization and Economic Analysis",
+    "original_prerequisites": "ECON 233 or BUS 232 or STAT 270 or POL 201, with a minimum grade of C-; ECON 103 with a minimum grade of C-, or ECON 113 with a minimum grade of B-, or ECON 105 with a minimum grade of C-, or ECON 115 with a minimum grade of B-.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for POL 390, STAT 341, or STAT 452 may not take this course for further credit. Students with credit for ECON 387 under the title \"Applied Data Analysis\" may not take this course for further credit.",
+    "timestamp": "2025-07-04T06:24:45.677Z"
+  },
+  {
+    "department": "ECON",
+    "number": "342",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ECON",
+              "number": "103",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "ECON",
+              "number": "113",
+              "minGrade": "A-"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ECON",
+              "number": "105",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "ECON",
+              "number": "115",
+              "minGrade": "A-"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "creditCount",
+              "credits": 60
+            },
+            {
+              "type": "permission",
+              "note": "permission of the department"
+            }
+          ]
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ECON",
+        "number": "442"
+      }
+    ],
+    "original_title": "International Trade",
+    "original_prerequisites": "ECON 103 with a minimum grade of C- or ECON 113 with a minimum grade of A-; ECON 105 with a minimum grade of C- or ECON 115 with a minimum grade of A-; 60 units or permission of the department.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ECON 442 cannot take this course for further credit.",
+    "timestamp": "2025-07-04T06:25:04.655Z"
+  },
+  {
+    "schema_version": "SFUv1.1",
+    "department": "ECON",
+    "number": "427W",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ECON",
+          "number": "201",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ECON",
+              "number": "333",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "BUEC",
+              "number": "333",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "ECON",
+              "number": "302",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "BUEC",
+        "number": "427"
+      },
+      {
+        "type": "conflict_course",
+        "department": "BUEC",
+        "number": "495"
+      }
+    ],
+    "original_title": "Industrial Organization: Law and Economics",
+    "original_prerequisites": "ECON 201 and ECON (or BUEC) 333 or ECON 302, all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for BUEC 427 or BUEC 495 may not take this course for further credit. ",
+    "timestamp": "2025-07-04T06:25:26.512Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "252",
+    "schema_version": "SFUv1.1",
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "EDUC",
+        "number": "401"
+      },
+      {
+        "type": "conflict_course",
+        "department": "EDUC",
+        "number": "402"
+      },
+      {
+        "type": "conflict_course",
+        "department": "EDUC",
+        "number": "403"
+      },
+      {
+        "type": "conflict_other",
+        "note": "holding a teaching certificate"
+      }
+    ],
+    "original_title": "Introduction to Reflective Practice",
+    "original_prerequisites": "",
+    "original_corequisites": "",
+    "original_notes": "Students enrolled in or with credit for EDUC 401, 402, 403 or holding a teaching certificate may not take this course for credit.",
+    "timestamp": "2025-07-04T06:26:05.941Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "375",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "401"
+        },
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "402"
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "EDUC",
+      "number": "403"
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "EDUC",
+        "number": "415"
+      },
+      {
+        "type": "conflict_course",
+        "department": "EDUC",
+        "number": "475"
+      }
+    ],
+    "original_title": "Struggle with Mathematics: Sources and Recovery",
+    "original_prerequisites": "EDUC 401/402 or corequisite EDUC 403.",
+    "original_corequisites": "",
+    "original_notes": "Students who have credit for or are currently enrolled in EDUC 415 or EDUC 475 may not take this course for further credit.\r\n",
+    "timestamp": "2025-07-04T06:27:15.560Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "405",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "EDUC",
+              "number": "401"
+            },
+            {
+              "type": "course",
+              "department": "EDUC",
+              "number": "402"
+            },
+            {
+              "type": "course",
+              "department": "EDUC",
+              "number": "403"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "Students must successfully complete a Criminal Record Check."
+        }
+      ]
+    },
+    "original_title": "Teaching Semester",
+    "original_prerequisites": "EDUC 401/402 or EDUC 402/403. Students must successfully complete a Criminal Record Check.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:28:21.115Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "406",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "permission",
+          "note": "Permission will not be given to students without previous teaching experience."
+        },
+        {
+          "type": "permission",
+          "note": "Students must successfully complete a Criminal Record Check."
+        }
+      ]
+    },
+    "original_title": "Supervised Observation and Teaching",
+    "original_prerequisites": "Permission will not be given to students without previous teaching experience. Students must successfully complete a Criminal Record Check.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:28:36.958Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "407",
+    "schema_version": "SFUv1.1",
+    "corequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "402"
+        },
+        {
+          "type": "permission",
+          "note": "Students must successfully complete a Criminal Record Check."
+        }
+      ]
+    },
+    "original_title": "Professional Growth Portfolio: Developing a Solid Foundation",
+    "original_prerequisites": "",
+    "original_corequisites": "EDUC 402. Students must successfully complete a Criminal Record Check.",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:28:45.975Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "416",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "401"
+        },
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "402"
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "EDUC",
+      "number": "403"
+    },
+    "original_title": "Designs for Learning: Secondary Science",
+    "original_prerequisites": "EDUC 401/402 or corequisite EDUC 403.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:30:01.589Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "430",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "401"
+        },
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "402"
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "EDUC",
+      "number": "403"
+    },
+    "original_title": "Designs for Learning: Dance",
+    "original_prerequisites": "EDUC 401/402 or corequisite EDUC 403.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:31:16.960Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "457",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "EDUC",
+              "number": "401"
+            },
+            {
+              "type": "course",
+              "department": "EDUC",
+              "number": "402"
+            }
+          ]
+        },
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "403",
+          "canBeTakenConcurrently": "true"
+        }
+      ]
+    },
+    "original_title": "Drama and Education",
+    "original_prerequisites": "EDUC 401/402 or corequisite EDUC 403.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:31:58.320Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "459",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "401"
+        },
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "402"
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "EDUC",
+      "number": "403"
+    },
+    "original_title": "Instructional Activities in Physical Education",
+    "original_prerequisites": "EDUC 401/402 or corequisite EDUC 403.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:32:30.768Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "467",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 60
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "creditCount",
+              "credits": 6,
+              "department": "EDUC"
+            },
+            {
+              "type": "group",
+              "logic": "ONE_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "EDUC",
+                  "number": "401"
+                },
+                {
+                  "type": "course",
+                  "department": "EDUC",
+                  "number": "402"
+                }
+              ]
+            },
+            {
+              "type": "program",
+              "program": "admission to the Certificate in Teaching ESL program"
+            },
+            {
+              "type": "course",
+              "department": "EDUC",
+              "number": "403",
+              "canBeTakenConcurrently": "true"
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Curriculum and Instruction in Teaching English as an Additional Language",
+    "original_prerequisites": "60 units plus one of the following: six units of EDUC course work; or completion of EDUC 401/402; or admission to the Certificate in Teaching ESL program, or co-requisite EDUC 403.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:34:50.583Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "473W",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "401"
+        },
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "402"
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "EDUC",
+      "number": "403"
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "EDUC",
+        "number": "473"
+      }
+    ],
+    "original_title": "Designs for Learning: Reading",
+    "original_prerequisites": "EDUC 401/402 or corequisite EDUC 403.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for EDUC 473 may not take this course for further credit.",
+    "timestamp": "2025-07-04T06:35:25.298Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "476",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "EDUC",
+              "number": "401"
+            },
+            {
+              "type": "course",
+              "department": "EDUC",
+              "number": "402"
+            }
+          ]
+        },
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "403",
+          "canBeTakenConcurrently": "true"
+        }
+      ]
+    },
+    "original_title": "Designs for Learning: Elementary Science",
+    "original_prerequisites": "EDUC 401/402 or corequisite EDUC 403.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:36:14.717Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "477",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "EDUC",
+              "number": "401"
+            },
+            {
+              "type": "course",
+              "department": "EDUC",
+              "number": "402"
+            }
+          ]
+        },
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "403",
+          "canBeTakenConcurrently": "true"
+        }
+      ]
+    },
+    "original_title": "Designs for Learning: Art",
+    "original_prerequisites": "EDUC 401/402 or corequisite EDUC 403.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:36:47.848Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "478",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "401"
+        },
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "402"
+        },
+        {
+          "type": "course",
+          "department": "EDUC",
+          "number": "403",
+          "canBeTakenConcurrently": "true"
+        }
+      ]
+    },
+    "original_title": "Designs for Learning: Music",
+    "original_prerequisites": "EDUC 401/402 or corequisite EDUC 403.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:37:11.626Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "799",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "EDUC",
+              "number": "870"
+            },
+            {
+              "type": "course",
+              "department": "EDUC",
+              "number": "874"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "Students must successfully complete a Criminal Record Check."
+        }
+      ]
+    },
+    "original_title": "Supervised Counselling Clinic I",
+    "original_prerequisites": "EDUC 870, 874. Students must successfully complete a Criminal Record Check.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:37:47.060Z"
+  },
+  {
+    "department": "EDUC",
+    "number": "895",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "program",
+      "program": "MEd program in Numeracy"
+    },
+    "original_title": "Conceptions of Numeracy",
+    "original_prerequisites": "This course is designed for the MEd program in Numeracy.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:38:01.623Z"
+  },
+  {
+    "department": "ENGL",
+    "number": "375",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 30
+        },
+        {
+          "type": "courseCount",
+          "count": 2,
+          "department": "English",
+          "level": "2XX"
+        }
+      ]
+    },
+    "recommended_prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "English",
+          "number": "199"
+        },
+        {
+          "type": "course",
+          "department": "English",
+          "number": "199W"
+        },
+        {
+          "type": "course",
+          "department": "English",
+          "number": "214"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_other",
+        "note": "Students who obtained credit for English 375 prior to Summer 2015 may not take this course for further credit."
+      }
+    ],
+    "original_title": "Studies in Rhetoric",
+    "original_prerequisites": "30 units or two 200-division English courses. Recommended: One of English 199, 199W, or 214.",
+    "original_corequisites": "",
+    "original_notes": "The course may be repeated for credit if a different topic is taught, though students who obtained credit for English 375 prior to\r\nSummer 2015 may not take this course for further credit.",
+    "timestamp": "2025-07-04T06:38:51.742Z"
+  },
+  {
+    "schema_version": "SFUv1.1",
+    "department": "ENSC",
+    "number": "151",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "HSCourse",
+          "course": "BC Math 12",
+          "orEquivalent": "true"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "100",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "150",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "151",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "154",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "157",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ENSC",
+        "number": "251"
+      },
+      {
+        "type": "conflict_course",
+        "department": "CMPT",
+        "number": "125"
+      },
+      {
+        "type": "conflict_course",
+        "department": "CMPT",
+        "number": "129"
+      },
+      {
+        "type": "conflict_course",
+        "department": "CMPT",
+        "number": "135"
+      },
+      {
+        "type": "conflict_other",
+        "note": "CMPT 200 or higher"
+      }
+    ],
+    "original_title": "Introduction to Software Development for Engineers",
+    "original_prerequisites": "BC Math 12 (or equivalent, or any of MATH 100, 150, 151, 154, or 157, with a minimum grade of C-).",
+    "original_corequisites": "",
+    "original_notes": "Students who have taken ENSC 251, CMPT 125, 129, 135, or CMPT 200 or higher first may not then take this course for further credit.",
+    "timestamp": "2025-07-04T06:40:25.317Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "351",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "group",
+              "logic": "ALL_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "ENSC",
+                  "number": "151",
+                  "minGrade": "C-"
+                },
+                {
+                  "type": "course",
+                  "department": "ENSC",
+                  "number": "215",
+                  "minGrade": "C-"
+                },
+                {
+                  "type": "course",
+                  "department": "ENSC",
+                  "number": "250",
+                  "minGrade": "C-"
+                }
+              ]
+            },
+            {
+              "type": "course",
+              "department": "ENSC",
+              "number": "254",
+              "minGrade": "C-"
+            },
+            {
+              "type": "group",
+              "logic": "ALL_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "CMPT",
+                  "number": "225",
+                  "minGrade": "C-"
+                },
+                {
+                  "type": "group",
+                  "logic": "ONE_OF",
+                  "children": [
+                    {
+                      "type": "course",
+                      "department": "CMPT",
+                      "number": "250",
+                      "minGrade": "C-"
+                    },
+                    {
+                      "type": "course",
+                      "department": "CMPT",
+                      "number": "295",
+                      "minGrade": "C-"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "creditCount",
+          "credits": 60
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ENSC",
+        "number": "451"
+      },
+      {
+        "type": "conflict_course",
+        "department": "MSE",
+        "number": "450"
+      }
+    ],
+    "original_title": "Embedded and Real Time System Software",
+    "original_prerequisites": "(ENSC 151 and ENSC 215 and ENSC 250) or ENSC 254 or (CMPT 225 and (CMPT 250 or CMPT 295)), all with a minimum grade of C- and a minimum of 60 units. ENSC 351 is a required course for all engineering science major and honours students (no course substitutions are permitted).",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for or who are concurrently enrolled in ENSC 451/MSE 450 cannot take this course for further credit.",
+    "timestamp": "2025-07-04T06:43:05.915Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "406",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 100
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ENSC",
+              "number": "100",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "ENSC",
+              "number": "106",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "CMPT",
+              "number": "106",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MSE",
+              "number": "102",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "MSE",
+        "number": "402"
+      },
+      {
+        "type": "conflict_course",
+        "department": "SEE",
+        "number": "402"
+      }
+    ],
+    "original_title": "Engineering Ethics, Law, and Professional Practice",
+    "original_prerequisites": "100 units including one of ENSC 100, ENSC 106, CMPT 106, or MSE 102, with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for MSE 402 or SEE 402 may not take ENSC 406 for further credit.",
+    "timestamp": "2025-07-04T06:43:31.805Z"
+  },
+  {
+    "department": "ENSC",
+    "number": "884",
+    "schema_version": "SFUv1.1",
+    "recommended_prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ENSC",
+          "number": "383"
+        },
+        {
+          "type": "other",
+          "note": "basic mechanics course"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ENSC",
+        "number": "488"
+      }
+    ],
+    "original_title": "Robotics: Motion and Control I",
+    "original_prerequisites": "Recommended Prerequisite: A basic control course (ENSC 383) and basic mechanics course.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for ENSC 488 may not take this course for further credit.",
+    "timestamp": "2025-07-04T06:46:44.928Z"
+  },
+  {
+    "department": "ENV",
+    "number": "303",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "350"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ENV",
+              "number": "302"
+            },
+            {
+              "type": "course",
+              "department": "GEOG",
+              "number": "302"
+            }
+          ]
+        },
+        {
+          "type": "program",
+          "program": "readmission into Environment Co-operative Education Program"
+        }
+      ]
+    },
+    "original_title": "Environment Practicum II",
+    "original_prerequisites": "ARCH 350, ENV 302 or GEOG 302 and readmission into Environment Co-operative Education Program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:47:03.028Z"
+  },
+  {
+    "department": "ENV",
+    "number": "403",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "ARCH",
+          "number": "450"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "ENV",
+              "number": "402"
+            },
+            {
+              "type": "course",
+              "department": "GEOG",
+              "number": "402"
+            }
+          ]
+        },
+        {
+          "type": "program",
+          "program": "readmission into Environment Co-operative Education Program."
+        }
+      ]
+    },
+    "original_title": "Environment Practicum IV",
+    "original_prerequisites": "ARCH 450, ENV 402 or GEOG 402 and readmission into Environment Co-operative Education Program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:47:16.546Z"
+  },
+  {
+    "department": "GERO",
+    "number": "994",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "program",
+      "program": "All coursework towards the PhD in Gerontology."
+    },
+    "original_title": "Comprehensive Examination I",
+    "original_prerequisites": "All coursework towards the PhD in Gerontology.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:56:01.163Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "398W",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 30
+        },
+        {
+          "type": "creditCount",
+          "credits": 3,
+          "department": [
+            "GSWS",
+            "WS",
+            "GDST"
+          ]
+        }
+      ]
+    },
+    "original_title": "Feminist Currents",
+    "original_prerequisites": "30 units including three units in GSWS or WS or GDST.",
+    "original_corequisites": "",
+    "original_notes": "Equivalent Courses: WS398",
+    "timestamp": "2025-07-04T06:56:58.303Z"
+  },
+  {
+    "department": "GSWS",
+    "number": "431",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 45
+        },
+        {
+          "type": "creditCount",
+          "credits": 6,
+          "department": [
+            "GSWS",
+            "CA"
+          ]
+        }
+      ]
+    },
+    "original_title": "Local Sex on Global Screen",
+    "original_prerequisites": "45 units including six units in GSWS or CA.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T06:59:40.704Z"
+  },
+  {
+    "department": "HIST",
+    "number": "334",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 45
+        },
+        {
+          "type": "creditCount",
+          "credits": 6,
+          "department": "history",
+          "level": "LD"
+        }
+      ]
+    },
+    "recommended_prerequisite": {
+      "type": "course",
+      "department": "HIST",
+      "number": "106"
+    },
+    "original_title": "The Making of Imperial Russia",
+    "original_prerequisites": "45 units, including six units of lower division history. Recommended: HIST 106.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:02:09.536Z"
+  },
+  {
+    "department": "HIST",
+    "number": "401",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 45
+        },
+        {
+          "type": "creditCount",
+          "credits": 9,
+          "department": "history",
+          "level": "LD"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "HIST",
+              "number": "224"
+            },
+            {
+              "type": "course",
+              "department": "HIST",
+              "number": "225"
+            },
+            {
+              "type": "course",
+              "department": "HIST",
+              "number": "332"
+            },
+            {
+              "type": "permission",
+              "note": "permission of the department"
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Problems in Modern German History",
+    "original_prerequisites": "45 units, including nine units of lower division history and one of HIST 224, 225, 332 or permission of the department.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:02:36.322Z"
+  },
+  {
+    "department": "HIST",
+    "number": "424",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 45
+        },
+        {
+          "type": "creditCount",
+          "credits": 9,
+          "department": "HIST",
+          "level": "LD"
+        }
+      ]
+    },
+    "recommended_prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "HIST",
+          "number": "101"
+        },
+        {
+          "type": "course",
+          "department": "HIST",
+          "number": "102W"
+        }
+      ]
+    },
+    "original_title": "Problems in the Cultural History of Canada",
+    "original_prerequisites": "45 units including nine units of lower division history. Recommended: HIST 101, 102W.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:03:04.366Z"
+  },
+  {
+    "department": "HIST",
+    "number": "476",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "creditCount",
+              "credits": 45
+            },
+            {
+              "type": "creditCount",
+              "credits": 6,
+              "department": "history",
+              "level": "LD"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "by permission of instructor"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "HS",
+        "number": "307",
+        "title": "Glory to Debt"
+      },
+      {
+        "type": "conflict_course",
+        "department": "HS",
+        "number": "476"
+      }
+    ],
+    "original_title": "History of Modern Greece",
+    "original_prerequisites": "45 units, including six units of lower division history or by permission of instructor.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for HS/HIST 307 under the topic \"Glory to Debt\" or HS 476 may not take this course for further credit. ",
+    "timestamp": "2025-07-04T07:06:13.833Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "350",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "permission",
+      "note": "Students must be accepted into the health sciences co-op program."
+    },
+    "original_title": "Co-op Practicum I",
+    "original_prerequisites": "Students must be accepted into the health sciences co-op program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:07:33.634Z"
+  },
+  {
+    "department": "HSCI",
+    "number": "452",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "course",
+      "department": "HSCI",
+      "number": "451"
+    },
+    "original_title": "Co-op Practicum V",
+    "original_prerequisites": "Completion of HSCI 451 Co-op Practicum IV.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:08:11.537Z"
+  },
+  {
+    "department": "IAT",
+    "number": "431",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 60
+        },
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "IAT",
+              "number": "309W",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "IAT",
+              "number": "333",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Speculative Design",
+    "original_prerequisites": "Completion of 60 units, including IAT 309W and IAT 333, with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:12:57.839Z"
+  },
+  {
+    "department": "IAT",
+    "number": "490",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "program",
+          "program": "Honours Program"
+        },
+        {
+          "type": "permission",
+          "note": "project accepted by a supervisor"
+        }
+      ]
+    },
+    "original_title": "Honours Project I",
+    "original_prerequisites": "Students accepted into Honours Program and project accepted by a supervisor.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:14:02.109Z"
+  },
+  {
+    "department": "IAT",
+    "number": "491",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "program",
+          "program": "Honours Program"
+        },
+        {
+          "type": "other",
+          "note": "project accepted by a supervisor"
+        }
+      ]
+    },
+    "original_title": "Honours Project II",
+    "original_prerequisites": "Students accepted into Honours Program and project accepted by a supervisor.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:14:12.235Z"
+  },
+  {
+    "department": "IAT",
+    "number": "803",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "permission",
+      "note": "SIAT Graduate Student."
+    },
+    "original_title": "Science, Technology & Culture",
+    "original_prerequisites": "SIAT Graduate Student.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:14:45.750Z"
+  },
+  {
+    "department": "IAT",
+    "number": "804",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "permission",
+      "note": "SIAT Graduate Student"
+    },
+    "original_title": "Foundations of Research Design for Human-Centred Design of Interactive Technologies",
+    "original_prerequisites": "SIAT Graduate Student.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:14:55.071Z"
+  },
+  {
+    "department": "INDG",
+    "number": "301",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "INDG",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "FNST",
+              "number": "101"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "group",
+              "logic": "ONE_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "INDG",
+                  "number": "201W"
+                },
+                {
+                  "type": "course",
+                  "department": "FNST",
+                  "number": "201W"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "logic": "ONE_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "INDG",
+                  "number": "111"
+                },
+                {
+                  "type": "course",
+                  "department": "FNST",
+                  "number": "111"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "permission of the instructor"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "FNST",
+        "number": "301"
+      }
+    ],
+    "original_title": "Indigenous/Indigenist Research Methods",
+    "original_prerequisites": "One of INDG (or FNST) 101 or 201W and 111, or permission of the instructor.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for FNST 301 may not take this course for further credit.",
+    "timestamp": "2025-07-04T07:17:49.239Z"
+  },
+  {
+    "department": "INDG",
+    "number": "433",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 45
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "INDG",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "FNST",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "INDG",
+              "number": "201W"
+            },
+            {
+              "type": "course",
+              "department": "FNST",
+              "number": "201W"
+            },
+            {
+              "type": "permission",
+              "note": "permission of the instructor"
+            }
+          ]
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "FNST",
+        "number": "433"
+      }
+    ],
+    "original_title": "Indigenous Environmental Justice and Activism",
+    "original_prerequisites": "45 units and one of INDG (or FNST) 101 or 201W, or permission of the instructor.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for FNST 433 may not take this course for further credit.",
+    "timestamp": "2025-07-04T07:21:05.750Z"
+  },
+  {
+    "department": "INDG",
+    "number": "435",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "INDG",
+              "number": "101"
+            },
+            {
+              "type": "course",
+              "department": "INDG",
+              "number": "201W"
+            }
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "permission of the instructor"
+        },
+        {
+          "type": "permission",
+          "note": "Students must successfully complete a Criminal Record Check"
+        }
+      ]
+    },
+    "original_title": "STT-Land-Based Learning Field Course",
+    "original_prerequisites": "INDG 101 or INDG 201W, and permission of the instructor. Students must successfully complete a Criminal Record Check.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:21:22.396Z"
+  },
+  {
+    "department": "INDG",
+    "number": "447",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 15,
+          "department": [
+            "INDG",
+            "FNST"
+          ]
+        },
+        {
+          "type": "permission",
+          "note": "permission of an instructor and department approval."
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "other",
+      "note": "Varies depending on topic."
+    },
+    "original_title": "Directed Studies in Indigenous Studies",
+    "original_prerequisites": "15 units of INDG (or FNST) courses; permission of an instructor and department approval. Corequisite: Varies depending on topic.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:21:42.002Z"
+  },
+  {
+    "department": "IS",
+    "number": "497",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "creditCount",
+          "credits": 60
+        },
+        {
+          "type": "CGPA",
+          "minCGPA": 3
+        },
+        {
+          "type": "program",
+          "program": "International Studies major or honours"
+        },
+        {
+          "type": "permission",
+          "note": "Students must successfully complete a Criminal Record Check, if required."
+        }
+      ]
+    },
+    "original_title": "Field Practice",
+    "original_prerequisites": "Completion of 60 units and a minimum CGPA of 3.0 is required. International Studies major or honours students. Students must successfully complete a Criminal Record Check, if required.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:25:38.410Z"
+  },
+  {
+    "department": "IS",
+    "number": "830",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "program",
+      "program": "MA in International Studies Program"
+    },
+    "recommended_prerequisite": {
+      "type": "other",
+      "note": "Undergraduate course work in methods is highly recommended."
+    },
+    "original_title": "Analytic Approaches for International Studies",
+    "original_prerequisites": "Acceptance into the MA in International Studies Program. Undergraduate course work in methods is highly recommended.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:25:58.524Z"
+  },
+  {
+    "department": "LING",
+    "number": "894",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "other",
+      "note": "All PhD coursework in Linguistics."
+    },
+    "original_title": "Qualifying Paper I",
+    "original_prerequisites": "All PhD coursework in Linguistics.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:31:10.649Z"
+  },
+  {
+    "department": "MACM",
+    "number": "203",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "CMPT",
+              "number": "102"
+            },
+            {
+              "type": "course",
+              "department": "CMPT",
+              "number": "120"
+            },
+            {
+              "type": "course",
+              "department": "CMPT",
+              "number": "126"
+            },
+            {
+              "type": "course",
+              "department": "CMPT",
+              "number": "128"
+            },
+            {
+              "type": "course",
+              "department": "CMPT",
+              "number": "130"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "150"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "151"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "154"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "157"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "232",
+              "canBeTakenConcurrently": "true"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "240",
+              "canBeTakenConcurrently": "true"
+            }
+          ]
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_other",
+        "note": "Students in excess of 80 units may not take MACM 203 for further credit."
+      }
+    ],
+    "original_title": "Computing with Linear Algebra",
+    "original_prerequisites": "One of CMPT 102, 120, 126, 128 or 130 and one of MATH 150, 151, 154 or 157 and one of MATH 232 or 240. MATH 232 or 240 can be taken as corequisite. Students in excess of 80 units may not take MACM 203 for further credit.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:32:51.623Z"
+  },
+  {
+    "department": "MACM",
+    "number": "316",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "152"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "155"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "158"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "232"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "240"
+            }
+          ]
+        },
+        {
+          "type": "other",
+          "note": "computing experience"
+        }
+      ]
+    },
+    "original_title": "Numerical Analysis I",
+    "original_prerequisites": "MATH 152 or 155 or 158, and MATH 232 or 240, and computing experience.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:33:12.944Z"
+  },
+  {
+    "department": "MACM",
+    "number": "409",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "251"
+        },
+        {
+          "type": "course",
+          "department": "MACM",
+          "number": "316"
+        },
+        {
+          "type": "other",
+          "note": "programming experience"
+        }
+      ]
+    },
+    "original_title": "Numerical Linear Algebra: Algorithms, Implementation and Applications",
+    "original_prerequisites": "MATH 251, MACM 316, programming experience.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:33:21.611Z"
+  },
+  {
+    "department": "MATH",
+    "number": "292",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "other",
+      "note": "Prerequisites will be specified according to the particular topic or topics offered."
+    },
+    "original_title": "Selected Topics in Mathematics",
+    "original_prerequisites": "Prerequisites will be specified according to the particular topic or topics offered.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:36:46.540Z"
+  },
+  {
+    "department": "MATH",
+    "number": "303",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "152",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "155",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "158",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "232",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "240",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Mathematical Journeys III",
+    "original_prerequisites": "MATH 152 or 155 or 158, and MATH 232 or 240, all with a minimum grade of C-. There may be additional prerequisites depending on the specific course topic.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:37:12.157Z"
+  },
+  {
+    "department": "MATH",
+    "number": "314",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "260",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "310",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "251",
+              "minGrade": "B+"
+            },
+            {
+              "type": "group",
+              "logic": "ONE_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "MATH",
+                  "number": "252",
+                  "minGrade": "C-"
+                },
+                {
+                  "type": "course",
+                  "department": "MATH",
+                  "number": "254",
+                  "minGrade": "C-"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Introduction to Fourier Methods and Partial Differential Equations",
+    "original_prerequisites": "MATH 260 or MATH 310, with a minimum grade of C-; and one of MATH 251 with a grade of B+, or one of MATH 252 or 254, with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:37:40.107Z"
+  },
+  {
+    "department": "MATH",
+    "number": "342",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "240",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "232",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "courseCount",
+          "count": 1,
+          "department": [
+            "MATH",
+            "MACM"
+          ],
+          "level": "2XX"
+        }
+      ]
+    },
+    "original_title": "Elementary Number Theory",
+    "original_prerequisites": "MATH 240 or 232, with a minimum grade of C-, and one additional 200-level MATH or MACM course.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:40:32.656Z"
+  },
+  {
+    "department": "MATH",
+    "number": "360",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "260",
+          "minGrade": "C-"
+        },
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "155",
+              "minGrade": "A-"
+            },
+            {
+              "type": "course",
+              "department": "BISC",
+              "number": "204",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "BISC",
+      "number": "204",
+      "canBeTakenConcurrently": "true"
+    },
+    "recommended_prerequisite": {
+      "type": "other",
+      "note": "Experience with a computing platform such as R, MATLAB, or Python."
+    },
+    "original_title": "Introduction to Biomathematics",
+    "original_prerequisites": "MATH 260 with a minimum grade of C- or (MATH 155 with a minimum grade of A- and BISC 204 with a minimum grade of C-). Corequisite: BISC 204 may be taken as a corequisite. Strongly Recommended: Experience with a computing platform such as R, MATLAB, or Python.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:40:56.473Z"
+  },
+  {
+    "department": "MATH",
+    "number": "418",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "group",
+              "logic": "ONE_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "MATH",
+                  "number": "260",
+                  "minGrade": "C-"
+                },
+                {
+                  "type": "course",
+                  "department": "MATH",
+                  "number": "310",
+                  "minGrade": "C-"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "logic": "ONE_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "MATH",
+                  "number": "314",
+                  "minGrade": "C-"
+                },
+                {
+                  "type": "course",
+                  "department": "MATH",
+                  "number": "320",
+                  "minGrade": "C-"
+                },
+                {
+                  "type": "course",
+                  "department": "MATH",
+                  "number": "322",
+                  "minGrade": "C-"
+                },
+                {
+                  "type": "course",
+                  "department": "PHYS",
+                  "number": "384",
+                  "minGrade": "C-"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "group",
+              "logic": "ONE_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "MATH",
+                  "number": "252",
+                  "minGrade": "A-"
+                },
+                {
+                  "type": "course",
+                  "department": "MATH",
+                  "number": "254",
+                  "minGrade": "A-"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "logic": "ONE_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "MATH",
+                  "number": "260",
+                  "minGrade": "A-"
+                },
+                {
+                  "type": "course",
+                  "department": "MATH",
+                  "number": "310",
+                  "minGrade": "A-"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Partial Differential Equations",
+    "original_prerequisites": "(MATH 260 or MATH 310) and one of MATH 314, MATH 320, MATH 322, PHYS 384, all with a minimum grade of C-. An alternative to the above prerequisite is both of (MATH 252 or MATH 254) and (MATH 260 or MATH 310), both with grades of at least A-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:41:38.445Z"
+  },
+  {
+    "department": "MATH",
+    "number": "462",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "314",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "418",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "PHYS",
+              "number": "384",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "251",
+              "minGrade": "B+"
+            },
+            {
+              "type": "group",
+              "logic": "ONE_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "MATH",
+                  "number": "260",
+                  "minGrade": "B+"
+                },
+                {
+                  "type": "course",
+                  "department": "MATH",
+                  "number": "310",
+                  "minGrade": "B+"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Fluid Dynamics",
+    "original_prerequisites": "One of MATH 314, MATH 418, PHYS 384, with a minimum grade of C-. An alternative to the above prerequisite is both of MATH 251 and (MATH 260 or MATH 310), both with grades of at least B+.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:41:53.105Z"
+  },
+  {
+    "department": "MATH",
+    "number": "495",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "other",
+      "note": "Will be specified according to the particular topic or topics offered under this course number."
+    },
+    "original_title": "Selected Topics in Applied Mathematics",
+    "original_prerequisites": "Will be specified according to the particular topic or topics offered under this course number.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:42:33.165Z"
+  },
+  {
+    "department": "MATH",
+    "number": "498",
+    "schema_version": "SFUv1.1",
+    "corequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "499W"
+        },
+        {
+          "type": "permission",
+          "note": "Students must have an approved project prior to enrollment."
+        }
+      ]
+    },
+    "original_title": "Communication and Research Skills in the Mathematical Sciences",
+    "original_prerequisites": "",
+    "original_corequisites": "MATH 499W. Students must have an approved project prior to enrollment.",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:42:45.524Z"
+  },
+  {
+    "department": "MATH",
+    "number": "604",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "program",
+          "program": "MSc in mathematics education"
+        },
+        {
+          "type": "permission",
+          "note": "permission of the department"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_other",
+        "note": "Graduate students in the Department of Mathematics cannot take this course to satisfy their degree requirements."
+      }
+    ],
+    "original_title": "Geometry",
+    "original_prerequisites": "Entrance into the MSc in mathematics education program or permission of the department. Graduate students in the Department of Mathematics cannot take this course to satisfy their degree requirements.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:42:54.943Z"
+  },
+  {
+    "department": "MBB",
+    "number": "229",
+    "schema_version": "SFUv1.1",
+    "corequisite": {
+      "type": "course",
+      "department": "MBB",
+      "number": "222",
+      "minGrade": "C-"
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "MBB",
+        "number": "308"
+      },
+      {
+        "type": "conflict_course",
+        "department": "MBB",
+        "number": "309"
+      }
+    ],
+    "original_title": "Introductory Molecular Biology and Biochemistry Laboratory",
+    "original_prerequisites": "or Corequisite: MBB 222 with a minimum grade of C- or better.",
+    "original_corequisites": "",
+    "original_notes": "Students who have taken MBB 308 or MBB 309 first may not then take this course for further credit.",
+    "timestamp": "2025-07-04T07:46:54.461Z"
+  },
+  {
+    "department": "MBB",
+    "number": "498",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "308"
+        },
+        {
+          "type": "course",
+          "department": "MBB",
+          "number": "309W"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_other",
+        "note": "Students may not take MBB 498 concurrently with MBB 481, 482, 483, 491 or 492 or BISC 490, 491, 492W, 498 or 499."
+      }
+    ],
+    "original_title": "Directed Research",
+    "original_prerequisites": "MBB 308 or 309W; Students may not take MBB 498 concurrently with MBB 481, 482, 483, 491 or 492 or BISC 490, 491, 492W, 498 or 499.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:47:57.131Z"
+  },
+  {
+    "department": "MSE",
+    "number": "250",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "PHYS",
+              "number": "141"
+            },
+            {
+              "type": "group",
+              "logic": "ALL_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "PHYS",
+                  "number": "121"
+                },
+                {
+                  "type": "course",
+                  "department": "PHYS",
+                  "number": "131"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MSE",
+              "number": "281",
+              "canBeTakenConcurrently": "true"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "260",
+              "canBeTakenConcurrently": "true"
+            }
+          ]
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "232"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "SEE",
+        "number": "230"
+      },
+      {
+        "type": "conflict_course",
+        "department": "ENSC",
+        "number": "220"
+      }
+    ],
+    "original_title": "Electric Circuits",
+    "original_prerequisites": "PHYS 141 or (PHYS 121 and 131), MSE 281 (or MATH 260), and MATH 232. MSE 281 (or MATH 260) may be taken concurrently.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for SEE 230 or ENSC 220 may not take MSE 250 for further credit.",
+    "timestamp": "2025-07-04T07:50:36.264Z"
+  },
+  {
+    "department": "MSE",
+    "number": "890",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "permission",
+      "note": "PhD Students in the School of Mechatronic Systems Engineering (MSE)."
+    },
+    "original_title": "PhD Qualifying Examination",
+    "original_prerequisites": "PhD Students in the School of Mechatronic Systems Engineering (MSE).",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:51:48.848Z"
+  },
+  {
+    "department": "PHIL",
+    "number": "331",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "other",
+      "note": "As stated by department at time of offering."
+    },
+    "original_title": "Selected Topics",
+    "original_prerequisites": "As stated by department at time of offering.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:52:11.662Z"
+  },
+  {
+    "department": "PHIL",
+    "number": "332",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "other",
+      "note": "As stated by department at time of offering."
+    },
+    "original_title": "Selected Topics",
+    "original_prerequisites": "As stated by department at time of offering.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:52:18.978Z"
+  },
+  {
+    "department": "PHIL",
+    "number": "343",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "PHIL",
+              "number": "201"
+            },
+            {
+              "type": "course",
+              "department": "PHIL",
+              "number": "203"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "group",
+              "logic": "ONE_OF",
+              "children": [
+                {
+                  "type": "course",
+                  "department": "PHIL",
+                  "number": "100"
+                },
+                {
+                  "type": "course",
+                  "department": "PHIL",
+                  "number": "100W"
+                },
+                {
+                  "type": "course",
+                  "department": "PHIL",
+                  "number": "300"
+                }
+              ]
+            },
+            {
+              "type": "course",
+              "department": "COGS",
+              "number": "200"
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Topics in the Philosophy of Mind",
+    "original_prerequisites": "Either one of: PHIL 201 or 203; or both of PHIL 100, 100W, or 300, and COGS 200.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:52:58.582Z"
+  },
+  {
+    "department": "PHIL",
+    "number": "455W",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "creditCount",
+      "credits": 15,
+      "department": "PHIL",
+      "level": "UD"
+    },
+    "recommended_prerequisite": {
+      "type": "other",
+      "note": "It is strongly recommended that students have taken prior courses in metaphysics and epistemology."
+    },
+    "original_title": "Advanced Topics in Epistemology and Metaphysics",
+    "original_prerequisites": "15 upper division PHIL units. It is strongly recommended that students in PHIL 455W have taken prior courses in metaphysics and epistemology.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:53:53.422Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "141",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "PHYS",
+              "number": "120",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "PHYS",
+              "number": "125",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "PHYS",
+              "number": "140",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MSE",
+              "number": "103",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "course",
+          "department": "PHYS",
+          "number": "101",
+          "minGrade": "B"
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "152"
+        },
+        {
+          "type": "course",
+          "department": "MATH",
+          "number": "155"
+        }
+      ]
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "PHYS",
+        "number": "126"
+      },
+      {
+        "type": "conflict_course",
+        "department": "PHYS",
+        "number": "121"
+      },
+      {
+        "type": "conflict_course",
+        "department": "PHYS",
+        "number": "102"
+      }
+    ],
+    "original_title": "Studio Physics - Optics, Electricity and Magnetism",
+    "original_prerequisites": "PHYS 120 or PHYS 125 or PHYS 140 or MSE 103, with a minimum grade of C-, or PHYS 101 with a minimum grade of B. Corequisite: MATH 152 or MATH 155.",
+    "original_corequisites": "",
+    "original_notes": "Students with credit for PHYS 126 or 121 or 102 may not take this course for further credit.",
+    "timestamp": "2025-07-04T07:55:17.228Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "321",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "PHYS",
+              "number": "121",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "PHYS",
+              "number": "126",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "PHYS",
+              "number": "141",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "PHYS",
+              "number": "102",
+              "minGrade": "B"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "252",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "254",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "260",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "310",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Intermediate Electricity and Magnetism",
+    "original_prerequisites": "PHYS 121 or PHYS 126 or PHYS 141 (or PHYS 102 with a minimum grade of B); MATH 252 or MATH 254; MATH 260 or MATH 310. All prerequisite courses require a minimum grade of C-, unless specified.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:55:46.690Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "346",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "CHEM",
+              "number": "120",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "CHEM",
+              "number": "121",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "PHYS",
+              "number": "102",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "PHYS",
+              "number": "121",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "PHYS",
+              "number": "126",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "PHYS",
+              "number": "141",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "152",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "MATH",
+              "number": "155",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Energy and the Environment",
+    "original_prerequisites": "CHEM 120 or 121; PHYS 102 or 121 or 126 or 141; MATH 152 or 155; all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:56:37.437Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "432",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "permission",
+      "note": "All students interested in taking this course must consult with their faculty supervisor regarding prerequisites."
+    },
+    "original_title": "Undergraduate Honours Thesis",
+    "original_prerequisites": "All students interested in taking this course must consult with their faculty supervisor regarding prerequisites.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:59:28.785Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "485",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "PHYS",
+              "number": "385",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "CHEM",
+              "number": "364",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "PHYS",
+              "number": "313",
+              "minGrade": "C-"
+            },
+            {
+              "type": "permission",
+              "note": "permission from instructor for non-physics students"
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Particle Physics",
+    "original_prerequisites": "PHYS 385 or CHEM 364; PHYS 313 or permission from instructor for non-physics students; all with a minimum grade of C-.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T07:59:57.841Z"
+  },
+  {
+    "department": "PHYS",
+    "number": "849",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "PHYS",
+          "number": "365",
+          "orEquivalent": "true"
+        },
+        {
+          "type": "course",
+          "department": "PHYS",
+          "number": "465",
+          "orEquivalent": "true"
+        },
+        {
+          "type": "permission",
+          "note": "permission of the instructor"
+        }
+      ]
+    },
+    "original_title": "Topics in Nanophysics",
+    "original_prerequisites": "PHYS 365 (Semiconductor Devices) or equivalent or PHYS 465 (Solid State Physics) or equivalent, or permission of the instructor.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:02:12.717Z"
+  },
+  {
+    "department": "PLCY",
+    "number": "817",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "permission",
+      "note": "Students approved for conducting MPP capstone research by the Graduate Program Committee."
+    },
+    "original_title": "Research Proposal Development",
+    "original_prerequisites": "Students approved for conducting MPP capstone research by the Graduate Program Committee.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:02:30.627Z"
+  },
+  {
+    "department": "POL",
+    "number": "498",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "permission",
+      "note": "Permission of the department."
+    },
+    "credit_conflicts": [
+      {
+        "type": "conflict_other",
+        "note": "Students may count only one readings course as credit towards their upper division political science requirements."
+      }
+    ],
+    "original_title": "Directed Readings in Political Science",
+    "original_prerequisites": "Permission of the department. Students may count only one readings course as credit towards their upper division political science requirements.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:03:12.566Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "821A",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "program",
+          "program": "Admission to the Clinical Psychology Graduate Program"
+        },
+        {
+          "type": "permission",
+          "note": "Students must successfully complete a Criminal Record Check."
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "PSYC",
+      "number": "820A"
+    },
+    "original_title": "Practicum in Psychological Assessment I",
+    "original_prerequisites": "Admission to the Clinical Psychology Graduate Program. Corequisite: Enrollment in PSYC 820A. Students must successfully complete a Criminal Record Check.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:05:31.449Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "881",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "program",
+          "program": "Admission to the doctoral clinical program"
+        },
+        {
+          "type": "permission",
+          "note": "Students must successfully complete a Criminal Record Check."
+        }
+      ]
+    },
+    "original_title": "Senior Practicum",
+    "original_prerequisites": "Admission to the doctoral clinical program. Students must successfully complete a Criminal Record Check.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:05:45.705Z"
+  },
+  {
+    "department": "PSYC",
+    "number": "882",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "program",
+          "program": "Admission to the clinical program with a specialization in neuropsychology"
+        },
+        {
+          "type": "permission",
+          "note": "Students must successfully complete a Criminal Record Check."
+        }
+      ]
+    },
+    "original_title": "Neuropsychology Practicum",
+    "original_prerequisites": "Admission to the clinical program with a specialization in neuropsychology. Students must successfully complete a Criminal Record Check.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:06:03.904Z"
+  },
+  {
+    "department": "PUB",
+    "number": "600",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "permission",
+      "note": "Admittance to the program."
+    },
+    "original_title": "Topics in Publishing Management",
+    "original_prerequisites": "Admittance to the program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:08:15.217Z"
+  },
+  {
+    "department": "PUB",
+    "number": "601",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "permission",
+      "note": "Admittance to the program."
+    },
+    "original_title": "Editorial Theory and Practice",
+    "original_prerequisites": "Admittance to the program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:08:30.974Z"
+  },
+  {
+    "department": "PUB",
+    "number": "602",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "permission",
+      "note": "Admittance to the program."
+    },
+    "original_title": "Design and Production Management",
+    "original_prerequisites": "Admittance to the program.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:08:49.722Z"
+  },
+  {
+    "department": "SA",
+    "number": "499",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "SA",
+          "number": "495"
+        },
+        {
+          "type": "permission",
+          "note": "permission from the SA department"
+        },
+        {
+          "type": "permission",
+          "note": "prior agreement from an SA faculty member who has agreed to supervise the honours essay"
+        }
+      ]
+    },
+    "original_title": "Honours Essay (SA)",
+    "original_prerequisites": "SA 495, permission from the SA department, and prior agreement from an SA faculty member who has agreed to supervise the honours essay.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:13:35.634Z"
+  },
+  {
+    "schema_version": "SFUv1.1",
+    "department": "SDA",
+    "number": "100",
+    "credit_conflicts": [
+      {
+        "type": "conflict_course",
+        "department": "ECON",
+        "number": "334"
+      },
+      {
+        "type": "conflict_course",
+        "department": "POL",
+        "number": "390"
+      },
+      {
+        "type": "conflict_course",
+        "department": "STAT",
+        "number": "240"
+      },
+      {
+        "type": "conflict_course",
+        "department": "STAT",
+        "number": "310"
+      }
+    ],
+    "original_title": "Data Visualization",
+    "original_prerequisites": "",
+    "original_corequisites": "",
+    "original_notes": "Students who have taken ECON 334, POL 390, STAT 240, or STAT 310 first may not then take this course for further credit.",
+    "timestamp": "2025-07-04T08:13:51.782Z"
+  },
+  {
+    "department": "SEE",
+    "number": "402",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "SEE",
+          "number": "110"
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "creditCount",
+              "credits": 100
+            },
+            {
+              "type": "group",
+              "logic": "ALL_OF",
+              "children": [
+                {
+                  "type": "creditCount",
+                  "credits": 80
+                },
+                {
+                  "type": "other",
+                  "note": "two-term co-op work"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Professional Engineering Ethics and Practice",
+    "original_prerequisites": "SEE 110; Minimum of 100 units OR 80 units plus two-term co-op work.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:14:41.024Z"
+  },
+  {
+    "department": "SEE",
+    "number": "464",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "SEE",
+              "number": "310"
+            },
+            {
+              "type": "course",
+              "department": "SEE",
+              "number": "324"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ALL_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "MSE",
+              "number": "321"
+            },
+            {
+              "type": "permission",
+              "note": "MSE students require approval of the course instructor."
+            }
+          ]
+        }
+      ]
+    },
+    "original_title": "Energy Systems Modeling for Buildings",
+    "original_prerequisites": "SEE 310 and SEE 324. MSE students who completed MSE 321 can take this course upon approval of the course instructor.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:15:34.105Z"
+  },
+  {
+    "department": "SEE",
+    "number": "810",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "program",
+          "program": "SEE MASc"
+        },
+        {
+          "type": "permission",
+          "note": "permission of the Graduate Program Chair"
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "SEE",
+          "number": "896"
+        },
+        {
+          "type": "course",
+          "department": "SEE",
+          "number": "897"
+        }
+      ]
+    },
+    "original_title": "Sustainability and Sustainable Energy Technologies",
+    "original_prerequisites": "Open to SEE MASc students or permission of the Graduate Program Chair. Corequisite: SEE 896 (MASc) or SEE 897 (PhD).",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:15:59.682Z"
+  },
+  {
+    "department": "STAT",
+    "number": "360",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "260",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "341",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "302",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "305",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "350",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "ECON",
+              "number": "333",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "recommended_prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "CMPT",
+          "number": "125"
+        },
+        {
+          "type": "course",
+          "department": "CMPT",
+          "number": "129"
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "STAT",
+      "number": "361"
+    },
+    "original_title": "Advanced R for Data Science",
+    "original_prerequisites": "One of STAT 260 or STAT 341 and one of STAT 302, STAT 305, STAT 350, or ECON 333, all with a minimum grade of C-. CMPT 125 or CMPT 129 is also recommended. Corequisite: STAT 361.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:17:28.383Z"
+  },
+  {
+    "department": "STAT",
+    "number": "361",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "group",
+      "logic": "ALL_OF",
+      "children": [
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "260",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "341",
+              "minGrade": "C-"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "logic": "ONE_OF",
+          "children": [
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "302",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "305",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "STAT",
+              "number": "350",
+              "minGrade": "C-"
+            },
+            {
+              "type": "course",
+              "department": "ECON",
+              "number": "333",
+              "minGrade": "C-"
+            }
+          ]
+        }
+      ]
+    },
+    "recommended_prerequisite": {
+      "type": "group",
+      "logic": "ONE_OF",
+      "children": [
+        {
+          "type": "course",
+          "department": "CMPT",
+          "number": "125"
+        },
+        {
+          "type": "course",
+          "department": "CMPT",
+          "number": "129"
+        }
+      ]
+    },
+    "corequisite": {
+      "type": "course",
+      "department": "STAT",
+      "number": "360"
+    },
+    "original_title": "Laboratory for Advanced R for Data Science",
+    "original_prerequisites": "One of STAT 260 or STAT 341 and one of STAT 302, STAT 305, STAT 350, or ECON 333, all with a minimum grade of C-. CMPT 125 or CMPT 129 is also recommended. Corequisite: STAT 360.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:17:47.290Z"
+  },
+  {
+    "department": "STAT",
+    "number": "490",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "other",
+      "note": "Dependent on the topic covered."
+    },
+    "original_title": "Selected Topics in Probability and Statistics",
+    "original_prerequisites": "Dependent on the topic covered.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:17:54.763Z"
+  },
+  {
+    "department": "STAT",
+    "number": "897",
+    "schema_version": "SFUv1.1",
+    "prerequisite": {
+      "type": "permission",
+      "note": "STAT PhD students."
+    },
+    "original_title": "PhD Comprehensive Exam",
+    "original_prerequisites": "STAT PhD students.",
+    "original_corequisites": "",
+    "original_notes": "",
+    "timestamp": "2025-07-04T08:19:11.801Z"
   }
 ]
